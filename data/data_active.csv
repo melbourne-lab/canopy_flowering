@@ -1,80 +1,138 @@
-﻿Date,Species,Plot,Tag,Racemes,Infloresences open,Infloresences done,Twist ties,Q,Note,Page
-5/30/20,Thermopsis divaricarpa,1,1002,1,0,0,,,,1
-,,1,1018,5,0,0,,,,1
-,,1,1019,1,0,0,,,close to 1018,1
-,,2,1004,2,0,0,,,,1
-,,2,1007,1,0,0,,,,1
-,,2,1050,1,0,0,,,bud emerging,1
-,,2,1014,1,0,0,,,bud emerging,1
-,,2,1054,1,0,0,,,bud,1
-,,2,1055,2,0,0,,,,1
-,,2,1023,1,0,0,,,,1
-,,2,1008,1,0,0,,,,1
-,,2,1017,2,0,0,,,,1
-,,2,1013,1,0,0,,,,1
-,,2,1001,1,0,0,,,,1
-,,2,1011,2,0,0,,,,1
-,,2,1009,1,0,0,,,b,1
-,,2,1015,2,0,0,,,,1
-,,1,1010,3,0,0,,,,1
-,,4,1049,2,0,0,,,,1
-,,5,1027,1,0,0,,,,1
-,,5,1003,1,0,0,,,,1
-,,5,1016,3,0,0,,,,1
-,,5,1024,1,0,0,,,,1
-,,6,1001,2,0,0,,x,maybe two sept plants,1
-,,7,1034,2,0,0,,,,1
-,,7,1030,1,0,0,,,,1
-,,7,1022,1,0,0,,,,1
-,,7,1039,2,0,0,,,,1
-,,8,1005,3,0,0,,,,1
-,,9,1052,5,0,0,,,,1
-,,9,1047,3,0,0,,,,1
-,,9,1032,1,0,0,,,,1
-,,10,1042,3,0,0,,,,1
-,,10,1041,1,0,0,,,,1
-,,10,1053,1,0,0,,,,1
-,,12,1006,1,0,0,,,,2
-,,12,1048,3,0,0,,,,2
-,,21,1046,2,0,0,,,,2
-,,21,1033,1,0,0,,,,2
-,,21,1044,2,0,0,,,,2
-,,22,1038,1,0,0,,,,2
-,,22,1025,3,0,0,,,,2
-,,22,1043,1,0,0,,,,2
-,,24,1026,1,0,0,,,,2
-,,24,1045,1,0,0,,,,2
-,,24,1040,2,0,0,,,,2
-,,24,1051,5,0,0,,,,2
-,,46,1029,2,0,0,,,yellow visible,2
-,,48,1031,2,0,0,,,yellow on one,2
-,,48,1036,4,0,0,,,yellow on one,2
-,,48,1012,4,0,0,,,yellow on one,2
-,,50,1028,3,0,0,,,bud only,2
-6/2/20,Thermopsis divaricarpa,3,1073,1,0,0,,,new bolt in shade,2
-,,2,1014,1,0,0,,,bud; same as 1054?,2
-,,2,1054,1,0,0,,,bud; same as 1014?,2
-,,2,1023,2,0,0,,,1 bud,2
-,,2,1055,2,0,0,,,1 bud,2
-,,2,1009,1,0,0,,,bud,2
-,,2,1008,1,0,0,,,bud,2
-,,6,1101,2,0,0,,x,sept plants? 2 buds,2
-,,14,1081,1,0,0,,,yellow visible,2
-,,14,1067,2,0,0,,,yellow visible 1 raceme only,2
-,,14,1077,1,0,0,,,yellow visible posibly 4 raceme plant,2
-,,14,1120,2,0,0,,,yellow visble 1 raceme 1 bud,2
-,,14,1070,1,0,0,,x,yellow visible 2 rosette north neighbor,2
-,,10,1053,2,0,0,,x,1 bud; 3 ros?,2
-,,10,1042,3,0,0,,x,1 bud; 4 ros?,2
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
+Page,Date,Species,Plot,Tag,Racemes,Infl_presenting,Infl_spread,Infl_done,Twist ties,Q,Note
+1,5/30/20,Thermopsis divaricarpa,1,1002,1,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,1,1018,5,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,1,1019,1,0,0,0,NULL,NULL,close to 1018
+1,5/30/20,Thermopsis divaricarpa,2,1004,2,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,2,1007,1,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,2,1050,1,0,0,0,NULL,NULL,bud emerging
+1,5/30/20,Thermopsis divaricarpa,2,1014,1,0,0,0,NULL,NULL,bud emerging
+1,5/30/20,Thermopsis divaricarpa,2,1054,1,0,0,0,NULL,NULL,bud
+1,5/30/20,Thermopsis divaricarpa,2,1055,2,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,2,1023,1,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,2,1008,1,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,2,1017,2,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,2,1013,1,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,2,1001,1,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,2,1011,2,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,2,1009,1,0,0,0,NULL,NULL,b
+1,5/30/20,Thermopsis divaricarpa,2,1015,2,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,1,1010,3,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,4,1049,2,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,5,1027,1,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,5,1003,1,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,5,1016,3,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,5,1024,1,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,6,1001,2,0,0,0,NULL,x,maybe two sept plants
+1,5/30/20,Thermopsis divaricarpa,7,1034,2,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,7,1030,1,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,7,1022,1,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,7,1039,2,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,8,1005,3,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,9,1052,5,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,9,1047,3,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,9,1032,1,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,10,1042,3,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,10,1041,1,0,0,0,NULL,NULL,
+1,5/30/20,Thermopsis divaricarpa,10,1053,1,0,0,0,NULL,NULL,
+2,5/30/20,Thermopsis divaricarpa,12,1006,1,0,0,0,NULL,NULL,
+2,5/30/20,Thermopsis divaricarpa,12,1048,3,0,0,0,NULL,NULL,
+2,5/30/20,Thermopsis divaricarpa,21,1046,2,0,0,0,NULL,NULL,
+2,5/30/20,Thermopsis divaricarpa,21,1033,1,0,0,0,NULL,NULL,
+2,5/30/20,Thermopsis divaricarpa,21,1044,2,0,0,0,NULL,NULL,
+2,5/30/20,Thermopsis divaricarpa,22,1038,1,0,0,0,NULL,NULL,
+2,5/30/20,Thermopsis divaricarpa,22,1025,3,0,0,0,NULL,NULL,
+2,5/30/20,Thermopsis divaricarpa,22,1043,1,0,0,0,NULL,NULL,
+2,5/30/20,Thermopsis divaricarpa,24,1026,1,0,0,0,NULL,NULL,
+2,5/30/20,Thermopsis divaricarpa,24,1045,1,0,0,0,NULL,NULL,
+2,5/30/20,Thermopsis divaricarpa,24,1040,2,0,0,0,NULL,NULL,
+2,5/30/20,Thermopsis divaricarpa,24,1051,5,0,0,0,NULL,NULL,
+2,5/30/20,Thermopsis divaricarpa,46,1029,2,0,0,0,NULL,NULL,yellow visible
+2,5/30/20,Thermopsis divaricarpa,48,1031,2,0,0,0,NULL,NULL,yellow on one
+2,5/30/20,Thermopsis divaricarpa,48,1036,4,0,0,0,NULL,NULL,yellow on one
+2,5/30/20,Thermopsis divaricarpa,48,1012,4,0,0,0,NULL,NULL,yellow on one
+2,5/30/20,Thermopsis divaricarpa,50,1028,3,0,0,0,NULL,NULL,bud only
+2,6/2/20,Thermopsis divaricarpa,3,1073,1,0,0,0,NULL,NULL,new bolt in shade
+2,6/2/20,Thermopsis divaricarpa,2,1014,1,0,0,0,NULL,NULL,bud; same as 1054?
+2,6/2/20,Thermopsis divaricarpa,2,1054,1,0,0,0,NULL,NULL,bud; same as 1014?
+2,6/2/20,Thermopsis divaricarpa,2,1023,2,0,0,0,NULL,NULL,1 bud
+2,6/2/20,Thermopsis divaricarpa,2,1055,2,0,0,0,NULL,NULL,1 bud
+2,6/2/20,Thermopsis divaricarpa,2,1009,1,0,0,0,NULL,NULL,bud
+2,6/2/20,Thermopsis divaricarpa,2,1008,1,0,0,0,NULL,NULL,bud
+2,6/2/20,Thermopsis divaricarpa,6,1101,2,0,0,0,NULL,x,sept plants? 2 buds
+2,6/2/20,Thermopsis divaricarpa,14,1081,1,0,0,0,NULL,NULL,yellow visible
+2,6/2/20,Thermopsis divaricarpa,14,1067,2,0,0,0,NULL,NULL,yellow visible 1 raceme only
+2,6/2/20,Thermopsis divaricarpa,14,1077,1,0,0,0,NULL,NULL,yellow visible posibly 4 raceme plant
+2,6/2/20,Thermopsis divaricarpa,14,1120,2,0,0,0,NULL,NULL,yellow visble 1 raceme 1 bud
+2,6/2/20,Thermopsis divaricarpa,14,1070,1,0,0,0,NULL,x,yellow visible 2 rosette north neighbor
+2,6/2/20,Thermopsis divaricarpa,10,1053,2,0,0,0,NULL,x,1 bud; 3 ros?
+2,6/2/20,Thermopsis divaricarpa,10,1042,3,0,0,0,NULL,x,1 bud; 4 ros?
+3,6/2/20,Thermopsis divaricarpa,10,1088,1,0,0,0,NULL,NULL,in plot!
+3,6/2/20,Thermopsis divaricarpa,10,1062,4,0,0,0,NULL,x,5 rac? 1b
+3,6/2/20,Thermopsis divaricarpa,12,1018,2,0,0,0,NULL,NULL,1b; 1 dry b
+3,6/2/20,Thermopsis divaricarpa,22,1025,3,0,0,0,NULL,NULL,3b
+3,6/2/20,Thermopsis divaricarpa,22,1038,2,0,0,0,NULL,NULL,1b
+3,6/2/20,Thermopsis divaricarpa,22,1043,1,0,0,0,NULL,NULL,b
+3,6/2/20,Thermopsis divaricarpa,22,1060,2,0,0,0,NULL,NULL,1b
+3,6/2/20,Thermopsis divaricarpa,22,1057,2,0,0,0,NULL,NULL,2b
+3,6/2/20,Thermopsis divaricarpa,22,1079,1,0,0,0,NULL,NULL,1b
+3,6/2/20,Thermopsis divaricarpa,22,1071,2,0,0,0,NULL,NULL,2b
+3,6/2/20,Thermopsis divaricarpa,22,1119,2,0,0,0,NULL,NULL,1b
+3,6/2/20,Thermopsis divaricarpa,22,1056,2,0,0,0,NULL,NULL,1b
+3,6/2/20,Thermopsis divaricarpa,22,1055,1,0,0,0,NULL,NULL,1b
+3,6/2/20,Thermopsis divaricarpa,22,1065,2,0,0,0,NULL,NULL,1b
+3,6/2/20,Thermopsis divaricarpa,22,1084,5,0,0,0,NULL,NULL,1b
+3,6/2/20,Thermopsis divaricarpa,26,1114,2,0,0,0,NULL,NULL,1b
+3,6/2/20,Thermopsis divaricarpa,26,1082,3,0,0,0,NULL,NULL,2b
+3,6/2/20,Thermopsis divaricarpa,25,1105,1,0,0,0,NULL,NULL,b
+3,6/2/20,Thermopsis divaricarpa,25,1080,2,0,0,0,NULL,NULL,2b
+3,6/2/20,Thermopsis divaricarpa,25,1106,1,0,0,0,NULL,NULL,1b
+3,6/2/20,Thermopsis divaricarpa,25,1113,1,0,0,0,NULL,NULL,b
+3,6/2/20,Thermopsis divaricarpa,25,1116,2,0,0,0,NULL,NULL,2b
+3,6/2/20,Thermopsis divaricarpa,25,1110,1,0,0,0,NULL,NULL,b
+3,6/2/20,Thermopsis divaricarpa,25,1103,1,0,0,0,NULL,NULL,b
+3,6/2/20,Thermopsis divaricarpa,31,1107,2,0,0,0,NULL,NULL,2b
+3,6/2/20,Thermopsis divaricarpa,31,1094,2,0,0,0,NULL,NULL,1b
+3,6/2/20,Thermopsis divaricarpa,31,1100,2,0,0,0,NULL,NULL,1b
+3,6/2/20,Thermopsis divaricarpa,31,1101,3,0,0,0,NULL,NULL,1b
+3,6/2/20,Thermopsis divaricarpa,31,1091,5,0,0,0,NULL,NULL,5b
+3,6/2/20,Thermopsis divaricarpa,31,1098,2,0,0,0,NULL,NULL,1b
+3,6/2/20,Thermopsis divaricarpa,31,1099,2,0,0,0,NULL,NULL,1b
+3,6/2/20,Thermopsis divaricarpa,31,1107,2,0,0,0,NULL,NULL,2b
+4,6/2/20,Thermopsis divaricarpa,24,1045,1,0,0,0,NULL,NULL,1b
+4,6/2/20,Thermopsis divaricarpa,24,1026,1,0,0,0,NULL,NULL,b
+4,6/2/20,Thermopsis divaricarpa,24,1040,2,0,0,0,NULL,NULL,2b
+4,6/2/20,Thermopsis divaricarpa,24,1064,1,0,0,0,NULL,NULL,b
+4,6/2/20,Thermopsis divaricarpa,27,1078,1,0,0,0,NULL,NULL,b
+4,6/2/20,Thermopsis divaricarpa,27,1061,1,0,0,0,NULL,NULL,b
+4,6/2/20,Thermopsis divaricarpa,27,1097,3,0,0,0,NULL,NULL,1b
+4,6/2/20,Thermopsis divaricarpa,27,1108,2,0,0,0,NULL,NULL,1b
+4,6/2/20,Thermopsis divaricarpa,27,1092,2,0,0,0,NULL,NULL,1b
+4,6/2/20,Thermopsis divaricarpa,32,1109,1,0,0,0,NULL,NULL,1b
+4,6/2/20,Thermopsis divaricarpa,33,1059,5,0,0,0,NULL,NULL,2b
+4,6/2/20,Thermopsis divaricarpa,44,1058,3,0,0,0,NULL,NULL,3b
+4,6/2/20,Thermopsis divaricarpa,45,1035,5,0,0,0,NULL,NULL,2b
+4,6/2/20,Thermopsis divaricarpa,45,1020,1,0,0,0,NULL,NULL,b
+4,6/2/20,Thermopsis divaricarpa,45,1096,1,0,0,0,NULL,NULL,b
+4,6/2/20,Thermopsis divaricarpa,45,1112,1,0,0,0,NULL,NULL,b
+4,6/2/20,Thermopsis divaricarpa,46,1087,3,0,0,0,wh,NULL,2b
+4,6/2/20,Thermopsis divaricarpa,46,1029,2,0,1,0,NULL,NULL,1b
+4,6/2/20,Thermopsis divaricarpa,46,1089,1,0,0,0,NULL,NULL,b
+4,6/2/20,Thermopsis divaricarpa,46,1115,2,0,0,0,NULL,NULL,1b; 1 yv
+4,6/2/20,Thermopsis divaricarpa,47,1066,3,0,0,0,NULL,NULL,1b
+4,6/2/20,Thermopsis divaricarpa,47,1037,3,0,0,0,NULL,NULL,3b
+4,6/2/20,Thermopsis divaricarpa,47,1118,3,0,0,0,NULL,NULL,2b
+4,6/2/20,Thermopsis divaricarpa,47,1086,1,0,0,0,NULL,NULL,b
+4,6/2/20,Thermopsis divaricarpa,47,1072,1,0,0,0,NULL,NULL,b
+4,6/2/20,Thermopsis divaricarpa,47,1093,1,0,0,0,NULL,NULL,b
+4,6/2/20,Thermopsis divaricarpa,48,1102,2,0,0,0,NULL,NULL,1 yv
+4,6/2/20,Thermopsis divaricarpa,48,1083,2,0,0,0,NULL,NULL,1 yv
+4,6/2/20,Thermopsis divaricarpa,48,1036,3,0,0,0,NULL,NULL,1 yv
+4,6/2/20,Thermopsis divaricarpa,48,1090,1,0,2,0,NULL,NULL,NULL
+4,6/2/20,Thermopsis divaricarpa,48,1085,1,0,2,0,NULL,x,1 rac eaten?
+4,6/2/20,Thermopsis divaricarpa,48,1031,2,0,4,1,NULL,NULL,1 yv
+4,6/2/20,Thermopsis divaricarpa,48,1069,2,0,0,0,NULL,NULL,1 yv
+4,6/2/20,Thermopsis divaricarpa,48,1095,1,0,0,0,NULL,NULL,1 yv
+4,6/2/20,Thermopsis divaricarpa,48,1117,1,0,0,0,NULL,NULL,1 yv
+4,6/2/20,Thermopsis divaricarpa,48,1012,2,0,NA,1,wh,x,forgot to record poll.
+4,6/2/20,Thermopsis divaricarpa,49,1121,2,0,0,0,NULL,NULL,2 yv
+4,6/2/20,Thermopsis divaricarpa,49,1104,2,0,0,0,NULL,NULL,1 yv; ran out of tags here
