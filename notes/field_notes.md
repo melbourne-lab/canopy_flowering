@@ -34,3 +34,25 @@ How to follow twist-tied plants? Probably should do different form for these.
 
 Make plots in aspen shade? Can do it around plot 42.
 
+### Jun 5 2020
+
+Have flowering in plots in two of the three complexes: the SW complex, and one plot (14 - a plot from June 2) in the E complex. There are many flowers in the NW complex, but none are in plots.
+
+I'm a little bit nervous about the early tagging I was doing. The first two days I was out, I tagged everything that was budding. But nearly all of those tagged plants are in dire shape right now, with buds that have barely progressed. Meanwhile, the plants that were not pre-emptively tagged (in plots 46 - 51) look good. Now, there is a spatial confounder here, but this is consistent with tagging (too soon) doing damage to plants. Checking budding records here could be helpful.
+
+The eastern part of the aspen stand (downhill, by east meadow) has a lot of plants bolting. It would be good to monitor these with plots. There are also some somewhat clear areas in here. There are also some small clearings in the pines uphill from the cabins (downhill from Julian's meadows). There is some sparse Thermopsis in here.
+
+Decided today not to count plants presenting pollen. I don't want to damage flowers by squeezing open petals to check for pollen. Now, I will only count flowers with both wing spread.
+
+Saw some bumblebees on *Thermopsis* today. I'm recording when visits happen to focal plants in notes (not really useful for analysis though).
+
+### Jun 8 2020
+
+Saw some flowers (not in plots) which were finished. Looks like flowers go through the following phases: browning, shrivelling, then seeding. In the future *count shrivelling flowers as done*. I have pictures of these.
+
+There were some pre-tagged plants with yellow visible today, but not very  many. Still lots of plants with buds that looked awful. Outside of both plots 25 and 26, there were plants (untagged because they were outside of the plot) which looked great with yellow visible as well. Further supports the hypothesis. On the other hand, there are still plenty of plants (outside plots) with bad looking buds. Is it worth doing test plots to examine this?
+
+The aspen stand has a lot of *Thermopsis* which hasn't flowered yet. There is some on the west side (uphill) of the stand. The interior of this has a lot of Helianthus (or Helianthella - not sure which) some of which is starting to flower (I have a picture).
+
+I am wondering if there are plants that bold but do not flower. Botany notes on this species are rare so I didn't see if they flower every year. Most of the shaded plots have  small (1-4) number of plants coming out right now, but if they don't all flower, the experiment is kinda shot. I could at the end of the season do a count within each plot, recording the number of flowering plants (and/or probability of flowering). 
+
