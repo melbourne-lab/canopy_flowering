@@ -56,3 +56,29 @@ The aspen stand has a lot of *Thermopsis* which hasn't flowered yet. There is so
 
 I am wondering if there are plants that bold but do not flower. Botany notes on this species are rare so I didn't see if they flower every year. Most of the shaded plots have  small (1-4) number of plants coming out right now, but if they don't all flower, the experiment is kinda shot. I could at the end of the season do a count within each plot, recording the number of flowering plants (and/or probability of flowering). 
 
+### Jun 11 2020
+
+East (downhill) meadow still far behind the other two meadows. Upper open areas of the SE meadow are very active; the very steep part is not as active. NE meadow has some parts which are very active.
+
+Saw a Lepidopteran of some sort (got a pic) on a Thermopsis today; not sure if pollinating or just hanging out. Also very importantly saw a HUMMINGBIRD pollinating Thermopsis in the SW meadow. It hit four or five plants up and down the meadow; long distance pollen movement! Also saw an small black bee.
+
+Thoughts about counting "done" plants - count plants as done when they have shrinkage and/or loss of color *and* shrinking/shrivelling banners. I.e., if both banners are still out, count the flower as "spread".
+
+Put out new shaded plots today in the aspen stand. These are marked 61 - 69 with orange flags (I am out of white flags right now). Locations here were chosen somewhat haphazardly. No flowering yet; there were two plants with yellow visble.
+
+I also laid out the following tags to look at the effects of tagging on development
+
+* 1243 (u)
+* 1034 (u)
+* 1164
+* 1162
+* 1242
+* 1208
+* 1176
+
+two of these were found (u)nattached
+
+These tags were placed in a cluster in the SE corner of the entrance meadow, by a big conifer tree, west of ribar.
+
+Saw untagged yv plants outside of plots 1, 25 (two), and 44. Wondering if I should start tagging plants if they are outside of the plot (perhaps including them in analysis only if there are no other plants present). 
+
