@@ -16,3 +16,13 @@ all.records %>%
   mutate(Status_Jun_11 = NA) %>%
   write.csv('data/datasheet_generation/datasheet_outputs/twist_tie_list_2020-06-11.csv', 
             row.names = FALSE, na = '')
+
+all.records %>%
+  filter(!(Twist.ties %in% 'NULL')) %>%
+  arrange(desc(as.Date(Date)), grepl('done', Twist.ties), Plot) %>%
+  distinct(Tag, .keep_all = TRUE) %>%
+  select(Tag, Plot, Racemes, Twist.ties, Note, Date) %>%
+  rename(Last_Record = Date, Twist_ties = Twist.ties) %>%
+  mutate(Status_Jun_14 = ifelse(grepl('done', Twist_ties), 'x', NA)) %>%
+  write.csv('data/datasheet_generation/datasheet_outputs/twist_tie_list_2020-06-14.csv', 
+            row.names = FALSE, na = '')
