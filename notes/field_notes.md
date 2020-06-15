@@ -82,3 +82,17 @@ These tags were placed in a cluster in the SE corner of the entrance meadow, by 
 
 Saw untagged yv plants outside of plots 1, 25 (two), and 44. Wondering if I should start tagging plants if they are outside of the plot (perhaps including them in analysis only if there are no other plants present). 
 
+### Jun 14 2020
+
+Visited all plots today (60s, 40s, 20s, 10s). Some of the plants in the NW and E meadow are starting to flower and yellow out (respectively). Very cool!
+
+For plots with no flowering plants - thinking about including plants within a small distance (currently measured as from end of clipboard to the start of the handle-hole) of one of the flags. If there is exactly one within a flag, include it with a note that it is outside and the flag it is closest to (by cardinal direction). If there are multiple, take only the one that is closest to a flag. Only include these in analysis if there are no flowering plants in the plot. The resolution of the DEM is small enough that these will appear as having the same light environment in a model.
+
+Related to above, there are a couple of plots (e.g., I think plot #2) which have some pre-tagged bad looking plants but I tagged an outside plant just in case. Ugh! Wish I hadn't done that pre-tagging.
+
+I saw a couple of pre-tagged plants which flowered but the flowers look awful, as do some of the plants themselves (e.g., short). I am coming around to the opinion that tags are harmful. I checked on the seven tagged plants in the corner of the entrance meadow and, while it's difficult to tell for sure, a couple (but not all) of them look a little damaged.
+
+Thoughts about the way I am counting infloresences: this is good for knowing the number of infloresences open at any one time (like... that is what I am recording) but this actually doesn't necessarily tell us the overall number of flowers per plant (for fitness). It's risky to do this by waiting to count all of the "done" plants; consider adding a "peduncle" column to the datasheet. But how often to count these? Not sure.
+
+Thoughts on salvaging the data if the tagging is a problem: just count and assess seeds after the fact and use this to test for a difference in seed set with light. Do this by having the solar radiation model up and running and sampling along the light gradient. Here, sample plots and collect seeds in the plots.
+
