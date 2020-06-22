@@ -12,6 +12,14 @@ Looks at nine subalpine plants at RMBL, experimentally monitors change in start 
 
 Tallgrass prairie community study with details and references about influences about soil moisture on timing of flowering.
 
+##### Reed et al., 2019. Prairie plant phenology driven more by... Ecology and Evolution.
+
+Effects of warming +/ drought on phenology (?) along a latitudional gradient in the coastal Pacific Northwest.
+
+##### Zhu et al., 2016. Interactions between warming and soil moisture... Royal Society Biological Letters.
+
+Experimental warming in plants in the Tibetan plateau.
+
 ### *Campanula* general notes
 
 ##### Preite et al., 2015. Adaptation of flowering phenology and fitness-related traits... Evolutionary Ecology.
