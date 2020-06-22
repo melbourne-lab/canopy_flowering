@@ -1,0 +1,97 @@
+# Initial sensor notes June 2020
+
+### June 19 2020 Meeting Notes
+
+Hobo: measure temperature and solar radiation
+UA002-08 (one is 8K, one is 64K)
+4K can store 3.5K combined temperature and light
+64K can store ~28K combined temperature and light
+
+There are nearby solar radiation sensors, so these could be good for getting global patterns (above-canopy). The permanent sensors can tell us about the clouding.
+
+These sensors would be used to see microhabitat (trees, maybe some topography). 
+
+Temperature - what temperature? What temperature is relevant?
+- Ambient temperature: difficult to measure, not incredibly relevant
+- The plant temperature is more likely determined by solar radiation
+- Soil temperature also important somehow
+
+Think it's well known that soil moisture is a trigger, but would be more common these days due to better tchnology.
+
+tomst.com; tms4 (soil moisture and ambient temp)
+https://tomst.com/web/en/systems/tms/tms-4/
+We could buy maybe 20 of these...
+Can we deploy these and interpolate?
+- Calibrate the model w/ in situ sensors
+
+Home-made
+https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13128
+^^ order equipment for this now, try making 2-3, w/ eye for making more later
+
+For making an Elk solar radiation model: could cadge calibration data from the work further up
+There are associated solar radiation sensors for these, but no loggers. Could purchase some loggers now to link up with those; these could be used for purchasing 
+
+Look at soil moisture sensors. See if you can purchase some pre-made ones which can be plugged into a data logger for cheap. Take a look at the UAV biodiversity repo.
+
+Having a pro. moisture probe by hand is a good idea. You can use it to sample places where the logger is not, giving some idea of spatial variance and allowing spatial variation.
+
+### June 22 2020 notes
+
+soil moisture sensors
+
+brett making a dir in UAV-b... folder on google drive (has moisture in dir name)
+
+three types of sensors
+- TDR: time domain reflectometry
+	- standard, but typically expensive
+	- technology pushing prices down... but still likely v expensive (thousands)
+- Electrical resistance approaches
+	- (these are the cheap ones)
+	- loose correlation between what these measure and moisture
+	- "pretty useless" compared to a research grade sensor
+- Capacitance
+	- newer, cheaper (~$100), probably more desirable
+	- Soil water potential vs. soil water content
+		- potential: available for plant
+		- content: what is there
+		- Sensors are expensive
+
+Potential sensors are simpler
+	- porous medium
+	- like gypsum blocks
+
+erstwhile Decagon devices, now Meter (?) Group
+	- TEROS range
+		- have both potential and content
+	- Email them... see what is needed
+	- ask about how much, but probably expensive
+	- Brett will ask them for quotes
+	- works w/ 3.5-5 V (this is good)
+
+Truebner
+	- SMT/SNT 100 model could be good
+	- capacitance sensor
+	- SN will ask for quote
+
+SpecMeters
+	- WaterScout SM100 is ~100
+
+DFRobot
+	- capacitance sensor, cheaper
+
+Cheap vs. expensive: cheaper ones likely require more calibration
+
+Handhelds: are these accurate at all...?
+	- TDR here is likely the best possible (Acclima)
+	- do we have anything like this in the department?
+	- SN will ask for a quote on the TDR-315H and reader kit
+
+Soliciting a quote:
+	- say it's a research project at CU
+	- quick description of project
+	- ask if product is appropriate
+	- ask for price (university pricing)
+
+Re: Mayflies
+	- Invest in good sensors now (these will be more expensive)
+	- simply wait on mayflies
