@@ -96,3 +96,21 @@ Thoughts about the way I am counting infloresences: this is good for knowing the
 
 Thoughts on salvaging the data if the tagging is a problem: just count and assess seeds after the fact and use this to test for a difference in seed set with light. Do this by having the solar radiation model up and running and sampling along the light gradient. Here, sample plots and collect seeds in the plots.
 
+### Jun 21 2020
+
+Headed up today. Hadn't been up for a week due to car issues and bad weather. Rented a car from Budget. Likely won't be able to get reimbursed. Ugh.
+
+Saw more flowering today. This is good. Lots of plants in the open areas of the SW meadow are done although there are still plenty that are open. Julian says this is one of the best (and earliest) years he has seen for Thermopsis. No signs of Campanula thus far.
+
+Note that peduncles are insanely fragile. This means that basic handling with hands will break things off. Use pencils? Thinking about *Campanula* - this probably won't work. Perhaps can tag individual *racemes* and then track flowers at the raceme-level. Number flowers as they go up the raceme - they should open in a consistent order.
+
+Tried a new datasheet method today. I really liked it! Pre-print out the old records (with most recent for each plant). There is a script for generating these in the `notes` directory.
+
+Really having trouble distinguishing plants from each other when they are nearby, i.e., distinguishing which stems are of plant A and which are of plant B.
+
+Some of the plots in the east meadow were rushed due to rain. I recorded these on the back of a datasheet. There may be one untagged yv plant outside of a plot but there shouldn't be anything important missing. It cleared up soon and I was able to correctly record info for the remaining plants.
+
+Collected three tags today (will note soon).
+
+Other species today: wallflowers, paintbrushes, pseudocymopt..., 
+
