@@ -20,6 +20,10 @@ Effects of warming +/ drought on phenology (?) along a latitudional gradient in 
 
 Experimental warming in plants in the Tibetan plateau.
 
+##### Newman, 1965. Factors affecting the seed production... Journal of Ecology
+
+Skimmed first part. Looks at annual moisture and influence on flower production. Long. May or may not be relevant.
+
 ### *Campanula* general notes
 
 ##### Preite et al., 2015. Adaptation of flowering phenology and fitness-related traits... Evolutionary Ecology.
