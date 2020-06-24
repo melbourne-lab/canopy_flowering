@@ -17,3 +17,5 @@ Folder currently contains the following directories:
 ### Updates
 
 2020-05-22 Repo created, initialized with `notes` folder.
+
+2020-06-24 At some point in the last two weeks I made a `data` folder for housing data, improvements to data, scripts for generating and handling data, etc.
