@@ -73,7 +73,7 @@ read.csv('data/data_active.csv') %>%
          Done = NA,
          Note = NA) %>%
   select(Date, Pl, Tag, Q, Spr, Dne, Tt, Spread, Done, Note, Old_Note) %>%
-  write.csv('data/datasheet_generation/datasheet_outputs/active_plas_2020-06-21.csv',
+  write.csv('data/datasheet_generation/datasheet_outputs/active_plas_2020-06-24.csv',
             row.names = FALSE, na = '')
 
 
