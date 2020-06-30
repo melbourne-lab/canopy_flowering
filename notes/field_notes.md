@@ -114,3 +114,27 @@ Collected three tags today (will note soon).
 
 Other species today: wallflowers, paintbrushes, pseudocymopt..., 
 
+### Jun 24 2020
+
+Did not put out twist ties today. Thinking the method I was using for tracking individual flowers was not good. For one thing, the twist ties fall off. This also simply won't work for Campanula - they are too fragile and the morphology is not ideal for twist ties.
+
+Saw some *Campanula* today! Just the basal leaves, although I saw one with an elongated stem. There is some in open areas but a lot is in the shaded area, specifically in areas with a lot of pine needles. Is this due to moister soil? Or, is this due to the lack of competition from other plants (soil here is more open - less competition for light)? Perhaps *Campanula* has to leaf out earlier in shadier areas in order to acquire enough light to flower? You can see some in the aspens and also by plots 27 and 47. 
+
+Seeds of the *Thermopsis* are looking close to done. How will I know when to collect them? Are there plants in the foothills I can sample?
+
+The tag experiment. Five plants did not flower. Two-three of these plants look pretty bad (leaves a little wilted). One flowered.
+
+### Jun 27 2020
+
+Collecting seeds will be difficult. A lot have already dropped in 48. Think about maybe designing a device which can collect seeds? Dusty Gannon had an idea on this for his *Aquilegia*, but there the floral morphology is more suited to this type of stuff. Maybe put out a little dish or something to collect the seeds? But then we won't know which are which.
+
+No evidence that *Campanula* is advanced at all.
+
+I am pretty convinced the effect is real! Seeing a lot of yellow emerging in the aspens and also in the pine plots (especially in the SW meadow). We may even have enough plants to find an effect this year.
+
+Thinking about which effects we can find... it would be interesting to also look at duration of flowering. One thing that could produce an effect here is the *time to pollination*. My sense, due to the fact that flowers shrivel asynchronously, is that they stay open until they are pollinated. So in essence what we could be seeing is just less pollination in shaded areas. This would also maybe mean fewer seeds. If there were fewer seeds in later shaded plants but not in later open-canopy plants, that would be interesting! Think about implications here.
+
+I think it would be good to get a UROP or undergraduate/CC student of some sort to look at differences in leaf traits, height, etc. in different light environments. Could do a lot of fun things in this system and more help would be good!
+
+Car troubles are back. Thinking about moving to a four-day schedule to minimize costs of rental cars (also gas).
+
