@@ -138,3 +138,22 @@ I think it would be good to get a UROP or undergraduate/CC student of some sort 
 
 Car troubles are back. Thinking about moving to a four-day schedule to minimize costs of rental cars (also gas).
 
+### July 1 2020
+
+Went today an ego carshare car - borrowed 7:30 - 1:30, left town at 7:50, got back to the car's parking spot at 1:26! 
+
+I changed up the datasheet generation script a little bit and therein found a bug which explained why certain plants weren't appearing in the pre-made datasheets. The problem was that I had a boolean in there for plants where the two most recent entries were had zero spreading plants. But plants with *only one record* got an NA here and therefore were filtered out. This is fixed in the new script. I also added a "-9" to the spread and done columns for plants that are done and visited twice. This was helpful!
+
+In retrospect it perhaps is not necessary to visit done plants twice. Due to time constraints today there were a handful of done plants which I did not look incredibly thoroughly for because this was the second visit. I will keep this in mind for the future.
+
+Still some plants coming out in the shaded plots. Hell yeah! I am absolutely convinced that this effect is real.
+
+Noticed today that I forgot to visit plot 29 last time (June 27). This means the start of flowering was missed - seven day uncertainty period instead of three or four. I visited it today.
+
+Biggest news: saw some Campanula flowering today. I saw the first one (a single flower) between plots 11/12 and 21. I also saw several between plots 44/45 and 46/48 near the crest of the hill to the west of the tree. There were a bunch here. There will be more soon. The ones that I saw typically only had something like 1-3 flowers per infloresence but multilple infloresences. Things are getting real! I skimmed for some *Campanula* in some plots and saw basal leaves in plots 2, 5, 11, 18, 22, 23, 28, 29, 33, 34 and 43.
+
+I did a brief skim in the sparsely-shaded area between the three meadows (W of the aspen stand). No *Campanula* there - consider adding plots in here.
+
+Thinking about other projects here: it's not a perfect correlation, but there are a lot of broad-leaved *Thermopsis* plants in shaded areas. I think these are taller too (think: the aspen stand, plot 27). This is worth studying! It would be an interesting fitness trade off. Could be a great study for an undergraduate.
+
+Other plants around: lots of lupines (lots!), wallflowers are still out, saw a new penstemon (some white, some purple), a few Allium, Cinquefoils. There is still Mertensia out (including in the shade). Saw two Dodecatheons in the NW meadow. Saw some swallowtail butterflies on wallflowers (!). 
