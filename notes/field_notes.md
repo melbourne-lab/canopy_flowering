@@ -157,3 +157,16 @@ I did a brief skim in the sparsely-shaded area between the three meadows (W of t
 Thinking about other projects here: it's not a perfect correlation, but there are a lot of broad-leaved *Thermopsis* plants in shaded areas. I think these are taller too (think: the aspen stand, plot 27). This is worth studying! It would be an interesting fitness trade off. Could be a great study for an undergraduate.
 
 Other plants around: lots of lupines (lots!), wallflowers are still out, saw a new penstemon (some white, some purple), a few Allium, Cinquefoils. There is still Mertensia out (including in the shade). Saw two Dodecatheons in the NW meadow. Saw some swallowtail butterflies on wallflowers (!). 
+
+### July 5 2020
+
+Short-ish day today. Got rained on when I first arrived. Day got cut short towards the end because of a storm threatening to the North (was probably fine but I played it safe).
+
+Still a couple of YV plants emerging in shaded plots. Some plots are totally done now (e.g., 48). I think I will get flowering plants in super-shaded plots 51 and 69 (dope!)
+
+*Campanula* is open in the plots! This is good. I pre-emptively tagged one outside of plot 48. There are also a couple flowering in plots 1 and 6 and one with purple visible (`pv` in notes) in plot 2. In general, flowers are emerging in all three of the meadows (although not the semi-shaded area west of the aspen stand). The most seems to be (again) in the SW meadow, including running up the main part of the meadow where plots 48 - 50 are. There also appears to be quite a big in the E meadow. Very cool.
+
+I'm starting tags starting at 1501 for the *Campanula*. Under this numbering system, plants 1001 - 1500 are *Thermopsis* while plants 1501 - 2000 are *Campanula*. I should have a lot of tags left over for next year.
+
+I laid out a couple of extra plots today: 71-74. I used Julian's yellow flags for this. These I put out in the SW corner of the E meadow, in the stand of trees that cleaves the E meadow from the meadow to its south. I put out single flags for marking in the future (fingers crossed). These plots are in the semi-shaded area between the aspen stand and the SW and NW meadows. I checked today and there were no flowering plants in these today. I was going to lay out these plots using the quadrat but the threatening storm made me put this off for four days.
+
