@@ -206,3 +206,47 @@ read.csv('data/datasheet_generation/datasheet_outputs/active_plas_2020-07-01.csv
          Note = NA) %>%
   select(names(read.csv('data/data_active.csv') %>% select(-X))) %>%
   write.csv('data/data_entry_07-01-2020.csv', na = '', row.names = FALSE)
+
+### July 5 data sheet
+
+read.csv('data/data_active.csv') %>%
+  select(-X) %>%
+  rbind(read.csv('data/data_entry_06-21-2020.csv'),
+        read.csv('data/data_entry_06-24-2020.csv'),
+        read.csv('data/data_entry_06-27-2020.csv'),
+        read.csv('data/data_entry_07-01-2020.csv')) %>%
+  # Give only plants with non-zero columns and/or yellow visible in notes
+  filter(Infl_spread > 0 | Infl_done > 0 | grepl('yv', Note) | grepl("can't find", Note)) %>%
+  # Format date
+  mutate(Date = as.Date(Date, '%m/%d/%y')) %>%
+  # Flag plants where last two records have no infloresences spreading
+  group_by(Plot, Tag) %>% arrange(Plot, Tag, desc(Date)) %>% 
+  mutate(done = (!Infl_spread[1] & !Infl_spread[2])) %>% ungroup() %>%
+  # Take care of NAs (occur if there is only one record)
+  mutate(done = ifelse(is.na(done), FALSE, done)) %>%
+  # Remove plants not seen since (arbitrarily chosen) June 14
+  filter(Date > as.Date('06-24', format = '%m-%d')) %>%
+  # Remove duplicates
+  distinct(Plot, Tag, .keep_all = TRUE) %>%
+  select(-c(Page, Species, Racemes)) %>%
+  # Handle yv records here
+  # (because there is only one record per plant, if it is YV and done,
+  # that is a mistake)
+  mutate(done = ifelse(done & grepl('yv', Note), FALSE, done)) %>%
+  # Add and reformat cols for data recording
+  mutate(Date = gsub('\\d{4}\\-', '', Date),
+         Twist.ties = ifelse(Twist.ties %in% 'NULL', '', as.character(Twist.ties)),
+         Q = ifelse(Q %in% 'NULL', '', as.character(Q)),
+         Note = gsub('\\s', '', Note)) %>%
+  rename(Pl = Plot,
+         Spr = Infl_spread,
+         Dne = Infl_done,
+         Old_Note = Note,
+         Tt = Twist.ties) %>%
+  mutate(Spread = ifelse(done & !is.na(done), -9, NA),
+         Done = ifelse(done & !is.na(done), -9, NA),
+         Note = NA) %>%
+  select(Date, Pl, Tag, Q, Spr, Dne, Tt, Spread, Done, Note, Old_Note) %>%
+  arrange(Pl, Spread, !is.na(Done)) %>%
+  write.csv('data/datasheet_generation/datasheet_outputs/active_plas_2020-07-05.csv',
+            row.names = FALSE, na = '')
