@@ -170,3 +170,20 @@ I'm starting tags starting at 1501 for the *Campanula*. Under this numbering sys
 
 I laid out a couple of extra plots today: 71-74. I used Julian's yellow flags for this. These I put out in the SW corner of the E meadow, in the stand of trees that cleaves the E meadow from the meadow to its south. I put out single flags for marking in the future (fingers crossed). These plots are in the semi-shaded area between the aspen stand and the SW and NW meadows. I checked today and there were no flowering plants in these today. I was going to lay out these plots using the quadrat but the threatening storm made me put this off for four days.
 
+### July 9 2020
+
+Plenty of *Campanula* today in open areas. I don't think there will be nearly as much as the *Thermopsis* but there should still be plenty for the study. Any possibility of pollen limitation? The East meadow looks like it has the most (and certainly has the most flowering in plots so far), the Northwest meadow has some but not a ton, and the main part of the Southwest meadow has a good spread but it's also a little sparse.
+
+Tracking individual stems with ribbons - I tried this on one plant and it was a massive pain in the neck. Twist ties might work. Consider this if we are doing more serious sequencing next year. The flowering period of *individual plants* seems short enough that I don't think we should be to concerned about the resolution of plants. There are a handful of flowers today which were shriveled today but may not have been caught on the 5th.
+
+I think it's a good idea to have a separate data collection and entry/storage protocol for each species. Set this up tomorrow or the day after.
+
+I realized today that inconsistent spacing for *Thermopsis* observations, which likely requires a resampling procedure (imputing start/end days) to capture observation uncertainty, likely precludes a linear modeling approach which handles spatial autocorrelation. Is there a way to incorporate spatial autocorrelation into MC-resampling procedures? Think about this. Ask Brett.
+
+I put out new plots today: 75 - 78 are in the bridge meadow and open areas in the pines to the North. 81 - 88 are placed in the 50-50 pine/shade area directly to the west of the aspen stand. All plots were put out with yellow flags. Note that if there is any bias incurred by putting out these plots, they likely make tests/estimates *conservative*, because these plots are put out where there are no flowering plants, and so far there are only flowering plants in open areas. Also, in terms of justifying/describing this in a paper, it's plausible to say no *Campanula* was flowering within at least ten meters (usually more) of any of the new plots. I think this puts us at 56 *Thermopsis* plots (although a number are empty so perhaps only 40 - 45) and 72 *Campanula* plots.
+
+Most of the *Thermopsis* is done. There are a good number of plants with good looking seeds intact. Some seeds are huge! There is actually a lot of variation in the size of seeds - some look like peapods (makes sense), others are very small. I wonder if this is a sign of number of seeds?
+
+I *think* alpine pussytoes is out. Either that or pearly everlasting. Check these (actually don't have to - not that important). Also there is some of the white *Castilleja* in the aspen grove... there are only a few of these, could be good for doing a smaller study. Collect *Castilleja* seeds!
+
+There is some stem elongation occurring in *Campanula* in shady areas. Maybe the effect here will be weaker? Having some floral overlap would still be cool for looking at seed relatedness - there is still some overlap here that is possible.
