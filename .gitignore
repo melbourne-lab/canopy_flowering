@@ -3,3 +3,4 @@
 .RData
 .Ruserdata
 local_map_api.txt
+*.xlsx
