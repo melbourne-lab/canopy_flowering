@@ -187,3 +187,13 @@ Most of the *Thermopsis* is done. There are a good number of plants with good lo
 I *think* alpine pussytoes is out. Either that or pearly everlasting. Check these (actually don't have to - not that important). Also there is some of the white *Castilleja* in the aspen grove... there are only a few of these, could be good for doing a smaller study. Collect *Castilleja* seeds!
 
 There is some stem elongation occurring in *Campanula* in shady areas. Maybe the effect here will be weaker? Having some floral overlap would still be cool for looking at seed relatedness - there is still some overlap here that is possible.
+
+### July 13 2020
+
+Still thinking that the light effect on *Campanula* - if it exists, it is less strong and/or consistent than with *Thermopsis*. Definitely seeing some plants (in high volume) emerging in some shaded plots (e.g., plot 53). 
+
+Floral development for *Campanula* is very fast. Some plants have first flowers emerge and finish in the four day period. Some plants are missed; just know that they opened and flowered at some point. Trying to assign the male/female stages here will be tricky.
+
+Likewise, the flowering here is a little more intermittent. There are a couple of plants with a flower that has finished and no other open flowers, but clearly buds on the way. This means that randomization procedures for accounting for observation error will have to allow for non-consecutive flowering periods. Seems like this will introduce a lot more uncertainty for synchrony measures.
+
+I tried counting only rosettes. It was hard. Plot 6 made me give up. So I am using guesswork - use the massive (9 rosette) plant in plot 6 as a guide.
