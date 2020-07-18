@@ -197,3 +197,19 @@ Floral development for *Campanula* is very fast. Some plants have first flowers 
 Likewise, the flowering here is a little more intermittent. There are a couple of plants with a flower that has finished and no other open flowers, but clearly buds on the way. This means that randomization procedures for accounting for observation error will have to allow for non-consecutive flowering periods. Seems like this will introduce a lot more uncertainty for synchrony measures.
 
 I tried counting only rosettes. It was hard. Plot 6 made me give up. So I am using guesswork - use the massive (9 rosette) plant in plot 6 as a guide.
+
+### July 17 2020
+
+Afternoon trip today (car trouble) - started surveys around noon. Started up top today (60s, 80s, 40s/50s, 30s/20s, 00s/70s). 80s plots have a lot of Campanula in them (although no flowering yet). Cha-ching!
+
+For questionable *Campanula* plants, I did some measuring of inter-plant distances. 8cm distance between rosettes seems to be like two different plants. I am more inclined to lump somewhat distant rosettes together if they have multiple tall stems with many flowers. Didn't get to do this too many times because I lost the ruler. I think I lost it between plot 52/53 and 22.
+
+The criterion I've adopted for whether a *Campanula* plant is open or not is whether the five petals have split/separated/spread at the tips. Thre are some plants with pollen open but they haven't fully opened yet; seems like it would be hard for a bee to climb in there... There is one plant (maybe plot 25?) without spread petals that I may have classified as flowering.
+
+There are lots of flowers which are shrivelling but not looking to seed yet. Look at the guide or online for seeding; I remember the JoE article ahd some detail on collection.
+
+Saw a moose (?) today in the NE meadow. I was coming in from plot 33 and it was standing around plots 29/30. I hid in the trees and made noise to scare it off. Didn't get a good look! Also, I saw a deer when collecting seeds (see below). Are there wildlife cams up there? Oh no...
+
+I collected 15-20 *Thermopsis* fruit in the southern meadow (south of SW). Perhaps a good method is to twist seed heads gently - if you are primarily twisting the fruit instead of the peduncle then I bet the seed is ready to go. Not sure how many seeds there are or how ready these were to go. Looks like there are still a good number of seeds up there.
+
+I think *Thermopsis* is done today. Still some plants to check to get the second zero. Begin improving and analyzing data.
