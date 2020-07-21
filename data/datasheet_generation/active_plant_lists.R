@@ -459,7 +459,7 @@ read.csv('data/data_thermopsis_active.csv') %>%
         read.csv('data/data_entry_07-01-2020.csv'),
         read.csv('data/data_entry_07-05-2020.csv'),
         read.csv('data/data_entry_07-09-2020.csv'),
-        read.csv('data/data_entry_07-13-2020.csv')) %>%
+        read.csv('data/data_entry_thermopsis_07-13-2020.csv')) %>%
   # Give only plants with non-zero columns and/or yellow visible in notes
   filter(Infl_spread > 0 | Infl_done > 0 | grepl('yv', Note) | grepl("can't find", Note)) %>%
   # Get only Thermopsis (for this data sheet)
@@ -501,6 +501,7 @@ read.csv('data/data_thermopsis_active.csv') %>%
 # A new campanula datasheet
 read.csv('data/data_campanula_active.csv') %>%
   rbind(read.csv('data/data_entry_campanula_07-13-2020.csv')) %>% 
+  mutate(Date = as.Date(Date, '%m/%d/%y')) %>%
   arrange(desc(Date), Plot, Tag) %>%
   distinct(Tag, .keep_all = TRUE) %>%
   select(-c(Page, Species)) %>%
@@ -517,3 +518,41 @@ read.csv('data/data_campanula_active.csv') %>%
   write.csv('data/datasheet_generation/datasheet_outputs/active_campanula_2020-07-17.csv',
             row.names = FALSE, na = '')
 
+# Data entry for july 17
+
+read.csv('data/datasheet_generation/datasheet_outputs/active_thermposis_2020-07-17.csv') %>%
+  # Rid us of ye done plants!!
+  filter(!Spread %in% -9) %>%
+  # Get the columns with relevant information
+  select(Date, Pl, Tag) %>%
+  # Generate empty rows for entry
+  rename(Plot = Pl) %>%
+  mutate(Page = NA,
+         Date = NA,
+         Species = NA,
+         Racemes = NA,
+         Infl_spread = NA,
+         Infl_done = NA,
+         Twist.ties = NA,
+         Q = NA,
+         Note = NA) %>%
+  select(names(read.csv('data/data_thermopsis_active.csv') %>% select(-X))) %>%
+  write.csv('data/data_entry_thermopsis_07-17-2020.csv', na = '', row.names = FALSE)
+
+# Data entry for July 13 Campanula  
+read.csv('data/datasheet_generation/datasheet_outputs/active_campanula_2020-07-17.csv') %>%
+  # Get the columns with relevant information
+  select(Date, Pl, Tag) %>%
+  # Generate empty rows for entry
+  rename(Plot = Pl) %>%
+  mutate(Page = NA,
+         Date = NA,
+         Species = NA,
+         Stms = NA,
+         Fl_straight = NA,
+         Fl_curled = NA,
+         Fl_done = NA,
+         Q = NA,
+         Note = NA) %>%
+  select(names(read.csv('data/data_campanula_active.csv'))) %>%
+  write.csv('data/data_entry_campanula_07-17-2020.csv', na = '', row.names = FALSE)
