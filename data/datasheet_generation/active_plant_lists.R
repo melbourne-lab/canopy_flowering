@@ -634,7 +634,6 @@ read.csv('data/data_campanula_active.csv') %>%
 
 # Data entry
 
-
 read.csv('data/datasheet_generation/datasheet_outputs/active_thermposis_2020-07-21.csv') %>%
   # Rid us of ye done plants!!
   filter(!Spread %in% -9) %>%
@@ -697,4 +696,48 @@ read.csv('data/data_campanula_active.csv') %>%
          Note = NA) %>%
   select(Date, Pl, Tag, Q, Stms, Str, Crl, Dne, Straight, Curled, Done, Note, Old_note) %>%
   write.csv('data/datasheet_generation/datasheet_outputs/active_campanula_2020-07-25.csv',
+            row.names = FALSE, na = '')
+
+# Data entry
+
+read.csv('data/datasheet_generation/datasheet_outputs/active_campanula_2020-07-25.csv') %>%
+  # Get the columns with relevant information
+  select(Date, Pl, Tag) %>%
+  # Generate empty rows for entry
+  rename(Plot = Pl) %>%
+  mutate(Page = NA,
+         Date = NA,
+         Species = NA,
+         Stms = NA,
+         Fl_straight = NA,
+         Fl_curled = NA,
+         Fl_done = NA,
+         Q = NA,
+         Note = NA) %>%
+  select(names(read.csv('data/data_campanula_active.csv'))) %>%
+  write.csv('data/data_entry_campanula_07-28-2020.csv', na = '', row.names = FALSE)
+
+### Materals for August 2
+
+read.csv('data/data_campanula_active.csv') %>%
+  rbind(read.csv('data/data_entry_campanula_07-13-2020.csv'),
+        read.csv('data/data_entry_campanula_07-17-2020.csv'),
+        read.csv('data/data_entry_campanula_07-21-2020.csv'),
+        read.csv('data/data_entry_campanula_07-28-2020.csv')) %>% 
+  group_by(Plot, Tag) %>% mutate(iggy = any(grepl('iggy', Note))) %>% ungroup() %>%
+  mutate(Date = as.Date(Date, '%m/%d/%y')) %>%
+  arrange(desc(Date), Plot, Tag) %>%
+  distinct(Tag, .keep_all = TRUE) %>%
+  select(-c(Page, Species)) %>%
+  rename(Pl = Plot,
+         Str = Fl_straight,
+         Crl = Fl_curled,
+         Dne = Fl_done,
+         Old_note = Note) %>%
+  mutate(Straight = ifelse(iggy, -9, NA),
+         Curled = ifelse(iggy, -9, NA),
+         Done = ifelse(iggy, -9, NA),
+         Note = NA) %>%
+  select(Date, Pl, Tag, Q, Stms, Str, Crl, Dne, Straight, Curled, Done, Note, Old_note) %>%
+  write.csv('data/datasheet_generation/datasheet_outputs/active_campanula_2020-08-02.csv',
             row.names = FALSE, na = '')
