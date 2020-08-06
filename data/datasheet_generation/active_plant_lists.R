@@ -763,3 +763,42 @@ read.csv('data/datasheet_generation/datasheet_outputs/active_campanula_2020-08-0
   select(names(read.csv('data/data_campanula_active.csv'))) %>%
   write.csv('data/data_entry_campanula_08-02-2020.csv', na = '', row.names = FALSE)
 
+### August 6 data generation
+
+read.csv('data/data_campanula_active.csv') %>%
+  rbind(read.csv('data/data_entry_campanula_07-13-2020.csv'),
+        read.csv('data/data_entry_campanula_07-17-2020.csv'),
+        read.csv('data/data_entry_campanula_07-21-2020.csv'),
+        read.csv('data/data_entry_campanula_07-28-2020.csv'),
+        read.csv('data/data_entry_campanula_08-02-2020.csv')) %>% 
+  # Get rid of plants to ignore
+  group_by(Plot, Tag) %>% filter(!any(grepl('iggy', Note))) %>% 
+  # Get rid of plants with collected tags
+  filter(!any(grepl('collected', Note))) %>%
+  # Get rid of plants which have disappeared (and ungroup)
+  filter(!any(grepl('^gone$', Note))) %>% ungroup() %>%
+  # Add dates
+  mutate(Date = as.Date(Date, '%m/%d/%y')) %>%
+  # Now, try to figure out how to get rid of plants which haven't changed in four visits
+  # Do this by sorting by date and picking out unique entries for demo data
+  # then, filter out plants past a cutoff date
+  # (this means if there is no change in demo data since this date, don't check it)
+  arrange(Date, Plot, Tag) %>%
+  distinct(Tag, Fl_straight, Fl_curled, Fl_done, .keep_all = TRUE) %>%
+  filter(Date > as.Date('2020-07-17')) %>%
+  # Now, get only the most recent record for each (remaining) plant
+  arrange(Plot, Tag, desc(Date)) %>%
+  distinct(Tag, .keep_all = TRUE) %>%
+  select(-c(Page, Species)) %>%
+  rename(Pl = Plot,
+         Str = Fl_straight,
+         Crl = Fl_curled,
+         Dne = Fl_done,
+         Old_note = Note) %>%
+  mutate(Straight = NA,
+         Curled = NA,
+         Done = NA,
+         Note = NA) %>%
+  select(Date, Pl, Tag, Q, Stms, Str, Crl, Dne, Straight, Curled, Done, Note, Old_note) %>%
+  write.csv('data/datasheet_generation/datasheet_outputs/active_campanula_2020-08-06.csv',
+            row.names = FALSE, na = '')
