@@ -802,3 +802,26 @@ read.csv('data/data_campanula_active.csv') %>%
   select(Date, Pl, Tag, Q, Stms, Str, Crl, Dne, Straight, Curled, Done, Note, Old_note) %>%
   write.csv('data/datasheet_generation/datasheet_outputs/active_campanula_2020-08-06.csv',
             row.names = FALSE, na = '')
+
+# Make data sheet
+
+read.csv('data/datasheet_generation/datasheet_outputs/active_campanula_2020-08-06.csv') %>%
+  # Get rid of non-checked plants (i.e., give only rows which are blank)
+  filter(is.na(Straight)) %>%
+  # Get the columns with relevant information
+  select(Date, Pl, Tag) %>%
+  # Generate empty rows for entry
+  rename(Plot = Pl) %>%
+  mutate(Page = NA,
+         Date = NA,
+         Species = NA,
+         Stms = NA,
+         Fl_straight = NA,
+         Fl_curled = NA,
+         Fl_done = NA,
+         Q = NA,
+         Note = NA) %>%
+  select(names(read.csv('data/data_campanula_active.csv'))) %>%
+  write.csv('data/data_entry_campanula_08-06-2020.csv', na = '', row.names = FALSE)
+
+### Make data sheet for August 10
