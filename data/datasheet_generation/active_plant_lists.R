@@ -931,3 +931,15 @@ read.csv('data/data_campanula_active.csv') %>%
   select(Date, Pl, Tag, Q, Stms, Str, Crl, Dne, Straight, Curled, Done, Note, Old_note) %>%
   write.csv('data/datasheet_generation/datasheet_outputs/active_campanula_2020-08-14.csv',
             row.names = FALSE, na = '')
+
+# NOTE:
+# find increasing plants like so:
+# this one won't work - not sure why (date sorting?)
+jul21 %>% arrange(Plot, Tag, Date) %>% filter(any(diff(Fl_straight + Fl_curled + Fl_done) > 0))
+jul21 %>% arrange(Plot, Tag, Date) %>% filter(any(diff(Fl_straight + Fl_curled + Fl_done) > 0)) %>% 
+  distinct(Plot, Tag) %>% nrow()
+# doing date sorting like so:
+jul21 %>% group_by(Plot, Tag) %>% mutate(allfl = Fl_straight + Fl_curled + Fl_done) %>% filter(any(diff(allfl) < 0))
+
+
+### 
