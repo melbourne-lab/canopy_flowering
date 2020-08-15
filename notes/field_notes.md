@@ -213,3 +213,39 @@ Saw a moose (?) today in the NE meadow. I was coming in from plot 33 and it was 
 I collected 15-20 *Thermopsis* fruit in the southern meadow (south of SW). Perhaps a good method is to twist seed heads gently - if you are primarily twisting the fruit instead of the peduncle then I bet the seed is ready to go. Not sure how many seeds there are or how ready these were to go. Looks like there are still a good number of seeds up there.
 
 I think *Thermopsis* is done today. Still some plants to check to get the second zero. Begin improving and analyzing data.
+
+### August 6 2020
+
+Wasn't taking notes recently due to time constraints imposed by rental vehicles. Now I have a new car. Good stuff.
+
+Ideas for analysis/questions to answer in a first-round paper.
+
+1) Start of flowering (this could easily be answered with Geoff's multinomial method)
+2) Duration of flowering (first to last day - how long is it?) Inspired by listening to an ESA talk. Here, would it make sense to exclude grazed plants? Possibly doing some selection there.
+3) Day-by-day synchrony (i.e., if sampling on N days, have N pairwise synchrony measurements for each plant)
+
+The third metric would illustrate the point that start of flowering is not an excellent proxy for *Campanula* because of the intermittent flowering that the same plants do throughout the season, although there is some resolution loss.
+
+Lots of grazing is happening, especially in plots 32/33. Saw bear scat today around plot 32 - seemingly between plots 22 and 53. What determines the probabilty of being grazed in a given day? Time of year/season? Flowering stage? Display size? Likewise there was some sort of disturbance at plot 18 (maybe becuase of the hillslope).
+
+Argosteris (?) - up and down. Appeared and finished in the last week. That was quick.
+
+Tall stipa-like grass... light competition only when in a thick mat? Clonal or vegatative growth would be advantageous here if competition was nonlinear or featured density dependence (e.g., if a thick mat was needed to get that competitive effect).
+
+### August 10 2020
+
+Lots of grazing is still happening. Bear is still active. Mountain lion scat on the trail by one of the entrances.
+
+For analysis, I really think onset of flowering is only part of the story. You may have first day of flowering advanced, but if individuals are throwing up flowers throughout the year, mating opportunities will change. I don't have a good sense from the data if the synchrony will actually vary, or if there is any signal of light environment here. 
+
+On the above note, can Geoff's multinomial model be made hierarchical w/ individuals within populations (or in our case plots)? Here, each individual *new flower* is a sample from an individual's multinomial distribution, which is itself coming from a population-mean multinomial. Maybe a_{ij} ~ N(a_i, sig_a^2) and likewise for b_{ij} for plant j in plot i?
+
+### August 14 2020
+
+Okay, still a lot of grazing is happening. It's very frustrating. How to handle this in analysis? Including these plants may show that certain effects exist (e.g., beginning of flowering is important) but that other constraints (like herbivory) may negate (or enhance!) effects. I'm not sure.
+
+Some time ago (august 6 maybe?) I began dropping plants out either if they were gone/lost or if they hadn't changed in the last several weeks (today: no changes after July 28). A problem with the latter of these is that plants that are grazed/drop seeds/break stems will have their number of flowers go down - this means they won't drop out and I will continue to (somewhat needlessly) check on them. I did wrote a code chunk which filters out plants where the total number of flowers increases. However, if you have grazing *and* increased flowering you're likely to not make it through this filter. Ugh. Guess I'll continue the useless checking.
+
+Seriously collecte seeds dude.
+
+
