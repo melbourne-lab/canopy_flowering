@@ -942,4 +942,23 @@ jul21 %>% arrange(Plot, Tag, Date) %>% filter(any(diff(Fl_straight + Fl_curled +
 jul21 %>% group_by(Plot, Tag) %>% mutate(allfl = Fl_straight + Fl_curled + Fl_done) %>% filter(any(diff(allfl) < 0))
 
 
-### 
+# enter data collected august 14
+
+read.csv('data/datasheet_generation/datasheet_outputs/active_campanula_2020-08-14.csv') %>%
+  # Get rid of non-checked plants (i.e., give only rows which are blank)
+  filter(is.na(Straight)) %>%
+  # Get the columns with relevant information
+  select(Date, Pl, Tag) %>%
+  # Generate empty rows for entry
+  rename(Plot = Pl) %>%
+  mutate(Page = NA,
+         Date = NA,
+         Species = NA,
+         Stms = NA,
+         Fl_straight = NA,
+         Fl_curled = NA,
+         Fl_done = NA,
+         Q = NA,
+         Note = NA) %>%
+  select(names(read.csv('data/data_campanula_active.csv'))) %>%
+  write.csv('data/data_entry_campanula_08-14-2020.csv', na = '', row.names = FALSE)
