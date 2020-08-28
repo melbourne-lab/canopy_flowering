@@ -248,4 +248,21 @@ Some time ago (august 6 maybe?) I began dropping plants out either if they were 
 
 Seriously collecte seeds dude.
 
+### August 27 2020
+
+(n.b. collected also on August 19 and August 23 but didn't take notes)
+
+Today was the first day I used a more selective filter for which plants to visit. I visited 20-30 plants with one of the following characteristics: (1) any flowers visible sice August 10, (2) an increase in the overall number of done flowers since August 10, or (3) any "pv"s in notes since August 10. I'll apply this for future sampling periods with a moved-up sampling date.
+
+I saw 2-3 new flowers today. One was for a plant which I don't think has flowered in a while (I think plant 1531; it was definitely in plot 45) - this means flowering after several weeks is rare but not impossible. There was also a new plant in plot 32 (maybe tag 1890? or 1830?) which had a new done flower. This may have been a previous miss (there were two stems coming out of the same rosette, two different lengths (think of a letter J with a flower on each end). Am I missing these on other plants too? I only checked this plant because it had flowered recently. Is this introducing bias?
+
+The *Campanula* data is going to be messy and uncertain. Is it worth trying to do a thorough synchrony analysis? There is also the issue of grazing. Ugh.
+
+The NW meadow had a lot of flags moved/disturbed. One plot had all four flags removed (I think 28). Not sure what was doing this. There was fresh-ish (2-3 days?) bear scat one or two sampling days ago but none that I saw ths time.
+
+There also looks to be a lot of gopher activity in the meadows these days. Plants that disappear may be subsumed into mounds (or eaten).
+
+I collected seeds today. I collected some Campanula in the large SSW meadow. Mostly in the open areas. I read earlier in the day about the morphology of seeds/fruit: the action is all happening in the capsule that is above the wilted petals (when the petals are facing down). Wait until this turns *brown* before picking. A lot of the ones on the ground had little holes poked where presumably someone got in and ate the seeds. Very cool! Also collected some *Thermopsis* in small, remote meadows to the south. You can see these on Google maps. These meadows are small and it would be interesting to do a genetic analysis...
+
+I met Dr. Molly Nepokroeff from CU Denver in the meadows. She was leading a Flora of Colorado group through the meadows on a collecting trip. Very cool. She described CU Denver as a George Mason-type commuter school with lots of first generation and/or non-white students. This sounds very good - try to reach out to these students for research opportunities.
 
