@@ -1028,3 +1028,188 @@ read.csv('data/datasheet_generation/datasheet_outputs/active_campanula_2020-08-1
          Note = NA) %>%
   select(names(read.csv('data/data_campanula_active.csv'))) %>%
   write.csv('data/data_entry_campanula_08-19-2020.csv', na = '', row.names = FALSE)
+
+### August 23 data
+
+read.csv('data/data_campanula_active.csv') %>%
+  rbind(read.csv('data/data_entry_campanula_07-13-2020.csv'),
+        read.csv('data/data_entry_campanula_07-17-2020.csv'),
+        read.csv('data/data_entry_campanula_07-21-2020.csv'),
+        read.csv('data/data_entry_campanula_07-28-2020.csv'),
+        read.csv('data/data_entry_campanula_08-02-2020.csv'),
+        read.csv('data/data_entry_campanula_08-06-2020.csv'),
+        read.csv('data/data_entry_campanula_08-10-2020.csv'),
+        read.csv('data/data_entry_campanula_08-14-2020.csv'),
+        read.csv('data/data_entry_campanula_08-19-2020.csv')) %>% 
+  # Get rid of plants to ignore
+  group_by(Plot, Tag) %>% filter(!any(grepl('iggy', Note))) %>% 
+  # Get rid of plants with collected tags
+  filter(!any(grepl('collected', Note))) %>%
+  # Get rid of plants noted as "no plant"
+  filter(!any(grepl('no\\splant', Note))) %>%
+  # Get rid of plants which have disappeared (and ungroup)
+  filter(!any(grepl('^gone$', Note))) %>% ungroup() %>%
+  # Add dates
+  mutate(Date = as.Date(Date, '%m/%d/%y')) %>%
+  # Now, try to figure out how to get rid of plants which haven't changed in four visits
+  # Do this by sorting by date and picking out unique entries for demo data
+  # then, filter out plants past a cutoff date
+  # (this means if there is no change in demo data since this date, don't check it)
+  arrange(Date, Plot, Tag) %>%
+  distinct(Tag, Fl_straight, Fl_curled, Fl_done, .keep_all = TRUE) %>%
+  filter(Date > as.Date('2020-08-06')) %>%
+  # Now, get only the most recent record for each (remaining) plant
+  arrange(Plot, Tag, desc(Date)) %>%
+  distinct(Tag, .keep_all = TRUE) %>%
+  select(-c(Page, Species)) %>%
+  rename(Pl = Plot,
+         Str = Fl_straight,
+         Crl = Fl_curled,
+         Dne = Fl_done,
+         Old_note = Note) %>%
+  mutate(Straight = NA,
+         Curled = NA,
+         Done = NA,
+         Note = NA) %>%
+  select(Date, Pl, Tag, Q, Stms, Str, Crl, Dne, Straight, Curled, Done, Note, Old_note) %>%
+  write.csv('data/datasheet_generation/datasheet_outputs/active_campanula_2020-08-23.csv',
+            row.names = FALSE, na = '')
+
+# Data entry
+
+read.csv('data/datasheet_generation/datasheet_outputs/active_campanula_2020-08-23.csv') %>%
+  # Get rid of non-checked plants (i.e., give only rows which are blank)
+  filter(is.na(Straight)) %>%
+  # Get the columns with relevant information
+  select(Date, Pl, Tag) %>%
+  # Generate empty rows for entry
+  rename(Plot = Pl) %>%
+  mutate(Page = NA,
+         Date = NA,
+         Species = NA,
+         Stms = NA,
+         Fl_straight = NA,
+         Fl_curled = NA,
+         Fl_done = NA,
+         Q = NA,
+         Note = NA) %>%
+  select(names(read.csv('data/data_campanula_active.csv'))) %>%
+  write.csv('data/data_entry_campanula_08-23-2020.csv', na = '', row.names = FALSE)
+
+### August 27 data
+
+read.csv('data/data_campanula_active.csv') %>%
+  rbind(read.csv('data/data_entry_campanula_07-13-2020.csv'),
+        read.csv('data/data_entry_campanula_07-17-2020.csv'),
+        read.csv('data/data_entry_campanula_07-21-2020.csv'),
+        read.csv('data/data_entry_campanula_07-28-2020.csv'),
+        read.csv('data/data_entry_campanula_08-02-2020.csv'),
+        read.csv('data/data_entry_campanula_08-06-2020.csv'),
+        read.csv('data/data_entry_campanula_08-10-2020.csv'),
+        read.csv('data/data_entry_campanula_08-14-2020.csv'),
+        read.csv('data/data_entry_campanula_08-19-2020.csv'),
+        read.csv('data/data_entry_campanula_08-23-2020.csv')) %>% 
+  # Get rid of plants to ignore
+  group_by(Plot, Tag) %>% filter(!any(grepl('iggy', Note))) %>% 
+  # Get rid of plants with collected tags
+  filter(!any(grepl('collected', Note))) %>%
+  # Get rid of plants noted as "no plant"
+  filter(!any(grepl('no\\splant', Note))) %>%
+  # Get rid of plants which have disappeared (and ungroup)
+  filter(!any(grepl('^gone', Note))) %>% #ungroup() %>%
+  # Add dates and filter out all records pre august 1
+  mutate(Date = as.Date(Date, '%m/%d/%y')) %>%
+  filter(Date > as.Date('2020-08-10')) %>%
+  # Now, filter out only plants with one of the following:
+  # - a pv in notes
+  # - any plants in male or female flowerin
+  # - any increase in overall number of flowers observed
+  filter(any(grepl('pv', Note)) |
+         any(Fl_straight | Fl_curled) |
+         any(diff(Fl_done) > 0)) %>%
+  # Now, get only the most recent record for each (remaining) plant
+  arrange(Plot, Tag, desc(Date)) %>%
+  distinct(Tag, .keep_all = TRUE) %>%
+  select(-c(Page, Species)) %>%
+  rename(Pl = Plot,
+         Str = Fl_straight,
+         Crl = Fl_curled,
+         Dne = Fl_done,
+         Old_note = Note) %>%
+  mutate(Straight = NA,
+         Curled = NA,
+         Done = NA,
+         Note = NA) %>%
+  select(Date, Pl, Tag, Q, Stms, Str, Crl, Dne, Straight, Curled, Done, Note, Old_note) %>%
+  write.csv('data/datasheet_generation/datasheet_outputs/active_campanula_2020-08-27.csv',
+            row.names = FALSE, na = '')
+
+# Entry
+
+read.csv('data/datasheet_generation/datasheet_outputs/active_campanula_2020-08-27.csv') %>%
+  # Get rid of non-checked plants (i.e., give only rows which are blank)
+  filter(is.na(Straight)) %>%
+  # Get the columns with relevant information
+  select(Date, Pl, Tag) %>%
+  # Generate empty rows for entry
+  rename(Plot = Pl) %>%
+  mutate(Page = NA,
+         Date = NA,
+         Species = NA,
+         Stms = NA,
+         Fl_straight = NA,
+         Fl_curled = NA,
+         Fl_done = NA,
+         Q = NA,
+         Note = NA) %>%
+  select(names(read.csv('data/data_campanula_active.csv'))) %>%
+  write.csv('data/data_entry_campanula_08-27-2020.csv', na = '', row.names = FALSE)
+
+### August 31 data
+
+read.csv('data/data_campanula_active.csv') %>%
+  rbind(read.csv('data/data_entry_campanula_07-13-2020.csv'),
+        read.csv('data/data_entry_campanula_07-17-2020.csv'),
+        read.csv('data/data_entry_campanula_07-21-2020.csv'),
+        read.csv('data/data_entry_campanula_07-28-2020.csv'),
+        read.csv('data/data_entry_campanula_08-02-2020.csv'),
+        read.csv('data/data_entry_campanula_08-06-2020.csv'),
+        read.csv('data/data_entry_campanula_08-10-2020.csv'),
+        read.csv('data/data_entry_campanula_08-14-2020.csv'),
+        read.csv('data/data_entry_campanula_08-19-2020.csv'),
+        read.csv('data/data_entry_campanula_08-23-2020.csv'),
+        read.csv('data/data_entry_campanula_08-27-2020.csv')) %>% 
+  # Get rid of plants to ignore
+  group_by(Plot, Tag) %>% filter(!any(grepl('iggy', Note))) %>% 
+  # Get rid of plants with collected tags
+  filter(!any(grepl('collected', Note))) %>%
+  # Get rid of plants noted as "no plant"
+  filter(!any(grepl('no\\splant', Note))) %>%
+  # Get rid of plants which have disappeared (and ungroup)
+  filter(!any(grepl('^gone', Note))) %>% #ungroup() %>%
+  # Add dates and filter out all records pre august 1
+  mutate(Date = as.Date(Date, '%m/%d/%y')) %>%
+  filter(Date > as.Date('2020-08-14')) %>%
+  # Now, filter out only plants with one of the following:
+  # - a pv in notes
+  # - any plants in male or female flowerin
+  # - any increase in overall number of flowers observed
+  filter(any(grepl('pv', Note)) |
+           any(Fl_straight | Fl_curled) |
+           any(diff(Fl_done) > 0)) %>%
+  # Now, get only the earliest record for each (remaining) plant
+  arrange(Plot, Tag, desc(Date)) %>%
+  distinct(Tag, .keep_all = TRUE) %>%
+  select(-c(Page, Species)) %>%
+  rename(Pl = Plot,
+         Str = Fl_straight,
+         Crl = Fl_curled,
+         Dne = Fl_done,
+         Old_note = Note) %>%
+  mutate(Straight = NA,
+         Curled = NA,
+         Done = NA,
+         Note = NA) %>%
+  select(Date, Pl, Tag, Q, Stms, Str, Crl, Dne, Straight, Curled, Done, Note, Old_note) %>%
+  write.csv('data/datasheet_generation/datasheet_outputs/active_campanula_2020-08-31.csv',
+            row.names = FALSE, na = '')
