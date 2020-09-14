@@ -1,0 +1,1 @@
+Initialize directory. Notes in preparation of UAV flight on September 15, 2020. Will finish the rest of this document today.
