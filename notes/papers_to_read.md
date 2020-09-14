@@ -29,3 +29,8 @@ Skimmed first part. Looks at annual moisture and influence on flower production.
 ##### Preite et al., 2015. Adaptation of flowering phenology and fitness-related traits... Evolutionary Ecology.
 
 *Campanula rotundifolia* taken from across Europe and planted in common garden. Looked at environmental correlations, some genetic analysis, looking at some phenological metrics.
+
+### Meadow dynamics
+
+##### Celis et al., 2017. Intraspecific trait variation and the differential decline of meadow species during conifer encroachment. Plant Ecology.
+
