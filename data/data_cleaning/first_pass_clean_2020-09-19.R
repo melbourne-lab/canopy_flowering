@@ -240,11 +240,125 @@ therm %>% filter(Tag %in% c(1084, 1089)) %>% arrange(Tag)
 
 
 # Plant 1085
+# It's a 47/48 plant
+therm = therm %>% 
+  mutate(Plot = ifelse(Tag %in% 1085, 48, Plot)) %>%
+  filter(!(Tag %in% 1085 & is.na(Infl_spread))) # %>% filter(Tag %in% 1085)
+# 
 
+# Plant 1090
+# 47/48 plant
+therm = therm %>% 
+  mutate(Plot = ifelse(Tag %in% 1090, 48, Plot)) %>%
+  filter(!(Tag %in% 1090 & is.na(Infl_spread))) # %>% filter(Tag %in% 1090)
 
+# Plant 1095
+# 47/48 plant
+therm = therm %>% 
+  mutate(Plot = ifelse(Tag %in% 1095, 48, Plot)) %>%
+  filter(!(Tag %in% 1095 & is.na(Infl_spread))) # %>% filter(Tag %in% 1095)
 
-table %>%
-  group_by(Tag) %>%
-  
-therm %>%
+# Plant 1098
+# is likely in plot 31, but no subsequent records after 6/14
+if (!1098 %in% check.tags) check.tags = c(check.tags, 1098)
 
+# Plant 1101
+# the 6/2 record in plot 6 looks like junk
+therm = therm %>% filter(!(Tag %in% 1101 & Plot %in% 6))
+nrow(therm)
+
+# Plant 1102
+# is a 47/48 plot
+therm = therm %>% 
+  mutate(Plot = ifelse(Tag %in% 1102, 48, Plot)) %>%
+  filter(!(Tag %in% 1102 & is.na(Infl_spread)))
+
+# Plant 1117
+# 47/48 plant
+therm = therm %>% 
+  mutate(Plot = ifelse(Tag %in% 1117, 48, Plot)) %>%
+  filter(!(Tag %in% 1117 & is.na(Infl_spread))) # %>% filter(Tag %in% 1117)
+
+# Plant 1181
+# the plot 48 stuff is all just yv
+therm = therm %>% filter(!(Plot %in% 48 & Tag %in% 1181)) # %>% filter(Tag %in% 1181)
+
+# Plant 1183
+# record for 1183 on 6/24 (plot 50) could be 1187?
+# uh.... well it's not 1186
+# not really sure what else it could be
+therm %>% filter(Plot %in% 50) %>% distinct(Tag)
+# note there's a twist tie here - look specifcally at twist tied plants
+therm %>% filter(grepl('wh', Twist.ties), Plot %in% 50)
+
+# assuming it's 1187 (twist ties plus notes on ants)
+# but, there is another record here for 1187 in 50 on this day
+therm %>% filter(Tag %in% 1187)
+# this has less info
+
+# remove 1187 record (less info), change 1183 to 1187, remove empties
+therm = therm %>% 
+  filter(!(Tag %in% 1187 & Date %in% as.Date('2020-06-24'))) %>%
+  mutate(Tag = ifelse(Tag %in% 1183 & Plot %in% 50, 1187, Tag)) %>% # filter(Tag %in% 1187)
+  filter(!(Tag %in% 1187 & is.na(Infl_spread) & is.na(Infl_done))) # %>% filter(Tag %in% 1187)
+
+# Plant 1229
+# 47/48 plant
+therm = therm %>% 
+  mutate(Plot = ifelse(Tag %in% 1229, 48, Plot)) %>%
+  filter(!(Tag %in% 1229 & is.na(Infl_spread))) # %>% filter(Tag %in% 1229)
+
+# Plant 1231
+# 47/48
+therm = therm %>% 
+  mutate(Plot = ifelse(Tag %in% 1231, 48, Plot)) %>%
+  filter(!(Tag %in% 1231 & is.na(Infl_spread))) # %>% filter(Tag %in% 1231)
+
+# Plant 1247
+# erm... records suggest this is in plot 14, but things are weird and not good
+# no YV records, first record has done plots
+# not good! maybe is 1241:1249?
+therm %>% filter(Tag %in% 1241:1249) %>% arrange(Date, Tag) 
+# was last record in new data sheet, plot no. inherited from above
+# 2/14 are near each other
+# assuming it's 14
+therm = therm %>%
+  mutate(Plot = ifelse(Tag %in% 1247, 14, Plot)) %>%
+  filter(!(Tag %in% 1247 & is.na(Infl_spread) & is.na(Infl_done))) # %>% filter(Tag %in% 1247)
+
+nrow(therm)
+
+# Plant 1262
+# record for plant 3 is bad.
+therm = therm %>%
+  mutate(Plot = ifelse(Tag %in% 1262, 2, Plot)) %>%
+  filter(!(Tag %in% 1262 & is.na(Infl_spread) & is.na(Infl_done))) # %>% filter(Tag %in% 1262)
+
+# Plant 1275
+# stray record in plot 22 - what should this be?
+therm %>% filter(Plot %in% 22) %>% distinct(Tag) %>% arrange(Tag)
+therm %>% filter(Tag %in% 1271)
+# the 1275 I am guessing should be 1271 (not that it matters it's 0,0)
+therm = therm %>%
+  mutate(Tag = ifelse(Tag %in% 1275 & Plot %in% 22, 1271, Tag)) #%>% filter(Tag %in% 1271)
+
+# Plants 1288/1295
+# 6/21 record - what should this be? tg 1288, note says perhaps 1295?
+therm %>% filter(Tag %in% 1295)
+# ah what the hell
+# should these be two separate plants...?
+# no because they're in different plots?
+
+# check.
+if (!1288 %in% check.tags) check.tags = c(check.tags, 1288)
+if (!1295 %in% check.tags) check.tags = c(check.tags, 1295)
+
+# Plants 1309
+# notes say that plot 32 record is in fact 1209
+# good notes!
+therm = therm %>%
+  mutate(Tag = ifelse(Tag %in% 1309 & Plot %in% 32, 1209, Tag)) #%>% filter(Tag %in% 1209)
+
+nrow(therm)
+
+# 
