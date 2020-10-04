@@ -6,6 +6,8 @@ library(ggplot2)
 library(dplyr)
 library(tidyr)
 
+##### Thermopsis data.
+
 ## Load Thermopsis data
 
 # `therm.orig` will be original, unaltered data
@@ -361,4 +363,169 @@ therm = therm %>%
 
 nrow(therm)
 
-# 
+##### Campanula
+
+# read in campanula data
+campn.orig = read.csv('data/data_campanula_active.csv') %>%
+  # read in subsequent data
+  rbind(
+    read.csv('data/data_entry_campanula_07-13-2020.csv'),
+    read.csv('data/data_entry_campanula_07-17-2020.csv'),
+    read.csv('data/data_entry_campanula_07-21-2020.csv'),
+    read.csv('data/data_entry_campanula_07-28-2020.csv'),
+    read.csv('data/data_entry_campanula_08-02-2020.csv'),
+    read.csv('data/data_entry_campanula_08-06-2020.csv'),
+    read.csv('data/data_entry_campanula_08-10-2020.csv'),
+    read.csv('data/data_entry_campanula_08-14-2020.csv'),
+    read.csv('data/data_entry_campanula_08-19-2020.csv'),
+    read.csv('data/data_entry_campanula_08-23-2020.csv'),
+    read.csv('data/data_entry_campanula_08-27-2020.csv')
+  ) %>%
+  # make date column into date format
+  mutate(Date = as.Date(Date, format = '%m/%d/%y'))
+
+
+# (there is one file missing here but it probably won't change anything.
+
+## Duplicate
+campn = campn.orig
+
+## Look at columns
+str(campn)
+
+# what's up wth the 'q' column
+unique(campn$Q)
+# seems good
+
+## Okay look for double tags.
+
+campn %>%
+  group_by(Tag) %>%
+  summarise(n.plots = length(unique(Plot))) %>%
+  filter(n.plots > 1)
+
+# woohoo! only 13 plants.
+
+campn %>%
+  group_by(Tag) %>%
+  filter(length(unique(Plot)) > 1) %>%
+  arrange(Tag, Date) %>%
+  View()
+
+# Plant 1530
+# note says could be 1570?
+campn %>% filter(Tag %in% 1570)
+# There is no record for this plant on 7/9...
+# going to say that the 7/9 1530 record is 1570.
+campn = campn %>%
+  mutate(Tag = ifelse(Tag %in% 1530 & Plot %in% 2, 1570, Tag)) %>%
+  filter(!(Tag %in% 1530 & is.na(Fl_straight) & is.na(Fl_curled))) # %>% filter(Tag %in% 1530)
+
+# Plant 1537
+# plot 53 record - could be 1737? or 1539?
+campn %>% filter(grepl('39$', Tag)) %>% arrange(Date)
+# well... there is a 1739, but it's recorded on the same date
+campn %>% filter(Tag %in% 1539) # not this
+campn %>% filter(Tag %in% 1534)
+campn %>% filter(Plot %in% 53) %>% arrange(Tag) %>% distinct(Tag)
+# 1737?
+campn %>% filter(Tag %in% 1737)
+# going to assume 1537 in plot 53 is 1737.
+campn = campn %>%
+  mutate(Tag = ifelse(Tag %in% 1537 & Plot %in% 53, 1737, Tag)) %>%
+  filter(!(Tag %in% 1737 & is.na(Fl_straight) & is.na(Fl_curled))) # %>% filter(Tag %in% 1737)
+
+# Plant 1544
+# looking at notes, the plot 33 record may be 1593
+campn %>% filter(Tag %in% 1593)
+# it is
+campn %>%
+  mutate(Tag = ifelse(Tag %in% 1543 & Plot %in% 33, 1593, Tag)) %>%
+  filter(!(Tag %in% 1593 & is.na(Fl_straight) & is.na(Fl_curled))) %>% filter(Tag %in% 1593)
+# wait... july 21 is 001, but july 28 is 110?
+# also the july 21 record says old tag.
+# come back to this...
+campn %>% filter(Plot %in% 33) %>% distinct(Tag) %>% arrange(Tag)
+
+if (!1543 %in% check.tags) check.tags = c(check.tags, 1543)
+  
+# Plant 1548
+# plot 31 record? similar tags?
+campn %>% filter(Plot %in% 31) %>% distinct(Tag)
+# could be 1544? is there a record on 7/21?
+campn %>% filter(Tag %in% 1544)
+# I'm going to assume this should be 1544
+# [I checked the notes and it is 1544 - was misread]
+campn = campn %>%
+  mutate(Tag = ifelse(Tag %in% 1548 & Plot %in% 31, 1544, Tag)) %>%
+  filter(!(Tag %in% 1544 & is.na(Fl_straight) & is.na(Fl_curled))) #%>% filter(Tag %in% 1544)
+
+# Plant 1561
+# there are multiple 1561s records in each plot
+# must be one legit plant in 1561
+campn %>% filter(Plot %in% 2) %>% distinct(Tag) %>% arrange(Tag)
+campn %>% filter(Tag %in% 1611)
+
+# Are there multiple tags? Check collected tags.
+if (!1561 %in% check.tags) check.tags = c(check.tags, 1561)
+
+# Plant 1568
+
+# ugh this one will require some record merging...
+# recycled tag.
+
+# Plant 1584
+campn %>% filter(Tag %in% c(1854, 1548)) %>% arrange(Date, Tag)
+# both of these have records for the date in question
+# what the heck man
+campn %>% filter(Plot %in% 1) %>% arrange(Tag) %>% distinct(Tag)
+# 1582?
+campn %>% filter(Tag %in% 1582) %>% arrange(Date)
+# ahhh what the hell
+
+# think of something later
+
+# Plant 1669
+# this should be plot 22
+campn = campn %>%
+  mutate(Plot = ifelse(Tag %in% 1669 & Plot %in% 2, 22, Plot)) %>%
+  filter(!(Tag %in% 1669 & is.na(Fl_straight) & is.na(Fl_curled))) # %>% filter(Tag %in% 1669)
+
+# Plant 1677
+# note says 1677 in plot 47 is 1577
+# check this:
+campn %>% filter(Tag %in% 1577)
+campn = campn %>% mutate(Tag = ifelse(Tag %in% 1677 & Plot %in% 47, 1577, Tag)) # %>% filter(Tag %in% 1577)
+
+# Plnt 1678
+# note says this may be 1576?
+campn %>% filter(Tag %in% 1576) %>% arrange(Date)
+# I don't think so... 7/17 record is 3 stems, 7/21 record is 1 stem
+campn %>% filter(Plot %in% 33) %>% distinct(Tag) %>% arrange(Tag)
+campn %>% filter(Tag %in% 1578) %>% arrange(Date)
+# no this has a record in the date in question
+# paper record is def 16X8 - maybe 1628?
+campn %>% filter(Tag %in% 1628) %>% arrange(Date)
+campn %>% filter(Stms %in% 3 & Plot %in% 33)
+campn %>% filter(Tag %in% 1528)
+# I think it's 1528
+campn = campn %>%
+  mutate(Tag = ifelse(Tag %in% 1678 & Plot %in% 33, 1528, Tag)) %>%
+  filter(!(Tag %in% 1528 & is.na(Fl_straight) & is.na(Fl_curled))) # %>% filter(Tag %in% 1528)
+
+# Plot 1694 
+
+# requires merging
+
+### Generate check list for dismantling plots
+
+therm %>%
+  filter(Tag %in% check.tags) %>%
+  arrange(Plot, Tag, Date) %>%
+  write.csv('data/data_cleaning/therdiva_check_tags.csv', row.names = FALSE)
+
+campn %>%
+  filter(Tag %in% check.tags) %>%
+  arrange(Plot, Tag, Date) %>%
+  write.csv('data/data_cleaning/camprotu_check_tags.csv', row.names = FALSE)
+
