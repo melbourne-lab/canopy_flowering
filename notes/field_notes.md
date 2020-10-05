@@ -266,3 +266,12 @@ I collected seeds today. I collected some Campanula in the large SSW meadow. Mos
 
 I met Dr. Molly Nepokroeff from CU Denver in the meadows. She was leading a Flora of Colorado group through the meadows on a collecting trip. Very cool. She described CU Denver as a George Mason-type commuter school with lots of first generation and/or non-white students. This sounds very good - try to reach out to these students for research opportunities.
 
+### September 27 2020
+
+(n.b. quick field collection day on September 1, none after that; frost occurred around September 5)
+
+I quickly put out caps on rebar (10 + one for Julian's take off site). There is one rebar (in the SW meadow, approx between plots 48 and 49) that is loose and will need to be re-applied. There were perhaps ~5 flowering *Campanula* site-wide but none in plots. Aspens were slightly past peak-color, particularly in the large stand where 61 - 69 are.
+
+### Octobr 4 2020
+
+Grant V. and I took down plots today. I've spent some time in the last couple of days trying to clean data and noting/rectifying cases where tags appear in multiple plots. We took down flags for all 72 plots and collected all available tags; I recorded all tags collected on a separate sheet of paper (save for one plot where I forgot). I will enter these later this week. Aspens were well past peak and mostly done - middle stand is mostly denuded (with a lot of litter on the ground). The most notable stand with (gold) leaves present is around plot 10 at the top of the narrow corridor. No *Campanula* flowering anywhere; didn't see anything else except for a handful of a purple aster.
