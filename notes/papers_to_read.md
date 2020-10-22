@@ -32,5 +32,25 @@ Skimmed first part. Looks at annual moisture and influence on flower production.
 
 ### Meadow dynamics
 
-##### Celis et al., 2017. Intraspecific trait variation and the differential decline of meadow species during conifer encroachment. Plant Ecology.
+##### Haugo and Halpern, 2007. Vegetation responses to conifer encroachment in a western Cascade meadow: a chronosequence approach. The Canadian Journal of Botany.
+
+### Seed limitation
+
+##### Santandreau, M., and Lloret, F. 1999. Effect of flowering phenology and habitat on pollen limitation in **Erica multiflora**. Canadian Journal of Botany.
+
+Seed set ~ Timing of flowering x shrub/forest habitat. Through the lens of pollination and pollen limitation throughout the season and how this varies by environment. Seems very relevant.
+
+##### Knight, T.M. 2004. Floral density, pollen limitation, and reproductive success in **Trilium grandiflorum.** Oecologia.
+
+Empirical demonstration that floral density affects seed set/pollen limitation.
+
+##### Ludemo, S., and Totland, O. 2007. Within-population spatial variation in pollinator visitaton rates, pollen limitation on seed set, and flower longevity in an alpine species. Acta Oecologica.
+
+Spatial variation in pollen limitation and pollinator visitation!
+
+##### Howe, A.A., et al. 2016. Seed set variation in wild **Clarkia** populations: teasing apart the effects of seasonal resource depletion, pollen quality, and pollen quantity. Ecology and Evolution.
+
+Comparing seed set/outcrossing in early and late flowering plants.
+
+
 
