@@ -44,3 +44,11 @@ Some other notes
 - Refs herein for community change and biodiversity in meadows and forest clearings
 - Also some refs on response to shade cross taxa (e.g., Albrecht et al. 2016 and some *Astragalus*)
 - Lots of reference in here to the fact that most of the change in light penetration happens early in the encroachment process, when trees are first establishing
+
+### Stone, W.B., and Wolfe, M.L. 1996. Respons eof understory vegetation to variable tree mortality following a mountain pine beetle epidemic in lodgpole pine stands in northern Utah. Vegetatio, 122: 1 - 12.
+
+Looking at stands of lodgepole pine with a recent (2-9 years prior) pine beetle outbreak of varying severity (0-90% tree mortality). Several studies demonstrate (refs herein - especially in intro) that there's a lot more biomass production under beetle-killed trees, but what about diversity? They surveyed tree mortality and vegetation stuff below said stands.
+
+As with other studies, there's more biomass production (exponentially) as mortality increases. However, the *diversity* (and richness) as well as patchiness (measured by CV in cover) were highest at intermediate levels. Supposedly, this was because at higher densities there's less diversity in niches and a smaller collection of species can dominate. Note that models here look a little whack although trends are clear. More open areas have tons of grass. Lots of fruiting from shrubs.
+
+So - beetle kill is another thing that can quickly open up canopy changing vegetation and reproductive dynamics. 
