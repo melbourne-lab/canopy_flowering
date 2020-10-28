@@ -12,4 +12,8 @@ It may be a good idea to sample a couple of plants from distant parts of the mea
 
 Ask Julian for pollinator visitation data. Jennifer Ison's 2018 paper showed declining visitation for one species of plant over time. Does any of our analysis of offspring, seed set, etc. assume that pollination is constant over the course of the season? What would temporal trends in pollinator abundance/visitation mean if there was a delayed flowering under shade? Means that light environment makes plants less/more likely to be visited, shut out of mating, etc.
 
+##### Another source of canopy (October 28, 2020)
 
+Pine-beetle kill! Creates canopy gaps. Look into what happens in the understory (needles may provide a thick mat). E.g., Stone and Wolfe (1996) measures vegetation under beetle-killed lodgepole pines. Also, fires! Although fires will also change the understory (and are likely to totally clear out canopy).
+
+Ref (unread): Stone, W.E., and Wolfe, M.L. Respone of understory vegetation to variable tree mortality following a mountain pine betle epidemic in lodgepol pine stands in northern Utah. Vegetatio, 122: 1 - 12.
