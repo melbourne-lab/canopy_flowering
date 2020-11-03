@@ -519,13 +519,156 @@ campn = campn %>%
 
 ### Generate check list for dismantling plots
 
-therm %>%
-  filter(Tag %in% check.tags) %>%
-  arrange(Plot, Tag, Date) %>%
-  write.csv('data/data_cleaning/therdiva_check_tags.csv', row.names = FALSE)
+# therm %>%
+#   filter(Tag %in% check.tags) %>%
+#   arrange(Plot, Tag, Date) %>%
+#   write.csv('data/data_cleaning/therdiva_check_tags.csv', row.names = FALSE)
+# 
+# campn %>%
+#   filter(Tag %in% check.tags) %>%
+#   arrange(Plot, Tag, Date) %>%
+#   write.csv('data/data_cleaning/camprotu_check_tags.csv', row.names = FALSE)
 
-campn %>%
-  filter(Tag %in% check.tags) %>%
-  arrange(Plot, Tag, Date) %>%
-  write.csv('data/data_cleaning/camprotu_check_tags.csv', row.names = FALSE)
+### Picking up where we left off.
+# Here, relying on notes from clean-up on Oct. 4
+
+# Thermopsis tags
+
+# Tag 1018
+# the 1018 record in plot 12 is 1048
+therm = therm %>% 
+  mutate(Tag = ifelse(Tag %in% 1018 & Plot %in% 12, 1048, Tag)) # %>% filter(Tag %in% 1048)
+
+# Tag 1033
+# ah.. note ays that this is plant 1044
+# need a way to handle combined plants...
+# but also record for plant in plot 47
+therm %>% filter(Tag %in% 1033 & Plot %in% 47)
+# hmm... record is for june 5
+therm %>% filter(Tag %in% c(1037, 1093))
+# hmm... well, not so sure this matters, because it's a non-flowering record
+# but I'd guess this is 1037 (closer rosette count)
+therm = therm %>% 
+  mutate(Tag = ifelse(Tag %in% 1033 & Plot %in% 47, 1037, Tag)) #%>% filter(Tag %in% 1033)
+
+# Tag 1056
+# notes say that 1056 is present in plot 22
+# the one in plot 48 is probably 1036
+therm %>% filter(Tag %in% 1036 | (Tag %in% 1056 & Plot %in% 48))
+# on 6/14 they both have records
+# look at plants on 6/11 - how many had 2 open?
+therm %>% filter(Plot %in% 48 & Date %in% as.Date('2020-06-11')) # %>% View()
+# ah what the heck man
+# okay, try to see which tags only show up once between 6/11 and 6/14
+therm %>% 
+  filter(Plot %in% 48 & Date %in% c(as.Date('2020-06-11'), as.Date('2020-06-14'))) %>%
+  group_by(Tag) %>%
+  summarise(n = n()) %>%
+  filter(n < 2)
+# 1083, 1098...
+therm %>% filter(Tag %in% c(1083, 1098) & Date %in% as.Date('2020-06-14'))
+# 1098 appears, but 1083 doesn't
+therm %>% filter(Tag %in% c(1083, 1056) & Plot %in% 48) %>% arrange(Date, Tag)
+# no! what the heck... 1083 has seven flowers!
+therm %>%
+  filter(Plot %in% 48) %>%
+  filter(!Tag %in% 1117) %>%
+  select(Date, Tag, Infl_spread) %>%
+  spread(Date, Infl_spread)
+# 1068 is plusible...
+therm %>%
+  filter(Plot %in% 48) %>%
+  filter(!Tag %in% 1117) %>%
+  select(Date, Tag, Infl_done) %>%
+  spread(Date, Infl_done)
+# 1068 is the only realistic option
+therm %>% filter(Tag %in% c(1056, 1068) & Plot %in% 48) %>% arrange(Date, Tag)
+# gonna say this was 1068
+therm = therm %>%
+  mutate(Tag = ifelse(Tag %in% 1056 & Plot %in% 48, 1068, Tag)) %>%
+  filter(!(Tag %in% 1068 & is.na(Infl_spread) & is.na(Infl_done))) #%>% filter(Tag %in% 1068)
+
+# Tag 1098
+# tag 1098 not found in either plot when collecting tags
+therm %>% filter(Plot %in% 31)
+# eh
+therm %>%
+  filter(Plot %in% 31 & Tag %in% 1090:1099) %>%
+  select(Date, Tag, Infl_spread) %>%
+  spread(Date, Infl_spread)
+# okay maybe it's not a 109X tg
+therm %>%
+  filter(Plot %in% 31, !Tag %in% 1107) %>%
+  select(Date, Tag, Infl_spread) %>%
+  spread(Date, Infl_spread)
+# uhhh - could be 1248...? could also be lost somehow
+therm %>% filter(Tag %in% 1098, Plot %in% 48)
+# these all look kinda garbo
+therm %>%
+  filter(Plot %in% 48) %>%
+  filter(!Tag %in% 1117) %>%
+  select(Date, Tag, Infl_done) %>%
+  spread(Date, Infl_done)
+# yeah these are garb - no evidence that 1098 is in plot 48
+# so what is that 1098 record from?? conceivably 1083
+therm %>% filter(Tag %in% 1083 | (Tag %in% 1098 & Plot %in% 48 & !is.na(Infl_spread)))
+# oh... nope
+# man idk
+# just nuke it? where the heck is it coming from
+therm %>%
+  filter(Plot %in% 48) %>%
+  filter(!Tag %in% 1117) %>%
+  select(Date, Tag, Infl_spread, Infl_done) %>%
+  unite(col = Infl, c(Infl_spread, Infl_done), sep = '_') %>%
+  spread(Date, Infl)
+# uhhh some of thes look pretty whack - wtf is happening with 1183
+# that is def whack lmao - 100% bad looking
+# (the 29 is def what is written on the data sheet)
+# it's conceivable that the 1098 record is 1183... 1 rac, 0 spread, 4 done
+# is there any plant with 29 flowers at any points?
+# hmm... it would make sense that 1083 got recordd as 1183 (1083 is missing on 6/14)
+# thn maybe 1098 got recorded somehow as 1183 - it makes a very parsimonious dataset
+# ahhhh except that the 29 fl record has only 1 stem whereas all other 1083s have 2
+# we were so close...
+
+# fix this later
+
+# Tag 1561
+# Okay - there are actually two distinct tags here!
+# I guess manually make up my own tag?
+# call it 1950 - a tag that was never created
+campn = campn %>% mutate(Tag = ifelse(Tag %in% 1561 & Plot %in% 9, 1950, Tag)) # %>% filter(Tag %in% 1561) # filter(Plot %in% 9)
+
+# Tag 1543
+# the plot 32 record has good tag, plot 33 is something else
+# notes from collections suggest it's either 1593 or 1547 (lean 1547)
+campn %>% filter(Tag %in% c(1543, 1547, 1593) & Plot %in% 33) %>% arrange(Date, Tag)
+# agh... this campanula data is annoying
+# okay - 1593 doesn't have any done flowers in its first record after this
+# but, 1547 has a record on the same day as the 1543 record
+campn %>% 
+  filter(Plot %in% 33, !(Tag %in% c(1521, 1552, 1597, 1550))) %>%
+  mutate(Fl_open = Fl_straight + Fl_curled) %>%
+  select(Date, Tag, Fl_open, Fl_done) %>%
+  unite(col = Fl, c(Fl_open, Fl_done), sep = ', ') %>%
+  spread(Date, Fl)
+# none of those look great...
+# try 1597
+campn %>% filter(Tag %in% c(1543, 1597) & Plot %in% 33)
+# nope - two july 21 records here
+
+# ahhhh just nuke it
+campn = campn %>% filter(!(Tag %in% 1543 & Plot %in% 33)) # %>% # filter(Tag %in% 1543)
+  
+### Start looking at dupes.
+  
+### Thermoposis dupes
+therm %>%
+  group_by(Tag, Date) %>%
+  filter(n() > 1) # %>% View()
+
+# woke! Not that many.
+
+# Tag 1107
+# both records are fine
 
