@@ -12,20 +12,20 @@ library(tidyr)
 
 # `therm.orig` will be original, unaltered data
 # Read in new plant csv
-therm.orig = read.csv('data/data_thermopsis_active.csv') %>%
+therm.orig = read.csv('data/raw_data/data_2020/data_thermopsis_active.csv') %>%
   # remove junk "X" col (should be empty)
   select(-X) %>%
   # read in pre-made data collection sheets
   rbind(
-    read.csv('data/data_entry_06-21-2020.csv'),
-    read.csv('data/data_entry_06-24-2020.csv'),
-    read.csv('data/data_entry_06-27-2020.csv'),
-    read.csv('data/data_entry_07-01-2020.csv'),
-    read.csv('data/data_entry_07-05-2020.csv'),
-    read.csv('data/data_entry_07-09-2020.csv'),
-    read.csv('data/data_entry_thermopsis_07-13-2020.csv'),
-    read.csv('data/data_entry_thermopsis_07-17-2020.csv'),
-    read.csv('data/data_entry_thermopsis_07-21-2020.csv')
+    read.csv('data/raw_data/data_2020/data_entry_06-21-2020.csv'),
+    read.csv('data/raw_data/data_2020/data_entry_06-24-2020.csv'),
+    read.csv('data/raw_data/data_2020/data_entry_06-27-2020.csv'),
+    read.csv('data/raw_data/data_2020/data_entry_07-01-2020.csv'),
+    read.csv('data/raw_data/data_2020/data_entry_07-05-2020.csv'),
+    read.csv('data/raw_data/data_2020/data_entry_07-09-2020.csv'),
+    read.csv('data/raw_data/data_2020/data_entry_thermopsis_07-13-2020.csv'),
+    read.csv('data/raw_data/data_2020/data_entry_thermopsis_07-17-2020.csv'),
+    read.csv('data/raw_data/data_2020/data_entry_thermopsis_07-21-2020.csv')
   )
 
 # `therm` will contain data in progress
@@ -56,8 +56,17 @@ therm$Date
 as.Date(therm$Date, format = '%m/%d/%y')
 therm$Date = as.Date(therm$Date, format = '%m/%d/%y')
 
+# Add unique column for recordID
+therm$RecordID = 10000 + (1:nrow(therm))
+
 # How many NAs?
 apply(therm, 2, function(x) sum(is.na(x)))
+
+# How many empty rows?
+therm %>% filter(is.na(Racemes) & is.na(Infl_spread) & is.na(Infl_done) & (Note %in% ''))
+# Get rid of these
+therm = therm %>% 
+  filter(!(is.na(Racemes) & is.na(Infl_spread) & is.na(Infl_done) & (Note %in% '')))
 
 ## Assess data complteness
 
@@ -366,29 +375,31 @@ nrow(therm)
 ##### Campanula
 
 # read in campanula data
-campn.orig = read.csv('data/data_campanula_active.csv') %>%
+campn.orig = read.csv('data/raw_data/data_campanula_active.csv') %>%
   # read in subsequent data
   rbind(
-    read.csv('data/data_entry_campanula_07-13-2020.csv'),
-    read.csv('data/data_entry_campanula_07-17-2020.csv'),
-    read.csv('data/data_entry_campanula_07-21-2020.csv'),
-    read.csv('data/data_entry_campanula_07-28-2020.csv'),
-    read.csv('data/data_entry_campanula_08-02-2020.csv'),
-    read.csv('data/data_entry_campanula_08-06-2020.csv'),
-    read.csv('data/data_entry_campanula_08-10-2020.csv'),
-    read.csv('data/data_entry_campanula_08-14-2020.csv'),
-    read.csv('data/data_entry_campanula_08-19-2020.csv'),
-    read.csv('data/data_entry_campanula_08-23-2020.csv'),
-    read.csv('data/data_entry_campanula_08-27-2020.csv')
+    read.csv('data/raw_data/data_2020/data_entry_campanula_07-13-2020.csv'),
+    read.csv('data/raw_data/data_2020/data_entry_campanula_07-17-2020.csv'),
+    read.csv('data/raw_data/data_2020/data_entry_campanula_07-21-2020.csv'),
+    read.csv('data/raw_data/data_2020/data_entry_campanula_07-28-2020.csv'),
+    read.csv('data/raw_data/data_2020/data_entry_campanula_08-02-2020.csv'),
+    read.csv('data/raw_data/data_2020/data_entry_campanula_08-06-2020.csv'),
+    read.csv('data/raw_data/data_2020/data_entry_campanula_08-10-2020.csv'),
+    read.csv('data/raw_data/data_2020/data_entry_campanula_08-14-2020.csv'),
+    read.csv('data/raw_data/data_2020/data_entry_campanula_08-19-2020.csv'),
+    read.csv('data/raw_data/data_2020/data_entry_campanula_08-23-2020.csv'),
+    read.csv('data/raw_data/data_2020/data_entry_campanula_08-27-2020.csv')
   ) %>%
   # make date column into date format
   mutate(Date = as.Date(Date, format = '%m/%d/%y'))
-
 
 # (there is one file missing here but it probably won't change anything.
 
 ## Duplicate
 campn = campn.orig
+
+# Add record ID column
+campn$RecordID = 20000 + (1:nrow(campn))
 
 ## Look at columns
 str(campn)
@@ -396,6 +407,16 @@ str(campn)
 # what's up wth the 'q' column
 unique(campn$Q)
 # seems good
+
+# How many empty rows?
+campn %>% filter(is.na(Stms) & is.na(Fl_straight) & is.na(Fl_curled) & 
+                 is.na(Fl_done) & Note %in% '')
+# a lot!
+# nuke.
+campn = campn %>%
+  filter(! (is.na(Stms) & is.na(Fl_straight) & is.na(Fl_curled) & 
+            is.na(Fl_done) & Note %in% '') )
+
 
 ## Okay look for double tags.
 
@@ -671,4 +692,51 @@ therm %>%
 
 # Tag 1107
 # both records are fine
+therm = therm %>% filter(!RecordID %in% 10099)
+
+# Tag 1117
+# hmm... differing number of racemes
+therm %>% filter(Tag %in% c(1117, 1177))
+# gonnay say the 2 raceme/1yv record on 6/5 is 1177
+therm = therm %>% # filter(Tag %in% 1117 & Date %in% as.Date('2020-06-05'))
+  mutate(Tag = ifelse(Tag %in% 1117 & Date %in% as.Date('2020-06-05') & Racemes > 1,
+                      1177, Tag)) #%>% #filter(Tag %in% 1177)
+
+# Tag 1077
+# goodness these records are, like, two spaces apart
+therm %>% filter(Plot %in% 14) %>% arrange(Tag) %>% distinct(Tag)
+# hmm... could be 1067
+therm %>% filter(Tag %in% c(1067, 1070, 1077))
+# lmao... okay all of these tags have a record on June 8
+# well, okay nuke the one with only one stme
+therm = therm %>% filter(!RecordID %in% 10175)
+
+# Tag 1023
+# blank record for a plant with a note to fix later
+# just nuke the blank
+therm = therm %>% filter(!RecordID %in% 10951)
+
+# Tag 1255
+# I suppose just nuke the record that says iggy?
+# My guess is it was missed on the print-out sheet when doing manual checks.
+therm = therm %>% filter(!RecordID %in% 10549)
+
+# Tag 1288
+# this is an unsure-tag
+therm %>% filter(Tag %in% 1288)
+# looking at data sheet 17, tags 1288 and 1295 are very close to each other
+# `plot` field is blank (assumed carried over from prev. record in 61 in entry)
+# is it possible that I just forgot to write the actual plot down?
+therm %>% filter(Tag %in% c(1288, 1295))
+therm %>% filter(Tag %in% 1295) %>% arrange(Plot, Date)
+# ah... bet that I just forgot to carry these over.
+
+# Change all references of plot to 62
+therm = therm %>%
+  mutate(Plot = ifelse(Tag %in% 1288 & Plot %in% 61, 62, Plot)) %>% # filter(Tag %in% 1288)
+  mutate(Plot = ifelse(Tag %in% 1295 & Plot %in% 61, 62, Plot)) %>% #filter(Tag %in% 1295)
+  filter(!(Tag %in% c(1288, 1295) & is.na(Infl_spread) & is.na(Infl_done))) # %>% filter(Tag %in% c(1288, 1295))
+
+
+# Should at some point check one-record tags...
 
