@@ -375,7 +375,7 @@ nrow(therm)
 ##### Campanula
 
 # read in campanula data
-campn.orig = read.csv('data/raw_data/data_campanula_active.csv') %>%
+campn.orig = read.csv('data/raw_data/data_2020/data_campanula_active.csv') %>%
   # read in subsequent data
   rbind(
     read.csv('data/raw_data/data_2020/data_entry_campanula_07-13-2020.csv'),
@@ -682,6 +682,7 @@ campn %>% filter(Tag %in% c(1543, 1597) & Plot %in% 33)
 campn = campn %>% filter(!(Tag %in% 1543 & Plot %in% 33)) # %>% # filter(Tag %in% 1543)
   
 ### Start looking at dupes.
+# i.e., records where one tag shows up multiple times on one day
   
 ### Thermoposis dupes
 therm %>%
@@ -738,5 +739,145 @@ therm = therm %>%
   filter(!(Tag %in% c(1288, 1295) & is.na(Infl_spread) & is.na(Infl_done))) # %>% filter(Tag %in% c(1288, 1295))
 
 
+### Check Campanula duplicate records (same tag >1 record in one day)
+
+campn %>%
+  group_by(Tag, Date) %>%
+  filter(n() > 1) %>% 
+  arrange(Tag) %>% View()
+
+# Tag 1521
+# records are identical
+# save the nice one
+campn = campn %>% filter(!RecordID %in% 20058)
+
+# Tag 1550
+# hoo boy
+campn %>% filter(Tag %in% 1550)
+# has 2 purple visible in previous (jul 13) record
+# ah... the "old record" on page 70 looks like it should be 1590
+campn %>% filter(Tag %in% c(1550, 1590))
+# wait wtf 1590 is in plot 2!
+campn %>% filter(Plot %in% 33) %>% arrange(Tag) %>% distinct(Tag)
+# could be written as 1590 as a misread of 1540?
+campn %>% filter(Tag %in% c(1540, 1550)) %>% arrange(Date, Tag)
+# ahhh wtgdf 1540 is flowerin on 7/17
+campn %>% 
+  filter(Plot %in% 33, !(Tag %in% c(1550, 1552, 1597))) %>%
+  mutate(Fl_open = Fl_straight + Fl_curled) %>%
+  select(Date, Tag, Fl_open, Fl_done) %>%
+  unite(col = Fl, c(Fl_open, Fl_done), sep = ', ') %>%
+  spread(Date, Fl)
+# I don't see anything plausible here.
+# erm... looking at notes, there's a small chance it's actually a plant in plot 32
+campn %>% 
+  filter(Plot %in% 32) %>%
+  mutate(Fl_open = Fl_straight + Fl_curled) %>%
+  select(Date, Tag, Fl_open, Fl_done) %>%
+  unite(col = Fl, c(Fl_open, Fl_done), sep = ', ') %>%
+  spread(Date, Fl)
+# nyet!
+
+# idk man
+# just nuke it I guess - not sure what else this would be
+campn = campn %>% filter(!RecordID %in% 20110)
+
+# # Tag 1552
+# ignore (see below)
+# campn %>% filter(Tag %in% 1552)
+# # lmao what on earth is that 1,1,9 record
+# # ah... was misentered - data says 1,1,0
+# # gonna fix that now
+# # but even still, both records def say 1552 ahhhh
+# # check for a possible misread
+# campn %>% 
+#   filter(Plot %in% 33, !(Tag %in% c(1550, 1552, 1597))) %>%
+#   mutate(Fl_open = Fl_straight + Fl_curled) %>%
+#   select(Date, Tag, Fl_open, Fl_done) %>%
+#   unite(col = Fl, c(Fl_open, Fl_done), sep = ', ') %>%
+#   spread(Date, Fl)
+# 
+# # well, I guess just assume the 1, 0, 0 record is bad
+# campn = campn %>% filter(!RecordID %in% 20068)
+
+# Tag 1568 - seems like I should come back to this later.
+
+# Tag 1570
+# note says is 1530?
+campn %>% filter(Tag %in% 1570)
+campn %>% filter(Tag %in% c(1530, 1570))
+# lmao 1530 is in plot 31! c'mon man
+campn %>% filter(Tag %in% 1570)
+# okay, well, looks like the dupe same-day records are junk (empty)
+# just remove the empty records
+campn = campn %>% filter(!(RecordID %in% c(20424, 20506)))
+
+# Tag 1584 - appears in multple plots
+campn %>% filter(Tag %in% 1584)
+# ah this is one of the problemos from before
+# look for any plant plausibly from aug 14
+campn %>% 
+  filter(Plot %in% 1) %>%
+  mutate(Fl_open = Fl_straight + Fl_curled) %>%
+  select(Date, Tag, Fl_open, Fl_done) %>%
+  unite(col = Fl, c(Fl_open, Fl_done), sep = ', ') %>%
+  spread(Date, Fl)
+# plausible: 1532, 1536, 1568, 1582, 1694 (all missing on aug 14)
+# any chance this should be actually plot 84 instead of 1?
+# (on the data sheet, plot is left empty, right below Plot 1, above plot 84)
+campn %>% filter(Tag %in% 1584)
+# oh lmao true 1584 is in plot 53 not 84
+# who knows man!
+# wait... looking at above, 1584 has only one done flower on 8/14 (the date of
+# the 1584 record) but has two done fl on 8/10
+campn %>% filter(Tag %in% c(1548, 1584, 1854), Plot %in% 1)
+# 1548 also is 0,0,2 on aug 10, but is 0,0,1 for *all* records after
+# 1854 stays at 0,0,2
+# gonna assume that 1584 was a miswrite of 1854
+# but then, what is the deal with the 1854 (0,0,1) record on 8/14?
+# I'm assuming this was a tag misread
+campn = campn %>%
+  filter(!RecordID %in% 21616) %>%
+  mutate(Tag = ifelse(Tag %in% 1584 & Date %in% as.Date('2020-08-14') & Plot %in% 1,
+                      1854, Tag)) #%>% filter(Tag %in% 1854)
+
+# Tag 1597
+# man! wow. I really biffed it on this day in this plot.
+campn %>% filter(Tag %in% 1597)
+# looking at this, it looks like the 2-stem, 1,1,0 record is bad
+# was anything mis-recorded as 1597?
+campn %>% 
+  filter(Plot %in% 33, !(Tag %in% c(1550, 1552, 1597))) %>%
+  mutate(Fl_open = Fl_straight + Fl_curled) %>%
+  select(Date, Tag, Fl_open, Fl_done) %>%
+  unite(col = Fl, c(Fl_open, Fl_done), sep = ', ') %>%
+  spread(Date, Fl)
+
+campn %>% filter(Plot %in% 33, Stms > 1)
+# ugh... not incredibly helpful
+
+# wait... wtf. The dupe records for 1552 and 1597 are the same, but flipped
+# i.e., teach tag has one of (2,1,1,0) and (1,1,0,0)...
+campn %>% filter(Tag %in% c(1552, 1597))
+# both were grazed, making it hard to figure out final fate
+# sad!
+# but, both have records on July 17
+# on july 17, 1552 has two dones, 1597 has one curled
+# I _suspect_ the page 62 records (1552 has 1 open, 1597 has 2 open) 
+# were entered in the wrong order
+# Nuke these records to create internally consistent records.
+campn = campn %>% filter(!(RecordID %in% c(20067, 20068)))
+
+# Tag 1669
+# uhhh records say plant is in 22 but I have a record in 2?
+# (looks lke this was fixed above, lul)
+# ahhh this would mean that the plot (2) record is bunk, no?
+# but then wtf tag was I looking at?
+campn %>% filter(Tag %in% 1669)
+# wait... but the page 77 july 21 record also says plot 2
+# tag 1659 is in plot 22...
+
 # Should at some point check one-record tags...
+# Also need a way to merge tags in the future.
+# also all 'check' cases! and iggys
 
