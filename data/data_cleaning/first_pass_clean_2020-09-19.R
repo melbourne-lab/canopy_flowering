@@ -506,11 +506,12 @@ campn %>% filter(Tag %in% 1582) %>% arrange(Date)
 
 # think of something later
 
-# Plant 1669
-# this should be plot 22
-campn = campn %>%
-  mutate(Plot = ifelse(Tag %in% 1669 & Plot %in% 2, 22, Plot)) %>%
-  filter(!(Tag %in% 1669 & is.na(Fl_straight) & is.na(Fl_curled))) # %>% filter(Tag %in% 1669)
+# # Plant 1669
+# commented this out, but 
+# # this should be plot 22
+# campn = campn %>%
+#   mutate(Plot = ifelse(Tag %in% 1669 & Plot %in% 2, 22, Plot)) %>%
+#   filter(!(Tag %in% 1669 & is.na(Fl_straight) & is.na(Fl_curled))) # %>% filter(Tag %in% 1669)
 
 # Plant 1677
 # note says 1677 in plot 47 is 1577
@@ -876,8 +877,52 @@ campn = campn %>% filter(!(RecordID %in% c(20067, 20068)))
 campn %>% filter(Tag %in% 1669)
 # wait... but the page 77 july 21 record also says plot 2
 # tag 1659 is in plot 22...
+# are there two plants with this tag??
+# checked the tag list - no sign of plant 1669 at plot 2
+# but there ARE records from jul 21 and jul 28 suggesting that tag
+# is in plot 2; the tag seems to have disappeared after aug 2
+# but never checked again in plot 22? oy vey!
+# RULING: there were probably two tags; change the plot 2 tag to 1951
+campn = campn %>%
+  mutate(Tag = ifelse(Tag %in% 1669 & Plot %in% 2, 1951, Tag)) #%>% filter(Tag %in% c(1669, 1951))
 
-# Should at some point check one-record tags...
+# Tag 1694
+campn %>% filter(Tag %in% 1694) %>% arrange(Date, Tag)
+# ahhh okay this will require handling dupe tags
+# but also not sure what to do about the likely dupe-tagginess here
+# like I think there are two 1694s!
+
+# Tag 1755
+campn %>% filter(Tag %in% 1755)
+# ahhh the plot 47 was a mistype! it was 1795, not 1755
+campn = campn %>% 
+  mutate(Tag = ifelse(Tag %in% 1755 & Plot %in% 47, 1795, Tag)) %>% 
+  filter(!(Tag %in% 1795 & is.na(Fl_straight)))
+
+# Tag 1782
+campn %>% filter(Tag %in% 1782)
+# wow! same exact mstake as above.
+# I checked the data, and plot 47 is indeed 1787.
+campn = campn %>% 
+  mutate(Tag = ifelse(Tag %in% 1755 & Plot %in% 47, 1795, Tag)) %>% 
+  filter(!(Tag %in% 1795 & is.na(Fl_straight)))
+
+### Should go back and fix any missed above somewhat soon...
+
+### One record tags (if they show up just once, perhaps they were typos)
+
+therm %>% group_by(Tag) %>% filter(n() < 2) %>% print(n = nrow(.))
+# only one tag which shows up more than once _and_ flowers, and its an outsidie
+therm %>% filter(Plot %in% 2, grepl('OUTSIDE', Note))
+# Wait, there were surely multple plants _inside_ plot 2
+therm %>% filter(Plot %in% 2)
+# Yes.
+# Nothing to worry about here.
+
+campn %>% group_by(Tag) %>% filter(n() < 2) %>% print(n = nrow(.))
+# 1896 - was only seen as done ever. Check rest of plot 63:
+campn %>% filter(Plot %in% 63)
+# uhh?? think about this tomorrow.
+
 # Also need a way to merge tags in the future.
 # also all 'check' cases! and iggys
-
