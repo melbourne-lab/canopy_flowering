@@ -920,9 +920,26 @@ therm %>% filter(Plot %in% 2)
 # Nothing to worry about here.
 
 campn %>% group_by(Tag) %>% filter(n() < 2) %>% print(n = nrow(.))
-# 1896 - was only seen as done ever. Check rest of plot 63:
-campn %>% filter(Plot %in% 63)
-# uhh?? think about this tomorrow.
+# Tag 1896 - was only seen as done ever. Check rest of plot 63:
+campn %>% filter(Plot %in% 63) %>% arrange(Date)
+# Okay - my read is:
+#   - 1786 is in although was somehow missed a bunch
+#   - 1896 is also in, although first record was missed (ugh)
+#   - ignore the "outside" plant
 
-# Also need a way to merge tags in the future.
+# Hey this was also the only one! word.
+
+### Also need a way to merge tags in the future.
+
+# Well... Try first on thermopsis. Look for 'merge' or 'is \\d'
+therm %>% filter(grepl('merge|is\\s\\d{4}', Note))
+# ahhhngnh - some of these are legit, but others have question marks
+# Well, for now, just isolate the ones that don't have question marks.
+
+therm %>% 
+  filter(grepl('merge|is\\s\\d{4}', Note)) %>%
+  filter(!grepl('\\d{4}\\?', Note)) %>%
+  mutate(New.Tag = gsub('\\D|\\s|\\;', '', Note))
+# how do I remove the doubles? e.g., '1 possible overcount' rm that 1!
+
 # also all 'check' cases! and iggys
