@@ -929,7 +929,7 @@ campn %>% filter(Plot %in% 63) %>% arrange(Date)
 
 # Hey this was also the only one! word.
 
-### Also need a way to merge tags in the future.
+### Thermopsis tag merging.
 
 # Well... Try first on thermopsis. Look for 'merge' or 'is \\d'
 therm %>% filter(grepl('merge|is\\s\\d{4}', Note))
@@ -940,6 +940,128 @@ therm %>%
   filter(grepl('merge|is\\s\\d{4}', Note)) %>%
   filter(!grepl('\\d{4}\\?', Note)) %>%
   mutate(New.Tag = gsub('\\D|\\s|\\;', '', Note))
-# how do I remove the doubles? e.g., '1 possible overcount' rm that 1!
 
-# also all 'check' cases! and iggys
+# Think I'll have to do these individually. Shoot.
+
+# Tag 1033 = Tag 1044
+therm %>% filter(Tag %in% c(1033, 1044))
+# More parsimonious to change 1044 -> 1033
+# Only 1044 record is pre-flowering - just remove it.
+therm = therm %>% filter(!RecordID %in% 10040)
+
+# Tag 1054 = Tag 1014
+therm %>% filter(Tag %in% c(1014, 1054))
+# Two pre-flowering 1014 records - just remove these.
+therm = therm %>% filter(!RecordID %in% c(10007, 10054)) #%>% filter(Tag %in% c(1014, 1054))
+
+# Tag 1071 = Tag 1077?
+therm %>% filter(Tag %in% c(1071, 1077))
+# okay - most records are 1077 = Plot 14, 1071 = Plot 22
+therm %>% filter(Tag %in% c(1071, 1077)) %>% group_by(Plot, Tag) %>% summarise(n = n())
+# This was fixed above.
+
+# Tag 1094 = Tag 1099?
+therm %>% filter(Tag %in% c(1094, 1099))
+# Same plot, records on same days...
+therm %>% filter(Tag %in% c(1094, 1099), !grepl('find', Note))
+# Note June 21 saying they are same plant, not June 24 saying 1099 was grazed
+# Let's just merge these.
+
+therm = therm %>%
+  # Take the 1094 and 1099 records
+  # For each day, get the sum of all counts
+  # all other fields take either the first entry or paste fields together
+  filter(Tag %in% c(1094, 1099)) %>%
+  group_by(Date) %>%
+  summarise(
+    Page = Page[1],
+    Species = 'Thermopsis divaricarpa',
+    Plot = Plot[1],
+    Tag = 1094,
+    Racemes     = sum(Racemes    , na.rm = TRUE),
+    Infl_spread = sum(Infl_spread, na.rm = TRUE),
+    Infl_done   = sum(Infl_done  , na.rm = TRUE),
+    Twist.ties  = paste(Twist.ties, collapse = '; '),
+    Q           = '',
+    Note        = paste(Note, collapse = '; '),
+    RecordID    = RecordID[1]
+  ) %>%
+  # Append a note explaining the merge
+  mutate(Note = paste0(Note, '; 1094+1099 records merged SN Jan 2021')) %>%
+  # Bind this to all date *with 1094.1099 records removed*
+  rbind(therm %>% filter(!Tag %in% c(1094, 1099))) %>%
+  # Resort rows.
+  arrange(RecordID)
+
+# Tag 1077 = 1160?
+therm %>% filter(Tag %in% c(1160, 1077))
+# Appears in one (jun 11) but kept separate thereafter
+therm %>% 
+  filter(Tag %in% c(1160, 1077)) %>%
+  mutate(Infl_total = Infl_spread + Infl_done) %>%
+  select(Tag, Date, Infl_done) %>%
+  spread(Date, Infl_done)
+# These records look good kept separate
+
+# Tag 1173 = Tag 1174?
+therm %>% filter(Tag %in% c(1173, 1174))
+# the notes here appear to be all kinds of wrong
+
+# Tag 1209 - taken care of already
+
+# Tag 1215
+therm %>% filter(Tag %in% c(1215, 1241))
+# Not sure what the note is saying. Leave everything the same.
+
+# Tag 1270 = Tag 1228?
+therm %>% filter(Tag %in% c(1270, 1228)) %>% arrange(Date, Tag)
+# This is fishy... 1270 appears with 5 done flowers.
+# Didn't record coords/locations so hard to tell how likely
+# Here I'll trust the note and say these are the same.
+therm = therm %>%
+  # Take the 1094 and 1099 records
+  # For each day, get the sum of all counts
+  # all other fields take either the first entry or paste fields together
+  filter(Tag %in% c(1228, 1270)) %>%
+  group_by(Date) %>%
+  summarise(
+    Page = Page[1],
+    Species = 'Thermopsis divaricarpa',
+    Plot = Plot[1],
+    Tag = 1270,
+    Racemes     = sum(Racemes    , na.rm = TRUE),
+    Infl_spread = sum(Infl_spread, na.rm = TRUE),
+    Infl_done   = sum(Infl_done  , na.rm = TRUE),
+    Twist.ties  = paste(Twist.ties, collapse = '; '),
+    Q           = '',
+    Note        = paste(Note, collapse = '; '),
+    RecordID    = RecordID[1]
+  ) %>%
+  # Append a note explaining the merge
+  mutate(Note = paste0(Note, '; 1270+1228 records merged SN Jan 2021')) %>%
+  # Bind this to all date *with 1094.1099 records removed*
+  rbind(therm %>% filter(!Tag %in% c(1270, 1228))) %>%
+  # Resort rows.
+  arrange(RecordID)
+
+# Tag 1238 = Tag 1248? Two notes
+therm %>% filter(Tag %in% c(1238, 1248)) %>% arrange(Date, Tag)
+# Not enough vidence that these are the same (1238 is 3yv, 1248 is 1 fl)
+# also 1238 never flowered so likely won't influence analysis
+# interestingly tag 1238 never recovered
+
+# Tag 1257 = Tag 1287?
+therm %>% filter(Tag %in% c(1257, 1287)) %>% arrange(Date, Tag)
+# Not same - both seen on Jun 24
+
+# Tag 1295 = 1288? (Feel like this has been done before...)
+therm %>% filter(Tag %in% c(1288, 1295)) %>% arrange(Date, Tag)
+# Presuming these were kept separate on purpos.
+
+### Campanula tag merging
+
+
+
+# also all 'check' cases! and iggys, and improves
+
+#
