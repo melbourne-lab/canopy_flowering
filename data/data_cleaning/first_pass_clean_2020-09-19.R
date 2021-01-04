@@ -1059,9 +1059,48 @@ therm %>% filter(Tag %in% c(1288, 1295)) %>% arrange(Date, Tag)
 # Presuming these were kept separate on purpos.
 
 ### Campanula tag merging
+campn %>% filter(grepl('merge|is\\s\\d{4}', Note))
 
+# Tag 1502 == 1564?
+campn %>% filter(Tag %in% c(1502, 1564))
+# Notes here on Aug 6 and Aug 19 about combining
+# Trust the notes.
 
+campn = campn %>%
+  # For records for 1502 nad 1564, sum up numeric fields and paste or take first
+  # field for others
+  filter(Tag %in% c(1502, 1564)) %>%
+  group_by(Date) %>%
+  summarise(
+    Page = Page[1],
+    Species = 'Campanula rotundifolia',
+    Plot = Plot[1],
+    Tag = 1564,
+    Stms        = sum(Stms    , na.rm = TRUE),
+    Fl_straight = sum(Fl_straight, na.rm = TRUE),
+    Fl_done     = sum(Fl_done    , na.rm = TRUE),
+    Fl_curled   = sum(Fl_curled  , na.rm = TRUE),
+    Q           = '',
+    Note        = paste(Note, collapse = '; '),
+    RecordID    = RecordID[1]
+  ) %>%
+  # Append a note explaining the merge
+  mutate(Note = paste0(Note, '; 1502+1564 records merged SN Jan 2021')) %>%
+  # Combine with rest of campanula data frame (sans 1502/64 recs)
+  rbind(campn %>% filter(!Tag %in% c(1502, 1564))) %>%
+  # Sort by recordid
+  arrange(RecordID)
 
-# also all 'check' cases! and iggys, and improves
+# Tag 1510 = Tag 1507 (note says collected)
+campn %>% filter(Tag %in% c(1507, 1510))
+# Make the change - they wre combined after Aug 10
+# Manually edit data - flower counts for 1507/1530 wre
+# lkely swtched on 8/19
+campn$Fl_done[with(campn, Tag %in% 1507 & Date %in% as.Date('2020-08-19'))] = 2
+campn$Fl_done[with(campn, Tag %in% 1530 & Date %in% as.Date('2020-08-19'))] = 5
+
+# Need to merge... do later.
+
+# also all 'check' cases! and iggys, and improves/combines
 
 #
