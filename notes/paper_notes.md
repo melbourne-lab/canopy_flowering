@@ -52,3 +52,104 @@ Looking at stands of lodgepole pine with a recent (2-9 years prior) pine beetle 
 As with other studies, there's more biomass production (exponentially) as mortality increases. However, the *diversity* (and richness) as well as patchiness (measured by CV in cover) were highest at intermediate levels. Supposedly, this was because at higher densities there's less diversity in niches and a smaller collection of species can dominate. Note that models here look a little whack although trends are clear. More open areas have tons of grass. Lots of fruiting from shrubs.
 
 So - beetle kill is another thing that can quickly open up canopy changing vegetation and reproductive dynamics. 
+
+### Santandreau, M., and Lloret, F. 1999. Effect of flowering phenology and habitat on pollen limitation in **Erica multiflora**. Canadian Journal of Botany.
+
+- Env. factors limiting seed set: pollen lim., resource lim., prdation, environmental harshness (e.g., low temps.)
+	- Pollen limitation: few pollinators, few pollen donors, inefficient pollinators, self-incompatibility
+- Plants flowering at peak may have highest rates of outcrossing
+	- But, may also be competing for resources most (possibly resources selectively allocated to certain ovules; Copland and Whelan 1989)
+	- Asynchronous flowers may have reduced competition for pollinators
+	- Asynchronous flowers are also less likely to face predation
+- *E. multiflora* occurs in pine forest and shrublands
+	- Santandrea 1997 shows that floral production is lower in forests than shrubs
+	- Less light in forests
+- Main question: how does poll. activity, flower density influence seed and fruit set in *E. multiflora*
+	(1) Look at self-incompatbility (using pollen from same fl., same infl., same plant)
+	(2) Variation in pollinator activity during fl. period and btwn. pine forest/shrub
+	(3) Pollen limittion through flowering period
+##### Methods
+###### Breding system
+- 15 plants of simlar size selected at peak flowering in shrubland site
+	- on each plant, five terminal inflorescences enclosed in bag before anthesis
+	(1) control - natural pollination
+	(2) hand pollination w/ pollen from other plant
+	(3) hand pollination w/ pollen from other infl. same plant
+	(4) hand pollination w/ pollen from same infl.
+	(5) hand pollination w/ from same flower
+	- Treatments applied on three separate days
+- Seeds collected
+	- Response: mean # seeds per five fruits
+	- Response square root transformed
+	- randomized block ANOVA: breeding system fixed effect, plant is block
+###### Pollen vector
+- Five shoots selected from 24 randomly selected plants
+	- Inflorescences (with >5 mature flowers) counted periodically
+		- (What was counted? # flowers?)
+- 45 random plants selected
+	- Three flowering periods (early/mid/late), 15 plants each assigned
+	- Per plant, three inflorecences assigned to
+		(1) control
+		(2) mesh enclosure (wind, no insect)
+		(3) bag enclosure (no wind or insect)
+- Seed set and fruit set analyzed by ANOVA
+	- flowering period (fixed effect), poll. vector (fixed), plant (random)
+- Five flowering plants at peak of flowering period selected in each env. type
+	- experimental setup above repeated at each site
+	- all sites >1 km apart
+###### Insect pollinators
+- Six flpl selected for each habitt stand in each locality and each fl period
+- All insect visits in a 15 minute period per plant counted on several watch days
+- # insect visitors / flowering period counted via ANOVA
+###### Pollen limitation
+- Selected 15 plants in each period (45 total) in shrubland habitat
+- Two terminal inflorescences got control or supplemental pollen
+- Same seed set model as above described
+- Five plants at peak of flowering period studied in each habitat type
+##### Results
+###### Breeding system
+- Most seeds in control + outcross, fewer in same plant treatments, ~none in same flower treatments
+###### Pollination visitors
+- In main shrub site: ns differences between early/peak but def fewer visits per plant and per infl. in late
+- Sign. effct of vector (enclosure) on sed set and % filled fruits
+	- natural pollination produced higher seed set
+	- bag treatment produced more seed and fruit than mesh (interesting)
+	- effects changed over time
+		- control had highest seed + fruit early
+		- bag was similar to open for peak and late
+	- many fewer seeds in late flowering plants than early
+- No differences (in vector experiment) by habitat type but yes by locality
+- Fewer visitors in pine forest than shrubland
+	- pine forest visitation barely changes over time
+###### Pollen limitation
+- Fewer filled seeds per fruit at peak than early (like with EP studies!)
+- Hand pollination increased seed and fruit set in late periods but not early or peak
+- No differences in seed or fruit set by habitat type (interesting!)
+	- hand pollination did not increase seed set overall at either habitat type
+##### Discussion
+- *E. multiflora* primarily has outcrossing but can do some selfing if between flowers
+- As in other studies (Gross and Werner, 1983, Herrera, 1988), insect exclusion has differing effects over time
+	- at the end of the fl period, bagging had no effect on seed set - insects less important at end of season
+		- makes sense - fewer pollinators observed at end of study (see Motten et al. 1981 - temperature?)
+	- but pollination is very important pre-peak - bagging reduced seed set pre-peak but not at peak
+- Pollen limitation varies over time
+	- pre-peak, highest rate of visitation, but slightly more fruits filled per inflorescence when supplemented
+		- perhaps pollinators here are carrying too little pollen?
+	- no pollen limitation at peak
+		- resource lmitation could be high here - fruit per plant at its peak
+		- self-pollination could be more prevalent here - most fruits per plant
+		- but also pollen-added plants could influence stuff
+	- pollen limitation is very high at the end of the study
+		- few pollinators around, but also low competition for resources
+- Lower floral density and less pollination by habitat type, but no influence on reproductive output
+	- it's possible there is movement from shrubs into nearby pine forests
+	- could be more selfing and within-plant competition in shrubs (more competitors)
+	- hand pollination at peak didn't show differences between habitats
+		- i.e., habitat type doesn't necessarily induce (marginal) limitation
+		- so resources may explain low output in shrub populations
+
+Wow - lots of interesting stuff in here... The resource angle is very important. Higher overall flowering in open areas (not to mention heterospecifics!) may increase pollen visitation but that also comes with resource limitation. (N.b. what are the resources? this is never defined here... unlikely to be light). So what is more important - pollination or resources? This varies over time according to the size of the pollen pool. Early and late there is less floral competition. Early there is still pollination, so seed set is very high early. But at peak there's high competition and high competition. Late there is low competition but also low visitation, inducing limitation such that pollen addition increases seed set here (but at no other times).
+
+The time vs. limitaton aspect here is super interesting. The shade-peak may still have plenty of plants around, although there will be fewer of these plants. So shade peak would have higher reproductive success than shade tail. Also for a low-autocorrelation environment (patchy), shade peak can exchange genes with open tail (and likewise for shade head and open peak, I'd bet). This is when most of the genetic exchange between habitat types would occur.
+
+
