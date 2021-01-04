@@ -152,4 +152,84 @@ Wow - lots of interesting stuff in here... The resource angle is very important.
 
 The time vs. limitaton aspect here is super interesting. The shade-peak may still have plenty of plants around, although there will be fewer of these plants. So shade peak would have higher reproductive success than shade tail. Also for a low-autocorrelation environment (patchy), shade peak can exchange genes with open tail (and likewise for shade head and open peak, I'd bet). This is when most of the genetic exchange between habitat types would occur.
 
+### Llorens, L., and Penuelas, J. 2005. Experimental evidence of future drier and warmer conditions affecting flowering of two co-occurring mediterranean shrubs. Int. Journal of Plant Sci.
+
+- Climate influences start and performance of flowering in cool temperate climates (Walkovszky 1998, Tyler 2001, Rathcke and Lacey 1985)
+	- includes temperature, photoperiod, rainfall
+	- temperature: Ratchke and Lacey 1985, Fitter et al. 1995, Galan et al. 2001
+	- temperature, experimentally: Alatalo nd Totlnd 1997, Welker et al. 1997, Sandvk and Totland 2000, Dunne et al. 2003
+	- small influences of precip: Spano et al. 1999, Pico and Retana 2001, Penuelas et al. 2002
+- Here, experimentally manipulate heat and moisture and flowering phen in two shrubs in Mediterranean shrub
+	- Do warmer and/or drier conditions change flowering patterns, production, lifespan?
+##### Methods
+- Two dominant shrubs: *Erica multiflora* and *Globularia alypum*
+- Climate manipulations:
+	(1) extended summer drought: cover plots with transparent waterproof plastic curtains over spring and fall growing seasons
+	(2) passive night tim warming: cover vegetation and soil wth aluminum curtains to retain infrard radiation
+- Measure precipitaton with a bucket
+- Measure soil moisture w/ time domain reflectometry every 1-2 weeks
+	- depth? 0-15 cm
+	- three fixed sampling points per plot
+- Measure air temp and soil temps with thermstors
+	- temperatures measured every 10 min
+- 9 20m2 plots (4x5m)
+	- Central 12m2 area of plots for plant monitoring
+	- Monitored plots 1/wk
+	- In total 23, 19, 23 *E.m* and 34, 34, 31 *G.a.* in resp. treatment plots
+	- Estimated (!!!) % "functonal" flowers/heads w/ visible stamens rel. to total # flowers
+	- Estimated (!!!) flower production as % of branches wth flowers (rel to all branches)
+	- Estimate bins: 0%, 1-25%, 26-50%, 51-75%, 76-100%
+	- Flowering period per plant
+- Estimated # flowers by counting length & number of infl. and using allometric equations
+	- individual lifespans: marked one closed flower/spring bud in 4-10 plants per plot at beginning of season, monitoring weekly
+- Analysis
+	- Survival analysis: warmer/drier conditions influence onset of flowering?
+	- survival analysis: onset of flower senescence (first senescent fl. per plant)
+	- survival analysis: time until (estimated) >75% of plants had sensecent
+	- right-censoring: if event doesn't happen by end of study it's designated as last day
+	- survival: Kaplan-Meier nonparametric for survival curves, Cox-Mantel for differences between treatments
+	- Length of flowering: ANOVAs with blocking
+##### Results
+- Summer "drought" trt reduced soil moisture by 29% in year 1 and 17% in year 2
+	- drought effects mostly Sept - February...
+- Warming trt very slightly reduced soil moisture (11% and 8.4%)
+- Warming trt increased minmum temperatures by 0.7C in air, 1.6C at 2cm below, 1.1C 10cm below
+	- warming effects largest Oct - March but also somewhat in rest of year
+- *E.m.* is unimodal synchronous flowering, *G.a.* is bimodal (spring and fall)
+- Drought delays flowering in *E.m.* 2000 (p 0.02) but not 1999 
+	- in 2000, KM test says eight day delay for median date of onset in drought (Oct).
+	- in 1999, on (arbitrary) date, more plants senescent in control than drought
+	- end of flowering period delayed by drought
+	- warming didn't influence duration of phenophase
+- In *G.a.* drought meant fewer flowers and flowers that opened later
+	- all warmed plants had flowering heads in both years
+		- in 1999, warmed plants had later autumn flowers but earlier winter flowers
+- *E.m.* drought plants: longer phenophase in drought than controls in 1999, same in 2000
+	- no effect of warming on phenophase duration
+- *G.a.* 11-12 days shorter autumn flowering period in drought
+	- warmer plants also had ~10 days fewer
+- Fewer *E.m.* wth >75% of branches flowering (i.e., reproductive effort) less common in drought (both years)
+	- other metrics of effort (e.g. fl / infl) show same pattern
+	- no effects of warming on flower production
+- No winter flowering for drought *G.a.*
+	- control/warming have some (what is measurement here? ugh)
+- In both spces longer floral lifespan n droguht than control, no effect of warming
+- Shorter corolla lengths in *E.m.* treatment groups than controls (~10% reduction)
+##### Discussion
+- Higher production of winter flowers in *G. alypum* may have caused unimodal flowering in 2000
+	- high winter flowering may have resulted from high rainfall in 1999
+	- high reproductive effort and reserves for future reproduction: Snow and Whigham 1989, Sandvik 2001
+- Drought means less leaf net photosynthesis, which may cause delay in flowering (Llorens et al 2003)
+	- (remember this was only observed in one year)
+- Warming affected *G.a.* but not *E.m.*; effect varied by flower type (fall/winter)
+	- (one of these may be influenced by warming causing reduced soil moisture)
+- Longer duration of flowers in drought - no real explanation here, looks like this is unusual
+	- could be compensation (counteracting scarcity of pollinators)	
+	- but ths lkely induces maintenance costs... no extra thought in here
+- Smaller flowers under drought - kinda makes sense,
+	- Galen et al. 1999 - larger flowers require greater water uptake
+	- trade-off between floral maintenance and floral construction?
+
+Not my favorite paper! Results are spotty and inconsistent. The mediterranean aspect also reduces relevance - longer phenophase and the multiple flowering periods complicate interpretation. I'm not sure how useful this is. Look into similar paper in alpine or arctic environments. Dunne et al. 2003 is probably a better reference. 
+
 
