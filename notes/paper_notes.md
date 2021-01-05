@@ -232,4 +232,99 @@ The time vs. limitaton aspect here is super interesting. The shade-peak may stil
 
 Not my favorite paper! Results are spotty and inconsistent. The mediterranean aspect also reduces relevance - longer phenophase and the multiple flowering periods complicate interpretation. I'm not sure how useful this is. Look into similar paper in alpine or arctic environments. Dunne et al. 2003 is probably a better reference. 
 
+### Ison, J.L., and Wes, A.E. 2017. Temporal population genetic structure in ht epollen pool for flowering time: a field experiment with *Brassica rapa*. American Journal of Botany.
+
+- Mean breeding value for mating/flowering phenology will change over the course of a season -> assortative mating
+	- This produces an excess of early/late alleles (at certain points in time) than random mating
+	- This *inflates* additive genetic variance in the assorting trait? How?
+	- But also it leads to temporal isolation.
+	- See Weis et al. 2014 for a look at pairwise mating opportunities and genetic correlation in 31 sp.
+- Spatial distribution also influences mating patterns (e.g., Wes and Kossler, 204, Thomson and Thomson, 1989, Fenster, 1991)
+	- Strength of phenological assortative mating my b greater in areas of high conspecific density
+- Other things may cause deviation of offspring phenotypes from expectation
+	- e.g., selection for floral traits, temporal variation in reproductive success
+##### Methods
+- \bar{z}^P_t is phenotypic mean of plants contributing to pollen pool on day t
+	- \bar{z}^P_t is z_i for each plant (1, ..., N), weighted by i's open flowers on day t
+	- for pollen grain sampled from pollen pool on day t, \bar{z}^P_t is expected phenotype of pollen donor
+	- slope of \bar{z}^P_t over time is how much the mean phenotype changes over time
+		- steep when variance in flowering time is high and flowering duration is short
+		- is zero of mating pool is totally unstructured
+	- breeding value \bar{A}_t is (\bar{z}^P_t - \hat{z}^P)*h^2
+		- i.e., deviation of phenotype from grand mean, multiplied by heritability
+	- slope $\bar{A}_t$ is indcative of genetic structure carried on to offspring
+		- slope of 1 (req's h = 1) means total turnover, i.e., each day is an isolated pool
+		- slope of 0 means no temporal genetic structure and/or no structure inherited by offspring
+	- Prospective estimate of genetic structure: regress \bar{z}^P_t ~ t, multiply by h^2
+	- Retrospective estimate: regress \bar{Z}^O (offspring phenotypes) ~ t
+		- assumes breeding values are uncorrelated with pollen recipients, violated by assortative mating
+- Gene trapping breaks the donor-recipient correlation
+	- Using genetically uniform pollen recipients (dams)
+		- Thus dam mean genotype is constant over time
+	- These plants are male-sterile, so only receive pollen from pollen pool without donating
+	- Gene trap line done by mating... not really sure why! This produced some mal-sterile segregants.
+- Spatial component of experiment: two open-pollinated field experiments
+	- Expmt 1: six plots of pollen donors in hexagonal plot
+		- in three plots, pollen donors planted at 0.5m spacing
+			- six gene trap plants in plots
+		- in other three plots, pollen donors bunched into corner of hexagon
+			- w/in corner, plants 0.17m apart; corners >2.7m apart
+			- each gene trap has corner in center
+		- In each plot, in each plant, first flowering date and newly opened flowers every 3-4 days
+	- Expmt 2: "amplified" heritability - how much does it increse temporal shift in the breeding value
+		- Two additional plots (one even, one clumped)
+		- Assortatively-mated offspring put into field plots
+		- "Amplified" heritability 1: w/in fam stabilizing selection
+			- only planted progeny with identical flowering time to parent
+			- elimnates contributions w/ extreme segregation and envronment
+			- much higher covarance between parents and offspring
+		- "Amplified" heritability 2: reduced developmental env. variance
+			- all plants grown in greenhouse conditions to reduce env. variance
+		- Recorded date of first flower and opening date of each flower per plant
+	- In both expmts, took seven seeds from gene trap plants, recorded dates of first flower?
+- Stats:
+	- Measured phenotypic correlation of flowering time between potential mates (Weis and Kossler 2004)
+	- Phenotypic shift in donors: regress donor flowering time ~ t
+	- Effects of spatial arrangement on mean pheno of pollen donors: regresson...?
+	- Strength of temporal genetic structure: regress \bar{z}^O_t ~ t
+	- Spatial arrangement and progeny: prog. flowering time ~ date * space
+##### Results
+- Sign. shifts in phenotype of active pollen donors over time
+	- mean strat date shifts 0.387-0.506 day/day
+	- similar results in both experiments as well as amplified h studies
+	- Stronger shift of donor phenotype/time in even rel. to clumped expmts
+- Retrospective structure (offspring ~ t) evident in five of six plots
+	- regression coefficients in amplfied heritability plots steeper than main expmt
+	- no evidence of small-scale spatial clumping here
+- Mean donor phno predicts flowering time in progeny
+##### Discussion
+- (What is "mean combining ability"?)
+- Seasonal shift phenotype of pollen donors is translated into shift in offspring
+- The prospective (donor-phenotype) estimate assumes every flower has equal probabilities in all-to-all mating
+	- comparing prospective with retrospective tests these assumptions
+	- retrospective test may also pick up genetic effects (e.g., epistasis)
+	- the observed retrospective estimates falls w/in range of h2 obs. in wild populations
+	- prospective est. falls w/in 2 sterr. of restrospective estimates
+		- supports hypothesis of random all-to-all exchange
+		- retrospective mean is higher... could there be more structure in wild population?
+	- interestingly: differnce in prospective by space, no difference in retrospective by time
+- Consequences of temporal structure
+	- For mating time breeding value ~ t close to 1 means isolated breeding pools
+		- drift at neutral loci -> divergence among pools
+		- see Dainou et al. 2012 Suni and Whiteley 2015 for examples
+	- Spatial structure too - close neighbors breeding omre likely if schedules overlap
+		- see Almeida-Neto et al. 2004, Hirao and Kudo 2008 for examples
+		- note no vidence of spatial arrangement influencing temporal structure in this study
+
+Papers to read next:
+- Hendry and Day 2005
+- Weiss and Kossler 2004
+- Rathcke and Lacey 1985 (also referenced above)
+- Weis 2005
+- Weis et al. 2014
+
+Interesting ideas here... like the approach of testing assumptions of prosp. estimate with the retrosp. estimate. This does give a framework for thinking about changing phenotypes over time. Some empirical evidence of heritable variation in flowering times being transmitted through generations with potental for assortative mating. Assortative mating is a good thing to highlight in theory/discussion of Elk meadow work.
+
+
+
 
