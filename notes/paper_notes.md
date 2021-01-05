@@ -180,7 +180,7 @@ The time vs. limitaton aspect here is super interesting. The shade-peak may stil
 	- Estimated (!!!) flower production as % of branches wth flowers (rel to all branches)
 	- Estimate bins: 0%, 1-25%, 26-50%, 51-75%, 76-100%
 	- Flowering period per plant
-- Estimated # flowers by counting length & number of infl. and using allometric equations
+- Estimated number flowers by counting length & number of infl. and using allometric equations
 	- individual lifespans: marked one closed flower/spring bud in 4-10 plants per plot at beginning of season, monitoring weekly
 - Analysis
 	- Survival analysis: warmer/drier conditions influence onset of flowering?
