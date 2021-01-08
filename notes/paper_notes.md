@@ -325,6 +325,86 @@ Papers to read next:
 
 Interesting ideas here... like the approach of testing assumptions of prosp. estimate with the retrosp. estimate. This does give a framework for thinking about changing phenotypes over time. Some empirical evidence of heritable variation in flowering times being transmitted through generations with potental for assortative mating. Assortative mating is a good thing to highlight in theory/discussion of Elk meadow work.
 
+### Suni, S.S., and Whiteley, A.R. 2015. Genetc structure of a montan perennial plant. Conservation Genetics.
 
+- Geographic distribution of genetic variation in a metapopulation is important for response to environmental change (Jay et al., 2012)
+	- Portfolio effect (Shindler et al. 2010)
+- Isolation by distance is often considered in landscape genetics, but isolation by phenology is less often considered (Stanton et al. 1997)
+	- Assortative mating based on flowering time
+	- Flowering time is highly heritable in some plants (Geber and Griffen 2003, also Jung and Miller 2009?), subject to slction (refs) and _can lead to genetic differentiation_
+	- some refs on envronmental influencs on flowering time
+	- Flowering time variation - usually considered on continental scale, but also can happen on local (~10 km) scales
+	- _Shimono et al. 2009_ looks at snowmlt timing and patterns in variation
+	- Need to consider relative influences of pollen movement and seed movement for landscape genetic structure
+- Here: consider spatial distribution of variation in *Ipomopsis aggregata* in Colorado
+##### Methods
+- *I. aggregata* - monocarpic, self-incompatible, hearty rosette only for several years until flowering
+	- one flower typically open 3-5 days, plants flower 4-6 weeks
+	- Seeds fall near parent plants so gene flow is mostly through pollen
+- Study at RMBL
+	- sampled tissue from 297 individuals, ~20 plants / 14 sites
+	- sites: 2.6 - 130 km apart
+	- at each site, sample plants within a 50m radius
+	- sampld phenology for all plants in meadow at one site
+###### Molecular analysis
+- eight microsatellite loci developed (Wu 2006)
+	- details on PCR
+	- use GENEMAPPER and Geneious software for microsatellite lengths (?)
+###### Genetic differentiation
+- Looking for departures from HW
+	- look for HW departures at complete-sampled site between early and late plants
+- linkage disquilibrium
+- F_{IS} averaged over loci for each site, looking for differences in heterozygosity and allelic richness
+- F_{ST} (some intricat stuff here - G_{ST} as unbiased estimator)
+- Bayesian clustering to find population structuring
+- Landscape structure:
+	- geographc distance F_{ST}, F'_{ST} ~ distance
+	- genetic differentiation ~ elevation
+		- pairs of sites
+		- cumulative elevation change among pairs (?)
+- Phenology
+	- At one focal site, designtd early/late groups of plants (>1 week difference in onset)
+		- these groups were intermixed through meadow
+		- look at F_{ST} between sites
+	- sampld leaf tissue from plants on day of flowering at 13 sites
+		- distance matrix: days apart (of frst flowering) compared with mantel tests
+		- some prmutation approaches to account for high type I error/low power
+##### Results
+- Deviations from HW at some sites due to a deficit of heterozygosity (F_{IS) btwn 0.002 and 0.29)
+	- F_{IS} higher, heterozygosity lower, allelic richness marg. sign. lower n disturbed sites compared to meadows
+- Moderate (F_{ST} betwen 0 and 0.13, mean 0.04) with pairwise F'_{ST} between 0 and 0.53 (mean 0.19)
+	- after correcting for type I error, 90% of tests were significant (non-zero F_{ST}?)
+- STRUCTURE test says K = 2 or K = 3 if locatoin is used as a prior but K = 1 if not
+	- no correlation between allelic richness and proportion of genome assigned to second group, i.e., not supporting hypothesis that drift drove STRUCTURE results in one cluster type
+- No evidence of isolation by distance; geographic distance and F_{ST}/F'_{ST} not correlated
+- No elvation effects on genetic distance
+- At focal meadow, F_{ST} = 0.05, F'_{ST} = 0.23 between early and late flowering plants
+- Flowering time associated with genetic structure across populations
+	- i.e. correlation between diff. in flowering time and F_{ST} and F'_{ST}
+	- correlations remain after controlling for geographic distance and elvaton
+	- phenologcal distance had a higher regression coefficient than geographic distance in MMRR
+##### Discussion
+- Phenology a better predictor of genetic relatedness than landscape features
+	- seen on both small (~80m) scale and large (~130)
+- In *I. aggregata*, hertability of flowering estimated to be approx 0.3, influenced also by snowmelt timing
+	- elevaton and flowering time are correlated
+	- but no strong evidence of levation as a prdictor of gnetic relatedness
+	- also possible hybridization occurring between *I. aggregata* and *I. tenituba*?
+- Temporal isolation within populations: se Antonovics, 2006, Kovach et al., 2013
+	- but note that plants can produce a lot of flowers flowering over a long period of time providing overlap between early- and late-flowering plants
+	- alternative explanation is cohort effects (drft among cohorts)
+	- also can't rule out micro-envronmental differences over time!
+- What drives among-population differentiation?
+	- third cluster (one population) does not appar to be due to inbreeding b/c only one HW departur and and one LD test 
+	- but if the sit with the lowest F_{IS} is removd, F_{IS} is correlated with how much of the genome is assigned to group 2 suggesting inbreeding may be driver for this group
+	- genetic drft may occur in peripheral populations (periphery of drainage)
+	- gene flow in central drainage could occur via pollinator sharing
+	- (N. Waser and some hummingbird work)
+	- seed dispersal could occur through water
+- Some stuff about evidence of inbreeding in small populations
+
+Very cool and useful! Will go back to this on for genetic techniques. It seems like microsatellites on parents are good for looking at genetic relatedness (F_{ST} as a continuous measure may not work for us unless we choose extremes of shade distribution). But this will also be useful for establishing that over larger spatial scales, phenology structures populations (moreso than distance even). Great stuff.
+
+ 
 
 
