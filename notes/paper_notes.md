@@ -100,7 +100,7 @@ So - beetle kill is another thing that can quickly open up canopy changing veget
 ###### Insect pollinators
 - Six flpl selected for each habitt stand in each locality and each fl period
 - All insect visits in a 15 minute period per plant counted on several watch days
-- # insect visitors / flowering period counted via ANOVA
+- number insect visitors / flowering period counted via ANOVA
 ###### Pollen limitation
 - Selected 15 plants in each period (45 total) in shrubland habitat
 - Two terminal inflorescences got control or supplemental pollen
@@ -405,6 +405,64 @@ Interesting ideas here... like the approach of testing assumptions of prosp. est
 
 Very cool and useful! Will go back to this on for genetic techniques. It seems like microsatellites on parents are good for looking at genetic relatedness (F_{ST} as a continuous measure may not work for us unless we choose extremes of shade distribution). But this will also be useful for establishing that over larger spatial scales, phenology structures populations (moreso than distance even). Great stuff.
 
- 
+### Albrecht, M.A., Becknell, R.E., and Long, Q. 2016. Habitat change in insular grasslands: woody encroachmnt alters th population dynamics of a rare ecotonal plant. Biological conservation.
 
+- Rare ecotonal spcies: may require intermediate habitats or special, distinct microhabitats
+	-  but environmental change can shift ecotones
+- This study: ecotonl plant in a limestone cedar glade
+	- mostly short-statured annuals
+	- thin, rocky, infertile soil
+	- typically narrow abupt transition zones between glade and forest (where deep soil supports perennials and grasses)
+	- changing fire frequency -> woody encroachment
+	- natural form of fragmentaton and Morris et al. 2002 shows evidence that outcrops used to be part of a larger matrix
+##### Methods
+- *Astragalus bibullatus* is small individual, known <5K remaining, mostly in a small area in Tennessee
+	- typcially flower before tree laf out
+	- little is known about population dynamics 
+	- number of populations is small
+- Six sites with 22 (total) 1m2 plots
+	- plots vary between 13-88% tree cover
+- Over three years, record
+	- percent cover in plot (of veg. type/ground cover)
+	- soildepth
+	- soil chem
+	- sling density, multi-stm veg. dults, flowering adults, n. stems, n. fruits
+- Combine env. variables into a PCA/composite, look at demographic performance ! microhabitat with GLMs
+	- separate models for each demographic variable + year
+		- avoiding overfitting by capping models at five vars.
+- Recruitment assessed using transect sweeps and tagging adults
+	- up to 30 seedlings tagged each spring and followed for duration of study
+	- reproductive adults: count n. inflorescences, infructescences, number of fruits, seeds per fruit
+- shade manipulation study in 36 plots
+	- crossing presence/absence of cedar x cover (summer or spring cover)
+	- cedar cover treatments achievd with cloth 
+	- each plot: three seeds and three vegetative adults in pots
+	- recorded above and belowground biomass in subeset of surviving plants
+	- preliminary results show no difference within cedar groups so treatments collapsed to CE only
+	- modl: germination, survival, final stem number
+	- models were on plot means averaging across surviving individuals
+##### Results
+- Adult vitals (stem numbers, reproductive adults, legumes) affected by canopy cover, seedlngs not (Table 2)
+	- forb cover is consistent predictor of seedlng numbers
+- (Figure 2) somewhat more stems per adult in mowed (i.e., somewhat less canopy) plots, somewhat more fruits per plot
+	- more seedlings per plot in unmowed (higher canopy) plots
+	- proportion of seedlings declined moving from closed to open canopy
+		- greater seedling survival in closed rel. to edge/open sites
+	- more inflorescences, more fruits in open sites
+- (Fig. 4) proportionally opn plots had a lot more adult plants, more flowering plants
+	- more fruit per plant n open rel. to edge
+- Pot study: sedling emergnce ddn't vary by CE, but survival was greater without CE (added cloth)
+	- fewer stems in CE+ than CE- (in seedlings only, n.s. in transplants)
+	- higher root:shoot ratio in CE- than CE+
+##### Discussion
+- Rock outcropping endemics requre high light and are poor competitors
+	- open microhabitats provide more light
+	- however, open habitats also have several light-requiring competitors, lowering seedling recruitment
+	- for *A. bibullatus* nitrogen availability in open soil may also have fostered competitors for microsites
+- Despite rare flowering, seedling densities in shade suggest that there isn't seed limitation in shade
+	- dispersal from nearby unlikely
+	- soil seed banks persisting for decades? (Morris et al. 2002)
+	- historically cedar coverage was lower - suggests that historic conditions may have been good for reproduction
+
+Interesting. Provides support to the idea that shading influences demographic processes. Also some thoughts here on shade encroachment. Very interesting point that despite reproduction and size being larger in open areas, seedling density was not. This is because open areas have higher forb coverage and fewer available microsites. Think about ths in the context of meadows - likely hgher density of competitors (con- or heterospecific) which impedes recruitment. However, there's also a layer of leaf litter in aspen understory - this may also block out light needed for recruitment there. In either scenario the take-home here is that higher flowering in open areas does not necessarily mean an increase in recruitment.
 
