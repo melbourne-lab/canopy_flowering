@@ -466,3 +466,58 @@ Very cool and useful! Will go back to this on for genetic techniques. It seems l
 
 Interesting. Provides support to the idea that shading influences demographic processes. Also some thoughts here on shade encroachment. Very interesting point that despite reproduction and size being larger in open areas, seedling density was not. This is because open areas have higher forb coverage and fewer available microsites. Think about ths in the context of meadows - likely hgher density of competitors (con- or heterospecific) which impedes recruitment. However, there's also a layer of leaf litter in aspen understory - this may also block out light needed for recruitment there. In either scenario the take-home here is that higher flowering in open areas does not necessarily mean an increase in recruitment.
 
+### Hendry, A.P., and Day, T. 2005. Populaton structure attributabl to reproductive time: isolation by time and adaptation by time. Molecular Ecology. 
+
+- Some examples of traits covarying with mating phenology: clutch size/egg laying day, body size/metamorphosis date, reproductive lifespan of fish/breeding day
+- Could reproductive timing be flexible/plastic instead of highly heritable?
+	- Temporal phenotypic clines
+	- Could be constraints or adaptive tactics
+	- Alternatively, trait expression could be due to environmental condition at a given time (also creating phenotypic clines)
+	- adaptive tactics (altered trait expression)
+- Alternatively: could be strong heritable controls over trait expression
+	- an individual that should reproduce early (late) that instead reproduces late (early) - what kind of traits will they express?
+- Reproductive fitness may be influenced by a combination of heritable variation, random environmental effects, individual choice
+##### Isolaton by time
+- In temporally-structured mating population with heritable variation, probability of two individuals mating is inverseley related to difference in heritable component of reproductive times
+	- i.e., probabilty of mating is high when difference in heritable component of reproductive time is low
+	- if heritable time is an additive trait (well supported! see Table 1) then this is also difference in breeding values
+	- *isolation by time* is tendency for less reproductive as differences in timing get larger
+- Similarities to isolation by distance: predictions similar, but differences in how to "disperse" in space/time
+	- in IBD model, reproducing at a given location then offspring disperse with distribution centered at location
+		- offspring inherit the location (jumping off point for their own dispersal)
+	- in asexual IBT model, "dispersal" happens because environment causes them to reproduce at other times (*feel like this is relevant to us...*)
+		- temporal dispersal inversely related to heritabilty of trait
+		- however, if your reproductive timing varies from your breeding value (due to env. effects), your offspring still inherit your breeding value
+		- i.e., offspring jumping off point is the same
+	- in sexual IBT model, dispersal happens because mating between two individuals produces avg. breeding value at midpoint
+		- offspring disperse from this new point
+		- if reproductive activity is not uniform through time (e.g., more reproductive activity early), then the mean breeding value of offspring will be shifted directionally
+			- (this latter case of directional dispersal seems like selection, like spatial gene flow)
+- In general, lower heritability -> more temporal dispersal -> more gene flow -> less temporal structure
+- How to demonstrate empirically? Heritability alone is insufficient
+	- One way is relatedness of individuals ~ reproductive time
+		- early vs. late seems like a good binning
+	- in general this is a deviation from random mating to get part way there
+		- look for heterozygote deficits
+		- linkage disequlibrium when pooling samples w/in a time period
+	- need to be wary of spatial confounding here
+	- Temporal clines in allele frequencies, if found, may be genetic drift (assuming limited gene flow) or linkage (neutral alleles linked to those under selection)
+	- pairwise approach? (what does this mean?)
+- Demonstrating IBT in flowering times specifically
+	- Geber and Griffen 2003 hav flowering time mean h2 of 0.40 (n = 139)
+	- candidate genes influencing flowering time found in arabadopsis
+	- some differences in genetic makeup of early vs. late flowring morphs
+	- but, looking for genetic differences ~ flowering time *within a population* is rare (see Stanton et al. 1997)
+		- but, can find genetic differences in the pollen pool although by themselves this does not confirm IBT
+	- Flowering time causing departures from random mating! Gutierrez and Sprgue 1959, Ennos and Dodson 1987
+##### Adaptation by time
+- Limited gene flow -> adaptive divergence
+	- adaptive divergence in space is well-documented
+	- if selection varies through the season and there are temporal clines in phenotypic traits, adaptation by time may occur
+- ABT rquires IBT and temporal variation in selection
+	- observed trait clines should become stronger as optimal trait clines get stronger
+	- mismatches betwen optimal and observed clines will grow if heritability decreases for reproductive (and IBT gets weaker) or phenotypic trait (selection response gets weaker) and/or if reproductive activity becomes less uniform (?? maladaptive gene flow is directional)
+**Note: did not read remainder of this section, skimmed empirical flowering time work**
+
+Interesting theoretical framework for IBT (ABT is less appealing for our specific study right now). The dispersal in time ideas in particular are interesting. Come back to this when thinking about empirical demonstrations in meadow systems.
+
