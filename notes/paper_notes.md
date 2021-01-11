@@ -521,3 +521,36 @@ Interesting. Provides support to the idea that shading influences demographic pr
 
 Interesting theoretical framework for IBT (ABT is less appealing for our specific study right now). The dispersal in time ideas in particular are interesting. Come back to this when thinking about empirical demonstrations in meadow systems.
 
+### Hererra, C.M. 1995 (Jan.) Floral biology, microclimate, and pollination by ectotherm bees in an early-blooming herb. Ecology.
+
+- "The importance of abiotic factors in plant-pollinator systems will presumably be greatest when flowering occurs primarily during climatically unfavorable periods" such that the environment limits pollinator activity
+- Interior temprature of flowers as a trait to enhance floral visitaton (by ectotherms)
+##### Study
+- Flower: *Narcissus longspathus* perennial herb in SE Spanish mountains
+	- flowering in lat February to mid-April
+	- snowstorms do occur in this time period
+	- single flowers on a scape, long-ish yellow perianth
+- Pollinator: *Andrena bicolor* does 70-90% of all visits to *N. longispathus*
+	- bask in or outside perianth during foraging
+	- during *N. longispathus* flowering period *A. bicolor* appars to specialize
+- Measured floral microclimate by measuring air temp inside and outside flowers
+- Netted bees, brought them to lab, did cooling tests
+	- mesured minimum flight temp and maximum voluntary tolerance
+- In field, followed bees, recorded air tmp. and floral temp of visited flowers "as often as possible"
+##### Results
+- *N. longispathus* in >100 W/m2 (up to 900-1100 Wm2) settings: air warmer inside flowers than outside
+	- generally increasing temperature inside flowers with more radiation
+- There was considerable variation in air temp. within flowers, getting warmer closer to the anthers (further in the perianth)
+- Significant relationship between air temp and thoracic temp of bees captured in field
+	- qualitatively similar but slightly different regression lines depending on bee being caught in flower or in air
+	- small but significiant difference between air temp in flight and in flower (1.2C +-0.23 warmer in flight)
+- When foraging, bees spent 66% in within flowers, 17% basking n flowers, and 17% flying between flowers
+	- with increasing air temp, more tme in flowers, less time basking
+	- flight time not influenced by air temp
+	- (wait - this was only on two days of observation??)
+- After accounting for air temp and visitation rate, bees spent more time in warmer flowers
+	- bees less likely to bask after visiting warmer flowers
+
+Interesting stuff. I didn't know about the basking behavior. Also had never thought about temperature *inside* of a flower. I wonder if our pollinators do this. It seems like air temp did not influence the proportion of time spent in flight but a cooler air temperature did lead to more time spent in the warming areas of a flower. Given the relationshp betwen air temp and floral temperature it's a safe bet that the interior of plants in shade is cooler than the interiors of those in sun. Also if there's interspecific variation in floral temperature then pollinators may selectively forage in shade. Definitely a useful paper!
+
+
