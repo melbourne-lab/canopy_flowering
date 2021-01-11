@@ -553,4 +553,78 @@ Interesting theoretical framework for IBT (ABT is less appealing for our specifi
 
 Interesting stuff. I didn't know about the basking behavior. Also had never thought about temperature *inside* of a flower. I wonder if our pollinators do this. It seems like air temp did not influence the proportion of time spent in flight but a cooler air temperature did lead to more time spent in the warming areas of a flower. Given the relationshp betwen air temp and floral temperature it's a safe bet that the interior of plants in shade is cooler than the interiors of those in sun. Also if there's interspecific variation in floral temperature then pollinators may selectively forage in shade. Definitely a useful paper!
 
+### Kilkenny, F.F., and Galloway, L.F. 2008. Reproductive success in varying environments: direct and indirect effects of light on plants and pollinators. Oecologia.
 
+- Light can influence growth, allocation (lower light may necessitate more allocaton to photosynthtic tissue), and pollinator behavior
+	- Potential interacton: more light -> more floral display -> more pollinator visits
+- Objectives of study:
+	1. Poll. visitation ~ light
+	2. Poll behavior ~ light + floral display size
+	3. Reprod. success ~ reprod. success
+	4. Selection on phnological characters driven by light?
+##### Methods
+- *Campanulastrum americanum* annual/binnial, compact indeterminate inflorescences
+	- protrandrous: male phase on day female phase 2-3 days (up to 6-9 days possible without pollination though)
+	- populations can exst in heterogeneous light environments, e.g., under canopy
+	- primary pollinators: Bombus, halictds
+- Observed plants for ten minutes on seven different days
+	- two environment types: sun and shade
+	- recorded number and type of pollinators on each day
+- Measured pollen removal for 15 plants in each habtat type
+	- observed on one day
+	- followed protocol of Evanhoe and Galloway 2002
+- Does pollen limitation study
+	- compared seeds produced per flower on augmentation vs. control
+	- model: seed set ~ env. + poll. + poll*date + poll*env
+	- compared with set of flowers with no hand pollination b/c plants with added pollen may allocate resources differently
+- Experimental manipulaton of display size
+	- grew *C. americanum* in greenhouse, transplanted to field
+	- planted individuals 1m apart each
+	- small display sze: removd flowers until only three were left
+	- large display size: did not manipulate (mean 21.5 fl)
+	- observed arrays of five plants for 20 min. (n = 112 arrays)
+		- watch one plant, randomly chosen, recorded n. pollinators vistng and n. flowers visiteds
+	- prior to obs period, measure PAR and temperature
+- Phenology test
+	- three measurements: date of initiation, peak day, duraton day
+	- marked one flower, counted its seeds at end of season, used that to estimate seed production by whole plant
+	- calculated phenotypic selection: relative fitness (to mean in env.) calculated, estimated selection diffrential as covariance of fitness and traits
+	- looking to see if phenotypic selection varied by env. type through an ANCOVA (heterogeneity in slopes: looking for trait*env. interactions as difference in slope between environments)
+##### Results
+- Plants in the sun had 7x the vists of plants in the shade
+	- more vsits wth larger displays
+	- Bombus and halctids visitd sun plants more than shade but no difference for syrphids
+- Pollinator visitation highest earliest in the season for both environment types
+- Pollen movement and fitness differences
+	- ~3x as much pollen removal in the sun than in the shade
+	- in shade, pollen addition increased seed set by 50% whereas in sun pollen augmentation did not influence seed set
+		- not due to resource limitation
+		- pollen augmentation effects did not change over time
+	- overall seed production lower in shade
+- In experimental arrays, more Bombus visits per plant and per flower
+	- no difference in visits between display size treatments
+- Plants in sun were 17x larger and initiated flowering nine days sooner, flowered for twice as long, produced 9x the number of flowers
+	- stronger selection differential in shade compared to sun
+	- in sun, earlier flowering and longer flowering durations have greater fitness, but no evidence of selection on these traits
+		- instead selection on plant size
+	- in shade, plants flowering ealier had higher seed and fruit production, higher fruit production with longer duration
+		- here, traits were under selection
+##### Discussion
+- Plants visit light moreso than they do shade
+	- although this difference was taxon-specific (no effects on syrphid flies)
+	- differences in removal rates does suggest that this influences fitness
+	- differences wee due in part due to differences in floral display, although there was no difference in per-flower visitation
+		- no evidence of increased reproductive success in open displays
+	- Conclusion: direct pollinator-mediated effects on success, but no evidence of indirect effects mediated by response to display size
+- Light directly influences reproductive success
+	- Haggerty 2006 showed *C. americanum* are differentiated in common field environment (i.e., uncorrelated?)
+	- Flowering time is heritable (Burgess et al. 2007)
+- Selection pressure on phenology
+	- more visitation early in the flowering season regardless of envronment + later initiation of flowring in shade means phenotypic selection for early flowering in shade
+	- selection on duration (longer duration -> more seeds) explained by pollen limitation
+
+Fuck. Okay this is 100% exactly what I wanted to do plus stuff I hadn't thought of explicitly. Goddamnit. 
+
+Interesting and good to incorporate display size into analysis. Also interesting to note that selection pressure varied by environment type - selection pressure in the shade but no selection on flowering time in the sun. Otherwise results are exactly what I expected.
+
+Where to go from here? Would be good to look at (1) seedling recruitment and (2) genetic structure to sorta fully complete the loop. Pollinator observations may still be worth doing but only in conjuntion with other work if only to show what is driving the mechanism. Notably this work doesn't reference Hendry and Day. Maybe talk to committee about their thoughts. 
