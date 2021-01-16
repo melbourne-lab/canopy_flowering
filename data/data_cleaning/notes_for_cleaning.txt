@@ -1,0 +1,10 @@
+Future cleaning/handling needs:
+
+* "Improve"
+* "Combine"
+* "Merge"
+* "Check"
+* "Ignore"
+
+* start date missed (i.e., first record is (0-)0-(1+)
+* count increases in tail of distribution
