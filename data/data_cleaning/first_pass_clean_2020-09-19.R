@@ -1193,10 +1193,168 @@ campn = campn %>%
   arrange(RecordID)
 
 # Tag 1565 = Tag 1582
-campn %>% filter(Tag %in% c(1565, 1582)) %>% arrange(Date, Tag)
+campn %>% filter(Tag %in% c(1565, 1582)) %>% arrange(Date, Tag) %>%
+  select(Date, Tag, Stms, contains("Fl"), Note)
+# tag was collected
+# Fl_done doesn't change because of two grazed flowers
+campn = campn %>%
+  # Clean as usual:
+  filter(Tag %in% c(1565, 1582)) %>%
+  group_by(Date) %>%
+  summarise(
+    Page = Page[1],
+    Species = 'Campanula rotundifolia',
+    Plot = Plot[1],
+    Tag = 1565,
+    Stms        = sum(Stms    , na.rm = TRUE),
+    Fl_straight = sum(Fl_straight, na.rm = TRUE),
+    Fl_curled   = sum(Fl_curled  , na.rm = TRUE),
+    Fl_done     = sum(Fl_done    , na.rm = TRUE),
+    Q           = '',
+    Note        = paste(Note, collapse = '; '),
+    RecordID    = RecordID[1]
+  ) %>%
+  # Append a note explaining the merge
+  mutate(Note = paste0(Note, '; 1565+1582 records merged SN Jan 2021')) %>%
+  # Combine with rest of campanula data frame (sans 1565/1582 recs)
+  rbind(campn %>% filter(!(Tag %in% c(1565, 1582) & Plot %in% 1))) %>%
+  # Sort by recordid
+  arrange(RecordID)
 
+# Tag 1575 = Tag 1725?
+campn %>% filter(Tag %in% c(1575, 1725)) %>% arrange(Date, Tag)
 
+# Combino
+campn = campn %>%
+  # Clean as usual:
+  filter(Tag %in% c(1575, 1725)) %>%
+  group_by(Date) %>%
+  summarise(
+    Page = Page[1],
+    Species = 'Campanula rotundifolia',
+    Plot = Plot[1],
+    Tag = 1725,
+    Stms        = sum(Stms    , na.rm = TRUE),
+    Fl_straight = sum(Fl_straight, na.rm = TRUE),
+    Fl_curled   = sum(Fl_curled  , na.rm = TRUE),
+    Fl_done     = sum(Fl_done    , na.rm = TRUE),
+    Q           = '',
+    Note        = paste(Note, collapse = '; '),
+    RecordID    = RecordID[1]
+  ) %>%
+  # Append a note explaining the merge
+  mutate(Note = paste0(Note, '; 1575+1725 records merged SN Jan 2021')) %>%
+  # Combine with rest of campanula data frame (sans 1575/1725 recs)
+  rbind(campn %>% filter(!(Tag %in% c(1575, 1725)))) %>%
+  # Sort by recordid
+  arrange(RecordID)
+
+# Tag 1577 appears to have already been done
+
+# Tag 1579 = Tag 1580?
+campn %>% filter(Tag %in% 1579:1580) %>% arrange(Date, Tag) %>%
+  select(Date, Tag, Stms, contains("Fl"), Note)
+# okay... only reason this wasn't done earlier is 1579 ws fnished flowering
+
+campn = campn %>%
+  # Clean as usual:
+  filter(Tag %in% c(1579, 1580)) %>%
+  group_by(Date) %>%
+  summarise(
+    Page = Page[1],
+    Species = 'Campanula rotundifolia',
+    Plot = Plot[1],
+    Tag = 1580,
+    Stms        = sum(Stms    , na.rm = TRUE),
+    Fl_straight = sum(Fl_straight, na.rm = TRUE),
+    Fl_curled   = sum(Fl_curled  , na.rm = TRUE),
+    Fl_done     = sum(Fl_done    , na.rm = TRUE),
+    Q           = '',
+    Note        = paste(Note, collapse = '; '),
+    RecordID    = RecordID[1]
+  ) %>%
+  # Append a note explaining the merge
+  mutate(Note = paste0(Note, '; 1579+1580 records merged SN Jan 2021')) %>%
+  # Combine with rest of campanula data frame (sans 1575/1725 recs)
+  rbind(campn %>% filter(!(Tag %in% c(1579, 1580)))) %>%
+  # Sort by recordid
+  arrange(RecordID)
+
+# Tag 1548 / 1584 / 1854
+campn %>% filter(Tag %in% c(1854, 1584, 1548)) %>% print(n = nrow(.))
+# Okay - suspicion confirmed, 1584 is in plot 53
+campn %>% filter(Tag %in% c(1854, 1584, 1548), Plot %in% 1)
+# where even is the 1584 Plot 1 record?
+campn %>% filter(Tag %in% c(1584), Plot %in% 1)
+# huh? Maybe got nuked before. oh well. Bye bye!
+campn = campn %>% filter(!RecordID %in% 21851)
+
+# Tag 1651 = Tag 1672
+campn %>% filter(Tag %in% c(1651, 1672)) %>% arrange(Date, Tag)
+# seems legit
+
+campn = campn %>%
+  # Clean as usual:
+  filter(Tag %in% c(1651, 1672)) %>%
+  group_by(Date) %>%
+  summarise(
+    Page = Page[1],
+    Species = 'Campanula rotundifolia',
+    Plot = Plot[1],
+    Tag = 1651,
+    Stms        = sum(Stms    , na.rm = TRUE),
+    Fl_straight = sum(Fl_straight, na.rm = TRUE),
+    Fl_curled   = sum(Fl_curled  , na.rm = TRUE),
+    Fl_done     = sum(Fl_done    , na.rm = TRUE),
+    Q           = '',
+    Note        = paste(Note, collapse = '; '),
+    RecordID    = RecordID[1]
+  ) %>%
+  # Append a note explaining the merge
+  mutate(Note = paste0(Note, '; 1651+1672 records merged SN Jan 2021')) %>%
+  # Combine with rest of campanula data frame (sans 1575/1725 recs)
+  rbind(campn %>% filter(!(Tag %in% c(1651, 1672)))) %>%
+  # Sort by recordid
+  arrange(RecordID)
+
+# Tag 1656 = 1784?
+campn %>% filter(Tag %in% c(1656, 1784)) %>% arrange(Date, Tag)
+# well okay
+campn = campn %>%
+  # Clean as usual:
+  filter(Tag %in% c(1656, 1784)) %>%
+  group_by(Date) %>%
+  summarise(
+    Page = Page[1],
+    Species = 'Campanula rotundifolia',
+    Plot = Plot[1],
+    Tag = 1784,
+    Stms        = sum(Stms    , na.rm = TRUE),
+    Fl_straight = sum(Fl_straight, na.rm = TRUE),
+    Fl_curled   = sum(Fl_curled  , na.rm = TRUE),
+    Fl_done     = sum(Fl_done    , na.rm = TRUE),
+    Q           = '',
+    Note        = paste(Note, collapse = '; '),
+    RecordID    = RecordID[1]
+  ) %>%
+  # Append a note explaining the merge
+  mutate(Note = paste0(Note, '; 1656+1784 records merged SN Jan 2021')) %>%
+  # Combine with rest of campanula data frame (sans 1575/1725 recs)
+  rbind(campn %>% filter(!(Tag %in% c(1656, 1784)))) %>%
+  # Sort by recordid
+  arrange(RecordID)
+
+# 
 
 # also all 'check' cases! and iggys, and improves/combines
 
 #
+
+write.csv(therm,
+          file = 'data/processed_data/therm_draft_01-12-2021.csv',
+          row.names = FALSE)
+
+write.csv(campn,
+          file = 'data/processed_data/campn_draft_01-12-2021.csv',
+          row.names = FALSE)
+
