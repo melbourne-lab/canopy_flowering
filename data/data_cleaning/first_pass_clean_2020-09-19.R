@@ -1344,11 +1344,83 @@ campn = campn %>%
   # Sort by recordid
   arrange(RecordID)
 
-# 
+# I think tag 1694 was handled above? Reords here look... fine?
+# OH - there's also a tag 1694 in plot 3. This plant is fine
+# (well - it mysteriously disappeared on august 14. thanks animals!)
+
+# Tag 1701 = Tag 1871?
+campn %>% filter(Tag %in% c(1701, 1871)) %>% arrange(Date, Tag) %>%
+  select(Date, Tag, Stms, contains('Fl'), Note)
+# hmm... 1871 starts with one done flower, but 1701 has two flowers
+# gonna treat them as separate for now.
+
+# Tag 1878 = Tag 1879?
+campn %>% filter(Tag %in% 1878:1879)
+# oh - there is no tag 1879
+campn = campn %>% mutate(Tag = ifelse(Tag %in% 1878, 1879, Tag))
+
+
+### All 'improve' cases
+
+# Check 'improve' cases for thermopsis
+therm %>% filter(grepl('[Ii]mprove', Note)) %>% View()
+
+# only two cases... one of which has been handled
+# Other is tag 1071 / 1077
+therm %>% filter(Tag %in% c(1071, 1077))
+# these are in different plots?
+therm %>% filter(Tag %in% c(1071, 1077)) %>% distinct(Tag, Plot)
+# okay...
+
+# Do the same but with Campanula
+campn %>% filter(grepl('[Ii]mprove', Note)) %>% View()
+
+# Tag 1533 - already taken care of
+
+# Tag 1755 - may req data modification
+campn %>% filter(Tag %in% 1755) %>% arrange(Date)
+# well the "0 8 NA" looks like a mistype - assuming it should be 0-0-8
+campn$Fl_curled[campn$RecordID %in% 20378] = 0
+campn$Fl_done[campn$RecordID %in% 20378]   = 8
+campn$Note[campn$RecordID %in% 20378]      = "[data manually modified to correct bad record - 16 jan"
+
+# Tag 1510 - has already been fixed, so it seems
+# Tag 1577 - has already been improved
+# Tag 1879 - has already been improved
+
+# Tag 1782/1787
+campn %>% filter(Tag %in% c(1782, 1787))
+campn %>% filter(Tag %in% c(1782, 1787)) %>% distinct(Tag, Plot)
+campn %>% filter(Tag %in% c(1782, 1787), Plot %in% 47)
+
+# Yes - tag misread.
+campn$Tag[with(campn, Tag %in% 1782, Plot %in% 47)] = 1787
+campn = campn[!campn$RecordID %in% 21260,]
+
+# Tag 1555 - already fixed
+
+# Tag 1641
+campn %>% filter(Tag %in% 1641) %>% arrange(Date)
+# Hmm... okay. Gonna trust that all-zero record was mistake
+# (data sheet does say 000 so this is a field mistake)
+campn = campn %>%
+  mutate(Fl_done = ifelse(RecordID %in% 21207, 1, Fl_done),
+         Note = ifelse(RecordID %in% 21207, 
+                       paste0(Note, '; [manually changed based on subsq. records jan 16 2021]'),
+                       Note))
+
+# Tag 1607
+campn %>% filter(Tag %in% 1607) %>% select(Date, Plot, Stms, contains('Fl'), Note)
+# Trust the note - field mistake
+campn = campn %>%
+  mutate(Fl_done = ifelse(RecordID %in% 21081, 1, Fl_done),
+         Note = ifelse(RecordID %in% 21081, 
+                       paste0(Note, '; [manually changed based on subsq. records jan 16 2021]'),
+                       Note))
+
+# Tag 1674
 
 # also all 'check' cases! and iggys, and improves/combines
-
-#
 
 write.csv(therm,
           file = 'data/processed_data/therm_draft_01-12-2021.csv',
