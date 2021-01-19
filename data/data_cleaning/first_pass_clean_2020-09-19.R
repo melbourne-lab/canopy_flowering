@@ -1419,6 +1419,74 @@ campn = campn %>%
                        Note))
 
 # Tag 1674
+campn %>% filter(Tag %in% 1674) %>% arrange(Date)
+campn$Fl_curled[campn$RecordID %in% 21801] = 0
+campn$Fl_done[campn$RecordID %in% 21801]   = 6
+
+# Tag 1829
+campn %>% filter(Tag %in% 1829) %>% arrange(Date)
+# Uh... not sure why this wouldn't be correct. is consistent to me
+
+# Tag 1580 was already handled
+
+# Tag 1789
+campn %>% filter(Tag %in% 1789)
+# going to trust note and say that august 14th there was one missed
+campn$Fl_done[campn$RecordID %in% 21638] = 2
+
+# Tag 1564 - has been handled
+
+# Tag 1510
+campn %>% filter(Tag %in% c(1510, 1530)) %>% arrange(Tag, Date) %>% print(n = nrow(.))
+# wait something is defintely wrong here.
+# mistakes were made
+# Not going to go and fix where they were made - just fixing them here
+# 1510(/1570) had 6 flowers at one point, 1530 had only two
+campn$Fl_done[campn$RecordID %in% c(21683, 21899)] = 5
+campn$Fl_done[campn$RecordID %in% c(21684, 21900)] = 2
+
+
+### "Combine" and "merge" cases
+
+# Thermopsis first
+therm %>% filter(grepl('[Cc]ombine|[Mm]erge', Note)) %>% filter(!grepl('merged SN', Note))
+# I've already handled these
+
+campn %>% filter(grepl('[Cc]ombine|[Mm]erge', Note)) %>% filter(!grepl('merged SN', Note))
+# I remember this case - I decided not to merge.
+
+### Iggy/ignore
+
+# Thermopsis
+therm %>% filter(grepl('[Ii]ggy|[Ii]gnore', Note)) %>% select(Date, Tag, Note)
+# two plants
+therm = therm %>% group_by(Tag) %>% filter(!any(grepl('[Ii]ggy|[Ii]gnore', Note)))
+
+# Campanula 
+campn %>% filter(grepl('[Ii]ggy|[Ii]gnore', Note)) %>% 
+  select(Page, Date, Tag, Note, RecordID) %>% arrange(Tag)
+# what's up with the question marks? one of these plants has merged records
+
+# one of these was originally 1582 - note says "mssed before? iggy?"
+campn.orig %>% filter(Tag %in% 1582)
+# oh well... just say it's 1565
+# the other is page 80 - loose tag possibly applied to neighbor
+campn %>% filter(Tag %in% 1644)
+# hmm... records seem consistent. I'm going to go with it.
+
+# Keep these two plants in - they have question marks
+campn %>% 
+  group_by(Tag) %>%
+  filter(!any(grepl('[Ii]ggy|[Ii]gnore', Note) & !grepl('\\?', Note))) %>%
+  filter(Tag %in% c(1565, 1644))
+# good it still keeps these
+
+campn = campn %>% 
+  group_by(Tag) %>%
+  filter(!any(grepl('[Ii]ggy|[Ii]gnore', Note) & !grepl('\\?', Note)))
+
+### Now, handling plants where the first record is missing
+
 
 # also all 'check' cases! and iggys, and improves/combines
 
