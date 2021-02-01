@@ -628,3 +628,103 @@ Fuck. Okay this is 100% exactly what I wanted to do plus stuff I hadn't thought 
 Interesting and good to incorporate display size into analysis. Also interesting to note that selection pressure varied by environment type - selection pressure in the shade but no selection on flowering time in the sun. Otherwise results are exactly what I expected.
 
 Where to go from here? Would be good to look at (1) seedling recruitment and (2) genetic structure to sorta fully complete the loop. Pollinator observations may still be worth doing but only in conjuntion with other work if only to show what is driving the mechanism. Notably this work doesn't reference Hendry and Day. Maybe talk to committee about their thoughts. 
+
+### Dunne, J.A., Harte, J., Taylor, K.J. 2003. Subalpine meadow flowering phenology responses to climate change: integrating experimental and gradient methods. Ecological Monographs, 73(1): 69 - 86. 
+
+- Two lines of research into climte change and environmental research:
+	- Timing of plant developmental stages ~ abiotic factors (e.g., photoperiod vs. temperature accumulation)
+	- genetic basis and natural selection in plant phenology
+- Three basic questions in this study:
+	- (1) is do factors other than snowmelt date (e.g., soil moisture, soil temp., cumulative energy inuts) explain flowering phen. variability
+	- (2) community-wide trends in flowering versus species-specific responses?
+	- (3) constraints on timing and duration of flowering - microclimate factors?
+##### Methods
+- RMBL - four study sites, four ecosystem types (spruce, fir, aspen, meadow) with some sagebrush shrub (?!)
+	- 99 angiosperm species in study plots (nine shrubs, 68 forbs, 22 graminoids)
+	- ~80% of annual precipitaton is snow, max depth of 197 cm
+- Exp. design
+	- 1990/1991: 10 3x10m plots in subalpine meadow ("warming" meadow)
+	- two electric radiant heters 2.5m above ground for each plot - 15 W/m2 year round heat flux
+	- three sites nearby: lower, middle, upper (elevation gradient)
+		- five pairs of 4x4m plots laid out per site, assn. ctrl. or snow removal
+			- here snowmelt date changed, not altering other factors?
+- Microclimate
+	- measure soil moisture every 2h, 12 and 25 cm depths, in all plots (gypsum blocks)
+		- readings averaged over each diurnal cycle to get daily and seas. soil moist.
+	- air temp data every two hours (weather stations)
+	- snowmelt date: day when 12cm remained above 1C
+- Phenology
+	- 11 perennial plant species
+	- Censuses once per week after snowmelt
+	- Flagged five individuals per plot (once five individuals started budding)
+	- Recorded stage (e.g., not yet flw., budding, open flws., etc.) numerically, averaged over stages present per individ.
+	- used this to calculate timing (time to stage 3.5) and duration (days to go from 1-5)
+- Analysis 
+	- ANOVA/ANCOVA to investigate effects of trt, site, year, plot position on microclimate and phen. variables
+	- Phenology ~ microclimate: linear regression for phen ~ snowmelt
+		- warming meadow: phen response to small-scale gradient, elev. meadows: landscape-scale snowmelt gradient
+	- Phenological soil microclimate variables in one year at elev. sites: mean soil temp., mean soil. moist., sol degree days (def. herein)
+##### Results
+- Snowmelt earlier (14 days) in most northern vs. most southern control plots
+- Warming advanced snowmelt by ~16 days
+	- warming increased spring soil temp by ~2C, summer by 1.2C
+	- decreased summer soil moist. by 14%
+- Snow removal also hastened snowmelt
+	- snow removal advanced snowmelt by more at lower than higher sites
+	- snow removal increased spring soil temp., no effect on summer soil temps.
+	- lower site had driest soil
+- Experimental warming advanced timing of flowering in 8/8 (8?) sp.
+	- later flowering times: weaker response to warming
+	- warming also extended duration of flowering
+- Snow removal extended duration for 7/8 sp.
+	- treatment effects on duraton consistent across time
+- Melt date affects 7/8 species in warming plots
+	- timing 0.3-0.7d earlier flower per day earlier snowmelt
+	- earlier flowering species had ns. stronger relationship to melt date than later
+	- 3/8 species have longer duration with snowmelt changes
+- Melt date affects 7/8 (8/8?) sp.'s timing in elevational plots
+	- 0.2-0.8d earlier flowering per day of early melt
+	- here earlier flowering species had sign. stornger resp. to snowmelt date
+- Phenology and soil microclimate
+	- if warming influences timing via changes to melt rather than soil microcl., sp. response to warming should be ~2x response to snow removal (2.3-fold greater difference btwn heated-control vs. snow-control)
+		- festuca had ~4x, forbs had ~1.5-2.1x difference
+	- also, look at residual warming effects beyond snowmelt date
+		- only sign. effects for 2/8 sp.'s timing, only 1/8 sp.'s duration
+	- warming spring soil temp. advanced timing sign. 7/8
+		- spring soil temp. had higher R2 than melt date
+		- spring soil temp. had stronger effect on earlier flowering comp. to later flowering
+	- drier flowering period soil sign. advanced timing 2/8
+	- timing not influenced by soil degree-days
+	- But, multivariate models had earlier timing due to warmer soil temp., lower degree days (?)
+	- spring and flowering period temps influenced durations 2/8
+		- in multivariate mos, in forbs longer duration due to cooler days, increased DD (??)
+	- soil moisture never a significant predictor of tming
+	- microclimate variables explain on avg. 82% of variation in timing, 38% of duration
+##### Discussion
+- Some discussion of consequences in first few paras: species interactions, e.g.
+- Evolution: "climate change may directly alter plant fitness" - cites Galen and Stanton 1991, 1993, Wookey et al. 1993
+	- indirect effects on reproductive success through pollination change - lots of citations here
+	- mixed effects on fruit set
+- Unlke timing of flowering, duraton showed stronger response to snow removal than to warming, esp. in early species
+	- additional effects of warmer, drier soil may stress plants and offset gains in duration due to snowmelt
+- "Advanced flowering time associated with earlier snowmelt date, shallower snowpack, or lower total snowfall [...] appears to be a general property of [...] species"
+	- some thoughts on why Eriogonum didn't show any response - may be due to the fact it's a lower-elev. species (less constrained? not sure how)
+- In general along gradients populations (w/in sp.) may be responding to different cues or constraints
+- Soil moisture: early snowmelt caused by lower snowpack and drier soil
+	- refs to studies suggesting soil moisture influences timing of flowerings
+	- here, soil moisture did not consistently influence phenology
+	- *Erigeron* and *Festuca* did have earlier flowering with drier soil in unvariate models
+	- see de Valpine and Harte 2001 for water addition treatment to *Erigeron*
+- Soil temperature: earlier snowmelt meant warmer soil (exposed sooner)
+	- residual effects of warming treatment beyond snowmelt date show delay in flowering with warmer snow?
+		- warming treatment increased soil temp, timing of flowering not affected by other soil effects (moisture)?
+- "We found that best-fit models for timing of flowering in most species incorporated some combination of..."
+	- earlier snowmelt date
+	- warmer flowering period soil temp
+	- decreased soil degree days
+- Univariate models worked best for early-flowering species, multi-variate models have stronger fits for later-flowering ones
+	- single factors have greater explanatory power (one factor controls process) in early-flowering
+
+Boy there is a lot going on here! Not sure I'm understanding the scales, differences between warming and elevation... The abiotic measurements and their influences are helpful here. I'm not really sure how to disentangle snowmelt's effects from other correlated things... maybe this could be re-analyzed? Anyway, I like the way spring soil temp., summer/flperiod soil temp., and soil moisture at various points are tested here. Seems like soil moisture does not necessarily have an effect here whereas summer soil temperature may. Thinking about collinearity in models will be very important (these should all be correlated under shade cover). Also worth disentangling time and duration of flowering.
+
+
