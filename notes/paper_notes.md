@@ -727,4 +727,70 @@ Where to go from here? Would be good to look at (1) seedling recruitment and (2)
 
 Boy there is a lot going on here! Not sure I'm understanding the scales, differences between warming and elevation... The abiotic measurements and their influences are helpful here. I'm not really sure how to disentangle snowmelt's effects from other correlated things... maybe this could be re-analyzed? Anyway, I like the way spring soil temp., summer/flperiod soil temp., and soil moisture at various points are tested here. Seems like soil moisture does not necessarily have an effect here whereas summer soil temperature may. Thinking about collinearity in models will be very important (these should all be correlated under shade cover). Also worth disentangling time and duration of flowering.
 
+### Rixen, C., Stoeckli, V., Huovinen, C., and Huovinen, K. 2001. The phenology of four subalpine herbs in relation to snow cover characteristics. From Proceedings of a symposium in Sixth IAHS Scientific Assembly, Maastricht, Ned. 
+
+- Ski slopes: artificial snow, water, minerals added; snow compressed
+	- Cold temps may more easily reach the soil, possibly causing soil freezing here
+	- artificial snow my have later snowmelt
+- Artificial snow field on a cultivated grassland: 10 artificial snow plots, 10 natural snow plots, 10 plos untreated snow on field edge
+- Phenology of four species incl. Taraxacum off. monitored frmo end of April to end of June
+- Groomed snow had lower and more variable soil temperature than natural ungroomed snow (incl. sub-freezing)
+	- compressed natural snow took one day more to melt than untreated natural (sign.?)
+- First three flowering species: earliest under untreated snow plots, compressed snow took longer (how much?)
+	- ehhh looks like these are not significant, but also n = 10 only so probably underpowered
+
+Eh... small sample size. Compressed snow will melt later and will cause fluctuations (going below freezing) in soil. Converse of this is that natural snow insulates soil very well! (up until snowmelt  suppose).
+
+### Forrest, J., Inouye, D.W., and Thomson, J.D. 2010. Flowering phenology in subalpine meadows: Does climte variation influence community co-flowering patterns? Ecology, 91(2): 431 - 440. 
+
+- Cites Dunne, saying that earlier flowering species will have a stronger relationship to timing of snowmelt than later-flowering species
+- Thrust of this paper seems to be thinking about/looking at the co-flowering community
+	- Thinking about pollination... variation in phenological response influences pollinator preference, possibly
+- Here: does timing of snowmelt influence temporal overlap [of different species?]
+- Why snowmelt? It integrates springtime temperature, winter snow accumulation, influences start of growing season, soil moisture
+	- Snowmelt is lower here than historcally
+##### Methods
+- 30 2x2m plots, monitored nearly every summer 1974 - ~2000?
+	- 16 unmanipulted plots in dry incl. in aspen and meadows
+	- # open flowers in all non-graminoid plants
+- snow accumulation and date of first bare ground recorded within 1km
+	- snowmelt varies by plots... on average ground bcomes bre 9.3 pm 8.9d earler at station?
+	- interannual variation much larger than inter-plot
+	- monthly April - June temps didn't add much to analysis
+- Focal species: an early (Mertensia), a late (Heterotheca), two intermediates (Lathyrus, Hymenoxys)
+- Community metric of overlap: take all flw plants during flowering period, measured relaive abundances ~ timing of snowmelt
+	- or... looked only within a 2x2m plot (local overlap)
+	- Use Mantel to evaluate relationshp between snowmelt date and first bare ground date
+		- i.e., snowmelt date is matrix 1, Bray Curtis flowering matrix is matrix 2
+		- (what are matrices? matrix 2 is B_{ij} is overlap in community from year 1 to 2? A_{ij} is difference in snowmelt?
+		- this gives each day equal weight in defining co-flowering community
+	- Also, overlap between species pairs
+		- used Schoener's index of niche overlap
+			- SI = 1 - (1/2)*sum_k |p_{ik} - p_{jk}|; p_{ik} is proportion of i's flowering occurring on day k
+				- this sums over days, giving overlap in temporal distribution
+			- use linear interpolation for missing days (good idea!)
+		- did this jsut for Lathyrus-Lupinus and Lathurus-Vicia because they may share pollinators
+		- ssess significance by looking t SI ~ snowmelt date (rank based assessments)
+##### Results
+- No temporal autocorrelation of either snowmelt date or flowering intensity/duration
+- For 2/4 species, correlation between first date of bare ground and composition of coflowering species
+	- third species becomes significant if using only presence/absence data (increased power b/c more data available)
+	- Fourth species (unaffected) was latest- and longest-flowering speces
+	- Lathyrus: 10.11 coflowering species responsive to snowmelt date
+- Later snowmelt means more co-flowering species?
+	- Three sp. with strongest intensty ~ snowmelt date are late-flowering??
+	- (so because late-flowering species are less responsive, everyone is getting shoved together when the season is shorter)
+- Much less Lathyrus-Lupine overlap with earlier snowmelt
+- No association of Lathyrus-Vicia overlap with snowmelt
+##### Discussion
+- Early species are more responsive to snowmelt timing
+- For Lathyrus (most seriously studied species), more species to overlap with with late snowmelt
+- Prevously shown that some species have more flowers in years with more snow, later melt
+	- early snowmelt may cause frost damage to buds
+- Duration effects: early snowmelt can increase duration by providing a longer growing season, later snowmelt/more snow can increase duration by providing more moisture...
+	- Ooh!!! wow. This duration effect may operate *within species* as well... e.g., there may be a difference in timing that conflates *plot level duration* with *individual duration* such that conspecifics are smooshed together if they start later
+- N.b. air temp did not have very much marginal effect (perhaps not fine-grained enough)
+- Some stuff about pollinators.
+
+This is useful for thinking about early vs. late flowering species and how they may respond differently to cues (Dunne also talks about this). Early flowering (like Thermopsis) may show more variation because it's much more reliant on when there is bare ground. Perhaps Thermopsis also will be more sensitive to changes in microclimate because they are relying on cues? Also the framework here of thinking about overlap between species can be useful for us, thinking about overlap/synchrony between plots. Linear interpolation is a good idea for imputing floral abundances!
 
