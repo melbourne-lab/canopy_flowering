@@ -819,5 +819,67 @@ This is useful for thinking about early vs. late flowering species and how they 
 
 Very cool stuff! Lots of physiology and photosynthetic stuff I don't understand. But it's interesting to think of forest subcanopy as both responding to diffuse radation and also requiring (?) brief periods of intense solar radation penetrating the forest overstory. The sections on recruitment and size are most interesting or relevant sounding to me/us.
 
+### Young, D.R. 1983. Comparson of intraspecfic variations in the reproduction and photosynthesis of an understory herb, Arnica cordifolia. American Journal of Botany, 70(5): 728 - 734. 
+
+- Understory herbs: typically in single-sp. patches, dependent on light, precip., and microtopography
+	- refs in here about differences in reproduction: light, temp., moisture, density
+- Photosynthesis varies under canopy - look at intraspecific variation in photosynth. and carbon storage in an understory species
+##### Methods
+- *Arnica cordifolia*
+	- Young and Smith , 1980, Y&S 1982, look at photosynthesis depending on understory microhabitat
+	- Max. photosynthetic rate per unit leaf area in a clearing is >2x that on edge or in shade
+	- Max. carbon gain per unit leaf area: highest in plants from open locations (~3x shaded plants)
+	- typically 1/3 m tall, 4-6 large broad leaves on one stem
+	- Summer growth cycle typically 4-8 weeks
+		- one shoot may flower for about one week, seed maturation in 2-3 days (!)
+	- Asexual reproducton through rhizomes
+	- New shoots need >3 years to reproduce a flowering head (just vegetative or all?)
+- Field work
+	- patch types: open typically >12 MJ/m2/day, shade <5
+	- Field sites: 1980, 1981 in Med Bow, NE-facing slope
+	- Go to six flowering sites
+	- Collect seeds (6 shoots from each of five patches per microhabitat, i.e., five each of open, semi-, closed)
+		- no evidence of differences in dry weight per ramet
+	- Germination: do gerimination differences exist by microhabitat?
+		- 100 seeds from each microhabtat: subdvded into groups of 20, put in five petri dishes
+		- monitor gerination over time
+##### Results
+- From 1980 studies, higher max. photo rate, higher light saturation, higher max carbon gain going up openness gradient
+- Only sign. differences in # flower heads, # seeds, total seed weight per ramet
+	- 2x number of heads in open env. rel. to shaded (2x seed weight per ramet)
+- No differences (among ramets) in seed, vegetative, or aboveground dry weight
+	- ramets in open locations had greater belowground weight comp. to shade
+- Similar max temp. for germination for all three env. types
+	- however, the best performing env. type seemed to vary by temp?
+		- e.g., hghest germ. for open seeds at 20C, but highest was shaded at 25C
+	- similarly, differences across shaded microhabitats
+		- only shaded seeds would germinate in darkness
+		- in general, germ. rates tracked PAR from their home env. type (!) although differences were slight
+##### Discussion
+- Yep: more patch reproductive effort in open locations
+	- associated with more photosynthetic capacity
+	- also means more max. daily carbon gain (more carbon for reproductive investment)
+- Improved germination in light env. similar to area of maternal plant
+	- highest overall germination was mid-temp from seeds collected from shade
+		- compensation? perhaps... seems shakey
+	- 80% of plants occur in intermediate/semi-open canopy
+		- this is the range of optimal germination	
+		- intermediate climate here may allow max water use efficiency
+- Seed reproductive effort, vegetative reproductive effort, total rep. eff. (SRE, VRE, TRE)
+	- (how are these defined? just weight?)
+	- looking at all three of these in conjunction allows examination of vegetatively-reproducing plants
+	- high VRE in relation to SRE could just be vegetative reprod.... self-evident?
+	- In understory, SRE increases and VRE increases with plant density, daily light (refs)
+		- but in this Arnica, both SRE and VRE increased with density and light
+		- is increase just due to more carbon gain allowing more reproduction?
+	- Are photoassimilates (some chem. compound?) transfered among plants through underground stuff? whoa
+
+Wow, lots of interesting stuff here. Need to think about this more in the context of clonality - we know Campanula has vegetative reproduction through ramets. But as far as seeding goes, we see more evidence here that more flowers and seeds are produced in sun rel to shade. Also more belowground growth for allocation. Is there a reason to assume this may influence timing of flowering? The seed germination stuff was also super interesting - not just what environment is best for seeding, but what maternal environment could do to seeding. Is this a seed quality thing? Thinking about maternal investment, why would shaded plants have higher quality seed in any setting? Is this some sort of local adaptation? Plasticity?
+
+At the very least it makes it tempting to do a source x environment part of a seed addition experiment!
+
+
+
+What's next... two Chazdon papers, also potentially some stuff in here Abrahamson, e.g. about clonality. Also good refs in Young about abiotic influences on number of flowers.
 
 
