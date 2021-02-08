@@ -794,3 +794,30 @@ Eh... small sample size. Compressed snow will melt later and will cause fluctuat
 
 This is useful for thinking about early vs. late flowering species and how they may respond differently to cues (Dunne also talks about this). Early flowering (like Thermopsis) may show more variation because it's much more reliant on when there is bare ground. Perhaps Thermopsis also will be more sensitive to changes in microclimate because they are relying on cues? Also the framework here of thinking about overlap between species can be useful for us, thinking about overlap/synchrony between plots. Linear interpolation is a good idea for imputing floral abundances!
 
+### Chazdon, R.L., and Pearcy, R.W. 1991. The importance of sunflecks for forest understory plants. BioScience, 41(11): 760 - .
+
+- With closed canopy, often only ~5% of solar radiation can reach the understory
+	- Sunflecks: brief and unpredictable periods of direct irradiance
+	- Also: shadeflecks are brief (or longer-lasting) cloud-induced shading periods
+- Direct radiation has a different low red:far-red ratio than direct sunlght
+- Canopy openings need to exceed angular size (?) of ~0.5 degrees for full irradiance
+	- penumbral parts of a sunfleck probably don't reach same photon flux as direct sunlight, only barely better than diffuse radiation
+- Generally, sunfleck duration and irradiance decrease wth taller tree height and leaf area
+- Similar photon flux density from sunflecks (i.e., I think proportion of direct understory irradiance coming from flecks) is similar btwn. temperate and tropical understories
+	- but within a day, for a given point in space, variation in irradiance can span orders of magnitude
+	- e.g., in Hawaii, 60% of sunflecks were <30 seconds; in CA redwoods, median duration is 2 secs
+	- highly clustered temporally, quite restricted spatially (~20 cm apart will vary over the course of a day)
+- Sunflecks important for carbon gain (some physiology stuff I didn't understand)
+	- Orozco-Segovia 1986: in MX rainforest, more seed germination of pioneer species in sunflecks
+	- in HI evergreen forest, seedlings show linear relationship between rel. growth rate and potential minutes of sunfleck
+	- Pitelka et al. 1980: in eastern deciduous forest, an Aster has more reproductive effort and size with more light
+	- Young 1983 seems to do something similar with an Arnica
+- Photosynthetic response to sunfleck: depends on whether leaves have been previously (recently?) exposed to near-saturating irradiance
+	- I guess it takes time (~20 sec) for the leaf to get up and running, see Fg. 6
+	- These combine to mean the effects on photosynthesis depend highly on the temporal sequence of sunflecks
+	- Efficiency of sunfleck use varies by species (and also within species? see Chazdon and Pearcy or solo refs)
+
+Very cool stuff! Lots of physiology and photosynthetic stuff I don't understand. But it's interesting to think of forest subcanopy as both responding to diffuse radation and also requiring (?) brief periods of intense solar radation penetrating the forest overstory. The sections on recruitment and size are most interesting or relevant sounding to me/us.
+
+
+
