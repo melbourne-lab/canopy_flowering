@@ -878,8 +878,40 @@ Wow, lots of interesting stuff here. Need to think about this more in the contex
 
 At the very least it makes it tempting to do a source x environment part of a seed addition experiment!
 
+### Young, D.R., and Smith, W.K. 1982. Simulaton studies of the influence of understory location on transpiraton and photosynthesis of *Arnica cordifolia* on clear days. Ecology, 63(6): 1761 - 1770.
 
+- Study sp: *Arnica cordifolia* - herbaceous perennial, 1/3 m. tall, 4-6 overlapping leaves on one uprght stem
+	- Rapid growth and senesence of the leaves
+	- Y&S 1980 show variaton in leaf morphology and variation according to microhabitat and understory location
+- Simulation modeling looking at photosynthesis and transpiration at three understory locations:
+	- EL: "typical" understory location, early morning and late afternoon sunpatches  
+	- SH: shaded most of the day
+	- LM: only receiving sunlight at mid-day
+	- Leaf phenotypes at each location:
+		- LM, small leaves
+		- average sized leaves at EL
+		- large leaves for SH
+	- Factorial leaf size vs. location simulation design
+- Microclimate measurements (1979, 1980) taken at 15 understory locations along shade gradient
+	- Incident solar radiance, quantum flux, wind speeds at ~10 cm, air humidity, air temperatures, surface soil temperatures
+- Photosynthesis measured on leaes
+	- Influences of light, temperature, and xylem pressure potential on photosynthesis? Field measures or modeling?
+	- Stomatal resistanc to water vapor diffuon, leaf temp, humidity used to estimate transpiration (water loss)
+- Simulatons based on energy balance equations, leaf temp. ~ air temp, radiation levels, wind speed, air humidity
+	- Clculate photosynthesis, transpiration, water use efficiency for each phenotype in natural location and other two microhabitats
+	- Validation by comparing sim results to one day of measurements on two plants (but nine levels...)
+- Sim results:
+	- SH location: morning+afternoon net photosynthesis highest in large leaves, mid-day more in sm/average leaves
+	- EL location: during high radaton in morning and afternon, average leaves favored while larger leaves have advantage during shaded peiods
+	- LM location: small leaves have advantage at mid-day, large and average leaves have advantage durng morning/afternoon
+	- Highest net carbon gain for small leaves, but also highest water loss, such that small leaves had the lowest water use efficiency in LM
+	- Transpiration rate similar: leaf resistance differences offset by temperature
+- Carbon gain per plant is constant (?) for *A. cordifolia* because of trade offs in leaf area per plant vs. photosynthesis per leaf area
+	- Model suggests small leaves have greatest net carbon gain and water loss, but lowest WUE in its natural location
+	- average leaf size had greatest carbon gain and WUE at natural location
+	- does this suggest that WUE is more important than carbon gain?
 
-What's next... two Chazdon papers, also potentially some stuff in here Abrahamson, e.g. about clonality. Also good refs in Young about abiotic influences on number of flowers.
+Useful for thinking about trade-offs from leaf size. Larger leaves mean more photosynthesis but also more transpiration (water loss) - transpiraton probably more likely in open (warmer, less humid?) areas. Water use efficiency may be selected for more strongly than net photosynthesis and/or carbon gain.
 
+What's next? Chazdon when I have a lot of time. Young and Smith 1980 on leaves and other stuff may be helpful.
 
