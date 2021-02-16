@@ -975,3 +975,81 @@ Differences in timing of leaf out and also root production between forest and op
 
 Use of this paper: thinking about phenology of stages and importance of roots... well at the very least there is some influence of light on leaf phenology (not so for roots though) due to competition. That's interesting - makes me want to look at bolting of *Thermopsis*. Soil moisture doesn't seem to vary by habitat type (noteworthy) - this ecosystem probably also gets a lot of snow, although no topography that may influence snowmelt levels. The fact that moisture and temperature correlations depend on habitat type (for leaf productivity) is interesting, although no effect on rooting. Underground is probably just less sensitive to changes/heterogeneity than aboveground is. This says to me maybe flowering is likely to be affected by either of these. Use use use!
 
+### Chen, J., et al. 1999. Microclimate in forest ecosystem and landscape ecology. BioScience, 49(4): 288 - 297.
+
+- Forest structure/stand structure (e.g., overstory coverage, sp. composition) vs. landscape structure (topography, spatial patterns in soil, veg.)
+- Microclimate produces non-linear patterns, e.g., decomposition of organic matter is a function of soil temp. and moisture
+- Variance in microclimate is very important, e.g., short ~10 min sunflecks providing a disproportionate amount of an organism's total seasonal PAR
+- Microclimate highly sensitve to changes in overstory canopy
+- Spatial variation (scales) vary by forest ecosystems, e.g., doug fir forests and oak forests will have different scales of variation of air and soil temperatures
+	- although, generally, soil temperature is more spatially variable than air temperature 
+	- e.g., Chen and Franklin 1997 comparing summer air temperatures and soil temperatures along transects in WA
+	- e.g., in oaks of the Ozarks, air and soil temperatures varied by much less
+	- differences perhaps attributable to evenly-aged stand structure in oaks (compared to WA doug fir old growth varied canopy)
+- Temporal scale of measurement is important - microclimate variation may be related to daily, seasonal, or dramatic chance weather variation	
+	- means the choice of summary statistic is important
+- Forest edges can cause variation, e.g., moving into a forest remnant can cause an increase in daytime summer temperature but an increase in humidity
+	- Chen et al. 1995 - scales of variation, 8C differences at patch boundaries, compared to 2.7C within a patch
+	- extreme temperatures at edges due to stable air masses??
+	- strong wind, low humidity near edges?
+- [A good question... what is the magnitude of within-site variation or change compared to climate change?]
+
+Meh. I do like the question about between environment variation vs. across year variation (with climate change trend). Chen and Franklin have some interesting stuff but it looks like it's mainly on old growth forests.
+
+### North, M., et al. 2005. Influence of light and soil moisture on Sierran mixed-conifer understory communities. Plant Ecology, 177: 13-24.
+
+- Southern Sierra: fire suppression means more shade-tolerant trees, overstory canopy, more litter, less light
+- The effects of gap openings on forest understory likely are influenced by forest type
+	- e.g., in old growth forest, more herbs in gaps due to increasing radiation (Gray et al. 2002)
+	- in deciduous forests, gaps mean more soil moisture due to precip
+- Here: lok at herb and shrub cover, compared to canopy cover, soil moisture, litter depth, bedrock depth
+##### Methods 
+- Teakettle Exmpt. Forest: mixed conifer of red fir and lodgepole pine (also white fir, black oak, sugar pine)
+	- White fir has most stems and basal area
+	- Sugar pine and Jeffrey pine have largest diameter and tallest trees
+	- Fire interval was 12-17 years historically, only two surface fires since 1865
+- In a 200 ha block, 18 4-ha plots established
+	- in 12 plots, 50x50m grid and six 25x25m plots
+		- in large plots, 9 points per plot, in small, 49 points per
+	- At each sample point, measure: soil depth, volumetric soil water content, canopy cover (hemi photo + moosehorn?)
+	- Also, 10m2 circular plot: % cover of herb and shrub
+- From photos, get %can cover, direct rad., diffuse rad., and photosynthetically active photon flux density (PPFD)
+- For plant cover data per plot: alpha, beta, gamma richness, Simpson and Shannon div.
+	- Also species groupings using cluster analysis, ordination, regression trees (damn!)
+- Analysis... goddamn this seems like overkill goodness
+##### Results
+- Overall rich community but infrequent and heterogeneous at small scales
+	- 84 herbs at 402 sites, with most abundant (Pteridum) at 11.5% total herb cover
+	- 14 shrub species, dominated 75% of one species
+- By canopy, there are four distinct habitat types:
+	- mesic closed canopy (with woody debris)
+	- open canopy, drier understory, high litter
+	- dry gap with shallow soil (no litter or debris)
+	- Rock cover, shallow soils, littl moisture
+- Regression trees looking at predictors of habitat type
+	- high herb cover with >14% October moisture
+	- also herb cover with >10% Oct. moisture and less sunlight (?)
+	- shrub cover associated with more diffuse light, less moisture, less direct light
+	- herb richness associated with higher Oct moisture, somewhat influenced by May moisture, more diffuse, less direct light
+##### Discussion
+- Functional group stuff
+	- Annual herbs complete life cycle after snowmelt
+	- Perennial shrubs tolerate warm and ry summers
+	- Herbs are patchy
+- Herb response to light varies by direct and diffuse PPFD
+	- more cover with less direct light
+	- diffuse light has less effect
+	- direct PPFD under direct sunlight (Barbour et al. 1991, North et al. 2002)
+	- litter depth is positively correlatd wth Oct. soil moisture (litter traps moisture?)
+- Shrubs form large contiguous patches, a lot on the edge of tree clumps and gaps
+	- shrubs do well where moisture is low
+- Available soil moisture has largest influence on understory plant composition
+	- soil moisture can be influenced by porosity, bedrock depth, litter depth, temperature, plant use
+	- differences in bedrock depth and plant functional types may most influence soil moisture patterns observed here
+	- Closed canopy has deepest soils retaining most moisture (what is the driver here? soil depth -> tree cover -> canopy -> moisture?)
+	- Closed canopy and partial canopy have similar litter and sol depths, but varied moisture; may be due to shrubs that compete for water
+	- Trees reduce understory light, possibly less affecting moisture
+
+Ehh... good discussions on plant functional types and drivers of soil moisture (although are they sourced?) Litter and canopy coverage *as well as* current plant composition driving soil moisture. Compare our eventual soil moisture results with this. Litter depth influencing moisture - there seems to be a lot of litter in aspens, perhaps these have high moisture (but also less light penetration I'd guess?) Herb coverage influenced by soil moisture for sure - more moisture means more herbs, less moisture typically associated with shrubs (where are the understory shrubs at Elk Meadows?) The patchiness of herbs is interesting - annuals, ephemeral populations? Like fireflies blinking across the landscape... idk. 
+
+
