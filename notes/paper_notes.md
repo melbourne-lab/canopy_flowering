@@ -915,3 +915,63 @@ Useful for thinking about trade-offs from leaf size. Larger leaves mean more pho
 
 What's next? Chazdon when I have a lot of time. Young and Smith 1980 on leaves and other stuff may be helpful.
 
+### Steinaker, D.F., and Wilson, S.D. 2008. Phenology of fine roots and leaves in forest and grassland. Journal of Ecology, 96: 1222 - 1229.
+
+- Response of leaf out to climate change is well studied, bu what about root phenology
+	- Also, does root phenology predict shoot phenology?
+	- Shoots are dependent on roots for soil resources
+	- Roots are dependent on shoots for photosynthates
+- There may be decoupling of these phenologies if
+	- Shoots are affected by air temp while roots are affected by soil temp (ar warms faster than soil)
+	- Nutrients and photosynthates are stored in distal tissue
+	- There is strong light pre-emption in forests (due to leaf out) such that it's advantageous to leaf out rapidly
+- Do we see differences in root and shoot phenology depending on environment? Forest (aspen) vs. grassland.
+##### Study
+- Mosaic of grassland and aspen in SK Great Plains
+	- Aspen creep (changing burn regimes + N deposition)
+	- Forest is shrubby understory
+	- Grassland dominated by Stipa, Agropyron, Koeleria, Selaginella
+- Measure root and leaf production + soil water + soil temperature
+	- 10 locations, >30m apart, total 20 locations
+	- Root and leaf measurements with sequential imaging
+- Root images:
+	- One rhizotron tube per location (20 tubes total)
+	- 25 images along each rhizotron tube per day (250 for each habitat on each date, >7K photos)
+	- Photo every 15 days
+- Shoot images:
+	- Sequential downward-facing images taken biweekly over growing season
+	- Count green pixels for stuff
+	- In forest, also tke upward-facing images to get canopy changes
+- Differences n production are inverse (?) of summed difference btween production value on each date and mean site production (???)
+- Analysis: repeated measures ANOVA used to get differences in production duration betwen habitat types
+	- root depth measurements are repeated measures for one plant
+##### Results
+- In grasslands, leaf production begins one sample interval (15 days) before max root production (such that root and shoot were correlated over time)
+- In forest, max leaf production occurred 45 days after max root production (less correlation)
+	- I.e., synchrony in grassland but not forest
+- Leaf production starts on same days in ech habtat, although forest max is 30 dys sooner than grassland max
+	- forest leaf production finishes 15 days soner
+- Root production occurs in spring and summer, with greatst production in early summer in both env. types
+	- Root duration longer than shoot duration for both habitat types, although no differences in root duration between types
+- Soil moisture varies through time but not by habitat
+	- similar patterns between sites
+- Soil temperature varie by time
+	- warmer soils in grasslands than forests
+- Grassland leaf production increases with soil temps
+	- Forest leaf production increases with soil moisture, as leaf production is greatest earlier in season when moisture is highest
+	- Root production increases over growing season - soil temp increases and moisture decreases
+	- [think about how all of this fits together...]
+##### Discussion
+- Forest leaf production occurs before root production because air warms faster than soil
+	- Forest leaf production may also b faster due to translocation from twigs (??) and due to intense light competition
+- More synchronous growth in grasslands because nutrients for new leaf production come from belowground storage
+	- (Is there a different allocation of resources due to the scarcity of light? Root depth greater in sun where there is greater light availability)
+- Root and leaf production are temporally coupled in grasslands and decoupled by woody invasion
+- Temperature changes may have increasing effects on grasslands than shaded areas due temperature's moderating effect on climate
+	- i.e., soil temperature increases more in grasslands than forests
+- Jackson et al. 2001 (in Terrestrial Global Productivity): "5-10 day lengthening of growing season can improve net productivity in temperate forests by 1/3 because early spring photosynthetic tissue disproportionately increases total productivity"
+
+Differences in timing of leaf out and also root production between forest and open area. Leaf out is *earlier* in forest. But, root production looks about the same by habitat type. Leaf out is important in light to get the available light quickly. Thinking about differences in allocation... there's likely to be a lot less root mass in understory because of the lack of available light. Soil temperature varied over time. **Soil was warmer in grassland than forest**. Soil temperature was important for leaf phenology in grasslands, soil moisture important in forest. Both important for roots (similar effects by habitat: moister soil meant less production, soil temperature has positive effects).
+
+Use of this paper: thinking about phenology of stages and importance of roots... well at the very least there is some influence of light on leaf phenology (not so for roots though) due to competition. That's interesting - makes me want to look at bolting of *Thermopsis*. Soil moisture doesn't seem to vary by habitat type (noteworthy) - this ecosystem probably also gets a lot of snow, although no topography that may influence snowmelt levels. The fact that moisture and temperature correlations depend on habitat type (for leaf productivity) is interesting, although no effect on rooting. Underground is probably just less sensitive to changes/heterogeneity than aboveground is. This says to me maybe flowering is likely to be affected by either of these. Use use use!
+
