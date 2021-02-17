@@ -1052,4 +1052,52 @@ Meh. I do like the question about between environment variation vs. across year 
 
 Ehh... good discussions on plant functional types and drivers of soil moisture (although are they sourced?) Litter and canopy coverage *as well as* current plant composition driving soil moisture. Compare our eventual soil moisture results with this. Litter depth influencing moisture - there seems to be a lot of litter in aspens, perhaps these have high moisture (but also less light penetration I'd guess?) Herb coverage influenced by soil moisture for sure - more moisture means more herbs, less moisture typically associated with shrubs (where are the understory shrubs at Elk Meadows?) The patchiness of herbs is interesting - annuals, ephemeral populations? Like fireflies blinking across the landscape... idk. 
 
+### Buck, J.R., and St. Clair, S.B. 2012. Aspen increase soil moisture, nutrients, organic matter and respiration in Rocky Mountain forest communties. PLoS One.
+
+- Rocky mountain successonal cycle: 
+	- disturbance removes overstory
+	- aspen roots "sucker" (?)
+	- aspen stands establish
+	- conifer seedlings grow rapidly and slowly promote aspen mortality
+- Aspen stands have more biodiversty and production than forest meadows (??)
+	- see citation here: Kuhn et al. 2011
+	- also, may be mroe snowpack in aspen stands than open meadows (see: LaMalfa and Ryle 2008)
+- Are there plant-soil feedbacks related to forest type, overstory composition, etc.?
+	- Hypothesis: soil resources and respiration high in aspen stands, lower in conifers stands and meadows
+- Ten sites at Fishlake National Forest (UT) w/ four stand types each
+	- >75% aspen, 50-50 conifer/aspen, mostly coniper (fir and Engelman n spruce), and open meadow adjacent to forest edge
+	- vascular plants (shrubs and forbs) most abundant in aspen understory
+	- meadow mostly mixed grasses and forbs, some shrubs
+- Soil samples collected from four stand types at seven (?) sites
+	- nutrient concentrations, soil texture, respiration
+	- differences 
+- Differences in C:N, total N, K, Fe, Zn between stand types (acc'd to ANOVA)
+	- (n.b., Zn p = 0.04, organic matter p = 0.03)
+	- no differences among NO3, P, Mn, pH, Mg
+- Most organic matter, N and Zn in aspen stands, then mixed or conifer dominated then meadows
+- Confier stands had highest C:N, Fe
+- Aspen stands had more N, K, and lower C:N compared to conifers
+- Meadows and aspen stands had higher soil temperature compared to conifer dominatd stands
+	- changes across the summer were consistent across summer
+- Soil moisture decreased over time
+	- aspen and meadows had approx. 30% higher soil moisture compared to conifers early in summer
+	- soil moisture converged later in summer
+- Soil respiraton increases from early June to july in all soil types
+	- aspen stands consistently had highest soil respiration (aspen > mixed > confier > meadow)
+- Nutrient inputs into soil: root exudates, root turnover, litter, stemflow
+	- litter likely different among communites
+	- foliar nitrogen could be contributing to differences in N
+		- broadleaf species typically have higher N and lower C:N in litter compared to conifers
+- Soil moisture is important for plant community composition
+	- moisture reliant on snow pack (so things dry out later in summer)
+	- early in summer more snow in aspens but convergence by late summer
+	- soil moisture convergence: maybe aspens have higher summer evapotranspiration?
+	- the differences in soil organic matter may be what cause differences in soil moisture
+	- ref in here about water penetration in conifer soils... not high!
+
+Great references in here about biodiversity and some abiotic factors under aspen canopy. I'm not really sure what to do with the geochemical stuff, other than perhaps to use it to say we can't specify what exactly is driving patterns (a secondary concern, anyway).
+
+But, it's super cool to see some of the abiotic differences between aspen and conifer laid out here. Does this influence plant physiology? Or it could, perhaps more likely, influence whether plants appear in these canopy types at all. For species present in both, contrasts between these two may be useful for disentangling direct light effects from effects of other variables like moisture.
+
+Good question here about snow pack - how much is this contributing to soil moisture? Litter also seems to be contributing a lot (nutrients, organic matter, but also to moisture retention). What if we did litter removal experiments???
 
