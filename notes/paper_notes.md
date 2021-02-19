@@ -913,8 +913,6 @@ At the very least it makes it tempting to do a source x environment part of a se
 
 Useful for thinking about trade-offs from leaf size. Larger leaves mean more photosynthesis but also more transpiration (water loss) - transpiraton probably more likely in open (warmer, less humid?) areas. Water use efficiency may be selected for more strongly than net photosynthesis and/or carbon gain.
 
-What's next? Chazdon when I have a lot of time. Young and Smith 1980 on leaves and other stuff may be helpful.
-
 ### Steinaker, D.F., and Wilson, S.D. 2008. Phenology of fine roots and leaves in forest and grassland. Journal of Ecology, 96: 1222 - 1229.
 
 - Response of leaf out to climate change is well studied, bu what about root phenology
@@ -1100,4 +1098,46 @@ Great references in here about biodiversity and some abiotic factors under aspen
 But, it's super cool to see some of the abiotic differences between aspen and conifer laid out here. Does this influence plant physiology? Or it could, perhaps more likely, influence whether plants appear in these canopy types at all. For species present in both, contrasts between these two may be useful for disentangling direct light effects from effects of other variables like moisture.
 
 Good question here about snow pack - how much is this contributing to soil moisture? Litter also seems to be contributing a lot (nutrients, organic matter, but also to moisture retention). What if we did litter removal experiments???
+
+### Abrahamson, W.G. 1979. Patterns of resource allocation in wildflower populations of fields and woods. American Journal of Botany. 66(1): 71 - 79.
+
+- In r- vs. K-selection, less mature/highly disturbed environments cause more investment in reproducton
+	- reproductive allocation declines with habitat "maturity"
+	- allocation should also rely on the limiting resource
+		- Abrahamson and Gadgil 1973: if light is limiting, the more biomas for stems to avoid shading or more biomass for leaves
+- Here: sampled 52 populations (56 sp.); 36 from fields, 16 from forests
+	- sampled durng peak fruiting period in 1977
+	- 8-17 randomly chosen flowering or fruiting plants chosen
+		- whole plant excavated
+		- plants divied into stems, leaves, flowers, fruits
+		- each part weighed
+	- seeds per plant counted for ten individuals per species
+	- field sites 5-20 y/o, wood sites 50-125 y/o
+- Regressing biomass measurements against each other
+	- in woods, pretty strong associations (r = 0.99 except flower mass against total)
+	- in fields, lower correlations (0.79 - 0.95)
+	- root to shoot correlations: field r = 0.67 forest r = 0.99
+		- when accounting for annual vs. perennial differences, annuals r = 0.91 and r = 0.76 for perennials
+-  About 10x seeds per plant in field speces (comp. to forest)
+	- about 9x seed biomass in field species
+	- ~14 and 23% of biomass in field goes to seed and fruit resp.
+	- ~4 and 16% of biomass goes to seed and fruit in forest resp.
+- No differences in biomass allocations between introduced and native field species
+	- except that introduced field species have slightly higher floral biomass
+- Root to shoot ratio higher in field perennials, typically more belowground allocationa nd less stem allocation in perennials compared to annuals
+- In general, more allocation to flower, seed and fruit in field populations, relatively more allocation to belowground leaves in woods, more and smaller propagules in field
+	- Field species have earlier-successional stage attributes
+	- Genetics? Physiology and plasticity?
+- Similar patterns in single sp. studies (Abrahamson and Gadgil 1973, Gaines et al 1974, Abrahamson 1975, Hickman 1975, Roos and Quinn 1975)
+- Due to vegetative propagation, it's impossible to truly quantify vegetative reproduction in dis stuff
+- There was a good amount of residual variation after site was accounted for, possibly explained by
+	- differences in life cycles (although we'd expect only perennials in forest understory yes?)
+	- spring vs. fall flowering
+	- growth form differences within a habitat type
+	- pollination mode? showy petals etc. may be very costly
+	- biotic or abiotic dispersal
+
+Good stuff. Makes me think there is a life history aspect of this as well. In general the shaded plants are more interested in resource accumulation and survival which will drive them towards less flowering, perhaps. Wonder if there are longevity differences between the two! As a general pattern though much more investment in reproduction in sun.
+
+Would be good to look at some of the refs in here about single-species although maybe not in time for writing a proposal.
 
