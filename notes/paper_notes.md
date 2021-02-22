@@ -752,7 +752,7 @@ Eh... small sample size. Compressed snow will melt later and will cause fluctuat
 ##### Methods
 - 30 2x2m plots, monitored nearly every summer 1974 - ~2000?
 	- 16 unmanipulted plots in dry incl. in aspen and meadows
-	- # open flowers in all non-graminoid plants
+	- n. open flowers in all non-graminoid plants
 - snow accumulation and date of first bare ground recorded within 1km
 	- snowmelt varies by plots... on average ground bcomes bre 9.3 pm 8.9d earler at station?
 	- interannual variation much larger than inter-plot
@@ -1140,4 +1140,70 @@ Good question here about snow pack - how much is this contributing to soil moist
 Good stuff. Makes me think there is a life history aspect of this as well. In general the shaded plants are more interested in resource accumulation and survival which will drive them towards less flowering, perhaps. Wonder if there are longevity differences between the two! As a general pattern though much more investment in reproduction in sun.
 
 Would be good to look at some of the refs in here about single-species although maybe not in time for writing a proposal.
+
+### Peschel, A.R., Boehm, E.L., and Shaw, R.G. 2020. Estimating the capacity of *Chamaecrista fasciculata* for adaptation to change in precipitation. Evolution, 75(1): 73 - 85. 
+
+- Fisher's Fundamental Theorem of Natural Selection (FTNS) predicts the change in mean fitness (quantitative trait) between the current generation and progeny is V_A(W) / \bar{W}
+	- i.e., more genetic diversity increases rate of genetic change
+	- note that this is due entirely to the environment of the parental generation and that environmental change will cause deviation from this
+	- "Whether a decreasing population (\bar{W} < 1) will be 'rescued' from extirpation through adaptation resulting in \bar{W} >= 1 depends on the magnitude of V_A(W) / \bar{W}"
+- Very few estimates of V_A(W)
+	- people say that populations will have little genetic variation because selection will remove it (fixation of beneficial alleles)
+	- in Chamaecrista
+		- Etterson (2004) looks at a soil moisture gradient for evidence of variance
+		- Sheth et al. 2018 and Kulbaba et al. 2019 estimate this V_A(W) in natural populations
+		- significant V_A(W) found
+- In tallgrass prairie, adaptation via gene flow is unlikely due to fragmentation, meaning that persistence will rely on in situ adaptation
+	- Climate change means greater cumulative precipitaton but less frequent rain, meaning likely changes in soil moisture
+	- specific leaf area is related to fitness-precipitation/moisture relationshp (thicker leaves/lower SLA = fitness advantage in low moisture)
+	- here: look at heritability, selection, plasticity of SLA
+- (1) is there V_A(W) in differing rainfall differences?
+	- (2) if yes what is the rate of adaptation in each condition?
+- (3) is there selection on SLA?
+	- (4) what is the heritability of SLA?
+	- (5) is there adaptive phenotypic plasticity for SLA?
+	- (6) is there a GxE interaction (variation for plasticity) between SLA and fitness?
+##### Methods
+- V_A(W) determined from a pedigree (variance between noninbred half-siblings)
+- Adaptive capacty of *Chamaecrista* - ten 2m2 plots, five with rainfall excluded (17 storms) in one summer
+	- summer is wetter than usual (considerably)
+	- 208 seeds (52 full sib fams representing 18 half-sib groups) planted
+		- thinned such that one seed per full-sib fam remained
+- At end of season, seeds collected and counted, SLA determined by weighing
+- V_A(W) and \bar{W} estimated with aster models
+	- aster has emergence as bernoulli and seed emergence as poisson
+- Testing for GxE interaction using trt and plot as fixed factors, dam sire and sire x trt as random factors
+	- get pearson's r as indicator of similarity of breeding values between treatments
+	- SLA plasticity is difference in trait expression between environments
+	- selection differential on SLA measured with n aster (regress fitness on trait)
+###### Results
+- rain shelters reduced 40% of incident rain
+- n.s. differences in mean lifetime fitness between rain treatments
+- large and significant effects of V_A(W) (??) in both treatments
+	- this comes from parental effects
+	- V_A(W) is higher in rain reduction treatment than in full rain
+	- also plot effects were significant, so, spatial variation in lifetime fitness
+- Both treatments had parental fitness greater than 1
+	- rain reduction had 52% larger predicted change in mean fitness (due to high V_A(W)?)
+	- predicted mean progeny fitness is 20% larger in reduction treatment
+- GxE interaction for lifetime fitness
+- Significant differences in SLA betwen treatments
+	- larger leaves in full rain treatments
+	- variable selection between treatments (trt x SLA influences fitness)
+	- slightly quadratic fitness function (fitness ~ SLA) for full ran, i.e., disruptive selection but no detectable selection in rain exclusion
+##### Discussion
+- Significant standing genetic variation (likely higher than other studies to to herbivore exclusion and weeding)
+	- populations have ability to adapt to both environmental types (very wet and dry)
+- Sire group breedng values only moderately correlated across treatments
+	- sire group's fitness in one environment type is a weak predictor of fitness in other environment type
+- Greater variation in fitness in more relaxed environment (rain exclusion is akin to historical rain)
+	- *Chamaecrista fasciculata* tends to occupy well-drained soils
+	- contrast with Etterson 2004
+	- Both populations have fitness well above replacement
+	- high variance suggests high adaptive capacity regardless
+- Although plasticity could be good, but here plasticity was maladaptive
+	- if rate of genetic change is slow, adaptive plasticity can buffer the population
+	- but here, selection in full rain treatment favored low SLA, but plasticity produced higher SLA (I thought it was bi-directional?)
+
+Not sure I 100% get what's going on here, but the important thing is that here is some natural variaton in an annual plant. It's a little confusing that the rain exclusion treatment here tends to resemble more historic treatments. I'm not sure why V_A(W) varies by treatment group. Also both fitness and varaiance are huge here. I'm also somewhat confused by the parts on SLA - this is associated with fitness. What are the biological and genetic mechanisms here? The stuff on plasticity is interesting and worth considering more.
 
