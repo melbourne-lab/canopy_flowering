@@ -1238,5 +1238,61 @@ Not sure I 100% get what's going on here, but the important thing is that here i
 
 Results here are good (forest characteristics influence climate buffering, along with topography) for thinking about aspen vs. conifer. More intriguing is the statistical technique used. 183 sensors is a lot - we won't be able to do this. The statistical technique here is worth noting as well - will we have enough data for techniques like this? Will 8-9 time serieses be enough to capture spatial variation?
 
+### Campbell, D.R. 2019. Early snowmelt projected to cause population decline in a subalpine plant. PNAS.
+
+- With climate change, mountain snowpack declines, earlier meltoff, earlier phenology
+- What will this mean for plant reproduction and population dynamics?
+- Here: *Ipomopsis aggregata* and *Ipomopsis tenuituba* near RMBL, 2001 - 2016
+	- Snowmelt date has advanced 1.34d / decade 1935 - 2016
+	- Common garden data
+- Questions
+	- (1) does seed production depend on snowmelt date?
+	- (2) how is seed production driven by n. flowers, fruits/flower, seeds/fruit, seed escape prob?
+	- (3) how will seed production change in future? impact on population growth?
+	- (4) population growth and snowmelt timing - effects of seedling establishment, survival, etc.
+- *Ia* and *It*: monocarpic, 5y as vegetative rosettes then blooming only once
+	- *Ia* is seed limited with no seed bank
+	- most vital rates from common garden (plantd from seed)
+		- seed production from natural populations
+		- seed establishment don separately
+	- seedlings in CG followed until flowering or death
+		- length of longest leaf
+	- four multiplicative influences of seed production (per plant) considered
+- Seed production and snowmelt date: ANCOVA gets mean total seed production ~ date of snowmelt + site
+	- snowmelt dates taken from weather station nearby (8km from CG... annual variation only)
+	- lag effects tested by using precip and snowmelt in prev. year
+- Seed production: ANCOVA approach on each component of seeding
+- Population growth rates: two approaches, one is an IPM, not sure what the other was
+	- get actual mean fecundity and the fecundity needed to obtain lambda = 1
+	- vital rates here modeled as functions of size, snowmelt date, site
+	- take 12 snowmelt dates
+##### Results
+- 2.64 fewer mature seeds for every day of earlier snowmelt (!)
+	- mean seed producton not related to june and july rainfall or lag precip
+	- variance in seed prod (?) not associated with site or snowmelt date
+- Seed production patterns driven primarily by proportion of flowers fruiting and seeds per fruit
+	- flowers produced unaffected by snowmelt date
+	- proporton of flowers setting frut did decline wth earlier snowmelt though
+	- (does this technique disentangle these? not sure but inclination is no)
+- Demography if only seed set is changed: 74-77 seeds per plant needed per reproductive plant for population stasis
+	- seed production falling below replacement level approx. half of hte time
+	- snowmelt day 134-136 for stasis in this case
+		- critical snowmelt day would be below 2035 at current rate by these estimates
+- Demography if all vital rates are influenced by snowmelt
+	- seedling establishment is increases with snowmelt date
+	- veg growth varies by one site (not sure how)
+	- later snowmelt increased survival over next year and probabilty of flowering in next year (only)
+	- elasticity most dependent on growth and survival with fecundity effects only true in some cases
+		- but lambda changed more strongly with *observed* snowmelt-induced changes in seed production
+	- combind says that populations fall below replacement rate of 1 for snowmelt days 130 - 139 (decline by 2064 or ~2025 depending on how counting happens)
+- Proportion fruiting and seeds per fruit - may be a pollination effect o seed provisioning effect
+	- maybe soil moisture influences nectar or pollen production
+- Density dependence unlikely to compensate for negative impacts of snowmelt on seed production (based on other studies)
+- Some other refs here about seed production and snowmelt: Inouye 2008, Aldridge et al. 2011, Amy Iler's papers
+- Petry et al. 2018 on sex-specfic responses to climate change in plants!!
+
+Good study looking at population level response. In general earlier snowmelt influences several vital rates (check flowering in subsequent years, etc.) but most importantly fruiting and seed set info. Definitely seems like a possible pollination influence to me.
+
+Seems like our paper would be very helpful for looking at the individual level and also for seeing how variation within populations may be helpful. Given what we know about how timing influences individual seed set, and how conspecific density may influence pollination and reproductive success, it's a really good question how variation may do this? [Actually, has this been done? Have we looked into how overall temporal overlap influences reproductive success at the population level?] Seems like a compelling mechanism may be "spreading out the phenophase lowers individual reproductive success by reducing phenological overlap"... if populations are seed limited I guess.
 
 
