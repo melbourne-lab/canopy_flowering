@@ -1207,3 +1207,36 @@ Would be good to look at some of the refs in here about single-species although 
 
 Not sure I 100% get what's going on here, but the important thing is that here is some natural variaton in an annual plant. It's a little confusing that the rain exclusion treatment here tends to resemble more historic treatments. I'm not sure why V_A(W) varies by treatment group. Also both fitness and varaiance are huge here. I'm also somewhat confused by the parts on SLA - this is associated with fitness. What are the biological and genetic mechanisms here? The stuff on plasticity is interesting and worth considering more.
 
+### Frey, S.J.K., et al. 2016. Spatial models reveal the microclimatc buffering capacity of old-growth forests. Sci Adv.
+
+- In mountains, surface temps diverge from troposphere due to (1) local air-flow (2) microtopography
+	- vegetation can influence this too
+	- forest structure can influence this stuff (think: old growth vs. secondary)
+- At HJA: combine topo + veg structure form LiDAR with Boosted Regression Trees to get thermal properties of landscape
+	- 183 HOBO loggers / 6400 ha placed 1.5m above forest floor recording Jan '12 to Jul '13 (7.4 mil loggings)
+	- Predictors: elevation, microtopography and veg structure
+	- Scales tested around sample point: 25m, 250m
+	- Responses: CDDs, mean min/max monthly temps, temp variability in Jan-March and Apr-Jun
+	- Boosted regression trees: air temp ~ predictors (38)
+		- also looked at each group of predictors and how much variance was explained (summng RI vars)
+		- no effect sizes womp womp
+	- Old growth vs. new: temperatures ~ PCA of LiDAR variables
+		- this is somehow getting at differences between old and new growth
+##### Results
+- elevation is the best predictor for most temp measures
+- topography too: steeper, exposed, south-facing sites warmer and more variable
+- vegetation structure predicts temperature variability
+- old forest characteristics typically produce cooler less variable temps
+- topographic position (valley versus exposed) accentuates effects of forest structure
+- elevation-canopy interaction
+- max temperature seems to be equally related to elevation, topo and veg
+- vegetation metrics typically have more influence at broader (250m) scale
+- Principle Components: (1) forest structure: closed canopy plantation -> old growth forest explains 44% of variance
+	- PC1 associated with 8/10 temp vars esp. temp extremes 
+	- (cooler in old growth)
+- Refs here (18, 19, 31, 32) about mature forest vs. grassland and clear cuts would be good to read at some point
+
+Results here are good (forest characteristics influence climate buffering, along with topography) for thinking about aspen vs. conifer. More intriguing is the statistical technique used. 183 sensors is a lot - we won't be able to do this. The statistical technique here is worth noting as well - will we have enough data for techniques like this? Will 8-9 time serieses be enough to capture spatial variation?
+
+
+
