@@ -1295,4 +1295,37 @@ Good study looking at population level response. In general earlier snowmelt inf
 
 Seems like our paper would be very helpful for looking at the individual level and also for seeing how variation within populations may be helpful. Given what we know about how timing influences individual seed set, and how conspecific density may influence pollination and reproductive success, it's a really good question how variation may do this? [Actually, has this been done? Have we looked into how overall temporal overlap influences reproductive success at the population level?] Seems like a compelling mechanism may be "spreading out the phenophase lowers individual reproductive success by reducing phenological overlap"... if populations are seed limited I guess.
 
+### Chen, J., Franklin, J.F., and Spies, T.A. 1995. Growing-season microclimatic gradients from clearcut edges into old-growth douglas-fir forests. Ecological Applications, 5(1): 74 - 86. 
+
+- Measure diurnal changes in air temp, soil temp, relative humidity, radiation, wind speed, soil moisture as a function of distance to edge, edge orgientation, weather, etc.
+- Study site: doug-fir forests at Wind River Exp. For. (S WA) and HJA
+- 16 edges (13 at Wind River, 3 at HJA) between old growth forest and 10-15 yr clearcuts
+	- weather stations placed a 30m intervals up to 240 m from edge
+		- shorter 15m transects used for soil moisture
+	- measured soil temp 10 cm into soil and all else measured 2m above soil
+	- soil moisture measurd during a three day period at 10 sites
+	- data collected for 134 days
+- Highest air temps at edge and declining temps going into forests
+	- edge orientation determines the strength of gradients (strongest effects in south and east facing)
+	- highest effects of air temperature in early morning
+	- strong edge effects during sudden weather changes (e.g., cloudy to sunny)
+	- occasionally air temp had edge effects of >240 but typical range is 60-120
+- Soil temp shows similar patterns to air temp
+	- high at edge with larger edge effects during day than air temps
+	- edge effects here only go about 60 m in
+- Short wave radiation: very high at edge, decreases rapidly 30-60m into forest
+	- in forest only spikes due to sunflecks
+- Wind speed decreases from edge into forest
+- Soil moisture did not vary from edge into forest
+	- high variability recorded in edge but stabilizng ~15m in
+	- moisture variation did seem higher at 90 - 270 angles from north (i.e. generally south facing)
+- Topography matters - in general stronger edge effects in South facing edges
+- Wind matters - influences evapotranspiration, seed dispersal, insect paths (!), air circulation
+	- (several paras on wind!)
+- This stuff matters for litter decomp - soil moisture and temperature mean that ltter decomposition is higher near edges
+	- unpublished finding that organic layer is shallower at edge!
+
+Well not exactly great for the purposes of what we are studying but sufficient for proposal. Interior of forests are generally cooler (although the thing that I did not consider before reading this was that the edge effects persist into the forest). Considerng microtopography here is also quite important. The soil moisture result is interesting but they only study one day, and they do so late in the season (perhaps when things are most likely to be dry everywhere?) Hmm. Soil temp differences are worth noting. Do we care about wind? For purposes of pollinators yes, maybe.
+
+
 
