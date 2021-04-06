@@ -1,0 +1,53 @@
+look at repo
+documentation for data loggers
+
+03_3_mayfly_datalogger.md and on
+any of the 03 files
+
+communicating with the mayfly via usb
+will need to install a driver
+
+will probably (likely) need to do the SDI-12 protocol
+look in the file
+this is what will take the longest amount of time
+
+03_7_deployment ...
+
+also look in UAV-b-data-loggers repo
+all of these are based on arduino
+
+cpp syntax
+install an arduino compiler
+(can find on youtube?)
+
+03_5_mayfly_datalogger.md may also have some instructions that would be useful vis a vi setups
+DON'T do the tutorials listed in # Getting Started
+don't set it up the same way that they're outlined in the tutorials in that file
+do 1-2 basic arduino tutorials (arduino.cc, the first link in that file)
+like a hello world type tutorial and then rely on the rest of the repo for that
+the best deployment code available is SP510_deplooy/SP510_deploy.ino in data loggers repo
+maybe plus some additional setup for sdi12
+
+loop (l 73) is what's doing the actual readers
+
+maybe do this Example_03_Modify_temp.cpp ex. in the uav-b-dataloggers repo
+
+can probably follow "logging mayfly with decagon sd12..."
+https://www.envirodiy.org/topic/logging-mayfly-with-decagon-sdi-12-sensor/
+don't do the 6:43 entry about manual installation
+just find the code that does this correctly and figure out how to modify it
+
+coding styles: an object oriented library (reqs a library for the particular sensor)
+they have written a library, our job is just to pick it out
+look at the code on the 11:03 post
+take what is required to run this script in the library, import those
+we need any methods from the mSDI12 object (mySD12.method())
+all of these functions needed will go into this script at the head (before the first call so mySDI12)
+
+go to Brett and get the loggers
+bring him moisture sensors
+
+use neon towers to monitor snowmelt (phenocams at C1)
+
+
+
