@@ -1327,5 +1327,39 @@ Seems like our paper would be very helpful for looking at the individual level a
 
 Well not exactly great for the purposes of what we are studying but sufficient for proposal. Interior of forests are generally cooler (although the thing that I did not consider before reading this was that the edge effects persist into the forest). Considerng microtopography here is also quite important. The soil moisture result is interesting but they only study one day, and they do so late in the season (perhaps when things are most likely to be dry everywhere?) Hmm. Soil temp differences are worth noting. Do we care about wind? For purposes of pollinators yes, maybe.
 
+### Resasco, J., Chacoff, N.P., and Vazquez, D.P. 2021. Plant-pollinator nteractions between generalists persist ovr time and space. Ecology.
+
+- General patterns from plant-pollinator network studies: most interactions are inconsistent over both time and space
+	- Of those that do occur conistently, they're typically generalist species at the core
+	- Perhaps tolerance (spatial and temporal) influences generalization and thus interactions (e.g., broader tolerance probably means more interactions)
+- Predictions for this study (Julian's six sites over five years): more persistent interactions (in space and time - longer phenophase, broader spatial occurrence) between generalists at core
+- Plant pollinator observations (2015 - 2019) supplemented with air temperature measurements (weather station), soil moisture, ground temperature (latter two collected once in July 2018)
+	- Fay et al. 2000 a good reference for soil moisture
+- P-p matrix, three matrix values to measure persistence *per interaction*
+	- number of years, span of days, number of plots interaction was recorded
+	- distance to core for interaction: 1 - standardized euclidian distance of interaction to corner of matrix
+	- Spearman rank-order correlation tests distance to core vs. variables of spatial, temporal persistence
+	- compare with null distributions from 1000 randomized mtrices
+- Species-level analysis: species distance to network core (row/col no. divided by total number of rows/cols) vs. inter-annual occurrence, intra-annual occurrence, inter-plot occurrence
+	- assessed with polynomial regression (2nd degree)
+	- got thermal tolerance of species using temperatures during sampling days
+- 836 links, 267 pollinators (wow) and 41 plants
+	- network connectance of 0.08
+	- NODF 25 (I forget how to interpret)
+	- one module
+- Interactions between generalists (core) tend to have higher inter-annual persistence, intra-annual persistence, and inter-plot persistence (correlation coefficients 0.22 - 0.35)
+- Interactions with higher persistence have longer phenophases and occur in more plots
+- For species, more generalization mens more inter-annual persistence, longer phenophases, and more plot occurrence
+	- phenophase length associated with broader temperature range
+- Hypothesized mechanism supported: broader tolerance to environmental variation means more generalization due to more overlap
+	- (the temperature tolerance stuff... think about this more. just observational. longer phenophase maybe due to other things?)
+	- Generalizability relates to the concept of nich breadth and environmental constraints
+	- the temporal and spatial persistence of interactions could be a function of niche breadth
+
+Interesting. Could be useful to get our sensors in there for some use. Still not exactly sure why interactions are a good focal unit of measurement though...
+
+The tolerance-phenophase question is interesting... does this framework allow for differential responses among species to cues? Or is that an alternative hypothesis? Phenophase breadth means more likely generalization... more likely to produce seeds?
+
+This does make me think about those plants on the sort of extreme of spatial and temporal ranges (in these meadows at least). Stuart's isolation questions... In this paper the breadth allows you to pick up more interactions with pollinators. What does this mean on the individual level? Jennifer's 2018 Oikos paper says at least the later plants (in Echinacea system) carry less conspecific pollen.
 
 
