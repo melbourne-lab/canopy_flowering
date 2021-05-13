@@ -119,3 +119,32 @@ writetable(pathOut_subs, 'data/processed_data/elk_roi_pathlengths.csv');
 writetable(roi_key,      'data/processed_data/elk_roi_key.csv');
 
 writetable(svfOut,       'data/processed_data/elk_svf.csv');
+
+%% Try this clunky (but hopefully fool-proof) way...
+
+pathLong = zeros([numel(pathRoi), 7]);
+n = 1;
+for a = 1:numel(azi) % Loop through the number of azimuth directions
+    for z = 1:numel(zen) % Loop through the number of zenith directions
+         for ii = 1:size(pathRoi, 3) % Loop through pixels
+             pathLong(n, 1) = ii;
+             % pathLong(n, 2) = elk_x2(rrR(ii), ccR(ii));
+             % pathLong(n, 3) = elk_y2(rrR(ii), ccR(ii));
+             pathLong(n, 4) = pathRoi(a, z, ii);
+             pathLong(n, 5) = a;
+             pathLong(n, 6) = z;
+             if ismember(ii, index_roi)
+                 % iroi = index_roi(ii);
+                 [~, iroi] = ismember(ii, index_roi); % not efficient but w/e
+                 pathLong(n, 2) = elk_x2(rrR(iroi), ccR(iroi));
+                 pathLong(n, 3) = elk_y2(rrR(iroi), ccR(iroi));
+                 pathLong(n, 7) = iroi;
+             end
+             n = n + 1;
+         end
+    end
+end
+
+inside_roi = ismember(pathLong(:, 1), index_roi); 
+
+pathLong = pathLong(inside_roi,:);
