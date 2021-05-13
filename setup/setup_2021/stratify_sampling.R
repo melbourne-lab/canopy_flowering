@@ -11,9 +11,9 @@ library(tidyr)
 elk.svf = read.csv('data/processed_data/elk_svf.csv')
 
 # Read in path length object (from Musselman raytrace model)
-plt.plengs = read.csv('data/processed_data/elk_roi_pathlengths.csv') %>%
+elk.plengs = read.csv('data/processed_data/elk_roi_pathlengths.csv') %>%
   mutate(PathLen = ifelse(PathLen %in% 999, NA, PathLen))
-# raw.plengs = plt.plengs
+# raw.plengs = elk.plengs
 
 # Key linking indices for ROI raytrace object to coordinates
 elk.coords = read.csv('data/processed_data/elk_roi_key.csv')
@@ -58,23 +58,23 @@ elk.svf.base +
 
 # Looks good to me
 
-# Subset svf (for coordinates of ROI)
-elk.svf.roi = elk.svf %>% 
-  filter((Easting < 453950) & (Northing > 4431275) & (Northing < 4431450)) %>%
-  mutate(Easting  = floor(Easting),
-         Northing = floor(Northing))
-
-coords.roi = elk.coords %>%
-  filter((X_e < 453950) & (Y_n > 4431275) & (Y_n < 4431450)) %>%
-  mutate(X_e = floor(X_e),
-         Y_n = floor(Y_n))
-
-# Merge to get path lengths (all angles) only in the ROI
-roi.plengs = merge(
-  x = plt.plengs, y = coords.roi %>% select(-Z_e),
-  by.x = "Location", by.y = "Ind", 
-  all.x = FALSE, all.y = TRUE
-)
+# # Subset svf (for coordinates of ROI)
+# elk.svf.roi = elk.svf %>% 
+#   filter((Easting < 453950) & (Northing > 4431275) & (Northing < 4431450)) %>%
+#   mutate(Easting  = floor(Easting),
+#          Northing = floor(Northing))
+# 
+# coords.roi = elk.coords %>%
+#   filter((X_e < 453950) & (Y_n > 4431275) & (Y_n < 4431450)) %>%
+#   mutate(X_e = floor(X_e),
+#          Y_n = floor(Y_n))
+# 
+# # Merge to get path lengths (all angles) only in the ROI
+# roi.plengs = merge(
+#   x = plt.plengs, y = coords.roi %>% select(-Z_e),
+#   by.x = "Location", by.y = "Ind", 
+#   all.x = FALSE, all.y = TRUE
+# )
 
 # Get the distributions of solar angles
 sol.ang.distn = sol.angles %>%
@@ -91,36 +91,35 @@ sol.ang.distn = sol.angles %>%
   mutate(p = n / sum(n))
 
 # Merge to get only angles of interest
-roi.subset = merge(
-  x = roi.plengs, y = sol.ang.distn,
+elk.angles = merge(
+  x = elk.plengs, y = sol.ang.distn,
   by.x = c("Azi", "Zen"), by.y = c("Azi.round", "Zen.round"),
   all.x = FALSE, all.y = TRUE
 )
 
-nrow(roi.subset)
+nrow(elk.angles)
 
-# Plot for my curious and bored brain: plot path len at one angle
-roi.subset %>%
-  filter(Azi %in% 90, Zen %in% 60) %>%
-  ggplot() +
-  geom_raster(aes(x = X_e, y = Y_n, fill = PathLen)) +
-  scale_fill_viridis_c()
-# hmm...
-# anyway
+# # Plot for my curious and bored brain: plot path len at one angle
+# elk.angles %>%
+#   filter(Azi %in% 90, Zen %in% 60) %>%
+#   ggplot() +
+#   geom_raster(aes(x = X_e, y = Y_n, fill = PathLen)) +
+#   scale_fill_viridis_c()
+# # hmm...
+# # anyway
 
 # What happens if one does a frequency-weighted mean of... some index of path lenghs
 # Thinking a gaussian?
-plot(0:50, exp(-(0:50)^2 / 500), type = 'l')
+plot(0:50, exp(-(0:50)^2 / 150), type = 'l')
 
-test1 = roi.subset %>%
-  mutate(gauss.pl = exp(-PathLen^2 / 500),
+test1 = elk.angles %>%
+  mutate(gauss.pl = exp(-PathLen^2 / 150),
          gauss.pl = ifelse(is.na(gauss.pl), 0, gauss.pl)) %>%
-  group_by(Location) %>%
-  summarise(mean.gpl = sum(p * gauss.pl),
-            x = X_e[1],
-            y = Y_n[1])
+  group_by(Loc) %>%
+  summarise(mean.gpl = sum(p * gauss.pl)) %>%
+  merge(y = elk.coords %>% select(-c(X_col, Y_col)))
 
-ggplot(test1, aes(x = x, y = y)) +
+ggplot(test1, aes(x = X_e, y = Y_n)) +
   geom_raster(aes(fill = mean.gpl))
 
 ggplot(test1, aes(x = x, y = y)) +
@@ -128,3 +127,34 @@ ggplot(test1, aes(x = x, y = y)) +
 
 # stll having this indexing problem
 # what the heck!!!
+
+##### Try the stratification just on SVF.
+
+# Subset svf (for coordinates of ROI)
+elk.svf.roi = elk.svf %>%
+  filter((Easting < 453950) & (Northing > 4431275) & (Northing < 4431450)) %>%
+  mutate(Easting  = floor(Easting),
+         Northing = floor(Northing))
+
+elk.svf.roi$Svf
+
+elk.roi.rank = elk.svf.roi %>% 
+  arrange(Svf) %>%
+  mutate(svfrank = 1:nrow(.),
+         svf.res = floor(((svfrank-1) / nrow(.)) * 20) ) #%>%
+
+elk.roi.rank %>%
+  group_by(svf.res) %>%
+  sample_n(size = 4) %>%
+  ggplot() +
+  geom_raster(
+    data = elk.svf.roi,
+    aes(x = Easting, y = Northing, fill = Svf)
+  ) +
+  geom_point(
+    aes(
+      x = Easting, y = Northing
+    ),
+    colour = 'red'
+  )
+
