@@ -16,32 +16,38 @@ cd ~/repos/canopy_flowering
 clear variables
 
 % Load in data
-load('./data/solar_data/raytracemod/elk_1m_output.mat')
+load('./data/solar_data/raytracemod/elk_1m_output_w_roi.mat')
 
 %% Manipulate and re-shape data
 
-% Linear indices of coordinates (just in case useful)
-% Column 1: linear index, Column 2: Easting, Column 3: Northing
-% This seems to work for svf but not for ROI?
-lininds = horzcat([1:numel(elk_x2)]', elk_x2(:), elk_y2(:));
-
 % Code for linking ROI to coords - from original script (by Keith)
-roiMat = nan(size(elk_dem2));
-sd = size(elk_dem2);
+[rrR(:,1),ccR(:,1)] = ind2sub(size(elk_dem2),index_roi); 
 
-buff =  [0,  0,  0,  0];
+% (4d object for storing path rois)
+proi4d = zeros([size(pathRoi, [1 2]), repelem(sqrt(size(pathRoi, 3)), 2)]);
 
-r1 = (buff(1)+1):(sd(1)-buff(2));
-c1 = (buff(3)+1):(sd(2)-buff(4));
+for a = 1:numel(azi) % Loop through the number of azimuth directions
+    for z = 1:numel(zen) % Loop through the number of zenith directions
+         for ii = 1:numel(index_roi) % Loop through pixels
+                 proi4d(a, z, rrR(ii),ccR(ii)) = pathRoi(a,z,ii);
+         end
+    end
+end
 
-roiMat(r1,c1) = elk_dem2(r1,c1);
+% test to make sure this works:
+% imagesc(squeeze(proi4d(10, 5, :, :)))
 
-roiInd = find(~isnan(roiMat));
+% Create an object for indexing coords
+% 
+roi_key = zeros([numel(index_roi), 5]);
+roi_key(:, 1) = index_roi;
 
-roi_array = [roiInd, elk_x2(roiInd), elk_y2(roiInd)];
-
-roi_table = table(roiInd, elk_x2(roiInd), elk_y2(roiInd), elk_dem2(roiInd));
-roi_table.Properties.VariableNames = {'Ind', 'X_e', 'Y_n', 'Z_e'};
+for ii = 1:numel(index_roi)
+   roi_key(ii, 2) = rrR(ii);
+   roi_key(ii, 3) = ccR(ii);
+   roi_key(ii, 4) = elk_x2(rrR(ii), ccR(ii));
+   roi_key(ii, 5) = elk_y2(rrR(ii), ccR(ii));
+end
 
 % Reshaping the pathROI
 % pathROI has number (integer) of voxels that a ray at a certain angle
@@ -59,7 +65,7 @@ size(pathLong)
 
 % Code below for getting azi, zen, and loc for each entry above
 % But to be honest that just takes up a lot of space...
-[aziazi, zenzen, locloc] = meshgrid(azi, zen, roiInd);
+[aziazi, zenzen, locloc] = meshgrid(azi, zen, 1:size(pathRoi, 3));
 combins = cat(3, aziazi, zenzen, locloc);
 combins = reshape(combins, [], 3);
 combins = sortrows(combins, [3 2 1]);
@@ -67,38 +73,49 @@ combins = sortrows(combins, [3 2 1]);
 % Combine pathROI with other info
 pathOut = horzcat(pathLong, combins);
 
-%%% Tried the below... wasn't cooperating. Maybe one day.
-% % To save space, narrowing the ROI:
-% % NOTE: narrower ROI specified here (based on analysis in sep't script)
-% roiLocs = roi_table.Ind(roi_table.X_e < 453950 & ...
-%     roi_table.Y_n > 4431275 & roi_table.Y_n < 4431450);
-% 
-% [locs, indices] = intersect(pathOut(:, 4), roiLocs);
-% 
-% pathSub = pathOut(indices, :); % only seems to pick out locs once...
+% Remove indices outside the ROI
+% First selecting indices
+inside_roi = ismember(combins(:, 3), index_roi);
+% subsetting out indices
+pathOut = pathOut(inside_roi, :);
+
+% To save space, narrowing the ROI:
+% NOTE: narrower ROI specified here (based on analysis in sep't script)
+roi_subs_locs = roi_key( ...
+    roi_key(:,4) < 453950 & roi_key(:,5) > 4431275 & roi_key(:,5) < 4431450, ...
+    1);
+
+% Get the rows of pathOut corresponding to the ROI
+subs_inds = ismember(pathOut(:, 4), roi_subs_locs);
+
+pathOut_subs = pathOut(subs_inds,:);
 
 % Unroll sky view factor (integrated and estimated transmittance)
 % Note: svf is currently based on the default transm polynomial inherited
 % from Keith M. Will likely change in future.
 % This version is from 2020.
-svfLong = horzcat(svf(:), lininds);
+svfLong = horzcat(svf(:), elk_x2(:), elk_y2(:));
 
 %% Export 
 
 % Convert to tables
 
 % first, path lengths
-pathOut = array2table(pathOut);
-pathOut.Properties.VariableNames = {'PathLen', 'Azi', 'Zen', 'Location'};
+pathOut_subs = array2table(pathOut_subs);
+pathOut_subs.Properties.VariableNames = {'PathLen', 'Azi', 'Zen', 'Loc'};
 
 % now, svf
 svfOut = array2table(svfLong);
-svfOut.Properties.VariableNames = {'Svf', 'Location', 'Easting', 'Northing'};
+svfOut.Properties.VariableNames = {'Svf', 'Easting', 'Northing'};
+
+% finally the key
+roi_key = array2table(roi_key);
+roi_key.Properties.VariableNames = {'Loc', 'X_col', 'Y_col', 'X_e', 'Y_n'};
 
 % Export now
 
-writetable(roi_table, 'data/processed_data/elk_roi_key.csv');
+writetable(pathOut_subs, 'data/processed_data/elk_roi_pathlengths.csv');
 
-writetable(pathOut,   'data/processed_data/elk_roi_pathlengths.csv');
+writetable(roi_key,      'data/processed_data/elk_roi_key.csv');
 
-writetable(svfOut,    'data/processed_data/elk_svf.csv');
+writetable(svfOut,       'data/processed_data/elk_svf.csv');
