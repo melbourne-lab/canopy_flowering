@@ -76,6 +76,11 @@ elk.svf.base +
 #   all.x = FALSE, all.y = TRUE
 # )
 
+#### Do some processing on path length input
+elk.plengs = elk.plengs %>%
+  mutate(Azi = Azi * 15, Zen = Zen * 5) %>%
+  merge(y = elk.coords, by = 'GlobInd')
+
 # Get the distributions of solar angles
 sol.ang.distn = sol.angles %>%
   # First requires binning azimuths and zeniths (to match raytrace object)
@@ -112,21 +117,17 @@ nrow(elk.angles)
 # Thinking a gaussian?
 plot(0:50, exp(-(0:50)^2 / 150), type = 'l')
 
-test1 = elk.angles %>%
+gauss_150 = elk.angles %>%
   mutate(gauss.pl = exp(-PathLen^2 / 150),
          gauss.pl = ifelse(is.na(gauss.pl), 0, gauss.pl)) %>%
-  group_by(Loc) %>%
-  summarise(mean.gpl = sum(p * gauss.pl)) %>%
-  merge(y = elk.coords %>% select(-c(X_col, Y_col)))
+  group_by(GlobInd) %>%
+  summarise(mean.gpl = sum(p * gauss.pl),
+            x_e = X_e[1], y_n = Y_n[1])
 
-ggplot(test1, aes(x = X_e, y = Y_n)) +
+ggplot(gauss_150, aes(x = x_e, y = y_n)) +
   geom_raster(aes(fill = mean.gpl))
 
-ggplot(test1, aes(x = x, y = y)) +
-  geom_raster(aes(fill = Location))
-
-# stll having this indexing problem
-# what the heck!!!
+write.csv(gauss_150, 'setup/setup_2021/spatial_pathlength_gauss150.csv')
 
 ##### Try the stratification just on SVF.
 
@@ -158,3 +159,11 @@ elk.roi.rank %>%
     colour = 'red'
   )
 
+elk.roi.rank %>%
+  mutate(svfrank = svfrank / nrow(.)) %>%
+  ggplot() +
+  geom_raster(
+    aes(x = Easting, y = Northing, fill = svfrank)
+  ) +
+  scale_fill_gradient2(low = 'red', high = 'blue',
+                       mid = 'white', midpoint = 0.5)
