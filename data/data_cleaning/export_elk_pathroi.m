@@ -53,9 +53,9 @@ end
 % pathROI has number (integer) of voxels that a ray at a certain angle
 % passes through to reach that point on the groud
 % I want this in long form
-pathLong = reshape(pathRoi, [numel(pathRoi), 1]);
+pathsLong = reshape(pathRoi, [numel(pathRoi), 1]);
 
-size(pathLong)
+size(pathsLong)
 
 % Indexing/ordering here is column-wise, e.g.,
 % indices 1:3 in reshaped matrix are first, second, third rows in first
@@ -71,7 +71,7 @@ combins = reshape(combins, [], 3);
 combins = sortrows(combins, [3 2 1]);
 
 % Combine pathROI with other info
-pathOut = horzcat(pathLong, combins);
+pathOut = horzcat(pathsLong, combins);
 
 % Remove indices outside the ROI
 % First selecting indices
@@ -122,29 +122,92 @@ writetable(svfOut,       'data/processed_data/elk_svf.csv');
 
 %% Try this clunky (but hopefully fool-proof) way...
 
-pathLong = zeros([numel(pathRoi), 7]);
+pathsLong = zeros([numel(pathRoi), 7]);
 n = 1;
 for a = 1:numel(azi) % Loop through the number of azimuth directions
     for z = 1:numel(zen) % Loop through the number of zenith directions
          for ii = 1:size(pathRoi, 3) % Loop through pixels
-             pathLong(n, 1) = ii;
+             pathsLong(n, 1) = ii;
              % pathLong(n, 2) = elk_x2(rrR(ii), ccR(ii));
              % pathLong(n, 3) = elk_y2(rrR(ii), ccR(ii));
-             pathLong(n, 4) = pathRoi(a, z, ii);
-             pathLong(n, 5) = a;
-             pathLong(n, 6) = z;
-             if ismember(ii, index_roi)
-                 % iroi = index_roi(ii);
-                 [~, iroi] = ismember(ii, index_roi); % not efficient but w/e
-                 pathLong(n, 2) = elk_x2(rrR(iroi), ccR(iroi));
-                 pathLong(n, 3) = elk_y2(rrR(iroi), ccR(iroi));
-                 pathLong(n, 7) = iroi;
+             pathsLong(n, 4) = pathRoi(a, z, ii);
+             pathsLong(n, 5) = a;
+             pathsLong(n, 6) = z;
+             [flag_roi, iroi] = ismember(ii, index_roi);
+             if flag_roi
+                 pathsLong(n, 2) = elk_x2(rrR(iroi), ccR(iroi));
+                 pathsLong(n, 3) = elk_y2(rrR(iroi), ccR(iroi));
+                 pathsLong(n, 7) = iroi;
+             end
+             if ~rem(n, 10000)
+                 disp(n)
              end
              n = n + 1;
          end
     end
 end
 
-inside_roi = ismember(pathLong(:, 1), index_roi); 
+% inside_roi = ismember(pathLong(:, 1), index_roi); 
+% pathLong = pathLong(inside_roi,:);
 
-pathLong = pathLong(inside_roi,:);
+% Get the ROI by getting where coords columns are non-zero
+proiLong = pathsLong(pathsLong(:, 2) > 0, :);
+
+% To save space, export key linking coordinates to indices
+proiKey  = unique(pathsLong(:, [1 2 3 7]), 'rows');
+
+proiKeyTab = array2table(proiKey);
+proiKeyTab.Properties.VariableNames = {'GlobInd', 'X_e', 'Y_n', 'RoiInd'};
+
+writetable(proiKeyTab, 'data/processed_data/elk_roi_key.csv');
+
+% Get subsetted data frame (subregion of interest in Elk meadows)
+proiSubs = proiLong(...
+    proiLong(:,2)<453950 & proiLong(:,3)>4431275 & proiLong(:,3)<4431450, ...
+    [1 4 5 6]);
+
+proiSubsTab = array2table(proiSubs);
+proiSubsTab.Properties.VariableNames = {'GlobInd', 'PathLen', 'Azi', 'Zen'};
+
+writetable(proiSubsTab, 'data/processed_data/elk_roi_pathlengths.csv');
+
+%% This S still doesn't work (oh my god!!!!)
+
+% (note: This works)
+
+pathsLong = zeros([numel(pathRoi), 6]);
+
+n = 1;
+for a = 1:numel(azi) % Loop through the number of azimuth directions
+    for z = 1:numel(zen) % Loop through the number of zenith directions
+         for ii = 1:numel(index_roi) % Loop through pixels
+             pathsLong(n, 1) = ii;
+             pathsLong(n, 2) = elk_x2(rrR(ii), ccR(ii));
+             pathsLong(n, 3) = elk_y2(rrR(ii), ccR(ii));
+             pathsLong(n, 4) = pathRoi(a, z, ii);
+             pathsLong(n, 5) = a;
+             pathsLong(n, 6) = z;
+             if ~rem(n, 10000)
+                 disp(n)
+             end
+             n = n + 1;
+         end
+    end
+end
+
+proiKey  = unique(pathsLong(:, [1 2 3]), 'rows');
+
+proiKeyTab = array2table(proiKey);
+proiKeyTab.Properties.VariableNames = {'GlobInd', 'X_e', 'Y_n'};
+
+writetable(proiKeyTab, 'data/processed_data/elk_roi_key.csv');
+
+% Get subsetted data frame (subregion of interest in Elk meadows)
+proiSubs = pathsLong(...
+    proiLong(:,2)<453950 & proiLong(:,3)>4431275 & proiLong(:,3)<4431450, ...
+    [1 4 5 6]);
+
+proiSubsTab = array2table(proiSubs);
+proiSubsTab.Properties.VariableNames = {'GlobInd', 'PathLen', 'Azi', 'Zen'};
+
+writetable(proiSubsTab, 'data/processed_data/elk_roi_pathlengths.csv');
