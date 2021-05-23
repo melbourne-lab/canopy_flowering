@@ -15,3 +15,22 @@ I put down 41 plots today, mostly on the East (lower) side. I recorded (for uplo
 
 More detail (esp. on snowdepths) to come.
 
+### May 23 2021
+
+Put out another 41 plots using procedures as outlined above. Total of 82 plots this summer.
+
+Aspen/conifer gallery to the north of the bridge connecting East (I guess now Northeast?) and Northwest meadows had spotty/inconsistent snow. The conifer portion to the North and Northwest of the Northwest meadow was much more consistently (>90%) beneath snow - much of it deep. 
+
+Northwest meadow was pretty dry. Southern (larger) part of the Southwest meadow was dry but the smaller Northern arm of the Southwest meadow was beneath a large snowdrift. Aspens to the west were mostly snowed in but there were a few bare patches where I put plots down.
+
+I saw ~five Thermopsis plants emerging from the ground - two in one plot (I think plot 72/73). Lookng back on photos from last year, there were *a lot* of emerging Thermopsis plants on May 26 and they were much higher/larger (no stem visble on any of this year's yet). Suggests to me that there's probably at least seven-ten days before T starts flowering. ~Two of what I saw (included in the count of five) were purple (on/near the steep open area on the Northern boundary). These may be *Mahonia* (Oregon grape). Otherwise I only saw T in the open part of the SW meadow.
+
+I also over the last two days saw a couple (maybe ~six) of what look like well-defined Campanula rosettes. I wonder if they wjust never senesced last year? They're too small to be from this year. It's also possible it's not Campanula - will need to look more closely at leaves next tme. 
+
+This all means that it's probably too late to get moisture measurements before the T appears. But we should get a solid month before the Campanula appears.
+
+I put out some of the flags right on the edge of snowdrifts. Should be intersting to see how much they melt before the next visit (thinking right now that will be Thursday May 27). 
+
+Got snowed on today. That was neat. Not sure how much stuck but it was I guess too cool to get rain. It was in the 70s in Boulder - this suggests that warm weather in Boulder and even supra-freezing in Ned does not guarantee conditions for massive snowmelt. In general it was half sunny half cloudy thoughout the day - definitely conditions for melting when the sun was out but the afternoon shade looked like it wouldn't cause much melt.
+
+
