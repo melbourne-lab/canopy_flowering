@@ -1362,4 +1362,60 @@ The tolerance-phenophase question is interesting... does this framework allow fo
 
 This does make me think about those plants on the sort of extreme of spatial and temporal ranges (in these meadows at least). Stuart's isolation questions... In this paper the breadth allows you to pick up more interactions with pollinators. What does this mean on the individual level? Jennifer's 2018 Oikos paper says at least the later plants (in Echinacea system) carry less conspecific pollen.
 
+### Valverde, J., et al. 2016. Inter-annual maintenance of the fine-scale genetic structure in a biennial plant. Scientific Reports.
+
+- Spatial genetic structure (SGS) produced by
+	- restricted gene movement
+	- genetic drift
+	- local selection
+- SGS maintained by
+	- local mating
+	- short distance seed dispersal
+- There are studies of this in perennials (n.b. what I am most interested in) - see Kalisz et al. 2001, Vekemans and Hardy 2004
+	- few studies in biennials
+	- "perfect" biennial have no overlap in mating due to only flowering in second year, although "perfect" bienniality is rare
+	- "inter-annual migrants" - not quite sure how these are defined - allow gene flow among cohorts and produce homogenization
+	- how does spatial distribution influence this?
+- Here: lookng at two consecutiv cohorts of a biennial in Spain
+	- dispersal over short distances only
+	- patchy distributions
+	- Are the cohorts genetically differentiated?
+	- Is there isotropic SGS?
+- 100 sampled individuals per cohort
+	- most loci at HWE
+	- plastids used for haplotypes - 5 haplotypes with 96% of individuals in two haplotypes
+- "Global" spatial structures of cohorts but no "local" structures
+	- i.e. differentiation between distant neighbors but not close ones
+	- Fig. 2 looks like two clusters along a PCA axis with high spatial autocorrelation
+	- Looks lik global structure is associated with light availability (shading)
+- Environment-genotype correlations: autoregressive models look at PC1 and PC2 (genetic)
+	- light availability strongly associated with both PCs (moreso on PC1)
+	- PC2 associated with cations
+- No evidence of genetic differentiation between cohorts (low FST, non-significant AMOVA)
+	- would expect this more in smaller populations where drift is more common
+	- 17% of population are inter-annual migrants?
+	- Between-cohort gene flow could be due to: delayed seed emergence/dormancy, repeated flowering/delayed reproduction, 
+		- (delayed reproduction due to resource allocation?)
+- Spatial distribution of genotypes: could be due to local dispersal of seeds or pollen
+	- positive (genetic) correlation vanishes between 1 and 3m, while documented dispersal is typcally <0.5m...
+	- "congruent SGS pattern showed by the nuclear and plastidal markers suggest that pollinators moving pollen at long distances are not blurring the SGS"
+	- "we think that the prevalence of floral visitors that tend to forage at short distances may facilitate mating events among nearby relatives, causing biparental inbreding, and reinforcing the SGS"
+- "Asymmetry in SGS for both cohorts, indicating directionally biased gene flow"
+	- here the Kinship-distance correlation has spatal periodicity with higher "resistances to gne flow" at 90 and 87deg 
+	- not really sure what this means or how it is determined... fig. 4 I guess
+	- could be due to non-random movment of pollinators, micro-environment (influencing germination?), or influence from neighboring populations
+	- could be pollinator affinity for certain environment types (mediated by light)
+	- soil too... supported by other studies, although seedling limitation seems to be stronger in effect
+
+Interesting. Techniques to consider include sPCA, FST (known) and genetic techniques. Worth looking in to the anisotropy and symmetry of gene flow (same?)
+
+Good to note: they did find evidence of spatial structure *associated* with solar exposure. This could just be a function of short dispersal distances and (or?) constrained pollination. They suggest seed germination and pollinator affinity as mechanisms but not phenology. Maybe there is a lot of phenological overlap here? (note: scales of synchrony...) Would phenophase/general phenological overlap influence the effects here?
+
+I need to consider seed dispersal distances throughout...
+
+Like the idea of "inter-annual migrants"... think about these in perennials. The nested project - those (genes/genotypes) who flower most will appear frequenly in successive generations.
+
+Read Kalisz et al. and the 2004 papers next.
+
+
 
