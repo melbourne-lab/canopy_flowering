@@ -33,4 +33,30 @@ I put out some of the flags right on the edge of snowdrifts. Should be interstin
 
 Got snowed on today. That was neat. Not sure how much stuck but it was I guess too cool to get rain. It was in the 70s in Boulder - this suggests that warm weather in Boulder and even supra-freezing in Ned does not guarantee conditions for massive snowmelt. In general it was half sunny half cloudy thoughout the day - definitely conditions for melting when the sun was out but the afternoon shade looked like it wouldn't cause much melt.
 
+### Jun 3 2021
+
+(Written on June 7)
+
+Today: no aspens leafing out anywhere at site, probably a few buds. Snow mostly gone although still some small drifts remaining below canopy (in pine).
+
+I forgot the black sharpie today so some flags placed today (~10) were unlabelled. I used the flag field on the plot placement file.
+
+Two plots were scrapped today: 12 and 15. 12 I couldn't find and 15 I accidentally pulled the flag and forgot where it was supposed to go. So now there are only 80 plots.
+
+Decided today it's not worth tracking old toothpicks. Too much time, too little reward. As such the number of stems is probably not going to be informative (because new ones will pop up). These could be useful for identifying plants if there are doubles I suppose.
+
+On the drive up, there were leafed-out aspens on hurricane hill but nowhere above that. The highest Thermopsis I think I saw flowering was right before the road widening below Boulder Falls (although coming down a lot of these did look like dandelions or mustards).
+
+### Jun 7 2021
+
+Lower aspens were starting to leaf out and upper ones were not.
+
+Plots with adjacent aspens starting to leaf out: 1, 82, 8, 21, 4, 20, 22, 30, 35, 3, 33, 36, 68, 38
+Plots with adjacent aspens not leafing out: 28, 9, 43, 39, 29, 31, 56, 64, 63, 81, 78, 76 77
+
+Decided today it's too hard to toothpick Campanula. Both because it's starting now and it would be a lot of added work plus also because they're kinda hard to identify.
+
+There was Thermopsis flowering on the part of Peak to Peak with the viewpoint and maybe even one flowering on the road by the trailhead. But there were none flowering in the meadows (obviously) and no yellow visible so probably another week until they start. Nothing else flowering in meadows except for one Mertensia and whatever that tiny yellow plant was.
+
+All plots have been placed as of today. Work day today was 5.5 hours. Hopefully shorter going forward.
 
