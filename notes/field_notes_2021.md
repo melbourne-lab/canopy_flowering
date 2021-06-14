@@ -60,3 +60,19 @@ There was Thermopsis flowering on the part of Peak to Peak with the viewpoint an
 
 All plots have been placed as of today. Work day today was 5.5 hours. Hopefully shorter going forward.
 
+### Jun 10 + Jun 14 2021
+
+Jun 10 took ~4.5 hours. Ending was slightly tight due to approaching flight. 71, 73, 74 may have been rushed due to being at the end and also being watched (?) by an animal (assume deer). 
+
+Nearly all aspens were out save for those above plots 64 (and possibly 63).
+
+First flowering Thermopsis seen - large patches on the eastern edge of the NE meadow (where I recall some of the earliest ones being in 2020) as well as possibly the E edge of the NW meadow. Did see some pollination occurring on one of these few plants in the NW meadow and got a picture.
+
+Nervous that I am missing a good number of merging T plants. Probably an unavoidable problem given constraints. I marked these when recording with an asterisk, and noted them when entering data (jun 14) as something like "possibly prev. missed". Should go through at some point and make changes.
+
+Relatedly there were some data entry issues from June 7.
+
+Jun 14 took about five hours. Aspens are effectively done leafing out and canopy is full. Still seeing plenty of T coming out of the ground. Did see a handful of missed plants.
+
+Thankfully no flowering thus far within plots. I marked a few plants that had yellow visible. I think it is unlikely that these or any others flower by this upcoming Thursday. Regardless no pollinator observations tomorrow (Tues Jun 15).
+
