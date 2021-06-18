@@ -76,3 +76,15 @@ Jun 14 took about five hours. Aspens are effectively done leafing out and canopy
 
 Thankfully no flowering thus far within plots. I marked a few plants that had yellow visible. I think it is unlikely that these or any others flower by this upcoming Thursday. Regardless no pollinator observations tomorrow (Tues Jun 15).
 
+### Jun 17 2021
+
+Flowering today in a few plots - some of the low 70s (71 and 73 I think) as well as 62 and 8, perhaps others. 8 seems to have advanced phenology for some reason. Not very many new plants although some plots (esp. 1 and 2) seemed to have a lot. No plants in most of the pine plots (50s).
+
+I think my plots will be slightly slower than the modal plots. A lot of flowering is happening in the upper meadows (especially on the part just west of the steep part in the S one) but it's behind in plots. There were very few flowering plants in the large central aspen stand (<10 that I saw) and I didn't notice any with wings spread in any of the other aspen stands aside from plot 8.
+
+Due to scarcity of tags (or at least perceived scarcity) I did not tag YV plants in plots higher than 40. I did note these on the data sheet although without tags - just with toothpicks. I tagged YV plants in lower numbered (downhill) plots. I was never planning on using YV in analysis anyway.
+
+I started up top today and ended down below - really liked this order as it meant the tedious plots were done early in the day. Ending in the aspen stands (4, 20-22) was also nice.
+
+Saw Bombus nevadensis pollinating around plot 6. Also saw another Bombus although it was moving too quickly to detect. No other pollinators observed on Thermopsis. Saw a good number (definitely including small bees, possibly including bumblebees) on Mertensia though.
+
