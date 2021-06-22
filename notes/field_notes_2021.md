@@ -88,3 +88,12 @@ I started up top today and ended down below - really liked this order as it mean
 
 Saw Bombus nevadensis pollinating around plot 6. Also saw another Bombus although it was moving too quickly to detect. No other pollinators observed on Thermopsis. Saw a good number (definitely including small bees, possibly including bumblebees) on Mertensia though.
 
+### Jun 21 2021
+
+Solstice today! Wanted to put out first sensors today but could not - code from a test deployment in Brett's yard was buggy. Ugh.
+
+Today was foggy - low cloud rolling throughout the meadow throughout the entirety of my day. Dew drops on everything, very wet (including flowers). Temperatures in the 40s (47F when I left). No pollinators observed of course.
+
+Moisture made some slight confusion with the toothpicks - it's possible that orange faded to white. But I am confident in the data I collected. I ran a little short on tags again (put out a lot today) so some of the plots had only toothpicks with no tags, but there were few of these.
+
+Pollinator observations starting tomorrow - have 13 plots with plants in them. Will use 12 of them - these 12 will be selected in the datasheet generation script. Protocol will be uploaded soon but briefly - 12 plots, 15 minutes spent watching each for a total of 180 minutes.
