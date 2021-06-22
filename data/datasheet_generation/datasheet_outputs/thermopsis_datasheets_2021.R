@@ -29,4 +29,21 @@ read.csv('data/datasheet_generation/datasheet_outputs/data_datasheets_2021/therm
   rename(Tp = Toothpick, Fl_Stems = Fl_stems, Fl_Open = Fl_open, Fl_Done = Fl_done) %>%
   write.csv(file = 'data/raw_data/data_2021/therm_entry_21-06-2021.csv', na = '', row.names = FALSE)
 
-### 
+### 22 Jun 2021
+
+plots.0621 = rbind(
+  read.csv('data/raw_data/data_2021/therm_entry_21-06-2021.csv'),
+  read.csv('data/raw_data/data_2021/Thermopsis_newplants_2021.csv')
+) %>%
+  filter(Date %in% '6/21/21') %>%
+  filter(Fl_Open > 0) %>%
+  distinct(Plot)
+
+set.seed(7173)
+
+sample(plots.0621$Plot, size = 12, replace = FALSE)
+#  [1] 37 71  8  6 76 59 62 79 10 74 73 7
+
+# Slight reorder:
+# 37, 8, 6, 10, 7, 74, 71, 76, 73, 74, 62, 59
+
