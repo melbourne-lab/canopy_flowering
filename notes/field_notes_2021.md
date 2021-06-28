@@ -97,3 +97,25 @@ Today was foggy - low cloud rolling throughout the meadow throughout the entiret
 Moisture made some slight confusion with the toothpicks - it's possible that orange faded to white. But I am confident in the data I collected. I ran a little short on tags again (put out a lot today) so some of the plots had only toothpicks with no tags, but there were few of these.
 
 Pollinator observations starting tomorrow - have 13 plots with plants in them. Will use 12 of them - these 12 will be selected in the datasheet generation script. Protocol will be uploaded soon but briefly - 12 plots, 15 minutes spent watching each for a total of 180 minutes.
+
+### Jun 22 2021
+
+A lot less pollination than I expected. Seems like much less than last year (speculative/observational). Possibly due to cold weather yesterday? But alternatively you may expect there to be more pollination after a bad day...
+
+Need a tight seal on net when catching. Lost a small bee today.
+
+Truly not very many *Bombus* species today. Those I did see were often large - could have been *nevadensis* but some looked to have red (*mixtus* or *appositus*). Were they queens? Are entire colonies active yet?
+
+Flies (incl. syrphs) seemed to prefer the yellow celery type plant and the *Microsteris*-looking plant. Some fed on *Taraxacum*. Saw a *Bombus* and another bee on *Taraxacum*. Bees also like *Mertensia*. Rare switching occuring with a lep (white with orange tipped wings) going *Microsteris* to *Mertensia* (maybe 5-10m around plot 79).
+
+Looks like there's a nest for some bee in the basal sage about 1m N of plot 59.
+
+#### Jun 24
+
+Beautiful day! Not much to observe other than that pollination still appears rare (only saw *B. nevadensis* and maybe a syrph) and that I put in too little effort in checking for new emerging plants. Was wet in the morning.
+
+Lots of *Dodecatheon*, still some *Mertensia* and a few wallflowers. Shaded sunflower (*Arnica*?) is in full swing.
+
+It would be cool to think about movement, specifically encroachment. *T* pops growing/shrinking with encroachment. Some seed broadcasting/addition in different habitat types would be cool and useful. There is some *T* in pine around plot 40 but that's most/all of what I have seen in the interior-ish Northern pine.
+
+Right before leaving I did see a *Bombus* fly in to (but not really stop in) aspens towards plot 4. Very neat!
