@@ -80,3 +80,32 @@ read.csv('data/raw_data/data_2021/Thermopsis_newplants_2021.csv') %>%
   filter(!any(grepl('collected', Note))) %>%
   distinct(Plot, Toothpick)
 
+# Data entry for Jun 24
+
+read.csv('data/datasheet_generation/datasheet_outputs/data_datasheets_2021/therm_24-06-2021.csv') %>%
+  mutate(Date = NA, Note = NA) %>%
+  select(Date, Plot, Tag, Tp, Q, Fl_stems, Fl_open, Fl_done, Note) %>%
+  rename(Fl_Stems = Fl_stems, Fl_Open = Fl_open, Fl_Done = Fl_done) %>%
+  write.csv(file = 'data/raw_data/data_2021/therm_entry_24-06-2021.csv', na = '', row.names = FALSE)
+
+### Jun 28 2021
+
+read.csv('data/raw_data/data_2021/Thermopsis_newplants_2021.csv') %>%
+  rename(Fl_Done = Fl_done, Fl_Open = Fl_open, Fl_Stems = Fl_stems) %>%
+  rbind(read.csv('data/raw_data/data_2021/therm_entry_21-06-2021.csv'),
+        read.csv('data/raw_data/data_2021/therm_entry_24-06-2021.csv')) %>%
+  # Get rid of plants without tags (none were flowering as of last visit)
+  filter(!is.na(Tag)) %>%
+  # Get only most recent record for each plant
+  arrange(Plot, Tag, desc(Date)) %>%
+  distinct(Plot, Tag, .keep_all = TRUE) %>%
+  # Reformat columns for a datasheet
+  # rename(old_stems = Fl_stems, old_open = Fl_open, Old_note = note) %>%
+  mutate(Old_info = paste(Fl_Stems, Fl_Open, Fl_Done, sep = ';'),
+         Fl_stems = NA, Fl_open = NA, Fl_done = NA, q = NA) %>%
+  rename(Old_note = Note, Last_date = Date, Old_q = Q, Q = q) %>%
+  select(Plot, Tag, Toothpick, Q, Fl_stems, Fl_open, Fl_done,
+         Last_date, Old_info, Old_q, Old_note) %>%
+  # Export
+  write.csv('data/datasheet_generation/datasheet_outputs/data_datasheets_2021/therm_28-06-2021.csv',
+            na = '', row.names = FALSE)
