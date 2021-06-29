@@ -117,3 +117,19 @@ read.csv('data/datasheet_generation/datasheet_outputs/data_datasheets_2021/therm
   select(Date, Plot, Tag, Toothpick, Q, Fl_stems, Fl_open, Fl_done, Note) %>%
   rename(Fl_Stems = Fl_stems, Fl_Open = Fl_open, Fl_Done = Fl_done) %>%
   write.csv(file = 'data/raw_data/data_2021/therm_entry_28-06-2021.csv', na = '', row.names = FALSE)
+
+# Get plots for pollinator observations
+plots.0628 = rbind(
+  read.csv('data/raw_data/data_2021/therm_entry_28-06-2021.csv'),
+  read.csv('data/raw_data/data_2021/Thermopsis_newplants_2021.csv') %>%
+    rename(Fl_Stems = Fl_stems, Fl_Open = Fl_open, Fl_Done = Fl_done)
+) %>%
+  filter(Date %in% '6/28/21') %>%
+  filter(Fl_Open > 0) %>%
+  distinct(Plot)
+
+set.seed(9292)
+
+sample(plots.0628$Plot, size = 15, replace = FALSE) # 13th is backup in case there's something wrong
+#  [1] 62 36 38 71 57  9 60  5 37 21 79  6 24 70 76
+
