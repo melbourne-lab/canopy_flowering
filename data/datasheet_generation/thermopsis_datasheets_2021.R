@@ -109,3 +109,11 @@ read.csv('data/raw_data/data_2021/Thermopsis_newplants_2021.csv') %>%
   # Export
   write.csv('data/datasheet_generation/datasheet_outputs/data_datasheets_2021/therm_28-06-2021.csv',
             na = '', row.names = FALSE)
+
+# Write data entry sheet
+
+read.csv('data/datasheet_generation/datasheet_outputs/data_datasheets_2021/therm_28-06-2021.csv') %>%
+  mutate(Date = NA, Note = NA) %>%
+  select(Date, Plot, Tag, Toothpick, Q, Fl_stems, Fl_open, Fl_done, Note) %>%
+  rename(Fl_Stems = Fl_stems, Fl_Open = Fl_open, Fl_Done = Fl_done) %>%
+  write.csv(file = 'data/raw_data/data_2021/therm_entry_28-06-2021.csv', na = '', row.names = FALSE)
