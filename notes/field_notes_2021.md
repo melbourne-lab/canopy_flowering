@@ -110,7 +110,7 @@ Flies (incl. syrphs) seemed to prefer the yellow celery type plant and the *Micr
 
 Looks like there's a nest for some bee in the basal sage about 1m N of plot 59.
 
-#### Jun 24
+#### Jun 25
 
 Beautiful day! Not much to observe other than that pollination still appears rare (only saw *B. nevadensis* and maybe a syrph) and that I put in too little effort in checking for new emerging plants. Was wet in the morning.
 
@@ -119,3 +119,12 @@ Lots of *Dodecatheon*, still some *Mertensia* and a few wallflowers. Shaded sunf
 It would be cool to think about movement, specifically encroachment. *T* pops growing/shrinking with encroachment. Some seed broadcasting/addition in different habitat types would be cool and useful. There is some *T* in pine around plot 40 but that's most/all of what I have seen in the interior-ish Northern pine.
 
 Right before leaving I did see a *Bombus* fly in to (but not really stop in) aspens towards plot 4. Very neat!
+
+### Jun 28 2021
+
+Rainy morning - rained when I arrived and cleared up around 8:45. Think that early mornings that would otherwise would be clear will have cloud cover until the sun zaps the clouds away. In any event, no pollinator action until around 11am despite the sky clearing hours before.
+
+Very wet, little progress. Close to no new tags. Seems like most plants had the same number of flowers as before, although there were many exceptions. Seems like there was status advancement (a few YV plants flowering) for those plants already budding but few to no plants starting to bud. Thinking it would be cool to look at cumulative temperature (some proxy for GDD) in relation to emergence of flowers although the microclimate variation (shade) would complicate that considerably, as would the time dependence (early vs. late season).
+
+Hardly checked for new TPs today because of time crunch. There were some previously missed in 74. Ugh - consider ignoring that plot in Tp analysis. Relatedly, had a couple more no-tp plants bud/flower today. Thinking that in the MS these can be noted by saying they were mostly on the boundary and there were questions about being in or not.
+
