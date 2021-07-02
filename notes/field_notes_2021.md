@@ -128,3 +128,26 @@ Very wet, little progress. Close to no new tags. Seems like most plants had the 
 
 Hardly checked for new TPs today because of time crunch. There were some previously missed in 74. Ugh - consider ignoring that plot in Tp analysis. Relatedly, had a couple more no-tp plants bud/flower today. Thinking that in the MS these can be noted by saying they were mostly on the boundary and there were questions about being in or not.
 
+### Jun 29 2021
+
+Weather is weird. Didn't start until around 9 but the weather was great, but then it cooled off around 11. This is during the very cool and wet week - temperatures around the 40s. It will be good to use the time of observation as an intercept (note: check that this exists).
+
+Skipped the final plot (9) due to threatening weather. It would have been another observation at 40 degrees showing no observations - would have helped standard error but perhaps not much else.
+
+Grant joined today to check on signs of animal use. Tons of moose signage. Large-ish vertical-running scars on aspens that expose lower layers of bark - caused by teeth (!). There were a few of these that looked very fresh (definitely from this season) in the aspen stand housing 4 and 20-22. There were also some smaller aspen trees toppled, either by pushing them over or by pulling them down while browsing on top layers. There are a few of these that look fresh (bark isn't dried yet) in the same aspen stand. Is this the only area with these signs of browse? This does make me nervous about sensors.
+
+### Jul 1 2021
+
+Emerging plant (toothpick) hunting has been poor recently. Missing lots seen every day. I think there will be too much bias to tell mean emergence dates at each plot. It will still be possible to get first days of emergence, though. I do need to do surveys at the end to get a total toothpick count.
+
+Love the Dodecatheons! Also the columbines are out and doing very well right now - sticking mostly to shaded areas.
+
+Speaking of plants that do well in the shade - the Arnicas (?) look like a shade-adapted species that could be used in a forest movement study. Or perhaps for edge effects? Is this the same species (or one of the species) that Young was studying in the 80s in the Medicine Bow range?
+
+Weather continues to be weird. Was clear when I started around 8 but I got rained on around 10:30 while working on plot 74. Waited in the car for an hour before finishing.
+
+I did a pollinator observation in the plot I missed last time (plot 9). Started at 1:24 pm. Was warm-ish when (or rather right before) I started but it quickly clouded over. Of course, no pollinators observed (ugh). Made me wonder about what the best way to assign a temperature to each observation period would be - the beginning? Averaged over the time window?
+
+I did see a Bombus (one of the small ones - mixtus? didn't get a great look) look at but skip *Thermopsis* but did land on a wallflower in plot 59.
+
+Lots more flowers from Monday to today than there were from last Friday to Monday. Must have been a few good warm-ish days. Makes me wonder about springing and path dependence...
