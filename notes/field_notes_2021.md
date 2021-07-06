@@ -151,3 +151,20 @@ I did a pollinator observation in the plot I missed last time (plot 9). Started 
 I did see a Bombus (one of the small ones - mixtus? didn't get a great look) look at but skip *Thermopsis* but did land on a wallflower in plot 59.
 
 Lots more flowers from Monday to today than there were from last Friday to Monday. Must have been a few good warm-ish days. Makes me wonder about springing and path dependence...
+
+### Jul 3 2021
+
+Wow very much a dogshit day. Tried to put out sensors today. The first and worst was plot 6 - tried both corners and eventually had something off-level that collapsed when trying to fix. In retrospect I think it was because the hose clamp was too high, which let the pole move freely from the bottom and tip over easily. The hose clamp looks like it may be done. I took this unit out of the ground (partially assembled). It's possible that the un-filed bottom damaged the cable for the sensor. Hmm...
+
+Otherwise I successfully installed sensors in plots 19, 25, and 48.
+
+### Jul 5 2021
+
+Typical flowering observations took about three hours. Fewer than ten new tags put out.There were a lot more flowers that finished than in the previous two visits - possibly due to nice weather over the weekend. I think we may be past *Thermopsis* peak. However I am noticing a lot of *Campanula* looking like it will flower in full. Interestingly, I saw these most in the pine forest.
+
+Think it's time to take "done" flowers off the *Thermopsis* sheet. Should also edit the sheet to call any plants with *decreasing* done flowers done (rather than requiring them to be the same) as well as collected tags (I did collect two).
+
+I took out the card for sensor 48 today. For equipment, I brought the cable cutters and extra cards. However, I did not bring  cable ties. If ever doing card and battery swapping while sampling, I'll need to bring these. Otherwise the logger will be dangling. I collected the card by simply slipping a sheet of paper with the plot and SP510 number inside the plastic case for the card. The logger was left dangling from around 11 to 1 pm.
+
+I also tried putting out more sensors today but got rained out. Radar for that area is useless! 
+
