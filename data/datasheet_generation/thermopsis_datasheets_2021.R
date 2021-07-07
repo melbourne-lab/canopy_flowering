@@ -168,7 +168,51 @@ read.csv('data/raw_data/data_2021/Thermopsis_newplants_2021.csv') %>%
             na = '', row.names = FALSE)
 
 read.csv('data/datasheet_generation/datasheet_outputs/data_datasheets_2021/therm_01-07-2021.csv') %>%
+  filter(!grepl('done', Done)) %>%
   mutate(Date = NA, Note = NA) %>%
   select(Date, Plot, Tag, Toothpick, Q, Fl_stems, Fl_open, Fl_done, Note) %>%
   rename(Fl_Stems = Fl_stems, Fl_Open = Fl_open, Fl_Done = Fl_done) %>%
   write.csv(file = 'data/raw_data/data_2021/therm_entry_01-07-2021.csv', na = '', row.names = FALSE)
+
+
+### 5 Jul 2021
+
+read.csv('data/raw_data/data_2021/Thermopsis_newplants_2021.csv') %>%
+  rename(Fl_Done = Fl_done, Fl_Open = Fl_open, Fl_Stems = Fl_stems) %>%
+  rbind(read.csv('data/raw_data/data_2021/therm_entry_21-06-2021.csv'),
+        read.csv('data/raw_data/data_2021/therm_entry_24-06-2021.csv'),
+        read.csv('data/raw_data/data_2021/therm_entry_28-06-2021.csv'),
+        read.csv('data/raw_data/data_2021/therm_entry_01-07-2021.csv')) %>%
+  # Get rid of plants without tags (none were flowering as of last visit)
+  filter(!is.na(Tag)) %>%
+  # Pick out plants not finished yet
+  #   finished = no open flowers in two most recent records, number of done flowers same
+  #   and no yv in notes
+  #   (requires sorting rows by date)
+  arrange(Plot, Tag, desc(Date)) %>%
+  group_by(Plot, Tag) %>%
+  mutate(done = (!Fl_Open[1] & !Fl_Open[2]) & 
+           (Fl_Done[1] == Fl_Done[2]) & 
+           !(grepl('yv', Note[1]) | grepl('yv', Note[2])),
+         done = ifelse(is.na(done), FALSE, done),
+         done = ifelse(done, 'done', NA)) %>%
+  ungroup() %>%
+  distinct(Plot, Tag, .keep_all = TRUE) %>% 
+  arrange(Plot, done, Tag) %>%
+  # Reformat columns for a datasheet
+  # rename(old_stems = Fl_stems, old_open = Fl_open, Old_note = note) %>%
+  mutate(Old_info = paste(Fl_Stems, Fl_Open, Fl_Done, sep = ';'),
+         Fl_stems = NA, Fl_open = NA, Fl_done = NA, q = NA) %>%
+  rename(Old_note = Note, Last_date = Date, Old_q = Q, Q = q, Done = done) %>%
+  select(Plot, Tag, Toothpick, Q, Fl_stems, Fl_open, Fl_done, Done,
+         Last_date, Old_info, Old_q, Old_note) %>%
+  # Export CSV
+  write.csv('data/datasheet_generation/datasheet_outputs/data_datasheets_2021/therm_05-07-2021.csv',
+            na = '', row.names = FALSE)
+
+read.csv('data/datasheet_generation/datasheet_outputs/data_datasheets_2021/therm_05-07-2021.csv') %>%
+  filter(!grepl('done', Done)) %>%
+  mutate(Date = NA, Note = NA, Page = NA) %>%
+  select(Date, Plot, Tag, Fl_stems, Fl_open, Fl_done, Toothpick, Q, Page, Note) %>%
+  rename(Fl_Stems = Fl_stems, Fl_Open = Fl_open, Fl_Done = Fl_done) %>%
+  write.csv(file = 'data/raw_data/data_2021/therm_entry_05-07-2021.csv', na = '', row.names = FALSE)
