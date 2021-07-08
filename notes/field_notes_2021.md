@@ -168,3 +168,14 @@ I took out the card for sensor 48 today. For equipment, I brought the cable cutt
 
 I also tried putting out more sensors today but got rained out. Radar for that area is useless! 
 
+### Jul 7 2021
+
+Pollinator observation day + sensor placement.
+
+Thought at first the pollinator observation was a bust. Maybe it still is? Went today (Wed) instead of yesterday because forecast yesterday looked very bad (although according to Warren there was no rain until the afternoon). Consequently some of the plots selected were done - I had to supplement with other nearby plots (think I swapped 57 in for 59 and 74 in for 73). I didn't see anything early in the day, but I did see stuff later - three *Bombus nevadensis* visits. Saw *B. nevadensis* on some lupines too. Another species (smaller, likely *Bombus flavifrons*) was visiting Mertensia in the lower meadows but was going hog wild in a thick patch of *Thermopsis* by plot 70 - probably saw at least six. Otherwise I saw an orange lep and a house fly but not much else. I did see that missed bee from the first day at some point - seems to be a common pollinator.
+
+It'll be kinda tough to figure out what to use as a predictor in the analysis. Sky view? Hmm...
+
+I put out two more sensors today - plots 67 and 75. Would have put out 77 but I instead looked at the rooting depth of some plots in the adjacent (large south) meadow. Max depth I saw for tissue in either species (looking at 2-3 plants) was maybe only 4cm, as shallow as 3cm. I was looking mostly at rhizomes/runners. I did see some bud-like organ but it was maybe only at 4cm. I think it would be good to place the TEROS probes closer to around 4-5 cm depth instead of 7-8cm. Looking at some of the data from plot 48 (jul 3 - jul 5), at a depth of 7-8 we still see diurnal curves in soil temperature. Hmm..
+
+Also, because I don't think I tightened a bolt enough, the platform in 67 will need to be adjusted upward (which may require some other adjustments... ugh). The level in 67 is finnicky as well - would be good to go in with glue.
