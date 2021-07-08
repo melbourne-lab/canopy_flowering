@@ -179,3 +179,5 @@ It'll be kinda tough to figure out what to use as a predictor in the analysis. S
 I put out two more sensors today - plots 67 and 75. Would have put out 77 but I instead looked at the rooting depth of some plots in the adjacent (large south) meadow. Max depth I saw for tissue in either species (looking at 2-3 plants) was maybe only 4cm, as shallow as 3cm. I was looking mostly at rhizomes/runners. I did see some bud-like organ but it was maybe only at 4cm. I think it would be good to place the TEROS probes closer to around 4-5 cm depth instead of 7-8cm. Looking at some of the data from plot 48 (jul 3 - jul 5), at a depth of 7-8 we still see diurnal curves in soil temperature. Hmm..
 
 Also, because I don't think I tightened a bolt enough, the platform in 67 will need to be adjusted upward (which may require some other adjustments... ugh). The level in 67 is finnicky as well - would be good to go in with glue.
+
+OH also - Campanula is up. Saw some open south of plots 37 and 27 (approximate locations of last year's plots 7 and 71 or 72). Also saw some that were going to open soon elsewhere. No buds visible in plots though.
