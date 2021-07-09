@@ -16,9 +16,13 @@ Tallgrass prairie community study with details and references about influences a
 
 Effects of warming +/ drought on phenology (?) along a latitudional gradient in the coastal Pacific Northwest.
 
-##### Zhu et al., 2016. Interactions between warming and soil moisture... Royal Society Biological Letters.
+##### Jabis, M.D., Winkler, D.E. and Kueppers, L.M. 2020. Warming acts through earlier snowmelt toa dvance but not extend alpine community flowering. Ecology.
 
-Experimental warming in plants in the Tibetan plateau.
+NWT ridge look at snowmelt (x warming?) and advance and duration of flowering phenology.
+
+##### Collins, C.G., et al. 2021. Experimental wwarming differentially affects vegetative and reproductive phenology of tundra plants. Nature Communications.
+
+(from title) differential effects on vegetation and reproduction
 
 ##### Newman, 1965. Factors affecting the seed production... Journal of Ecology
 
@@ -52,5 +56,8 @@ Spatial variation in pollen limitation and pollinator visitation!
 
 Comparing seed set/outcrossing in early and late flowering plants.
 
+### Microsites and demography
 
+Oldfather, M.F., and Ackerly, D.D. 2019. Microclimate and demography interact to shape stable population dynamics across the range of an alpine plant. New Phytologist.
 
+This and Megan's other papers. Demographic influences of microclimate variability! Doesn't look at canopy coverage but does look at moisture and temperature. Influences on population dynamics!
