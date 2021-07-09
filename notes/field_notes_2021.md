@@ -181,3 +181,15 @@ I put out two more sensors today - plots 67 and 75. Would have put out 77 but I 
 Also, because I don't think I tightened a bolt enough, the platform in 67 will need to be adjusted upward (which may require some other adjustments... ugh). The level in 67 is finnicky as well - would be good to go in with glue.
 
 OH also - Campanula is up. Saw some open south of plots 37 and 27 (approximate locations of last year's plots 7 and 71 or 72). Also saw some that were going to open soon elsewhere. No buds visible in plots though.
+
+### Jul 8 2021
+
+Standard phenology day. No sign of *Campanula* anywhere near plots. No new tags put out.
+
+Should figure out how to collect seeds soon. Should I collect seeds in all plots or leave some plots for addition experiments?
+
+I looked around at some of the trees and shrubs. Very easy stuff. The pine is lodgepole (the tell is the asymmetric cones). Not quite sure about the other but it's probably Engelmann spruce. The shrub is common juniper.
+
+I also looked at some of the vegetation in the (lodgepole) forest on the road up to the ridge. Below the climate station the understory is bare (trees too tightly packed?) but there are a lot of gaps and openings with a surprising diversity up beyond that (likely before the bog). Lots of flowering *Thermopsis* (looks to be started recently) as well as a lot of lupines, plus some others. Plenty of roses up there too.
+
+I did take 20 minutes today to adjust the height on the pole at plot 67. I think the screw there may be stripped as well. Seems like if there is too much tightening that the screws may fail to adjust. Had this same issue with the one in plot 75 yesterday. Socket wrench should be part of the daily repair kit.
