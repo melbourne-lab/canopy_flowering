@@ -1417,5 +1417,111 @@ Like the idea of "inter-annual migrants"... think about these in perennials. The
 
 Read Kalisz et al. and the 2004 papers next.
 
+### Zhu, J., Zhang, Y., and Wang, W. 2016. Interactions between warming and soil moisture increase overlap in reproductive phenologya mong species in an alpine meadow. Biol. Lett.
+
+- (from intro) "whereas other species might take several years for the cumulative effects of warming to emerge (Hoffmann et al. 2010)
+- warming can expand or shorten overlap of successive species
+	- possibly moving means away from the summer peak? see Sherry et al. 2007
+- Here: a conceptual model for resposes of phenology to warming 
+	- warming would delay reproductive phenology of shallow-rooted early-flowering species but advance it for deep-rooted late flowering species
+	- test the model in Tibetan plateau system
+- System on Tibetan Plateau: summer monsoon season starting around 22 May, growing season mid-May to mid-September
+- Passive warming through open top chambers (ITEX-consistent design)
+	- measured air temperature and moisture 10cm abovbe ground
+	- measured soil temperature and moisture 5cm below ground
+	- control plus four levels of warming, four replicates per treatment = 20 plots
+	- warming increased air and soil temperature while reducing soil moisture
+- Measured phenology of individuals for six species
+	- phenology in six stages (modified from Dunne et al. 2003)
+	- one species shallow early, two species shallow mid, three species deep late (root depth + timing)
+- Warming delayed phenology of SREF, advanced in one SRMF and two DRLF, had no effect on one SRMF and DRLF
+	- more overlap between SREF and advanced SRMF in the warming plots
+- Life history and rooting depths mean different vulnerabilities to reduced moisture in top layers of soil (see Dorji et al. 2013)
+	- SREF would be more sensitive to warming... makes sense because the driver here is the monsoon. But why would it delay?
+		- (speculating) because they're trying to avoid periods of stress and wait for the rainy period??
+	- SRMF plants start later and typically avoid the early water stress
+	- DRM/LF start during hte monsoon and use deeper soil water
+		- less constrained by water limitation then and instead (?) respond to the the soil and air temperature
+- In general plants moved towards the rainfall peak under warming
+
+Very interesting stuff although I wish they had gone more into their conceptual model. Seemms like the big driver here is the monsoon - in our case though I think the driver would have to be snowmelt. Rather than happening early in the season like our snowmelt, the driving force here is mid-season (same as Sonoran desert plants?)
+
+The deep versus shallow root dichotomy is interesting! The soil profile in open versus shallow areas would be interesting to study; hypothesizing here that open areas have a steeper gradient due to drying and the vegetation buffer? Or maybe it's an effect no matter what the depth is. Note that Dunne et al. 2003 had two soil depths used.
+
+In our case both species are rhizomatous so the effects on phenology up at the top could be due to temperature, but also could be due to what's going on deep with soil moisture. What's the physiological reason that water would influence flowering? Speculating again: flowering means high resource yield so I guess you just want to avoid periods of stress?
+
+### Dorji. T., et al. 2013. Plant functional traits mediate reproductive phenology and success in response to experimental warming and snow addition in Tibet. Globacl Change Biology. 
+
+- The system here is semi-arid The shallow vs. deep root dichotomy seems to be rooted in surface vs. deep water.
+- Prediction here: SREF species will have delayed phenology under warming 
+because warming will zap away upper-soil moisture
+	- spring snow addition would advance phenology and increase reproductive effort of SREF species because it would add more moisture
+- Site: has summer monsoon season, also fully factorial manipulation experiments with warming, snow, pika presence
+	- 8m diameter circular plot w/ four blocks
+	- snow and warming applied in five subplots in each treatment 
+	- snow added when ground was snow free as is usual in this system
+	- warming done with open top chambers
+- Measure air temp 10cm above ground, soil sensors used (at what length??)
+- Four species measured: Kobresia, Potentilla (x2), Astragalus	
+	- five individuals per plot, noting bud date, flowering, fruiting, and number of each
+	- Kobresia: thick clonal mats so plots were subdivided and infructescences assessed
+	- Astragalus is DRLF
+	- Ps is SRMF (small taproot), Pf is DRMF (shrub with long taproot)
+- Treatments: C (control) W (warming) WS (warming + snow), x year fixed efects on phenology, number of flowers, reproductive success
+- Warming increased air and soil temperatures by 1-2C
+	- snow addition decreased soil temp on ground and a week after snowmelt
+	- soil moisture lower in warmed plots compared to controls
+	- soil misture increased by snow addition for 30 days after addition
+	- mean soil moisture was 5-6% lower in warming than control plots
+- Warming delayed day of 50% inflorescences and max in Kobresia by two weeks
+- Warming advanced budding and flowering in Astragalus by 2-5 days and date of flowering by Pf by a week
+- Warming + snow addition delayed max inflorescence date in Kobresia by two days
+	- snow advanced peak flowering days of Kobresia
+	- but this was a lot less than the delay of warming alone
+	- peak day delayed by 2 days in warming but delayed by nine days in warming + snow
+	- snow meant slightly more inflorescences, warming meant ~10% less
+- Warming means more K inflorescences, did not influence other sp
+	- snow increased K inflorescnences (moisture good) and lowered number of Astragalus flowers in one year (no effect in other), no effects on othe r sp
+	- warming alone meant fewer infloresences than warming + snow in Kobresia, no effects of combined treatment elsewhere
+- Overall: snow mitigates the negative effects of warming on flowering phenology and reproductive effort because snow adds moisture to the top soil layers at important times
+	- however it did influence dates of budding in Astragalus (DRLF) and flowering in Potentilla fruticosa (DRMF)
+
+There's a lot going on in here, but I think it's very similar to the Zhu study above with the added element of moisture. Think this ties in to another study (forget which - saw it but haven't read it yet) showing that moisture modulates the effects of warming under climate change.
+
+Kobresia flowers during relative drought (pre-monsoon) so warming makes it... wait? Is this a form of plasticity or constraint? I suppose if it has a lower moisture requirement to flower but will still flower at some point, then moisture stress will make it wait as long as it can. And/or, perhaps there is a slow increase in precip even before the monsoon. 
+
+The moisture stress here is supported by the addition of snow, which seems to negate a lot of these effects in Kobresia. Warming plus snow had only two days of delayed flowering relative to the control (warming only led to a two week dalay). Snow alone seems to move the date up, suggesting that the moisture seems to limit the earliness of flowering in this species. Moisture also seems to increase the number of flowers (makes sense I suppose).
+
+But the other species didn't have these effects - more moisture mostly didn't influence flowering time in other species (snow did seem to delay it for Potentilla saundersiana - shallow root means it doens't need the moisture? The two mid/later flowering species did flower earlier with heat - possibly because the warmth is what is limiting the earliness of flowering here? 
+
+Some stuff in here about reproductive effort but I didn't read super closely.
+
+Given thoughts above perhaps it's good to think about limiting factors on the earliness? In the Tibetan plateau system, the moisture pulse happens mid-season but I guess temperature increases slowly over time. In our system, moisture I guess is stable and then decreases (snowmelt and June rains) while temperature also increases. For *Thermopsis* is the limiting factor just temperature, then? As in higher temperatures mean earlier flowering? In the *Campanula*, I'm not sure what it would be - moisture? It's flowering later in the season when there is less moisture? If *Thermopsis* flowers earlier maybe it is especially reliant on moisture? Interesting frameowrk.
+
+
+### Winkler, D.E., Chapin, K.J., and Kueppers, L.M. 2016. Soil moisture mediates alpine life form and community productivity responses to warming. Ecology.
+
+- Warmer temperatures can directly affect productivity by advancing snowmelt (but no other direct effect of temps?)
+	- but what about soil moisture? if there is no increase in summer rain, warmer temperatures mean drier soil and most people only think about temperature
+	- Elmendorf et al. 2012 shows that temporal increases in abundance and height (huh?) are greatest in wetter sites
+	- Elmendorf et al. 2012 (different paper) suggests experimental warming and soil moisture interact (meta-analysis) although results vary for functional group
+- Productivity changes could be due to shifts in species relative abundances
+- Here: alpine productivity (at Niwot Ridge) as a function of warming and moisture
+- 20 3m diameter experimental plots in 2008; five plots get each of four treatments: control, heat (H), watered (W), heat and water (HW)
+	- heating with active infrared heater: nightime warming, maintaining natural wind, modified snowmelt timing, but no warming of air, delivering an extra 215 W/m2 (42 W/m2 in winter)
+	- watering (beginning after snowmelt) 2.5mm of water weekly 
+	- plots subdivided into 4 1m2 plots to get variation; measure soil moisture and temp every 15 minutes at 5-10 cm dept in center of each quadrat
+	- soil degree days is days with soil temp > 0
+	- adequate soil moisture days was number of days with mean daily VWC > 0.13
+- H-W interaction present in aboveground productivity (with pre-treatment productivity as covariate), explaining 21-53% of variation in productivity
+	- community-wide: heating alone decreases productivity, heating plus water increases it
+	- interaction strength is strongest for forbs, and slopes suggest that productivity would only increase with water + heating, not with heat or water alone
+	- graminoids respond better in heat + unwatered groups than heat + water (negative interaction) so graminoids may do well in a hotter future
+
+Great - more evidence of moisture x temperature interactions. I am very curious to see what results look like in the soil, comparing sub-canopy with open meadows. Given expected warmer temperatures in the future, the outcome (for production at least) depends on the amount of moisture (i.e. if rising temperatures which otherwise limit production are compensated by increasing moisture). All else equal (of course not true), my naive assumption is lower temperatures and more moisture in the aspen subcanopy and lower temperature and less moisture in the pine subcanopy.
+
+The finding about different functional types is interesting. Forbs will do well with wetness + heat, grasses will do meh; reverse is true for warming without water. This could provide insight into the differences between openness and canopy, perhaps. Keep in mind though that this paper is looking only at alpine!
+
+Next step of course is to look at the phenology paper from this group (Jabis et al. 2020).
 
 
