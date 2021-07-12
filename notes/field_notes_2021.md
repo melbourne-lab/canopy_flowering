@@ -193,3 +193,13 @@ I looked around at some of the trees and shrubs. Very easy stuff. The pine is lo
 I also looked at some of the vegetation in the (lodgepole) forest on the road up to the ridge. Below the climate station the understory is bare (trees too tightly packed?) but there are a lot of gaps and openings with a surprising diversity up beyond that (likely before the bog). Lots of flowering *Thermopsis* (looks to be started recently) as well as a lot of lupines, plus some others. Plenty of roses up there too.
 
 I did take 20 minutes today to adjust the height on the pole at plot 67. I think the screw there may be stripped as well. Seems like if there is too much tightening that the screws may fail to adjust. Had this same issue with the one in plot 75 yesterday. Socket wrench should be part of the daily repair kit.
+
+### Jul 11 2021
+
+Put out two more sensors today - one in plot 77 and one in plot 2. The one in plot 2 was with the new case (assembled by me) and what I believe was a SP510 that had never been used before.
+
+I also went in to each of the pre-existing plots (75, 67, 25, 48, 19) and re-located the TEROS sensor. I moved it to ~30cm south of the pole (putting it up against the east boundary of the plot) and up from 7-8 cm to 4-6 cm. For each of these plots/loggers, I collected the data card after making this change. Shoudl be interesting to see the last week's worth of results. One plot I think I made the change (possibly plot 67) in the last minute of the hour so the problem with not having the logger ID recorded may appear again. Ugh.
+
+The sensor at plot 75 was totally upended. Pole out of the ground, bracket dislodged from the pole, inside of container scrambled (batteries out of case, screw terminal plug unplugged from board, battery connector port slightly damaged), rebar out of ground, one tent stake on ground near the base. It looks like an animal but I'm not quite sure. I don't have evidence other than the scrambled innerds of the logger case that anything got inside the case, e.g. doesn't look like the container seal was broken. Two of the tent stakes were in the ground. There also looked to be some damage to one of the cords. I have pics.
+
+So, that sucks. I'd rather not have to deal with that. Also would prefer not to have to spend a lot of time this summer having to set those up again (it took over an hour to repair). But also I don't know what to do in the case of animals other than applying another set of twist ties to safely seal the logger container.
