@@ -203,3 +203,20 @@ I also went in to each of the pre-existing plots (75, 67, 25, 48, 19) and re-loc
 The sensor at plot 75 was totally upended. Pole out of the ground, bracket dislodged from the pole, inside of container scrambled (batteries out of case, screw terminal plug unplugged from board, battery connector port slightly damaged), rebar out of ground, one tent stake on ground near the base. It looks like an animal but I'm not quite sure. I don't have evidence other than the scrambled innerds of the logger case that anything got inside the case, e.g. doesn't look like the container seal was broken. Two of the tent stakes were in the ground. There also looked to be some damage to one of the cords. I have pics.
 
 So, that sucks. I'd rather not have to deal with that. Also would prefer not to have to spend a lot of time this summer having to set those up again (it took over an hour to repair). But also I don't know what to do in the case of animals other than applying another set of twist ties to safely seal the logger container.
+
+### Jul 12 2021
+
+Only ~60 plants to check on, most of which were not flowering. Thermopsis flowering (in plots at least) is winding down. I'd bet I got about 40 plots with flowering plants in them and 50-60 that didn't have any. 
+
+Annoyingly, there was another animal attack on a sensor. This time the SP510 in plot 67 was totally ravaged. Lots of chewing on the cable (sensor-end) and the sensor was dislodged from the platform. The screw tip was broken off inside the sensor (meaning it can't be used in reseach capacity anymore) and the remainder of the screw and the base piece were found nearby on the ground. I'm not sure yet if the sensor was taking data (or when the attack happened) but beyond a certain time the sensor data will be useless as the SP510 was pointed at the ground. I replaced this one (1645, RIP) with 1875.
+
+After talking briefly with Kris H. he says he thinks both attacks were bears, just being curious. He lent me a game trap that I put around the tree near plot 75 to monitor going forward. He said that some possible ways to avoid this problem in the future are (1) using ammonia (he recommended a rag but I wonder if the cables can be wiped down, although this may affect pollinators) or (2) getting an electric fence. The bears are fast learners so they'll know after getting 1-2 shocks not to mess with them again.
+
+The tuperware at plot 75 was also left dangling. What the heck man...
+
+Speaking of wildlife I got startled by a grouse today between plots 53 and 57. Very annoying!
+
+I missed plant emergence in plot 44 - there were ~3 stems up there that I just never saw. Oh well. Exclude from  first date analysis (although this plot would have been great to have - ugh). I saw a swallowtail butterfly (!) feeding on *Thermopsis* between plots 63 and 57. Very cool.
+
+There is plenty of *Campanula* flowering in the meadow interiors but none in plots. Plot 71 has two purple buds and plot 17 (!) has some green buds. Some bolting plants elsewhere but I'm not sure if they will flower necessarily (will they produce a vertical stem otherwise?). There should be a good down window between the *T* ending and the *C* beginning.
+
