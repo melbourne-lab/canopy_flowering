@@ -320,3 +320,26 @@ read.csv('data/raw_data/data_2021/Thermopsis_newplants_2021.csv') %>%
          Last_date, Old_info, Old_q, Old_note) %>%
   write.csv('data/datasheet_generation/datasheet_outputs/data_datasheets_2021/therm_12-07-2021.csv',
             na = '', row.names = FALSE)
+
+read.csv('data/datasheet_generation/datasheet_outputs/data_datasheets_2021/therm_12-07-2021.csv') %>%
+  filter(!grepl('done', Done)) %>%
+  mutate(Date = NA, Note = NA, Page = NA) %>%
+  select(Date, Plot, Tag, Fl_stems, Fl_open, Fl_done, Toothpick, Q, Page, Note) %>%
+  rename(Fl_Stems = Fl_stems, Fl_Open = Fl_open, Fl_Done = Fl_done) %>%
+  write.csv(file = 'data/raw_data/data_2021/therm_entry_12-07-2021.csv', na = '', row.names = FALSE)
+
+plots.0713 = rbind(
+  read.csv('data/raw_data/data_2021/therm_entry_12-07-2021.csv'),
+  read.csv('data/raw_data/data_2021/Thermopsis_newplants_2021.csv') %>%
+    rename(Fl_Stems = Fl_stems, Fl_Open = Fl_open, Fl_Done = Fl_done)
+) %>%
+  filter(Date %in% '7/12/21') %>%
+  filter(Fl_Open > 0) %>%
+  distinct(Plot)
+
+set.seed(4929)
+
+sample(plots.0713$Plot) 
+sample(plots.0713$Plot) 
+
+# [1] 70 73 57 60 74 25  9 74 57  9 70 60 25 73
