@@ -220,3 +220,10 @@ I missed plant emergence in plot 44 - there were ~3 stems up there that I just n
 
 There is plenty of *Campanula* flowering in the meadow interiors but none in plots. Plot 71 has two purple buds and plot 17 (!) has some green buds. Some bolting plants elsewhere but I'm not sure if they will flower necessarily (will they produce a vertical stem otherwise?). There should be a good down window between the *T* ending and the *C* beginning.
 
+### Jul 13 2021
+
+Meh day. No additional damage to sensors. Cool (smoky) day so not very warm - not good for pollinators.
+
+Need to check collections for bees. I saw a visit by what was possibly the shiny-bottomed bee in plot 25. I captured a similar looking bee in plot 60 though (it was on one of the flags) and it may have actually been a very pale Apis... white markings on face. Ugh whatever.
+
+Started to install a sensor in plot 6 but had to stop halfway due to weather. Resulting station is not level, TEROS is not connected through screw terminal, and the cap is on the SP510, although it is standing erect and the tuperware container is sealed shut.
