@@ -5,9 +5,12 @@ filename.str  = 'DATATEST'
 
 sensor.masterlist = read.csv('sensors_and_loggers/sensor_logger_masterlist_2021.csv')
 
-# get list of files
+# Get full path to file to read in
 file.to.read = grep(filename.str, dir(ext.drive.path), value = TRUE) %>%
   paste0(ext.drive.path, .)
+
+# Read in file
+xx = read.csv(file.to.read)
 
 # Check TEROS ID:
 grep('^T11', xx$Sensor_ID, value = TRUE) %>%
