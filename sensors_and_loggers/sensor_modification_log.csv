@@ -7,3 +7,9 @@ Plot, Date, Times, Card_swap, Note
 25, 07/11/2021, 4:05, TRUE, adjust TEROS depth
 19, 07/11/2021, , TRUE, adjust TEROS depth
 67, 07/12/2021, , TRUE, adjust TEROS height and replace SP510 (1645 -> 1875)
+19, 07/15/2021, 2:20, FALSE, replace battery and fix TEROS connection
+25, 07/15/2021, 2:35, FALSE, replace battery
+48, 07/15/2021, 2:50, FALSE, replace battery
+67, 07/15/2021, , FALSE, replace battery and fix TEROS connection
+77, 07/15/2021, , TRUE, replace battery
+75, 07/15/2021, 4:55, FALSE, replace battery
