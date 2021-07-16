@@ -227,3 +227,21 @@ Meh day. No additional damage to sensors. Cool (smoky) day so not very warm - no
 Need to check collections for bees. I saw a visit by what was possibly the shiny-bottomed bee in plot 25. I captured a similar looking bee in plot 60 though (it was on one of the flags) and it may have actually been a very pale Apis... white markings on face. Ugh whatever.
 
 Started to install a sensor in plot 6 but had to stop halfway due to weather. Resulting station is not level, TEROS is not connected through screw terminal, and the cap is on the SP510, although it is standing erect and the tuperware container is sealed shut.
+
+### Jul 15 2021
+
+*T* is pretty much done in plots - maybe less than 10 total flowers open. Of course in meadow margins, under canopy, and in smaller clearings, it looks to be peaking. But I don't think the plots and data collected will reflect that - ugh.
+
+This does lead to an interesting question - how much aggregated radiation does a meadow/clearing receive as a function of its size/shape? Crass way of putting this question is how large should a meadow be in order to be a meadow... There is a clearing around plot 57 where the interior (sunniest area) looks to be peaking now. The sensor in plot 67 should be able to answer this.
+
+First day of *C* flowering in plots. It appeared in a few plots without me noticing PV - suggests that budding to flowering is fast.
+
+I also harvested *T* fruits. I'll put a protocol on here soon. Briefly, I took plants that had been done for >10 days (this may be too short). I went out and recorded how many remaining fruits they had. If there were only one or two fruits with brown calyxes I took all present. If there were three or more I used a pre-designated list of T/F (Bernoulli variables with $p = 3/4$) variables and, counting from the bottom and going up, harvested fruits according to the sheet. I put all fruits in a brown paper bag labelling the bag with plot, tag, date, and number of fruits inside.
+
+Notably there were a good number of very small fruits that appeared to have no seeds. Aborted? Failure? 
+
+Sensors: 6 was in good shape. Good. I finished this around 10:20 AM. I swapped batteries in the afternoon (around 2). In 19, the screw terminal cable was disconnected from the board, although I don't know if I did this during the initial install or during the repair. 48 and 77's tuperwares were damaged - bitten through? Not quite sure. They will need repairs. 77 I collected the card for but stupidly dropped somewhere - most likely right by the entrance to the aspen stand there where I accidentally dropped the silica grease.
+
+I repaired 67 and 75 - hopefully. 67 had one of the wires not fully secured in the screw terminal. I repaired this. For 75, I did not see a super evident problem. Screw terminal and connection was fine. The port for the D6/D7 screw terminal looked to have been slightly dislodged during the animal attack, but this wouldn't explain why it failed to record data *before* the attack. I tried running with the TEROS unplugged and the flashing red light did indeed work. But when I reconnected it, the board seemed to work... in fact, on the hour, the LED9 which turns on for the TEROS engagement did turn on so perhaps it did take a record? Not sure. 
+
+
