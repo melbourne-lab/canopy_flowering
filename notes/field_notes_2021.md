@@ -244,4 +244,14 @@ Sensors: 6 was in good shape. Good. I finished this around 10:20 AM. I swapped b
 
 I repaired 67 and 75 - hopefully. 67 had one of the wires not fully secured in the screw terminal. I repaired this. For 75, I did not see a super evident problem. Screw terminal and connection was fine. The port for the D6/D7 screw terminal looked to have been slightly dislodged during the animal attack, but this wouldn't explain why it failed to record data *before* the attack. I tried running with the TEROS unplugged and the flashing red light did indeed work. But when I reconnected it, the board seemed to work... in fact, on the hour, the LED9 which turns on for the TEROS engagement did turn on so perhaps it did take a record? Not sure. 
 
+### Jul 19 and 20 2021
+
+Thermopsis is done. Campanula started last week in plots and is well underway now. Interesting there is a somewhat large density of Campanula in plot 53 - seems to like bare soil.
+
+Sensor in plot 33 was annihilated by a bear. The tuperware (new tacklebox edition) had a gaping hole in the back. There was a single piece of tacklebox by the base of the logger (toppled) so I suspect the bear made the hole then pushed the sensor over before excavating the box's contents. Two of the suspension cables were in place; the third one (in the direction the logger was toppled) had its peg pulled out. Damage to the unit's inner parts appear limited to a dessicant pack chewed through (with contents spilled in to the plot) and the connector for the battery broken. I repaired the damage finishing around 4.
+
+Idiotically I put the data card in my pocket again, went to look for the *other* missing data card, and then promptly lost the plot 33 one. Idiotic. I mostly was searching around plots 77/75 and then went back to the car, but after searching Tuesday couldn't find any evidence of either card. Stupid stupid stupid.
+
+Pollinator observations on Tuesday - seems like the pollinator assemblage for Campanula is more diverse than Thermopsis - at least this year, this time of season. Saw a few bees (not yet identified) and ended by seeing another *B. flavifrons*. Decided that incidental contact (of which there was plenty especially in plot 53) is not worthy of recording except as a note.
+
 
