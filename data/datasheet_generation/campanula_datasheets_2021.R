@@ -54,5 +54,26 @@ read.csv('data/raw_data/data_2021/Campanula_newplants_2021.csv') %>%
 read.csv('data/datasheet_generation/datasheet_outputs/data_datasheets_2021/campa_22-07-21.csv') %>%
   mutate(Date = NA, Page = NA, Note = NA) %>%
   select(Date, Plot, Tag, Fl_stems, Fl_open, Fl_done, Q, Page, Note) %>%
+  distinct(Tag, .keep_all = TRUE) %>% ## comment out in successive versions
   write.csv('data/raw_data/data_2021/campa_entry_22-07-21.csv', row.names = FALSE, na = '')
 
+### Jul 26 2021
+
+read.csv('data/raw_data/data_2021/Campanula_newplants_2021.csv') %>%
+  rbind(read.csv('data/raw_data/data_2021/campa_entry_19-07-21.csv'),
+        read.csv('data/raw_data/data_2021/campa_entry_22-07-21.csv')) %>%
+  arrange(Plot, Tag, desc(Date)) %>%
+  # Get rid of gone or collected plants
+  group_by(Tag) %>%
+  filter(!grepl('[Cc]ollected|[Gg]one', Note)) %>%
+  # (at some point - next time - will want to remove plants with more than 3 consecutive
+  # empty records)
+  ungroup() %>%
+  # Get only one row per plant
+  distinct(Tag, .keep_all = TRUE) %>%
+  mutate(Prev = paste(Fl_stems, Fl_open, Fl_done, sep = ';')) %>%
+  rename(Prev_note = Note) %>%
+  mutate(Date = NA, Fl_stems = NA, Fl_open = NA, Fl_done = NA, Q = NA) %>%
+  select(Date, Plot, Tag, Fl_stems, Fl_open, Fl_done, Q, Prev, Prev_note) %>%
+  write.csv(file = 'data/datasheet_generation/datasheet_outputs/data_datasheets_2021/campa_26-07-21.csv',
+            na = '', row.names = FALSE)
