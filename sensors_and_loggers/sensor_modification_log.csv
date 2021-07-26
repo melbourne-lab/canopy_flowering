@@ -13,3 +13,9 @@ Plot, Date, Times, Card_swap, Note
 67, 07/15/2021, , FALSE, replace battery and fix TEROS connection
 77, 07/15/2021, , TRUE, replace battery
 75, 07/15/2021, 4:55, FALSE, replace battery
+2, 07/22/2021, , TRUE, replace battery (Duracell)
+33, 07/22/2021, 3:20, FALSE, re-level
+67, 07/22/2021, , TRUE, replace battery (Rayovac) and re-level
+77, 07/22/2021, , TRUE, replace battery (Duracell)
+48, 07/22/2021, , TRUE, replace battery (Duracell)
+25, 07/22/2021, , TRUE, replace battery (Rayovac)
