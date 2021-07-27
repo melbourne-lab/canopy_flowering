@@ -77,3 +77,24 @@ read.csv('data/raw_data/data_2021/Campanula_newplants_2021.csv') %>%
   select(Date, Plot, Tag, Fl_stems, Fl_open, Fl_done, Q, Prev, Prev_note) %>%
   write.csv(file = 'data/datasheet_generation/datasheet_outputs/data_datasheets_2021/campa_26-07-21.csv',
             na = '', row.names = FALSE)
+
+read.csv('data/datasheet_generation/datasheet_outputs/data_datasheets_2021/campa_26-07-21.csv') %>%
+  mutate(Date = NA, Page = NA, Note = NA) %>%
+  select(Date, Plot, Tag, Fl_stems, Fl_open, Fl_done, Q, Page, Note) %>%
+  distinct(Tag, .keep_all = TRUE) %>% ## comment out in successive versions
+  write.csv('data/raw_data/data_2021/campa_entry_26-07-21.csv', row.names = FALSE, na = '')
+
+### Jul 27 2021
+
+plots.0727 = read.csv('data/raw_data/data_2021/Campanula_newplants_2021.csv') %>%
+  rbind(read.csv('data/raw_data/data_2021/campa_entry_26-07-21.csv')) %>%
+  filter(Date %in% '7/26/21') %>%
+  group_by(Plot) %>%
+  summarise(nfl = sum(Fl_open))
+
+set.seed(1516)
+
+sample(plots.0727$Plot, 15)
+#  [1]  7 45  1 10 53 67 17  3 82  8 34 37 74 66  2
+
+
