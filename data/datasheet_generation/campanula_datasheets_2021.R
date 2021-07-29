@@ -97,4 +97,25 @@ set.seed(1516)
 sample(plots.0727$Plot, 15)
 #  [1]  7 45  1 10 53 67 17  3 82  8 34 37 74 66  2
 
+### July 29 2021
+
+read.csv('data/raw_data/data_2021/Campanula_newplants_2021.csv') %>%
+  rbind(read.csv('data/raw_data/data_2021/campa_entry_19-07-21.csv'),
+        read.csv('data/raw_data/data_2021/campa_entry_22-07-21.csv'),
+        read.csv('data/raw_data/data_2021/campa_entry_26-07-21.csv')) %>%
+  arrange(Plot, Tag, desc(Date)) %>%
+  # Get rid of gone or collected plants
+  group_by(Tag) %>%
+  filter(!grepl('[Cc]ollected|[Gg]one|[Ii]ggy', Note)) %>%
+  # (at some point - next time - will want to remove plants with more than 3 consecutive
+  # empty records)
+  ungroup() %>%
+  # Get only one row per plant
+  distinct(Tag, .keep_all = TRUE) %>%
+  mutate(Prev = paste(Fl_stems, Fl_open, Fl_done, sep = ';')) %>%
+  rename(Prev_note = Note) %>%
+  mutate(Date = NA, Fl_stems = NA, Fl_open = NA, Fl_done = NA, Q = NA) %>%
+  select(Date, Plot, Tag, Fl_stems, Fl_open, Fl_done, Q, Prev, Prev_note) %>%
+  write.csv(file = 'data/datasheet_generation/datasheet_outputs/data_datasheets_2021/campa_29-07-21.csv',
+            na = '', row.names = FALSE)
 
