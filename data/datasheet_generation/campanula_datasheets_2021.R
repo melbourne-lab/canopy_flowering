@@ -138,4 +138,37 @@ set.seed(90208223)
 sample(plots.0729$Plot, 15)
 #  [1] 10 57 66 17  6 74 58 73 45 37 79 70  3  7 38
 
-
+read.csv('data/raw_data/data_2021/Campanula_newplants_2021.csv') %>%
+  rbind(read.csv('data/raw_data/data_2021/campa_entry_19-07-21.csv'),
+        read.csv('data/raw_data/data_2021/campa_entry_22-07-21.csv'),
+        read.csv('data/raw_data/data_2021/campa_entry_26-07-21.csv'),
+        read.csv('data/raw_data/data_2021/campa_entry_29-07-21.csv')) %>%
+  arrange(Plot, Tag, desc(Date)) %>%
+  # Get rid of gone or collected plants
+  group_by(Tag) %>%
+  filter(!grepl('[Cc]ollected|[Gg]one|[Ii]ggy', Note)) %>%
+  # (at some point - next time - will want to remove plants with more than 3 consecutive
+  # empty records)
+  mutate(Date = as.Date(Date, format = '%m/%d/%y')) %>%
+  # Pick out plants not finished yet
+  #   finished = no open flowers in two most recent records, number of done flowers same
+  #   and no yv in notes
+  #   (requires sorting rows by date)
+  arrange(Plot, Tag, desc(Date)) %>%
+  group_by(Plot, Tag) %>%
+  # Mark finished plants
+  mutate(done = (!Fl_open[1] & !Fl_open[2]) & 
+           (Fl_done[1] <= Fl_done[2]) & 
+           !(grepl('pv|bud', Note[1]) | grepl('pv|bud', Note[2])),
+         done = ifelse(is.na(done), FALSE, done),
+         done = ifelse(done, 'done', NA)) %>%
+  ungroup() %>%
+  # Get only one row per plant
+  distinct(Tag, .keep_all = TRUE) %>%
+  filter(is.na(done) | !(done %in% 'done')) %>%
+  mutate(Prev = paste(Fl_stems, Fl_open, Fl_done, sep = ';')) %>%
+  rename(Prev_note = Note) %>%
+  mutate(Date = NA, Fl_stems = NA, Fl_open = NA, Fl_done = NA, Q = NA) %>%
+  select(Date, Plot, Tag, Fl_stems, Fl_open, Fl_done, Q, Prev, Prev_note) %>%
+  write.csv(file = 'data/datasheet_generation/datasheet_outputs/data_datasheets_2021/campa_02-08-21.csv',
+            na = '', row.names = FALSE)
