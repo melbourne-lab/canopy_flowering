@@ -19,3 +19,10 @@ Plot, Date, Times, Card_swap, Note
 77, 07/22/2021, , TRUE, replace battery (Duracell)
 48, 07/22/2021, , TRUE, replace battery (Duracell)
 25, 07/22/2021, , TRUE, replace battery (Rayovac)
+19, 07/26/2021, , TRUE, replace battery with used battery
+6, 07/26/2021, , TRUE, replace battery with used battery
+75, 07/26/2021, , TRUE, replace battery with used battery and relevel (was toppled)
+67, 07/26/2021, , FALSE, relevel (was toppled - from memory)
+33, 08/02/2021, 10:00, FALSE, slack rope fixed (reveled)
+19, 08/02/2021, 10:30, FALSE, relevel
+67, 08/02/2021, 1:00 , FALSE, relevel (was toppled)
