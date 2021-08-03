@@ -270,3 +270,15 @@ I repaired sensor 75 - did not replace the battery because presumably it spent t
 
 Need to enter data for phen and sensor modifications.
 
+### Aug 2 2021
+
+Didn't enter last week's data - uneventful. Two sensors (75 and 67) were tipped on Monday and I fixed them. Tuesday after observations I went to the south meadow to harvest some *Thermopsis* fruit for eventual seed studies.
+
+Today: fit in both pollinator observations and plant phenology in the same day. Pollinator observations suck. One observation all day. There are also just so few plants in each plot. Maybe I'm just seeing visitation trail off after the initiation of flowering.
+
+Phenology: lots of plants are being dug out of the ground ("uprooted" in notes column). Pulled out of the ground with rosettes and some root stock showing. Perhaps due to intense grazing? Also some tags being chewed up - especially in plot 71.
+
+Sensor 75 was in good shape today but sensor 67 was toppled again - a single tent stake pulled but the other two intact. Two other sensors (33 and 19) also required re-levelling - in the case of 33 it just looked like a slack cable, maybe due to the tent stake being twisted.
+
+Harvested some fruit from the south meadow today. Did not harvest *Thermopsis* in the interest of time.
+
