@@ -339,3 +339,9 @@ read.csv('data/raw_data/data_2021/Thermopsis_newplants_2021.csv') %>%
   write.csv('data/datasheet_generation/datasheet_outputs/data_datasheets_2021/therm_harvest_05-08-21.csv', 
             na = '', row.names = FALSE)
 
+read.csv('data/datasheet_generation/datasheet_outputs/data_datasheets_2021/therm_harvest_05-08-21.csv') %>%
+  mutate(Return = NA, Page = NA) %>%
+  select(Harvest_Date, Plot, Tag, Fruit_Pres, Fruit_Coll, Return, Page, Harvest_Note) %>%
+  write.csv('data/raw_data/data_2021/therm_harvest_05-08-21.csv', na = '', row.names = FALSE)
+
+### done!
