@@ -273,3 +273,15 @@ read.csv('data/datasheet_generation/datasheet_outputs/data_datasheets_2021/campa
   select(Date, Plot, Tag, Fl_stems, Fl_open, Fl_done, Q, Page, Note) %>%
   distinct(Tag, .keep_all = TRUE) %>% ## comment out in successive versions
   write.csv('data/raw_data/data_2021/campa_entry_09-08-21.csv', row.names = FALSE, na = '')
+
+# Pollinator observations:
+plots.0809 = read.csv('data/raw_data/data_2021/Campanula_newplants_2021.csv') %>%
+  rbind(read.csv('data/raw_data/data_2021/campa_entry_05-08-21.csv')) %>%
+  filter(Date %in% '8/5/21') %>%
+  group_by(Plot) %>%
+  summarise(nfl = sum(Fl_open, na.rm = TRUE))
+
+set.seed(55)
+
+sample(plots.0809$Plot, 18)
+
