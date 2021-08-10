@@ -282,3 +282,14 @@ Sensor 75 was in good shape today but sensor 67 was toppled again - a single ten
 
 Harvested some fruit from the south meadow today. Did not harvest *Thermopsis* in the interest of time.
 
+### Aug 9 2021
+
+Wrapped in phen and pollinator observations today. 
+
+Lots of flowering in shade today! Very good. Two plants tagged + recorded as PV in shade last week (plots 54 and 63) were uprooted. Tags seem to be attracting predators. Annoying! Plot 42's plants were almost totally eradicated (including an untagged one outside the plot).
+
+Mercifully no sensor damage (aside from S25, totally killed last Thursday). S77 had a tent peg pulled requiring re-levelling but otherwise all sensors appeared to be intact. No sign of elk aside from grazing - perhaps they are done in the meadows for the time being?
+
+Pollinator observations: saw a surprising number of house flies today. Got a video of one (in plot 45) feeding on a *Campanula* anther for a long time. Not sure how much pollen they are moving given their lack of hair, but they are certainly making contact with the important organs! Also saw a *B. sylvica* visit a *C* in plots for the first time today.
+
+
