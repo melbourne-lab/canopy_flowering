@@ -292,4 +292,14 @@ Mercifully no sensor damage (aside from S25, totally killed last Thursday). S77 
 
 Pollinator observations: saw a surprising number of house flies today. Got a video of one (in plot 45) feeding on a *Campanula* anther for a long time. Not sure how much pollen they are moving given their lack of hair, but they are certainly making contact with the important organs! Also saw a *B. sylvica* visit a *C* in plots for the first time today.
 
+### Aug 12 2021
+
+Phenology was short today (less than two hours). Very few (<10) new plants.
+
+Got a late start today (due to evening volunteering down in Nederland). I wanted to put up two more sensors (probably plots 57 and 62) but didn't make it. I put in the rebar and left the pole at plot 57. Remember tent stakes next time!
+
+No visible damage to any sensors. I fixed the sensor in plot 25; was SP510 number 1650 but is now SP510 1642. Also did a card swap on sensor in plot 16.
+
+I talked to a BCOS scientist (Carrie?) about *Thermopsis* seeds. She said that the seeds down on the plains aren't ready until "hard dough" stage, when fruit are starting to split. She had not seen the frangible fruit falling like in our meadows! Wonder why that is - predation? Physiology? But it means the fruit I have collected thus far likely don't have useful seeds. Look for fruit that is brown and starting to crack open!
+
 
