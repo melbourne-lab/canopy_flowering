@@ -302,4 +302,16 @@ No visible damage to any sensors. I fixed the sensor in plot 25; was SP510 numbe
 
 I talked to a BCOS scientist (Carrie?) about *Thermopsis* seeds. She said that the seeds down on the plains aren't ready until "hard dough" stage, when fruit are starting to split. She had not seen the frangible fruit falling like in our meadows! Wonder why that is - predation? Physiology? But it means the fruit I have collected thus far likely don't have useful seeds. Look for fruit that is brown and starting to crack open!
 
+### Aug 16 2021
+
+Tired and burned out. This sucks.
+
+More uprooting. This sucks too. I wonder if this could be fixed with toothpicks... I set up a game camera by plot 40. I also tried burying a tag in plot 55 (under some pine litter - not soemthing widely replicable) and putting tags down facedown in plot 63. I think for analysis it would be good to just assume the first date of flowering is the first day after these plants were observed like this.
+
+Grazing seems to happen most in the subcanopy - perhaps because they are more conspicuous with less ground coverage? Could try to analyze this. It does hinder reproductive fitness. Source/sink where the source can barely reproduce because the predation risk is so much higher.
+
+Pollinators today - saw two. A small black bee (lasioglossum? maybe? who cares) and a house fly. 
+
+I installed the sensor at plot 57 today. Large rocks meant I had to install the soil moisture on the northern boundary instead of the eastern.
+
 
