@@ -314,4 +314,25 @@ Pollinators today - saw two. A small black bee (lasioglossum? maybe? who cares) 
 
 I installed the sensor at plot 57 today. Large rocks meant I had to install the soil moisture on the northern boundary instead of the eastern.
 
+### Aug 20 2021
+
+Phenology continues to wind down - perhaps one extra plant.
+
+Main event today was sensor repair. I uploaded a new script to the arduino boards (August deployment script). I also collected old datacards, replaced batteries, and importantly changed the orientation of the SP510s so that the cables are facing south (towards the sun) to make the calibration more accurate (maybe). The new scripts shouldn't have gaps (the timing issue has hopefully been fixed) and the intervals of the TEROS readings should be much more frequent (15 minutes instead of one hour).
+
+Sensor 75 seems to have had the same data recording character hiccup that sensor 25 had (huh) a couple of weeks ago. Uploading data was not straightforward. Likewise plot 25 somehow had its clock messed with (??). The first digit of the UNIXTIME was off by 1! Huge problem - time wasn't being recorded properly. To salvage the data I'll have to adjust the time columns.
+
+I also installed a sensor at plot 70 (danger zone) - the wires are short so it may fall over easily. 
+
+Sensor 57 was pitched over. I didn't see any evidence of browsing. I think it just fell because one of the tent stakes was turned around and the loop slipped off. This can be fixed by hammering the stakes in until they are flush with the ground.
+
+### Aug 23 2021
+
+Phenology today - close to finished. I believe ~7 plots had open flowers in them. Pollinator observations were meh. Saw several flies and a bumblebee (B. sylvicola) in plot 10 and nothing anywhere else. 
+
+I intended to put up a new sensor today but didn't have enough time. Instead I swapped the card on sensor 16, which appeared to be in good shape.
+
+Sensor 33 was pitched over today. I think it was the same issue as last time - loop slipping off of the tent stake. No signs of browse. Sensors 57 and 70 were standing intact.
+
+Ran in to Nancy today. Among other things she said we should talk about soil moisture - both the probes themselves (TEROS versus what is used on the ridge) and also what to do with measurements. One thing she mentioned is that Sarah Elmendorf has a lot of experience cleaning and imputing/filling these datasets. Very cool! Should talk to her about that in the future.
 
