@@ -1524,4 +1524,83 @@ The finding about different functional types is interesting. Forbs will do well 
 
 Next step of course is to look at the phenology paper from this group (Jabis et al. 2020).
 
+### Denney, D.A., et al. 2020. Small spaces, big impacts: contributions of micro-environmental variation to population persistence under climate change. AoB Plants.
+
+- Here: micro-environments influencing plasticity, genetic variation, population persistence in the face of global change
+- Microclimate: topography, nutrients, water, etc.
+	- Ehleringer and Cooper 1988: microtopography and plant physiology
+	- Paz 2003: rooting depends on canopy versus understory
+	- Anderson 2009, Anderson et al. 2009 on tree and shrub recruitment, plant distributions
+	- Cervantes et al. 2005 on light availability by habitat types
+- Thermal stress influences photosynthetic yield, root or shoot growth, leaf senescence
+	- e.g. stomatal size and density
+	- climate change will increase temperature, disrupt precip, altering plant phys
+	- combined effects may differ than what is expected from individual effects
+	- Microhabitats will be helpful here; e.g. Uriarte et al. 2018 and seedling growth by microhabitats
+- -omics: genomics, transcriptomics, epigenomic analyses, specifically on non-model organisms
+	- differences in gene expression could underlie responses to variation
+	- epigenetic differences: Richards et al. 2012, Herrera and Bazaga 2016
+- Plants could be locally adapted (to their biotic or abiotic conditions) to micro-environmental conditions
+	- Variation on small spatial scales can produce divergent selection within natural populations - microgeographic adaptation (see various refs here, e.g., Antonovics 2006, Dittmar and Schemske 2017)
+	- Uncommon microhabitats can harbor individuals with rare alleles (see some Antonovics papers on heavy metal contamination)
+	- long-term studies? Davies and Snaydon 1976, Panetta et al. 2018
+	- gene flow: effects on adaptation could be negative (hindering local adaptation) or positive (providing novel genetic material for selection)
+	- landscape genetic analyses could be useful (see Wang and Bradburd 2014 - Isolation by Environment)
+	- quantifying additive genetic variation would be rad
+	- some functional genomics work; e.g., Price et al. 2018 identifying specific genes responsible for a genetic trade-off
+	- reciprocal transplants...
+- Microenvironmental variation can also select for greater plasticity
+	- E. cicutarium in serpentine soils are an example - heterogeneous, within dispersal distance, producing divergent selection
+		- more plasticity favored in one habitat type, less plasticity favored in the other?
+		- see Baythavong and Stanton 2010, Baythavong 2011
+	- More plasticity means more buffering against short-term climatic change
+	- also, trans-generational plasticity... not quite sure what this is
+- Microhabitats as microrefugia: people currently think that microrefugia (where local conditions diverge from/are decoupled from regional climates) were key for the proliferation of warm-adapted species surviving glacial periods
+	- microrefugia are small (by definition) and thus populations therein may have less genetic diversity, but also may be differentiated from each other and/or populations outside the refugia
+	- see Mee and Moore 2014: survival in microrefugia may drive evolution of local adaptation?
+	- who persists in microhabitats? high tolerance, long-lived, asexually reproducing/selfers, pops with low genetic load (Hampe and Jump 2011, Mosblech et al. 2011)
+	- also: small seeds, dispersed by wind, vegetative reproduction also helps
+	- note: habitat fragmentation may create microrefugia, but also may make them more difficult to find by altering local climate
+
+Hmm... well... okay. Not as much fine-scale stuff as what we are working on (e.g. final section talks about an example where 20 ha is the size of a microrefuge) but there is some stuff in here about small-scale variation. Specifically look in to the microgeographic adaptation stuff - perhaps this (like the Galloway paper) is just about the selection pressures. There is note of additive genetic variation, but less so about assortative mating. Very little on demographic effects. They do mention isolation by environment (we would be linking isolation by environment with isolation by time). 
+
+### Antonovics, J. 2006. Evolution in closely adjacent plant pouplations X: long-term persistence of prereproductive isolation at a mine boundary. Heredity.
+
+- "Parapatry"/"micro-allopatric" adjacent but not completely isolated habitats, causing disruptive selection
+	- some early theoretical work looking at speciation in panmictic populations - Maynard Smith 1966, Antonovics 1968, Dickinson and Antonovics 1973
+	- genetic divergence is likely to evolve in such situations, but the evolution of reproductive isolation is "more difficult" to achieve
+	- some empirical quant gen stuff confirming theoretical results? see paragraph
+- The mine system: high levels of genetic differentiation found over short distances, even with substantial gene flow (McNeilly 1968, Antonovics and Bradshaw 1970)
+	- plants on mine soil flowered earlier and had greater self compatability (Antonovics 1968, McNeilly and Antonovics 1968)
+		- phenological effects persisted under cultivation in a common garden study
+		- this "inverse cline" was consistent with theoretical expectation on an environmental gradient (Caisse and Antonovics 1978)
+- Here: visit mine transects to measure flowering times in 1965, 1979, 2005
+	- Anthoxanthum odoratum on a mine in North Wales, UK, where mine soil is contaminated with zinc and lead from a mine shuttered in 1898
+	- transect east (mine) to west (pasture)
+	- 1979: flowering stage of most advanced inflorescence recorded on all plants
+		- 829 plants on mine, 228 in pasture
+		- 3m wide 60m long transect going in 1m segments on either side
+	- 2005: flowering stage of every inflorescence recorded in a quadrat placed on each meter along transect
+		- 1647 inflorescences on mine, 1056 on pasture
+		- inflorescence-based measurements correlate well with measurements on per plant basis
+	- Phenology measured using a numeric scale (1-5) where an increase of one flowering stage means about a week difference in flowering time
+	- Isolation index (Moyle et al. 2004): I - 1 - (B/(1-B)) where B = sum_i XiYi / (Xi + Yi) for frequency of population X/Y in ith stage on pasture/mine
+		- 1 is complete isolation, 0 is panmixia
+- Plants flowered earlier on the mine in both 1979 and 2005
+	- isolation index between populations was 0.43 in 2005
+	- in 1979, more heterogeneity in flowering times on mine than in 2005
+	- inverse cline? less difference in flowering time at transect extremes than mine boundary?
+		- no evidence of inverseness in 1979 and weak evidence (underpowered?) in 2005
+- Maintenance of this difference over 40 years
+	- assortative mating likely, promoting reproductive isolation
+	- isolation index suggests that if populations were intermixed, there would be 40% less mating between populations compared to within populations
+- 1966 analysis (common garden) shows a genetic basis to the difference
+	- 1970 analysis shows correlations between flowering time and metal tolerance were nonsignificant, so pleiotropy unlikely
+	- but, there could be direct selection for earlier flowering and therefore earlier seed maturation, as the mine has other attributes differentiating it from pasture other than soil
+	- could there be more selection for differing flowering times on mine boundary? more difference in flowering time close to mine boundary
+		- in this case, perhaps mixing of genotypes here is bad?
+
+Interesting study here. Here is a clear case where there is an environmental influence on flowering time inducing isolation. It's maintained a long time. The inverted cline is interesting - could we find it here???
+
+
 
