@@ -336,3 +336,17 @@ Sensor 33 was pitched over today. I think it was the same issue as last time - l
 
 Ran in to Nancy today. Among other things she said we should talk about soil moisture - both the probes themselves (TEROS versus what is used on the ridge) and also what to do with measurements. One thing she mentioned is that Sarah Elmendorf has a lot of experience cleaning and imputing/filling these datasets. Very cool! Should talk to her about that in the future.
 
+### Aug 26
+
+Phenology was very short today. There were 1-2 new plants. The overall number of flowering plants is about the same as yesterday (~10).
+
+I installed a sensor in plot 62 today. However, the TEROS LED turned on at the wrong time... I let it run for a few minutes and then collected the card. Turns out, I may not have set the UTC timer on there (ugh). It's running right now but likely will require an offset - or maybe just junking the data (ugh).
+
+I also swapped batteries for sensors in 77 and 57. Looking at the data, they actually did have another ~four day's worth of battery power in them. C'est la vie. Plotting the battery life (see file `/sensors_and_loggers/sandbox/assess_deployment_batteries_aug2021.R` or something like that) it appears that the new script uses batteries at about the same rate as before, and that batteries tend to last for ~12 days. Maybe use a six month sampling interval. I also collected the card for plot 70 to look at its battery usage - and it appears to be working well! 
+
+Looking at the data from the cards - no apparent gaps in measurements. Dope! Also the data looks cool. Very nice! The lack of gaps makes them look so much more compelling. The VWC measurements also look less noisy. There is something strange happening in plot 70 where there's a small increase for an hour or so around 10 am (??). Why?
+
+Thermopsis - following Carrie Cimo's (BCMOS) advice of harvesting fruit when they are starting to split, this could happen soon. Lots of fruit is brown and hardened at this point, but they haven't split open yet. In my meadows (or at least the SW one) there are a good number of fruit, although not necessarily a ton of plants.
+
+I saw three (dusky?) grouse (?) today too around plot 70. Very neat.
+
