@@ -350,3 +350,49 @@ Thermopsis - following Carrie Cimo's (BCMOS) advice of harvesting fruit when the
 
 I saw three (dusky?) grouse (?) today too around plot 70. Very neat.
 
+### Aug 31 2021
+
+Sensor idiocy (checks):
+
+* 67: toppled, and only 30 seconds (!!!) of records. I think somehow the switch may have been hit after it started. I re-leveled and changed batteries (perhaps not needed). No data collected.
+* 75: toppled, with only 3 days of records. Not sure why this one would have stopped. Battery seemed in okay condition so did not switch. I re-leveled (which took an eternity because screws were stripped)
+* 70: was recording but somehow, the timer was reset here. I had to reset the RTC. I turned the device off around 3:24.
+* 62: was recording. I reset RTC. I turned the device off around 3:41.
+* 48: worked. I switched the battery
+* 39: worked, but with gaps. Batteries were doing well (around 3.7v). Did not switch battery. 
+* 25: had only a few minutes of data. Collected but did not archive data. The switch was off when I arrived. Likely accidentally got turned off. Did not change battery.
+* 33: RTC was set to four days prior (?????). I reset RTC. Did not switch batteries. *Note that filenames in archived file are incorrect*. Turned device off around 4:22.
+* 6: worked. I switched the battery.
+* 2: worked. I switched the battery.
+* 16: worked. I did not switch the battery (was around 3.7V)
+* 19: worked. I switched the battery.
+
+I did not visit 77 or 57 because they were visited prior.
+
+Pollinator observations (did only six because only three had open flowers) - notes are on the bottom of page 76 (today's plant check datasheet).
+
+### Sep 4 2021
+
+Phenology was relatively quick today. Plot 10's plants got grazed although not fully. On the other hand the plant in plot 74 was totally gone. The plant in plot 70 with a purple bud the time before has flowered now. The plant in plot 39 also initiated flowering today.
+
+Sensors today - not as infurating as last time. 
+
+Sensor 33 was slackened (the cord previously was relying on a branch). I spent some time fixing this.
+
+Sensor 62 was totally obliterated, possibly by the gopher mound appearing there last time. Looking at the records it happened some time in the night the day after I set the timer up - 8/31 or 9/1. I found it around 10m SE of the plot. Strangely, the TEROS sensor (totally out of the ground) was further away from the plot than the pole and SP510, as if the sensor was dragged by the TEROS. But, I did not find any sign of chewing on any of the wires. I did find that the sticker (left over from the Home Depot purchase) was partially peeled off the pole. And, disappointingly, the SP510 was ripped from the platform; I didn't find the remainder of the screw or the bottom part of the platform.
+
+As such I reinstalled this sensor with a new SP510 (1881). I did not put it in plot 62 because the pit the original was left open. Instead I put it in plot 63, which is in some mixed understory. I realized (annoyingly) after that there is a huge snow pole nearly right next to this plot. But, I suppose this will be in any point cloud anyway (and actually does influence the solar radiation... albeit perhaps slightly). I also with remaining time installed a new sensor (originally the one in Brett's yard) in plot 22. This corner of the study are is somewhat overesampled (plots in 16, 19, 22) but I think this portion was important to measure because of the lower density of aspen trees.
+
+* 6: re-leveled at 1:00 (no card swap)
+* 33: re-leveled, turned off at 1:14:10 (data good, battery bad) - was behind by 5 minutes so I had to reset the Unixtime; turned on at 1:31:00
+* 39: turned off at 1:40:10; last record was at ~2:55 but timer was fine - battery maybe died right before visit!; turned on ~1:50
+* 16: turned off at 2:02:40 (is perfect); turned on ~2:05
+* 25: turned off at 2:17:40 - **did not** replace batteries (at ~4v) (is perfect); turned on ~2:20
+* 57: turned off at 2:30:(00?) (is perfect); turned on 2:37:40
+* 70: turned off at 2:46:40 (battery was dead - oops); turned on ~2:50 and releveled at 2:56
+* 63: (1881) turned on at 3:36
+* 77: turned off 3:46; battery dislodged; did not replace; batteries at 3.8v; turned on 3:50:30
+* 75: 4:00:10; battery probably fine (3.7-3.8) but replaced; 
+
+Also I heard elk bugling! In the south meadow. Freaky stuff. Ran in to Scott Taylor as I was leaving; he and several strangers (who were they?) were picking whortleberries (= huckleberries). Cool!
+
