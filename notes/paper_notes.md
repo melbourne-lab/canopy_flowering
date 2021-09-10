@@ -1507,7 +1507,7 @@ Given thoughts above perhaps it's good to think about limiting factors on the ea
 	- Elmendorf et al. 2012 (different paper) suggests experimental warming and soil moisture interact (meta-analysis) although results vary for functional group
 - Productivity changes could be due to shifts in species relative abundances
 - Here: alpine productivity (at Niwot Ridge) as a function of warming and moisture
-- 20 3m diameter experimental plots in 2008; five plots get each of four treatments: control, heat (H), watered (W), heat and water (HW)
+- 20 3m diameter experimental plots in 2008; five plots get each of four treatments: control, heat (H), watered (W), heat and water (HW)/
 	- heating with active infrared heater: nightime warming, maintaining natural wind, modified snowmelt timing, but no warming of air, delivering an extra 215 W/m2 (42 W/m2 in winter)
 	- watering (beginning after snowmelt) 2.5mm of water weekly 
 	- plots subdivided into 4 1m2 plots to get variation; measure soil moisture and temp every 15 minutes at 5-10 cm dept in center of each quadrat
@@ -1601,6 +1601,74 @@ Hmm... well... okay. Not as much fine-scale stuff as what we are working on (e.g
 		- in this case, perhaps mixing of genotypes here is bad?
 
 Interesting study here. Here is a clear case where there is an environmental influence on flowering time inducing isolation. It's maintained a long time. The inverted cline is interesting - could we find it here???
+
+### Wang, I.J., and Bradburd, G.S. 2014. Isolation by environment. Molecular Ecology.
+
+- Wright's isolation by distance (IBD): restricted gene flow means genetic differentiation between populations
+- Isolation by environment: genetic differentiation increases environmental differences independently of geographic distance
+	- One challenge: disentangle IBD and IBE (distance and environment are often correlated)
+		- Does some factor explain genetic distances more than just pairwise distances?
+	- Another challenge: connect pattern to process
+	- relatedly: isolation by resistance (BR) due to probability of dispersal from population to another where more dispersal is less resistance
+		- note that IBR conflates IBD and IBE and makes it impossible (how?) to separate these two patterns empirically
+##### Processes generating IBE
+- One example: differentiation of *Phlox* populations mediated by pollinator communities? (Hopkins et al. 2012)
+- Four possible (not mutually exclusive) processes that could influence patterns:
+	- Selection against immigrants
+	- Sexual selection against immigrants
+	- Reduced hybrid fitness
+	- Biased dispersal
+- Selection against immigrants: driven especially by local adaptation
+	- local adaptation of the immigrant means it would be maladapted to a novel environment
+	- (thought... more successful migrants coming from a larger and therefore likely more diverse habitat? when would we not expect local adaptation? selection pressure but also heterogeneity?)
+	- (anything else? does this rely on local adaptation?)
+- Sexual selection against immigrants: divergence in mate choice or sexual signals influences reproductive success of dispersers
+- Reduced hybrid fitness: hybrids with intermediate phenotypes may be outside both natal or new niches, or they could have few mating opportunities
+	- also: selection acts on the next generations after the immigrants themselves, meaning there could be different selection pressures
+- Biased dispersal and/or preference for a paerticular environment
+	- e.g., fitness or performance benefits to being in certain environments, or affinities/aversions to habitat types when dispersing across a heterogeneous landscape
+##### Studying and measuring IBE
+- Most important thing is disentangling environmental and geographic/physical distances
+	- (like with the response-surface idea: two dimensional space w/ axes of different distances; it's good to maximize spread)
+	- also need to sample thoroughly across the gradient to characterize changes
+	- see Fig. 3: give histograms of pairwise distances, estimate correlations of pairwise distances under potential sampling schemes prior to colleciton
+		- (estimated curves for IBD/IBE in Fig. 3?)
+- Sampling per sampling location: more individuals sampled per location decreases binomial sampling noise around allele freq. estimates
+	- but with next-gen sequencing, each individual can be sampled at a lot of loci, such that one can still get good estimates of differentiation between two populations (see Patterson et al. 2006?)
+- Statistics: pairwise genetic distances are inherently nonindependent
+	- Mantel andn partial Mantel tests explicitly account for the pairwise nature of hte data
+		- but, with spatial autocorrelation, partial Mantel has pathological (??) type I error rate according ot Guillot and Rousset 2013)
+	- More robust methods include modeling covariances in allele frequencies and matrix regression approaches
+		- BEDASSLE (Bradburd et al. 2013) models covariances in allele frequencies across the genome as a decreasing function of pairwise geo/eco distances
+		- Multiple matrix regression with randomization (MMRR by Wang 2013) quantifies effects of multiple distances matrices on a single response e.g. genetic differences
+		- some other stuff here too, e.g., LocalDiff, MEMGENE on p. 5655
+		- Bayenv2 by Coop et al. 2010, spaMM by Rousset and Ferdy 2014, look at fuller genome? spatial autocorrelation in SNPs or genotypes (seems more functional)
+- Experiments: reciprocal transplant is the best way to look for local adaptation, hybridization studies (for shorter-lived individuals) w/ a common garden feature
+	- think about non-selective processes as well, e.g., biased dispersal, differentially resistant landscape elements
+	- possible confounders: population history, demography, heterogeneity could produce migration-drift disequilibrium
+- Ecological speciation: definition here is reproductive isolating barriers due to divergent selection under different ecological conditions (refs herein)
+	- if IBE always results from selection, IBE would be evidence of early stages of ecological speciation (see Shafer and Wolf 2013?)
+	- but, of course, IBE can result from other processes as well, so IBE is one condition under which speciation could happen rather than an indication that it is happening
+- "Ideal free distribution" - theoretical null expectation that barring barriers to movement, individuals will move unimpeded through habitat patches and distribute themselves according to resource availability
+	- IBE is a deviation from ideal free distribution
+##### The future
+- Landscape genomics: the environment can act on different parts of the genome differently
+	- neutral processes will act upon the entire genome while selection will only act directly on those sites of loci directly under selection
+	- IBE due to selection may be observed at these important loci, but may not be seen globally in the genome
+- Comparative landscape genetics: multiple species or multiple landscapes
+- Population heterogeneity (!!): most of these studies appear to be at the species or meta-population level
+	- populations themselves may have heterogeneity in dispersal ability (due to landscape), habitat preference, adaptation to different ecological conditions
+	- "few landscape genetic studies have considered how spatial variation in the traits and factors affecting gene flow contributes to estimates of IBE and its causal factors at higher levels"
+- Temporal variation: evolutionary forces and ecological processes vary through time
+	- what is the tempo (natural scale?) of variation in ecological drivers of diversification
+- Ecological processes: looking beyond landscape genetics and towards more traditional landscape ecological methods
+
+Very cool, although I am having trouble fitting this flowering project into their framework. This is in a sense reduced gene flow, although it's reduced spatio-temporal gene flow. Definitely a reduction in/deviation from random mating. Thinking about local adaptation in this system: there's adaptation to, e.g., less light but also are there other things to adapt to? E.g., lack of pollinator availability?
+
+It was good to see the tie-in here to speciation but good to note that this is not speciation per se. We are definitely potentially seeing reproductive isolation here but not necessarily speciation (and I'm not super interested in speciation except for its nascent stages). These refs may be the best places to start.
+
+Future directions: population heterogeneity (responses to differences in environmental "quality" across a gradient) and temporal variation (are we looking at temporal variation here?) is what we're looking at... 
+
 
 
 
