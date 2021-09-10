@@ -396,3 +396,24 @@ As such I reinstalled this sensor with a new SP510 (1881). I did not put it in p
 
 Also I heard elk bugling! In the south meadow. Freaky stuff. Ran in to Scott Taylor as I was leaving; he and several strangers (who were they?) were picking whortleberries (= huckleberries). Cool!
 
+### Sep 9 2021
+
+Two plots (10 and 40) with flowers open today - including a new plant. 1778 in plot 39 also has a bunch of buds. Phenology - a bee visited a plant in plot 10. Crazy.
+
+The two plants with open/shriveling in plot 10 were in the SW corner, shaded somewhat by a tall rock and a stump. This goes to show that there is still microtopography with possible phenological effects that our model will likely miss!
+
+Sensors: annoying. 70 and 75 were pitched over. Fuck these elk. I didn't check for signs of chewing on 70; 75 there was chewing on wires but it may have been old. In retrospect - I also totally forgot to check the batteries (shit). 
+
+I also collected seeds (fruit) today. This was in the western (uphill) open area of the south meadow. Fruit were definitely split open and dropping so these seeds should be ready.
+
+* 70: releveled at 2:25, slightly off but it was a pain in the ass to adjust so whatever
+* 75: releveled at 2:37, note that the screws here are stripped
+* 77: turned off at 2:40, turned on at 2:45:00
+* 48: turned off at 3:09, turned on at 3:11:00
+* 25: turned off at 3:19, turned on at 3:21:20 or :40, but may have been turned off when I visited it. I separated batteries in case.
+* 6: off at 3:28, on at 3:30 but I didn't see the light come on (possibly a bad sign - check next time)
+* 2: off at 3:37, on at 3:38:42
+* 16: off at 3:45, on at 3:49:00, I mishandled cards so there are two potential cards in the bag here and one will be empty
+* 19: off at 3:55, on at 3:57:21
+
+I collected cards because the laptop wasn't charged enough for use. I learned the next day (9/10) when uploading that the smaller slot on the card reader won't work for several (but not all) of the SD cards. Wow! I also may have dreamed about elk bugling last night.
