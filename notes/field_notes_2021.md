@@ -417,3 +417,22 @@ I also collected seeds (fruit) today. This was in the western (uphill) open area
 * 19: off at 3:55, on at 3:57:21
 
 I collected cards because the laptop wasn't charged enough for use. I learned the next day (9/10) when uploading that the smaller slot on the card reader won't work for several (but not all) of the SD cards. Wow! I also may have dreamed about elk bugling last night.
+
+### Sept 14 2021
+
+Phenology - basically done. Only plants flowering in two plots (39 and 40 - shaded). The one in plot 10 was grazed. There is a pv in plot 23 (ugh but also wow). 
+
+Did not collect seeds today. It was raining in the morning and I got a late start. Hope this is not a problem.
+
+Sensors 6 and 70 were found toppled. Miraculously, 75 and 67 were not.
+
+6: releveled at 3:02 (no battery swap)
+70: swapped and releveled at 3:26(~:30), 
+75: turned back on at ~3:36(:~30), batteries kept in because they were knocked out before when toppled (were around ~4.5)
+67: on at 3:49:50, re-leveled (was slightly off-level) at 3:55:50
+63: off, 4:01:10, but the timer was reset (again) (ahhhh)
+57: off at 4:24, on at 4:31:00
+33: on at 3:45, only swapped middle battery, *revisit*
+22: on at ~3:57, I believe I only swapped the two outer vatteries 
+
+Also: aspens starting to turn. The last two weeks there were a handful of branches that had gone yellow; many more today. Still <5% though.

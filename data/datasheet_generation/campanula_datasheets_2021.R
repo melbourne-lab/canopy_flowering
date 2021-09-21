@@ -831,3 +831,8 @@ read.csv('data/raw_data/data_2021/Campanula_newplants_2021.csv') %>%
   write.csv(file = 'data/datasheet_generation/datasheet_outputs/data_datasheets_2021/campa_14-09-21.csv',
             na = '', row.names = FALSE)
 
+read.csv('data/datasheet_generation/datasheet_outputs/data_datasheets_2021/campa_14-09-21.csv') %>%
+  mutate(Date = NA, Page = NA, Note = NA) %>%
+  select(Date, Plot, Tag, Fl_stems, Fl_open, Fl_done, Q, Page, Note) %>%
+  distinct(Tag, .keep_all = TRUE) %>% ## comment out in successive versions
+  write.csv('data/raw_data/data_2021/campa_entry_14-09-21.csv', row.names = FALSE, na = '')
