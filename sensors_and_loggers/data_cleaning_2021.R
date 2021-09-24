@@ -16,6 +16,8 @@ library(tidyr)
 # Issue: Reading column contains extraneous readings
 # (TEROS issue - occasionally passes in too many readings)
 
+rm(list = ls())
+
 # Note: I previously went into the raw file, removed the space at the beginning
 # of each Reading_raw, and re-exported as raw.
 
@@ -24,29 +26,53 @@ dataraw = read.csv('sensors_and_loggers/data/plot2_2021-09-09_2021-09-23_raw.TXT
 # Locate the problem columns
 dataraw %>% filter(is.na(as.numeric(Reading_raw)))
 
-# Okay - should be able to fix the temperature readings by removing everything after a '-'
-# The moisture reading... yeah lmao I guess just set that to NA? ugh
+# Looking at some of the raw data, the problem is that whenever the temperature is sub-zero
+# the first part of the reading is a crazy-long slew of digits
+# and the moisture and temperature stuff is combined into the temperature reading
 
-dataraw %>% filter(grepl('\\d\\-', Reading_raw))
-dataraw %>% filter(grepl('\\-\\d\\.\\d{4,}', Reading_raw))
-# (note: doing just grepl for a dash gives issues with negative SP510 readings)
+# In this case, we can detect these is records with two decimals
+dataraw %>% filter(grepl('\\.[^\\.]*\\.', Reading_raw))
 
-dataproc = dataraw %>% mutate(Reading_new = gsub('\\-\\d\\.\\d{4,}', '', Reading_raw))
+# Okay - now, how to fix?
+# Want to split these records and put the moisture record in where it belongs
 
-dataproc %>% filter(Reading_new != Reading_raw)
+# # Test code below - proof of concept
+# t1 = dataraw %>% 
+#   group_by(Unixtime_UTC) %>%
+#   mutate(flag = any(grepl('\\.[^\\.]*\\.', Reading_raw))) %>%
+#   mutate(Reading_new = ifelse(grepl('temp', Reading_type) & grepl('T11', Sensor_ID) & flag,
+#                               gsub('\\d{4}\\.\\d{6}', '', Reading_raw[grepl('temp', Reading_type) & grepl('T11', Sensor_ID)]),
+#                               Reading_raw))
+# t2 = t1 %>%
+#   mutate(Reading_new = ifelse(grepl('mois', Reading_type) & flag,
+#                               substr(Reading_raw[grepl('temp', Reading_type) & grepl('T11', Sensor_ID)], 1, 11),
+#                               Reading_new))
+# t2 %>% filter(flag) %>% print(n = 20)
+# t2 %>% ungroup() %>% filter(!(Reading_new %in% Reading_raw)) %>% print(n = nrow(.))
+# # BEAUTIFUL
+
+dataproc = dataraw %>%
+  # Group_by time to link temperature and moisture records
+    group_by(Unixtime_UTC) %>%
+  # Add boolean column for antyhing with multiple decimals
+  # (shown above to get all problem records and nothing else)
+    mutate(flag = any(grepl('\\.[^\\.]*\\.', Reading_raw))) %>%
+  # New column: Reading_new
+  #   for TEROS temp records, remove the first 11 characters (the moisture reading)
+  #   for all other records just copy the raw reading
+    mutate(Reading_new = ifelse(grepl('temp', Reading_type) & grepl('T11', Sensor_ID) & flag,
+                                gsub('\\d{4}\\.\\d{6}', '', Reading_raw[grepl('temp', Reading_type) & grepl('T11', Sensor_ID)]),
+                                Reading_raw)) %>%
+  #   for the moisture readings, get the first 11 digits (assuming four digits before decimal, six after)
+    mutate(Reading_new = ifelse(grepl('mois', Reading_type) & flag,
+                                substr(Reading_raw[grepl('temp', Reading_type) & grepl('T11', Sensor_ID)], 1, 11),
+                                Reading_new)) %>%
+    ungroup()
+
+dataproc %>% filter(!(Reading_new %in% Reading_raw)) %>% print(n = nrow(.))
 # Looks good to me
 
-# Now - the moisture issue
-dataproc %>% filter(as.numeric(Reading_new) > 1e6)
-# Okay - there are actually a lot of records with this problem...
-
-# Just set them all to NA
-dataproc = dataproc %>% mutate(Reading_new = ifelse(as.numeric(Reading_new) > 1e6, NA, Reading_new))
-
-dataproc %>% filter(!(Reading_new %in% Reading_raw))
-# It's possible these were during the cold spell.
-
-dataproc = dataproc %>% 
+dataout = dataproc %>% 
   # Create "cleaned" column
   mutate(cleaned = !(Reading_new %in% Reading_raw)) %>%
   # Reading_raw column is now cleaned
@@ -54,7 +80,7 @@ dataproc = dataproc %>%
   select(-Reading_new)
 
 # Export
-write.csv(dataproc, 'sensors_and_loggers/data/plot2_2021-09-09_2021-09-23_proc.TXT',
+write.csv(dataout, 'sensors_and_loggers/data/plot2_2021-09-09_2021-09-23_proc.TXT',
           row.names = FALSE, na = '')
 
 ###
