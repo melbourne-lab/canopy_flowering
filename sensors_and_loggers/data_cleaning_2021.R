@@ -77,7 +77,7 @@ dataout = dataproc %>%
   mutate(cleaned = !(Reading_new %in% Reading_raw)) %>%
   # Reading_raw column is now cleaned
   mutate(Reading_raw = Reading_new) %>%
-  select(-Reading_new)
+  select(-c(Reading_new, flag))
 
 # Export
 write.csv(dataout, 'sensors_and_loggers/data/plot2_2021-09-09_2021-09-23_proc.TXT',
