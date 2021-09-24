@@ -436,3 +436,28 @@ Sensors 6 and 70 were found toppled. Miraculously, 75 and 67 were not.
 22: on at ~3:57, I believe I only swapped the two outer vatteries 
 
 Also: aspens starting to turn. The last two weeks there were a handful of branches that had gone yellow; many more today. Still <5% though.
+
+### 23 Sept
+
+Phenology: basically done. Two of the five plants to visit were gone. Plant 1778 had one flower out but it was old (went from 131 to 113 in nine days...). No pollinator observations.
+
+19: off 10:52;30
+16: bad record (fixed during import?) on 11:15
+22: on 11:28
+2: somehow reading column is string? wtf; on 11:40
+6: was toppled on 9/14 (took an hour to fix); did not replace batteries; on around 12:43
+33: on 12:55
+25: on ~1:04
+39: on 1:16
+48: on 1:28:10
+77: on 1:40:40
+75: on ~1:49:40
+70: re-leveled after toppling; use times after ~2:07, lights still on so assume working well
+
+57, 63, and 67 seemed to be working just fine.
+
+The string issue for plot 2: TEROS gives an extra reading (at the beginning) when the soil temperature goes below zero (great!) This requires processing, but the data is retrievable. It means the soil moisture and the temperature raw readings get concatenated together into the temperature column. Some grep/gsub can fix this (taking advantage of the fact that onl six digits of the TEROS readings are recorded). But this will likely be a recurring issue.
+
+Seems like most *T* plants have dropped seed, but not all. I collected for ~20 minutes in the middle part of the South meadow. May be able to do one more day of collecting. It may be tough to find fruit in the shade.
+
+###
