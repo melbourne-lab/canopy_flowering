@@ -1669,6 +1669,94 @@ It was good to see the tie-in here to speciation but good to note that this is n
 
 Future directions: population heterogeneity (responses to differences in environmental "quality" across a gradient) and temporal variation (are we looking at temporal variation here?) is what we're looking at... 
 
+### Donohue, K., et al. 2000. Evidence of adaptive divergence in plasticityL: density- and site-dependent selection on shade-avoidance responses in *Impatiens capensis*. Evolution.
 
+- Population differentiation in phenotypic plasticity and local adaptation - lots of empirical stuff here, hypothesized to be due to adaptive divergence
+	- but - selection can perhaps affect plasticity itself
+		- if plasticity is costly, then plasticity means lower fitness relative to non-plasticity with the same mean in the same environment
+		- correlation between trait mean and plasticity: can vary by environment (okay...) and this is a function of the additive genetic variance of the character between environments (not clear to me)
+		- selection on the trait can thus also lead to selection for/against plasticity and therefore differences in plasticity can be (1) environmentally mediated and (2) the result of selection on trait values themselves
+- Here: looking at *Impatiens capensis* (annual jewelweed) in different canopy environments
+	- crowding and vegetation shade: elongated internodes (taller?) and accelerated flowering (refs herein - but this is the opposite of what I am seeing at MRS?)
+	- red:far-red light ratio is a cue here
+	- adaptive value (demonstrated empirically) of these responses varies by environment type
+		- adaptive in open environments - light as a signal of competition
+		- but maladaptive under closed canopy - because there's no way you're going to beat the tree?
+	- see relatedly: Morgan and Smith 1979; Corre 1983; Van Hinsberg 1996; Van Tienderen and Van Hinsberg 1996 for comparative studies of sp/pops in open/closed canopy
+	- Genotypes from open-canopy sites exhibit greater plasticity in elongation and/or flowering date compared to closed-canopy sites (as predicted)
+		- but is it adaptive? must measure density-dependent selection at both sites
+##### Methods
+- Seeds collected from 18 lines in sun population, 17 lines in woodland population from a reserve in RI
+	- weighed, transplanted from plug trays, in two treatments: density (53/m2 in low density, 470/m2 natural for woods, 1305/m2 for natural in open canopy)
+	- two weeks after planting, internode length measured
+		- size: number of nodes, leaf length
+	- plants censused twice per week
+- Separate analysis of phenotypic and genotpyic selection
+	- genotypic: averages phenotype and fitness across replicates of genotype that is random across microenvironments (think about this)
+	- fitnesses: standardized within each treatment by dividing by mean w/in treatment fitness
+	- estimating selection differentials (total selection: direct and indirect) and selection gradients
+	- phenotypic selection analysis is similar to genotypic one
+- Was selection density dependent in each site?
+	- analysis of covariance *within* each site: density, population, block as main effects and standardized traits as covariates (response is rel fitness)
+	- interaction between trait and density gives selection that varies significantly by density
+- Also, ad hoc selection analysis performed at sun site: heavy mortality means changing density environment for survivors
+- Selection on plasticity independent of selection on phentypes (costs of plasticity)
+	- Difference in genotypic mean phenotype (what does this mean?) between density treatments: this gives plasticity to density
+- Local adaptation: ANOVA with site, density, population as fixed effects against DV absolute or relative fitness
+	- population-by-site interaction shows fitness differences depend on the site and allows us to see if population has higher fitness in its native site
+##### Results
+- Direction of selection on internode length: varies in sun, does not vary in woodlands
+	- sun: shorter internodes have higher fitness at low density but longer internodes are more fit at higher density
+		- plasticity of internode length: a more selectively favored phenotype can be expressed in both densities so the plasticity can be considered adaptive
+	- woods: longer internodes favored regardless (so plasticity is, or would be?, adaptive)
+	- supports adaptive divergence hypothesis (because the selection pressures on plasticity itself varies)
+	- No selection gradient on internode length at low density for either habitat type
+		- so, selection isn't direct on internode length at low density; selection does operate indirectly through correlated characteristics (plasticity)
+- Later flowering: favored at low density in sun site but not selected for at natural density
+	- survival bias possible - high mortality may have removed early-flowering individuals or the decrease in density later in life has an effect
+	- in woods, earlier flowering favored at both densities (plasticity again is not favored)
+	- selection on flowering date isn't density dependent but is site-dependent
+- Fewer nodes favored at natural density in sun site but nowhere else
+	- phenotypic analysis: selection shows opposite... idk man there's too much shit going on here
+- Some other stuff about leaf size
+- Mortality: similar between densities in woodland site, different in sun site (mortality higher at natural densities)
+	- n.b. mortality likely due to drought
+	- similar mortality curves by population source but slightly earlier senescence for woodland plants in the sun, low-density treatment (god this design is confusing as hell to me)
+- No signs of costs or benefits of plasticity?
+	- Exception: cost of plasticity in leaf length in woodland site at natural density
+		- but plasticity wasn't adaptive at the woodland site so there wasn't a direct cost? 
+	- different results when analyzing each character separately (come on man!)
+		- benefit of plasticity in internode length at low density in sun and both densities in woodlands
+		- but this could be due to selection on correlated traits
+	- "the evidence for costs or benefits of plasticity independent from phenotypic values is weak" so I guess this is just the cost/benefit of maintaining plasticity... wait what else would the benefit be? I see the cost (maintenance) but aside from the phenotype what else could benefit the plant?
+- Significant correlation between genotypic mean phenotypes and genotypic plasticities
+	- direction and magnitude varies by environment
+- This "frequency of low density" - I'm not sure what this means, so I didn't read the results on it
+- Evidence of local adaptation: plants have higher absolute fitness in their home environment (although only at low density for sun habitat... what does this mean???)
+##### Discussion
+- "Our results support the hypothesis of adaptive divergence in plastic responses to density"
+	- sun population has more plasticity in internode length and flowering date than woodland population
+	- here: selection on internode length and flowering date favors selection of plasticity in sunny but not woodland site
+	- these results could also be due to drift rather htan selection
+- Total selection on plasticity within each site was determined by selection on density dependence on phenotypes which are correlated with plasticity of those phenotypes
+	- important evidence here is the fact there was no evidence of costs or benefits associated with plasticity but there was density-driven selection on phenotypes
+- Microgeopgraphic scale of shade avoidance: plasticity is helpful in the sun, but stem elongation is not helpful in the shade and thus (plasticity that underlies stem elongation?) is maladaptive
+- Also local adaptation for plasticity of flowering time
+	- in wooded site, early mortality was common and thus early flowering universally favored (i.e. plasticity here is bad)
+	- timing of mortality was density dependent in the flowering site - delayed flowering favored at low density because plants lived longer (plasticity favorted - density determines whether it's adaptive to flower earlier or later)
+- "The results of this study demonstrate that even when an environment is rare, an appropriate response to it can give an enormous fitness advantage when the rare environment is more favorable than the common one"
+	- [I suppose the magnitude fitness benefit has to relate somehow to the rarity of the environment?] [- ah this is said later in the paragraph]
+	- Low density is rare in open environments, but when plants do occur there, tbhe plasticity allows individuals to exploit it for fitness benefit
+	- (ah this is the reason for the frequency of density)
+
+Goodness this was a doozy to read. So much going on. Parts of it I don't understand. But... the plasticity seems to be a response to density where certain trait values are favored at natural/low density. Height and flowering time are two identified here (height: response to competition; flowering time: response to mortality). Plasticity here would allow individuals to exploit low densities by adopting the adaptive trait value.
+
+However - there's adaptive divergence occurring here such that the environment determines the adaptive value of the plasticity. Turns out that in a wooded environment that no matter what a plastic response is bad (height: wasted because a flower can't outgrow trees; flowering time: plasticity would deviate from the optimal phenotype).
+
+Okay - I am lost on everything else. I understand the concept behind correlation of plasticity and trait values but don't understand the mechanism or what that looks like in this system. What I do understand is that they measured costs/benefits of plasticity (independent of phenotype - although I still don't know what it means for a benefit of plasticity to be independent of phenotype! cost is obvious though) and found none so it's not the plasticity itself that is adaptive. What is driving the correlation of phenotypes and plasticity? I guess it seems kinda obvious to me that the selection would be on the phenotypes and not the plasticity...
+
+Also some stuff about local adaptation in here. That makes sense. But how does it fit in to the picture.
+
+Some other stuff this makes me think about: so in addition to considering plasticity this does sorta reinforce that there's confounding happening here between environment-type and density. How to control? I suppose I can leverage the fact that there are sunny plots with low density (I think?) although I'm not sure there are very many shade plots with high density to make it balanced. But I guess this should be included as a covariate? Also of course the plasticity stuff. Plasticity is useful to include in a theory model though - or at least environmental variation... but maybe plasticity too ugh jesus christ there is so much I won't be able to do here.
 
 
