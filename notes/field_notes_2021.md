@@ -460,4 +460,16 @@ The string issue for plot 2: TEROS gives an extra reading (at the beginning) whe
 
 Seems like most *T* plants have dropped seed, but not all. I collected for ~20 minutes in the middle part of the South meadow. May be able to do one more day of collecting. It may be tough to find fruit in the shade.
 
-###
+### Sept 27 2021
+
+Phen: call it over. Nothing flowering (did see some flowers outside plots - probably fewer than five open that I noticed, but still existing). Finished with phenology for the rest of the season.
+
+Sensors:
+
+70: on 11:31
+67: below freezing; forgot time
+63: only five records; battery meltdown at some point? battery case melted to base; on 12:31:10
+57: batteries were dead... fuck; on 12:55
+6: on 1:21
+
+Mercifully none of them had fallen over. I went through each and turned stakes that looked like they may slip off. 
