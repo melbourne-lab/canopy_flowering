@@ -5,6 +5,7 @@
 # around September 21 temperatures may have gone below freezing at the site.
 # Were these recorded? Look at the heterogeneity.
 # SN - 24 Sept 2021
+# SN - 28 Sept 2021: add a few extra plots collected 9/27
 
 # Load libraries
 library(ggplot2)
@@ -18,12 +19,14 @@ dir('sensors_and_loggers/data/')
 
 # raw files
 sept23 = list(
+  'sensors_and_loggers/data/plot6_2021-09-23_2021-09-27_raw.TXT',
   'sensors_and_loggers/data/plot16_2021-09-09_2021-09-23_raw.TXT',
   'sensors_and_loggers/data/plot19_2021-09-09_2021-09-22_raw.TXT',
   'sensors_and_loggers/data/plot22_2021-09-14_2021-09-21_raw.TXT',
   'sensors_and_loggers/data/plot25_2021-09-09_2021-09-23_raw.TXT',
   'sensors_and_loggers/data/plot33_2021-09-14_2021-09-20_raw.TXT',
   'sensors_and_loggers/data/plot48_2021-09-09_2021-09-22_raw.TXT',
+  'sensors_and_loggers/data/plot70_2021-09-14_2021-09-27_raw.TXT',
   'sensors_and_loggers/data/plot75_2021-09-14_2021-09-23_raw.TXT',
   'sensors_and_loggers/data/plot77_2021-09-09_2021-09-23_raw.TXT'
 )
@@ -38,7 +41,10 @@ ts23 = sept23 %>%
 ts23 = ts23 %>%
   rbind(read.csv('sensors_and_loggers/data/plot2_2021-09-09_2021-09-23_proc.TXT') %>%
           mutate(fn = 'sensors_and_loggers/data/plot2_2021-09-09_2021-09-23_proc.TXT') %>%
-          select(-cleaned))
+          select(-cleaned),
+        read.csv('sensors_and_loggers/data/plot67_2021-09-14_2021-09-27_proc.TXT') %>%
+          mutate(fn = 'sensors_and_loggers/data/plot67_2021-09-14_2021-09-27_proc.TXT') %>%
+        select(-cleaned))
 
 # Get plot info
 ts23 = ts23 %>%
