@@ -83,4 +83,51 @@ dataout = dataproc %>%
 write.csv(dataout, 'sensors_and_loggers/data/plot2_2021-09-09_2021-09-23_proc.TXT',
           row.names = FALSE, na = '')
 
-###
+####
+# Sept 28 2021
+# Plot: 67, Collected: Sept 27 2021
+# Issue: freezing temps
+
+rm(list = ls())
+
+dataraw = read.csv('sensors_and_loggers/data/plot67_2021-09-14_2021-09-27_raw.TXT')
+
+# Locate the problem columns
+dataraw %>% filter(is.na(as.numeric(Reading_raw)))
+dataraw %>% filter(grepl('\\.[^\\.]*\\.', Reading_raw))
+
+# First - need to eliminate the extra space before each reading
+dataproc = dataraw %>%
+  mutate(Reading_raw = gsub('^\\s', '', Reading_raw))
+
+dataproc = dataproc %>%
+  # Group_by time to link temperature and moisture records
+  group_by(Unixtime_UTC) %>%
+  # Add boolean column for antyhing with multiple decimals
+  # (shown above to get all problem records and nothing else)
+  mutate(flag = any(grepl('\\.[^\\.]*\\.', Reading_raw))) %>%
+  # New column: Reading_new
+  #   for TEROS temp records, remove the first 11 characters (the moisture reading)
+  #   for all other records just copy the raw reading
+  mutate(Reading_new = ifelse(grepl('temp', Reading_type) & grepl('T11', Sensor_ID) & flag,
+                              gsub('\\d{4}\\.\\d{6}', '', Reading_raw[grepl('temp', Reading_type) & grepl('T11', Sensor_ID)]),
+                              Reading_raw)) %>%
+  #   for the moisture readings, get the first 11 digits (assuming four digits before decimal, six after)
+  mutate(Reading_new = ifelse(grepl('mois', Reading_type) & flag,
+                              substr(Reading_raw[grepl('temp', Reading_type) & grepl('T11', Sensor_ID)], 1, 11),
+                              Reading_new)) %>%
+  ungroup()
+
+dataproc %>% filter(!(Reading_new %in% Reading_raw)) %>% print(n = nrow(.))
+# Looks good to me
+
+dataout = dataproc %>% 
+  # Create "cleaned" column
+  mutate(cleaned = !(Reading_new %in% Reading_raw)) %>%
+  # Reading_raw column is now cleaned
+  mutate(Reading_raw = Reading_new) %>%
+  select(-c(Reading_new, flag))
+
+# Export
+write.csv(dataout, 'sensors_and_loggers/data/plot67_2021-09-14_2021-09-27_proc.TXT',
+          row.names = FALSE, na = '')
