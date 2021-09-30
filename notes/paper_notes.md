@@ -1759,4 +1759,74 @@ Also some stuff about local adaptation in here. That makes sense. But how does i
 
 Some other stuff this makes me think about: so in addition to considering plasticity this does sorta reinforce that there's confounding happening here between environment-type and density. How to control? I suppose I can leverage the fact that there are sunny plots with low density (I think?) although I'm not sure there are very many shade plots with high density to make it balanced. But I guess this should be included as a covariate? Also of course the plasticity stuff. Plasticity is useful to include in a theory model though - or at least environmental variation... but maybe plasticity too ugh jesus christ there is so much I won't be able to do here.
 
+### Schemske, D.W. 1984. Population structure and local selection in *Impatiens pallida* (Balsaminaceae), a selfing annual. Evolution.
+
+- Wright (1946, 1949) showed that mating system influences population structure with selfing promoting genetic subdivisions
+	- genetic variation maintained by selfers is larger than people think
+	- this study: look at local adaptation in the context of mating system
+		- within and between-population components of variation in quantitative characters incl. fitness
+		- quantify and compare genetic variation present in local populations
+		- experimentally determine the role of selection
+- *Impatiens pallida* - annual with obligate selfing (cleistogamous CL) or obligate outcrossing (chasmogamous CH) flowers in central IL
+- Three transects, 18m long at two sites
+	- Allerton: riparian, Brownfield: prairie with CH flowers on edge and CL flowers in forest interior
+	- plants collected at every .9m interval giving 20 plants/transect
+	- shaded greenhouse, plants used for seed produced by CL selfing to get F1 
+		- 10 plants/family x 20 families/transect x 3 transects = 600 plants
+- "Population structure" determined using quantitative characters
+	- Plant height (at multiple days), leaf length and width, petiole length, days to first flower, meristems, pods through time and total, CL and CH flowers
+	- ANOVA: variance components of each component
+		- variance between transects, among-family within-transect
+		- seed weight used as covariate to control for maternal effects
+			- although I guess this was only done where there was positive correlation between seed weight and the trait? which occurred primarily during the first two?
+	- population structure among transects done with discriminant analysis
+		- "the discriminant model produces a classification matrix based on a measure of generalized squared distance" [distances in 16 dimensional trait space?]
+		- "Each observation (=family) is placed into the class (=transect) for which the generalized squared sitance is smallest."
+		- so using the traits to determine how often this classification routine places individual plants in the right transect lineage
+- Local adaptation: reciprocal transplant starting from F2 CL seed
+- Selection within a transect (local selection) on flowering time
+	- Brownfield (where there is variation in canopy coverage) F3 selfed progeny from mid-woods
+	- Response is time to first flower (CL)
+- Monitoring survivorship and reproduction in natural populations
+	- frequency of selfing through cleistogamy
+	- compare LH traits from greenhouse to those observed in field
+##### Results
+- Allerton (flood plain) population shows genetic variation with greater variation within transects (compared to among) for 12/19 characters
+	- significant variation in number of CH flowers suggesting genetic variation in mating system
+	- variation in some traits increased with age/growth stage
+	- among transects: more variation among families in floodplain samples compared to mid-slope and ridge samples
+- Brownfield (prairie/forest) genetic variation present with greater within transect variation for 12/19 characters
+	- also variation both within and among transects in number of CH flowers -> variation in mating system
+	- here days to first CL flower and number of CL flowers are most important for classificaiton (compared to Allerton where it was mostly mating system?)
+	- family variance component significant for all traits in edge and mid-woods but only sign for 13/19 innter woods
+	- trait differences among transects e.g. 38% larger seeds from mid-woods and inner-woods
+	- different LH/fecundity traits across transects incl. time to first flower (earlier in forest)
+		- note overlap in family means for flowering time...
+- Local adaptation: no evidence of variation among transects at Allerton but at Brownfield it's possible there was post-germination survivorship to reproduction home advantage between seed and forest
+- Natural populations: phenological differentiation observed between transects at Brownfield but not Allerton
+	- later and also more pods in edge compared to forest
+	- extreme mortality at Brownfield - forest plants were dead by mid-July there but 1/3 edge plants survived into September (beetle attacks in July)
+##### Discussion
+- Differentiation may be promoted by gene flow
+	- note that outcrossing followed by selfing will produce recombination (Stebbins 1957) possibly contributing to differences among transects in w/in transect genetic variation
+	- forest populations are CL for a long time (selfing) but CH (outcrossing) would allow for genetic exchange in case of some disturbance (presumably increasing light?)
+		- (do we know, or is it just hypothesized that, light is what allows CH?)
+	- "the impact of gene flow on local genetic variation will depend on the extent of genetic divergence between populations, and local selection intensities"
+	- the fact that CH in edge vs. CL in mid-forest and interior forest didn't necessarily produce a noticeable difference in among-family variance in edge vs. mid-forest suggests that perhaps mating system does not necessarily reflect genetic variation within populations... hmm okay not sure I 100% get what's going on here see Allard et al. 1968, Brown 1979
+- Drift and differentiation: Wright wrote about theory, but few papers definitively suggesting that drift is more important than selection for creating genetic structure
+	- "emphasis on natural selection as the differnetiating force in plant populations is based on the expectation that local selection differentials are large compared to the magnitude of gene flow"
+	- here: differentiation found at both sites but only local adaptation observed at Brownfield
+		- at Allerton it may be selfing followed by drift that produces very fine-scale differentiation
+- Local adaptation appears to be driven by post-germination survivorship to reproduction in home environment
+
+Okay very cool. The multi-level ANOVA approach gives a blueprint into how to do a genetic differentiation analysis without sequencing. It demonstrates scales of variation in quantitative traits. Can we incorporate distances directly into this? I bet we can. I also think we can incorporate flowering time *of the parent* into this.
+
+Note that the plants on which the traits were measured were actually F1 or F2 (I forget). This removes for maternal effects. It also allows us to boost sample sizes! Would be great to use collected seed for this.
+
+It's interesting that the forested plots had *earlier* flowering rather than later. The beetle mortality explains this. I've had two successive years of grazing, particularly in shaded *C* plots, but this doesn't seem to select for earlier flowering there. Constraint? Why does this constraint act upon *C* but not the *Impatiens*?
+
+Gene flow is invoked in discussion but not anywhere else (to my memory at least). Was gene flow actually measured in any way? Flowering time wasn't even explicitly mentioned in the flowering time discussion (but does seem to be implied). The gene flow discussion here is important and useful to return to.
+
+The drift argument - perhaps there is going to be drift in my later-flowering plants because of the paucity of available mates? This reinforces that a selfing study should be done next year. Did the UNC duo look at selfing in *T*? I do know it was done for *C* in some of the 90s papers.
+
 
