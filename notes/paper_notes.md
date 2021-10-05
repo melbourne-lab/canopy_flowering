@@ -1829,4 +1829,38 @@ Gene flow is invoked in discussion but not anywhere else (to my memory at least)
 
 The drift argument - perhaps there is going to be drift in my later-flowering plants because of the paucity of available mates? This reinforces that a selfing study should be done next year. Did the UNC duo look at selfing in *T*? I do know it was done for *C* in some of the 90s papers.
 
+### Servedio, M.R., et al. 2011. Magic traits in speciation: "magic" but not rare? TREE.
+
+- Gene flow and speciation - gene flow and recombination recombinize associations between genes under divergent selection and/or genes causing non-random mating that leads to pre-mating
+	- but a selection-recombination antagonism disappears if non-random mating depends on the trait under divergent selection (because the recombination stops? or the gene flow?)
+	- **magic traits** are those which cause non-random mating and is also under divergent selection
+	- are these traits common? 
+- defining magic traits
+	- a *magic gene* is subject to divergent selection and also pleiotropically influences reproductive isolation
+	- must be true (due to the pleiotropy) that recombination can not disrupt this relationship
+	- there must be selective pressures favoring different optima that can coexist in the same population
+	- this doesn't include traits that evolve via uni-directional selection e.g. reduce dispersal
+	- necessary outcome is the trait contributing to the evolution of reproductive isolation (what does it mean to say "evolution of reproductive isolation" rather than "reproductive isolation"?)
+	- see: models with: (refs herein)
+		- a single locus contributing to non-random mating and fitness 
+		- a trait w/ multiple loci with dual effects on viability and reproductive isolation
+		- mating cues being under divergent selection
+		- mating within a chosen habitat type (is this us?)
+- *Automatic* magic traits: non-random mating "built into" traits under divergent selection with non-random mating as an unavoidable byproduct
+	- e.g., phenology (Lowry et al. 2008 "The strength and genetic basis of reproductive isolating barriers in flowering plants")
+	- other examples: flower color (if different colors mean different pollinators), habitat choice
+	- could also occur if individual survival (in specific environments/locations) produces assortative mating; local adaptation will contribute to the assortative mating
+- *Classic* magic trait: divergent selection acting on mating cues (but not necessarily producing non-random mating?)
+	- requires: (1) the magic trait and not something correlated must control the selection (2) the magic trait and not something correlated must produce non-random mating
+		- e.g., butterflies that prefer to mate with the same color pattern (divergence produces sexual isolation) and coloration is subject to divergent selection (somehow related to mimicry)
+	- could also arise due to selection acting on mating preferences (sensory drive: perception of potential mates)
+- Importance of magic traits: end result of speciation (degree thereof? differentiation at least I guess) depends on the magnitude of the effect
+	- reproductive isolation can occur by other means independent of the magic trait (should ask: how much isolation is there before the magic trait divergence)
+	- some stuff about mimicking by non-magic traits... linkage disequilibrium, etc., also interactions
+
+Digging this but hard to directly tie in to what we're doing. Magic traits: same trait (gene) is simultaneously under divergent selection and producing reproductive isolation. One ref in here (Lowry) that discusses flowering phenology as a barrier here.
+
+Divergent selection - are we seeing this? We don't have evidence that selection is necessarily operating in either system. The trait producing reproductive isolation is quite obvious though. It's physical or physiological constraints is it not? Or is that selection? Not sure.
+
+### 
 
