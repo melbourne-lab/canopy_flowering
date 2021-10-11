@@ -473,3 +473,33 @@ Sensors:
 6: on 1:21
 
 Mercifully none of them had fallen over. I went through each and turned stakes that looked like they may slip off. 
+
+### Oct 4 2021
+
+22: on 10:38
+19: no data (lol), on 10:55:30
+16: on 11:07:30
+02: on 11:21:22
+25: on 11:33:30
+39: on ~11:49
+48: batteries were old so only up to 9/25; on 12:08(:40?)
+77: fooked record? on ~12:24:40 and re-leveled 12:36; asp leaf in case
+75: on 12:54:40
+33: on 1:08:10
+
+Collected two more batches of seeds, both in the shaded areas to the S and E of the southern meadow. One was sub-aspen (mostly defoliated) and the other was sub-lodgepole.
+
+### Oct 10 2021
+
+No phen ofc. Nearly all (>90 or >95%) of aspens defoliated. Curiously - there was snow on the ground in some places, a very thin and patchy layer that seemed to be persisting only in shady pockets (e.g., the S side of the S meadow running along treeline where plot 75 is). However, most sensors showed no sign of freezing. 
+
+06: on 12:41:(~30)
+48: used for IPWA video; on 1:05:50; did not replace battery
+57: on 1:35:25
+63: done (didn't record time though?)
+77: on 1:49:27
+70: on 2:06:05
+67: freezing record; on 2:20
+
+I also collected seeds in the open southern parts of the S meadow. This was mostly open pockets alleys and alcoves.
+
