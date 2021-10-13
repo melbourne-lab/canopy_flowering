@@ -1862,5 +1862,122 @@ Digging this but hard to directly tie in to what we're doing. Magic traits: same
 
 Divergent selection - are we seeing this? We don't have evidence that selection is necessarily operating in either system. The trait producing reproductive isolation is quite obvious though. It's physical or physiological constraints is it not? Or is that selection? Not sure.
 
-### 
+### Hall, M.C., and Willis, J.H. 2006. Divergent selection on flowering time contributes to local adaptation in *Mimulus guttatus* pouplations. Evolution.
+
+- First para: refs on environmental determinants of flowering time (day length, light level, temp, snowmelt timing, nutrients, water availability)
+	- refs on genetic divergence in flowering time
+- "adaptive flowering time hypothesis" - flowering time differentiation contributing to local adaptation
+	- difficulty: populations don't just differ in their timing of reproduction but also in other important traits (Clausen et al. 1940, Hiesey et al. 1971)
+	- flowering time could be adaptive, but selection could also be operating on correlated traits
+	- better approach: use "genetically variable hybrids" (traits uncorrelated?) in a reciprocal transplant design
+- Here: *M. guttatus* and its huge range; within species diversity in several traits
+	- does the evolution of flowering time in different habitats contribute to local adaptation?
+##### Methods
+- Two *M. guttatus* subpopulations - coastal (**DUN**, *var. grandis*) and inland (**IM**, *var. guttatus*)
+	- same latitude -> same photoperiod (approximately)
+	- IM: diminutive annuals in shallow porous rocky soils and variable montane environments, fall germination with June flowering (outcross)
+	- DUN: perennials in coastal dunes with stable environment (incl. moisture via fog), long flowering season, some vegetative growth 
+- Experimental hybrid approach: recombinant inbred lines (RILs) from individuals crossed between combinations
+	- crossed individuals from an inbred IM line to a single DUN plant
+		- this inbred IM line (IM62) has been used in QTL studies
+	- some other stuff here that I don't understand
+- Reciprocal transplant of parental and hybrid genotypes into a DUN population and to a site near the IM population
+	- seeds in greenhouse, germinated, thinned, transplanted into transects approximating densities at each site
+	- visited sites on alternate days to monitor flower production
+		- measured phenotypic characters to note possible trait correlations, e.g., corolla width, corolla tube length, stem thickness, etc.
+		- all Cascade plants died in July; survivors at Dunes monitored after
+- Analysis: 
+	- do trait values vary among four genotypic classes and at the two sites? ANOVA on all traits and characteristics w/ Tukey-Kramer HSD comparisons
+		- Pearson correlation coefficients, one estimate per site, for each trait pair for each genotyipc class
+	- composite measure of fitness: lambda_i (growth rate of a population where all individuals are equivalent to the ith individual) (McGraw and Caswell 1996)
+		- at Cascades, just each plant's fecundity in year one or total number of seeds
+		- at Dunes, use a projection model approach
+	- phenotypic selection: only focus on a subset of uncorrelated traits
+		- relative fitness (abs. fitness divided by lambda of class) regressed onto four traits of interest to get linear selection terms
+		- flowering time: linear and quadratic selection on all classes at DUN site due to differences in sign among classes, test of stabilizing selection
+##### Results
+- Highly significant differences among genotypic classes within site
+	- flowering was rare for DUN plants in the Cascades
+- Differences in fitness among phenotypic classes and among sites (incl. interactions)
+	- native plants had higher fitness than non-natives at both sites
+		- at Cascades, no DUN plants survived to flower before drying (IM plants did fine)
+			- BC-IM hybrids also outperformed BC_DUN hybrids at cascades
+			- BC-IM hybrids having higher fitness than local IM plants?
+		- at Dunes: no differencese between native and non-native plants for survival to flowering but more flowers (and seeds) per plant for DUN plants
+- Phenotypic selection
+	- Cascades: selection for earlier and larger flowers for both IM and BC-IM plants
+	- Dunes: larger flowers (and plants) and different selection pressures among classes
+		- some quadratic relationsihps for date of first flower (stabilizing selection)
+##### Discussion
+(start here)
+
+### Clark, C.J., et al. 2007. Are plant populations seed limited? A critique and meta-analysis of seed addition experiments. Am. Nat.
+
+- Why care? Mechanisms influencing abundance and distribution of [plant] populations is "a central challenge of ecology"
+	- recruitment failure can be: propagule production, propagule transportation, competition, predation, herbivory, although most people/studies focus on propagule availability in space or time
+	- "a growing consensus" that processes early in the life cycle have a disproportionate outcome on this
+- *Seed limitation*: fewer individuals "than possible" because seeds are below saturating densities to match all potential recruitment sites
+	- source limitation (not enough seeds produced, even if seeds could reach all sites) vs. dispersal limitation (not enough seeds reach all sites although enough are produced)
+- *Establishment limitation* population size is constrained by space for establishment (and not the number of seeds)
+- Relative influences of these two processes:
+	- if establishment limitation is more important, then community composition is determined by competitive ability (over few sites)
+	- if seed limitation is more important, then it's more of a lottery model where the better competitor only wins a few sites and most microsites are drawn at random from the available pool of seeds
+- Thus the seed addition experiment: add seeds in some places and not others, compare seedlings
+	- if there is no increase in seed density after seed addition, then one can conclude there is no seed limitation
+	- if there is an increase after addition, then limitations is at least partially attributable to seed availability
+	- n.b. this only tells us about early life stages and whole-life cycle analyses may show something different
+- Difficulty in interpreting results, though, if seed limitation is found
+	- Is the study taking place in a place where the species does not occur at all, or simply in sites where we wonder why there aren't more?
+	- for the latter (determining what limits size/density rather than prohibiting a population) the number of seedlings is important and the *magnitude* of the response is more important than presence/absence of limitation
+- seed limitation is a *continuous variable* that is often dichotomized inappropriately
+	- seed and establishment limitation as opposite ends of a gradient
+	- proportion of seeds planted that emerge as a magnitude of response?
+	- what happens if the number of seeds that emerge is intermediate? two factors limit the response but vary in the strength of their effects
+- Here: meta-analysis on 43 publications
+##### Methods
+- Effect size for ith study: (R_exp,i - R_cont,i)/A_i
+	- i.e. seedling densities in experimental plots minus the densities in control plots, divided by the number of seeds added to experimental plots
+	- can be interpreted as number of recruits obtained per sown seed
+	- note: sampling error can produce E<0 or E>1
+- mean effect size is a weighted average of effect sizes, with weights with a weighted resampling procedure based on total number of seeds added
+	- pooled weighting used in some cases (multiple species or multiple seed densities added)
+- Absolute effect sizes: E_abs,i = R_exp,i - R_cont,i
+	- not explained why this is done
+- Also: disturbed vs. undisturbed settings
+- Analyses: separate for disturbed vs. undisturbed plots, and for those species occurring in both disturbed and undisturbed, looked at the differences in effect sizes
+- 43 publications, 798 effect sizes, 159 species
+##### Results
+- In undisturbed environments: only 15 per 100 seeds emerging as seedlings
+	- only 12% of species had E > 0.5
+	- Variation in response: good portion of it explained by seed origin, seed size, seed presence, and avg. seed bank longevity
+		- shorter-duration seed bank are more seed limited than those with longer seed banks
+		- marginally positive relationship between seed mass and seed limitation (more mass -> more limitation)
+- In disturbed environments, only about 14 per 100 seeds emerging as seedlings
+- Effects of disturbance: direct comparison from the same study (75 studies) showed that disturbance means ~10 more emerged seedlings per 100 seeds relative to undisturbed plots
+	- no differences among grouping variables estimated
+##### Discussion
+- Note that without more information from later parts of the life cycle, the (already modest) effects of seed limitation may be overstated
+- Two explanations for the modest effects of seed limitation:
+	- There may be an establishment bottleneck occurring between the seed deposition and the seedling censuses (Harper 1977)
+	- And/or could be due to experimental design where seeds are added at biologically irrelevant densities
+- Post-dispersal factors constraining establishment areimportant
+- Seed predation and herbivory: mixed results on how much seed limitation influences plant population sizes
+	- predation should only affect abundance of plants that are seed limited (if seed density is what determines plant density, and seed density is reduced by herbivory, then plant density will also be reduced)
+	- whereas if plants are microsite limited then reduction in seed density won't really influence plant density
+- No variables measured (of 16) only weak evidence for any on degree of limitation was found
+- Proposed improvements
+	- most addition experiments are not designed to separate density-dependent and density-indpendent mortality (but see Shaw and Antonovics 1986)
+		- results could vary if there is a non-linear recruitment function (e.g. density dependent emergence)
+		- Poulsen et al., 2007 looks at 18 studies with multiple augmentation levels, finding that a linear recruitment function fitted as well as a non-linear one
+	- knowing the natural number of seeds deposited via seed rain would be helpful  by reducing/controlling for noise occurring naturally
+		- more seeds per plot on average may mean more variation and therefore it would be harder to determine differences
+
+Good and helpful study! The continum argument is useful especially for our model. If doing averaging over a sufficient number of replicates (that reduce effects of background variation in seed density), then we can say that E is an estimated establishment success per established seed. We can partition this further into germination etc. if we are interested (seems cool). 
+
+Useful to note that in general the rate of limitation is small, and the effect size is very likely to be less than 50%. Seems then like we would want to add a lot of seeds to increase the chance of observing an effect.
+
+Points at the end about the non-linearity and knowing the background variation of seed rain are helpful. It's good to know that non-linearity doesn't appear to be widespread or strong at least. The background seed rain - I can go up one day and assess this myself to see if this is easy to detect.
+
+Next up the Poulsen et al. 2007 paper could be a good read.
+
 
