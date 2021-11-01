@@ -1980,4 +1980,89 @@ Points at the end about the non-linearity and knowing the background variation o
 
 Next up the Poulsen et al. 2007 paper could be a good read.
 
+### Cortes, A.J., et al. 2014. Small-scale patterns in snowmelt timing affect gene flow and the distribution of genetic diversity in the alpine dwarf shrub Salix herbacea. Heredity.
 
+- Climate change: changing growing seasons  and plant phenology (several refs including Elmendorf et al. 2012), but there is small-scale topographic variability herein that can operate on even a few meters (Yamagishi et al. 2005, Scherrer and Korner 2011)
+	- can produce local adaptation (Gonzalo-Turpin and Hazard 2009)
+	- genetic diversity and migration on such small scales: see Hirao and Kudo 2008, Shimono et al. 2009
+- Snowfall variation: snowbeds are depressions and ridges are more exposed and have much less coverage during the winter
+	- ridges are more stressful: less water, more frosting at either end of season
+	- phenological effects of snowbeds: Shimono and Kudo 2005, Kudo and Hirao 2006
+	- Stanton et al. 1997 on fine scale genetic structure (some other refs in here about flowering time)
+	- pollen flow can be restricted due to phenology - but seed dispersal can counteract this
+		- although gene flow operating primarily due to seed may produce source-sink patterns (Nathan and Muller-Landau 2000)
+- Ridge/snowbed very much like climate change threatened vs. climate change resistant environments?
+	- restricted gene flow and differentiation may produce local adaptation in which case some species such as late-snowmelt associated genotypes of long-lived species like shrubs may have trouble persisting
+	- early-snowmelt genotypes of long-lived species may have trouble colonizing because long-lived species have rare colonization anyway
+	- asymmetric gene flow could also affect genetic variation
+- Study questions:
+	- Do differences in snowmelt mean different flowering times
+	- Do differences in snowmelt microhabitats mean differences in genetic diversity
+	- Are patterns of genetic differentiation and gene flow driven by snowmelt?
+##### Methods
+- *Salix herbacea* long-lived (up to 450 years) prostrate dwarf shrub
+	- wind dispersed seeds
+- 12 sampling sites in Swiss Alps on three mountains ~10 km apart
+	- two altitudes on each mountain
+	- snowbed and ridge chosen at each altitude (determined by topology - topography? - and vegetation)
+- 30 *S. herbacea* stems randomly sampled at a 100m2 plot at each site - 360 samples total
+	- five leaves sampled per stem, stored in empty tea bags (!)
+- 359 patches (!?) outside of the other sites but on the same mountains surveyed
+	- snowmelt and flowering time recorded weekly in 2011, 2012
+	- assessed flowering time ~ snowmelt x altitude with linear models
+- Microsats
+	- departure from HWE, F_IS assessed
+	- number of alleles, expected/observed heterozygosity, at each site
+	- compare number of alleles, heterozygosity metrics between microhabitats w/ linear mixed models
+		- microhabitat as fixed effect, mountain as random effect
+- Genetic differentiation
+	- pairwise F_ST among 12 sites
+	- Mantel test: correlation between F_ST matrices and snowmelt distance (partial Mantel to look across geographic distance classes - among-within mountain, altitude, microhabitats)
+	- STRUCTURE used to quantify population structure
+- Effective population sizes and pairwise migration rates based on coalescent theory and MLE
+	- something else to look for recent/ancient migration and demographic processes depending on re-colonizatiom etc.
+##### Results
+- Yes - earlier snowmelt on ridges compared to snowbeds such that ridges were snow free a month earlier than snowbeds
+	- notably in 2011 snowmelt was almost a month earlier than 2012
+	- strong association of flowering time and snowmelt time: slope .805, R2 .827
+		- altitude did not influence flowering time differences
+- 97 alleles, 11 private alleles evenly distributed among microsites (private allele?)
+	- higher inbreeding than expected under HWE
+	- no evidence of bottlenecks
+	- more allelic richness, slightly higher heterozygosity in snowbeds than ridges
+- Low genetic differentiation among the 12 sites
+	- no significant differences within- or among-mountains, or within- and between-microhabitats
+	- genets from same mountain were more related than those from different mountains (wait... what does this mean for above?)
+	- relatedness did differ among within- and between- microhabitat comparisons
+- Non-significant Mantel tests for F_ST ~ relatedness, F_ST ~ snowmelt
+	- F_ST ~ geographic distance, and relatedness ~ snowmelt distance n.s. when accounting for geographic distances
+- K = 2 as the most likely number of clusters (n.b. this is the smallest allowable by the test)
+- No evidence of bottlenecking
+	- number of migrants per generation attributable to asymmetric gene flow, not post-glacial recolonization dynamics
+	- asymmetric migration between microhabitats
+	- non-zero migration among mountains but more migration within mountains
+#####  Discussion
+- There is phenological differentiation but it does not lead to genetic differentiation among microhabitats
+	- But, later-snowmelt habitats (snowbeds) are more diverse and receive more gene flow
+- The genetic differentition result is contrary to a number of other studies (e.g. Stanton and Galen 1997)
+	- n.b. that they were limited to only testing for structure at seven putatively neutral microsats - differentiation could be occurring at other regions (refs here about local adaptation)
+- What's stopping genetic differentiation from occurring?
+	- Seed dispersal could be occurring
+		- in this system, seeds are wind-dispersed and snowmelt rarely poses a problem for seed dispersal across microhabitats
+	- There could be intermediate sites acting as gene flow bridges
+	- The phenological barrier could be broken by a couple of years of extreme or aberrent weather
+	- Could be something with recent ancestry... I didn't understand this but also barely tried to read it
+- Asymmetric gene flow: very likely to be due to phenology, probably just the fact that the snowbeds are in depressions
+	- could also be due to moisture and conditions for establishment
+
+Super cool paper. Obviously for my purposes the most important finding is that phenological barriers do not necessarily mean genetic differentiation - there is basically none here at scales that I am interested in. The dynamic phenological barrier argument is a cool one. I am convinced by the seed dispersal argument though.
+
+What differs in our systems? (1) there may be quite large differences in establishment probabilities between canopy and open meadow - in fact I have some papers that show this, e.g., I think one of the Young papers in Med Bow and also an Albrecht paper in a different system. (2) Most obvious thing is our seeds are not wind pollinated but instead are large fruits that are more likely to disperse shorter distances by gravity. Of course, it's hard to know if this is true without a natural study. (3) Some system specific differences, e.g., pollinator communities, reproductive strategies and allocation, life histories... may be that our shorter lived plants have more pollen movement? Does that make sense or produce an effect in the direction that would create this result? Perhaps not actually...
+
+Oh yeah and of course I will need to look at snowmelt and its effects independent of canopy coverage (inasmuch as that is possible).
+
+It would be nice to look at the richness in different sites too - very relevant for the climate change claims I am making. Can I do this just with the quantitative traits? I don't see why not.
+
+Next steps are to read some of the phenological offset papers - lots from Japan. Also Stanton and Galen 1997 (holy FUCK this is a 35 page paper) and Elmendorf et al. 2012.
+
+### 
