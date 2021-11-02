@@ -2065,4 +2065,65 @@ It would be nice to look at the richness in different sites too - very relevant 
 
 Next steps are to read some of the phenological offset papers - lots from Japan. Also Stanton and Galen 1997 (holy FUCK this is a 35 page paper) and Elmendorf et al. 2012.
 
-### 
+### Munoz-Pajares, A., Abdelaziz, M., and Pico, F.X. 2020. Temporal migration rates affect the genetic structure of populations in the biennial Erysimum mediohispanicum with reproductive asynchrony. AoBPlants.
+
+- A population - what is it?
+	- certainly, a common feature is variation in the number of individuals contributing to the next generation, which produces spatio-temporal variation in allele frequencies and creates genetic structure (refs, incl. Rosenberg et al. 2002 - lol this is about human genetics)
+- We know about genetic structure in space - genetic structure in time is less well- studied but has been formalized in some work (e.g. Hendry and Day)
+	- it will be important when organisms require > 1 year between reproductive periods; biennials are an extreme case of this
+	- importance ofc depends on heritability of flowering time: complete heritability means distinct mating demes with no interbreeding (Weis and Kossler 2004)
+		- in a case like this, individuals belonging to one deme but reproducing with another are temporal migrants which will reduce differentiation
+	- asynchrony in reproduction well studied in many animals, e.g., salmonids, and when considered in plants people are usually considering seed banks
+- Here: what do temporal migrants do to genetic structure of plant populations over time?
+##### Methods
+- Study organism: *Erysimum mediohispanicum* - biennial in Spain
+	- 2-3 years as vegetative rosettes before dying after reproduction: semelparous but with variation in timing of first reproduction
+	- mixed mating, diverse pollination community, wind dispersal
+- Field: haphazardly tagged 100-120 vegetative rosettes of similar size (most of them) per site per year
+	- prev. work and domain knowledge suggest that all of these were 1 year old whne tagged
+	- estimating portion of rosettes completing their life cycle in 2 years (to get individuals who require >2 years - these are the migrants?)
+	- 807 plants total
+- Leaf material collecteed from 30 individuals per deme to assess genetic diversity and differentiation
+	- three years, four populations, two demes per population -> 720 individuals
+	- 687 individuals genotyped across three years
+	- mean alleles per locus, obs. heterozygosity, gene diversity (?) estimated for each individual
+	- hierarchical analysis of molecular variance gives hierarchical F-statistics that gives genetic variance at multiple scales
+	- genetic structure in STRUCTURE
+	- genetic distance between demes
+- Demographic-genetic model
+	- vegetative and reproductive individuals: can't interbreed
+		- reproductive individuals are from seeds germinated two years prior whereas vegetative ones are only one year prior
+	- define temporal migrant rate as the proportion of individuals from a specified deme reproducing one year later
+	- temporal migration event probability: frequency at which migration occurs over time (more ecological/environmental?)
+	- N_T is total reproductive individuals recruited into deme through reproduction N_R or immigration N_M (subtracting individuals emigrating from deme N_E)
+	- N_R(y, d1) = lambda(y, d1) N_T(y-2, d1) if deme 1 has tth generation at time y; lambda is growth rate sampled from normal distribution with mean 1 and sd 0.01
+		- (N_R for second deme is defined similarly)
+	- migration between demes defined by m_{12} and m_{21}
+	- individuals with 100 unlinked diallelic loci 
+- Model run at 10 scenarios:
+	- constant migration rates, 0-90% of individuals
+	- at each migration rate, 11 scenarios of event probabilities from 0 to 1 over the generations
+	- (I think this is proportion of population vs. migration occurring at all)
+	- gene diversity, genetic differentiation between demes and among individuals within demes calculated on final genotyeps after 100 generations
+##### Results
+- Empirical: temporal migration varies from 15%-67%
+	- mortality of individuals was ~1/3 in one year and ~50% in another
+	- no differentiation among sites
+	- genetic differences among demes... uhm these results are not clear to me?
+- Model: large migration rates and intermediate migration event probabilities maximize the probability of deme etinction and recolonization
+	- mean individuals per deme is minimized with higher migration event probabilities
+	- no migration means high degree of temporal differentiation
+	- "U"-shaped relationship between genetic differentiation and temporal migration rates: a lot or very little of migration means more differentiation
+##### Discussion
+- The expectation that increasing temporal migration rates would homogenize populations: met but with caveat
+	- genetic distance also went up again with high migration
+	- could this be because migration means *loss of individuals from the donor population?*
+		- loss of these individuals contributing to demographic stochasticity (genetic stochasticity?)
+	- migrants as survivors of mass mortality events...
+
+Okay discussion was nothing to write home about but this is a cool concept. Shows temporal (inter-annual) structure. Implications for perennials not flowering every year (Amy's stuff)... nested structure seems like it would minimize genetic structure.
+
+Temporal migrants - MRS study can also feature mixing by temporal migrants (environmental migrants?). Maybe those that are ducking behind a tree? The migration rate (variance around the environmental-flowering time trend) allows for mixing despite little overlap. But the scale of environmental variance would also influence this.
+
+
+
