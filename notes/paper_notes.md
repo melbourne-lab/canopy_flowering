@@ -2125,5 +2125,39 @@ Okay discussion was nothing to write home about but this is a cool concept. Show
 
 Temporal migrants - MRS study can also feature mixing by temporal migrants (environmental migrants?). Maybe those that are ducking behind a tree? The migration rate (variance around the environmental-flowering time trend) allows for mixing despite little overlap. But the scale of environmental variance would also influence this.
 
+### Iler, A.M., CaraDonna. P.J., Forrest, J.R.K., and Post, E. 2021. Demographic consequences of phenological shifts in response to climate change. ARES.
 
+- (Interesting point): shifting phenology allows you to track a changing environment, but without a shift one is more likely to face a novel climate
+	- not shifting your phenology may mean reduced performance
+	- if phenology shift, is it shifting enough? too much?
+- Due to varying sensitivies of vital rates, changing one vital rate does not necessarily threaten persistence of a species
+	- reproduction typically has less influence on population dynamics than survival and growth (unless the changes are drastic)
+##### Literature review: climate change and plant phenology
+- Germination: timing alters the environment the most vulnerable stage faces
+	- understudied
+	- combinations of soil moisture and temperature influence germination so climate change can influence this (most studies say no effect or earlier germination)
+	- earlier germination could mean more seedling recruitment as there is more time to grow before summer drought (Richter et al. 2012 - pines) and opposite could be true with delay
+	- but, influences for population dynamics will depend on whether populations are seed limited
+- Leaf emergence: start of growing season and influences how long plants can photosynthesize and grow
+	- earlier spring snowmelt can mean earlier leaf emergence (some studies support this) and these individuals do tend to show increased growth (multiple studies support)
+		- results may be subverted by other factors e.g. increased exposure to frost
+	- winter warming can delay leaf emergence (prolonged chilling requirements)
+	- no studies looking at effects of leaf emergence on competition or facilitation
+	- abiotic stress can influence these dynamics as well, e.g., if novel environments are stressful then perhaps competition will be replaced by stress (Wipf et al. 2006)
+- Flowering: recruitment depends on seed inputs and establishment probabilities and only populations that are sedd limited will affect persistence
+	- only one study has connected shifts in flowering phenology to population growth (Amy's 2019 frost paper)
+	- well studied (27% of papers for this review), half of which are at high latitude or high elevation
+	- negative abiotic consequence: mostly increased risk of frost damage in years when flowering is early, meaning subsequent reduction in seed production
+	- drought and heat stress also possible?
+	- pollinator disruption: those flowering at the beginning of seasonal transitions or specialists are morst susceptible to altered pollinator synchrony
+		- pollinator asynchrony may not matter if the abiotic environment is ill-suited for reproduction e.g. frost damage precludes increased pollination effects
+- Leaf senescence: delay mean longer growing season, no signs of earlier senescence
+##### Literature review: animals
+- [Didn't really read]
+##### Synthesis, future directions
+- Negative density dependence can compensate for losses in one vital rate by increasing another, while positive dependence could amplify the effects...
+- There could be trade-offs in resource allocation or vital rates across years or across vital rates, so unknown
+- People need to study population growth rates and also to focus on rates for which population growth is actually limited
+
+Nothing earth shattering here (maybe some interesting stuff with animals if I read it?). Some lessons that jump out: need to connect things to population growth to actually say anything about persistence (I even said this in the LTRE I think... ugh). Also for longer-lived alpine plants I am probably focusing on the wrong vital rates! To say nothing about clonality. Thus I should focus on distribution, patterns, and evolutionary dynamics instead of population growth explicitly (this study would be good to cite noting the sensitivity). In that vein, noting that longer growing seasons could be helpful because of the potential for increased growth is good. I have been saying this as well for subcanopy - every day provides less growth potential for plants below forest.
 
