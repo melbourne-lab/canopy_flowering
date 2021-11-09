@@ -2246,3 +2246,26 @@ Important things here: there are a lot of factors that can influence genetic str
 
 Some cool references in here though I guess.
 
+### Augspurger, C.A. 1983. Phenology, flowering synchrony, and fruit set of six neotropical shrubs. Biotropica, 15(4): 257-267.
+
+- Primack 1980 seems to have quantified population synchrony in temperature species...
+- Augspurger 1980: mass flowering means more bees, and Augspurger 1981: synchrony with population increases individual's seed set
+- Six tropical species, spanning from mass-flowering (pulse, 3 species) to steady state (flowers open 40-60 days, press)
+- 20 individuals per species, daily counting number of *newly* opened flowers, plus median flowering day with 90% of flower production and day of median flower
+	- Individual's overlap with rest of population is individual synchrony, population synchrony is the mean across individuals
+	- (n.b. Primack's measure is different)
+	- fruit set also determined
+- Multiple regression: fruits ~ flower number, 90% duration, individual synchrony was significant for 5/6 species (all but a species that was possibly undersampled)
+	- however, when removing synchrony and duration of flowering, there was no significant reduction in variance explained by regression? (?!)
+		- number of flowers, but not duration of flowering, was correlated with fruit set in 5/6 sp 
+- Bawa 1983 on what affects the length of flowering period: pollen flow, foraging behavior of pollinators, rate of fruit development wrt resources, habitat
+	- also environmental cues?
+	- seed predation
+- Population synchrony increases with shorter flowering duration, high population density, common flowering cuwe (heavy rain in this case)
+- Selection for synchrony: hypothesized to be due to potential for cross pollination, pollination efficiency, pollinator attraction
+	- 1981 paper on one of these species supports pollinator attraction and seed predator avoidance
+	- less selection for synchrony when there is steady-state flowerings
+- To demonstrate that synchrony does *not* matter for the individual requries manipulation but association study here does not support synchrony
+
+Okay! Glad I actually read this as it has the opposite conclusion that I expected, although it doesn't actually effectively answer the question I am interested in! There is actually no measurement of synchrony on per-flower fruit/seed produciton. Because there was no controlling for number of flowers, there was no way to disentangle number of flowers produced from synchrony effects. But I can do this! And I guess I should. The 1981 paper on one of these species (Hybanthus prunifolius) is probably better to read. More reading!
+
