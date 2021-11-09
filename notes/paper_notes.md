@@ -2161,3 +2161,88 @@ Temporal migrants - MRS study can also feature mixing by temporal migrants (envi
 
 Nothing earth shattering here (maybe some interesting stuff with animals if I read it?). Some lessons that jump out: need to connect things to population growth to actually say anything about persistence (I even said this in the LTRE I think... ugh). Also for longer-lived alpine plants I am probably focusing on the wrong vital rates! To say nothing about clonality. Thus I should focus on distribution, patterns, and evolutionary dynamics instead of population growth explicitly (this study would be good to cite noting the sensitivity). In that vein, noting that longer growing seasons could be helpful because of the potential for increased growth is good. I have been saying this as well for subcanopy - every day provides less growth potential for plants below forest.
 
+### Loveless, M.D., and Hamrick, J.L. 1984. Ecological determinants of genetic structure in plant populations. ARES.
+
+- Genetic structure arises from combo of migration, mutation, selection, and drift
+- Spatial structure (of individuals) and genetic patterns are not one in the same - you can have one without the other
+##### Table 1: ecological factors that can influence genetic structure
+- Breeding system
+	- Autogamy: more if it means less genetic variation, reduced gene flow, reduced within-family genotypic diversity
+	- Outcrossing means more variation, higher heterozygosity, less genetic divergence due to gene flow, and increased N_e
+	- Mixed mating systems also tend to have potential for subdivision which depends on the balance of selfing and outcrossing
+	- Outcrossing and restricted pollen movement and/or dispersal may increase consanguinous inbreeding; self-incompatibility can remedy this
+		- theoretical studies showing that only a small amount of long-distance gene flow is needed to prevent differentiation at neutral alleles
+- Floral morphology
+	- Hermaphrodity: increases chances of selfing/mating system which increases potential for subdivision
+	- Dioecious or heterostylous flowers mean more variation and more enforced outcrossing, reducing subdivision
+		- although sex ratios of populations can deviate from 1:1 which will reduce N_e and promote drift
+	- n.b. autogamy only occurs in hermaphroditic or monoecious plants
+- Mode of reproduction
+	- asexual means more subdivision while sexual typically means less although it depends on other factors
+- Pollination
+	- n.b. distinction between pollen movement and realized pollen flow 
+	- Insect pollination means less variability than, e.g., wind pollination
+	- Limited or leptokurtotic (mean-skewed) typically means less movement and lower N_e
+- Seed dispersal
+	- Limited dispersal (e.g., gravity, capsules, animal ingesting) means more potential for differentiation esp if offspring end up close to parents
+	- wind dispersal or long-distance animal movement means homogeneity
+	- seed dormancy will increase N_e and retard local subdivision (increaed effective generation time... not quite sure what this means) although this depends on how long seeds are in the pool and the fecundity of parents/genetic diversity of hte pool
+- Phenology
+	- Depends on synchrony, where all else equal more overlap means less differentiation (refs 8, 9, 15)
+	- temporally asynchronous populations may have subsets which entirely undergo selfing (see 9?)
+	- many many refs in here... (4, 7-9, 15, 17, 24, 41, 44, 116, 145, 153)
+- Life cycle
+	- annuals typically have reduced genetic variation with higher chances of subdivision (due to drift, bottlenecking)
+	- longer-lived plants have reduced drift which decreases possibility of divergence
+- Timing of reproduction
+	- Monocarpic (analogous to semelparity) typically means more drift and more subdivision because of reduced mating possibilities
+	- monocarpy in a perennial restricts mating opportunities
+- Successional stage
+	- early successional stages typically mean stronger founder effects and a shorter individual lifespan typically but not always meaning more subdivision
+	- later successional stages could mean stable, longer-lived populations which reduces differentiation
+- Population size
+	- large, stable population size means more genetic variation, less drift, but large means more potential for subdivisions by chance
+	- smaller populations if stable are more likely to be homogeneous
+	- fluctuating population size will also experience drift and reduced N_e
+	- migration matters here
+- Population spatial distribution
+	- patchy means more isolation and reduced gene flow (although effects on pollination could be complicated)
+	- uniformity promotes homogeneity
+	- a more linear population array (compared to something more compact) means more divergence
+##### Meta-analysis
+- 163 studies, 124 plant taxa
+	- each taxon has 10 ecological traits
+	- calculate H_T (total diversity at polymorphic loci), H_S (diversity within populations at polymorphic loci), D_{ST} (genetic diversity among populations) where H_T = H_S + D_{ST}
+- H_T (total diversity) highest for short-lived perennials, widespread species, and plants with both sexual and vegetative species
+	- lower with sexually reproducing species, long-lived perennials ?
+- H_S (number and evenness of allele frequencies within populations)
+	- higher with later successional stages, sexual and vegetative reproduction, polycarpy, monoeiciouy (sp?)
+	- lower with selfing, annuals, wind pollination??, 
+	- annual selfing species show signatures of reduced gene flow (Slatkin 1981) e.g. skewed allele frequencies
+- Genetic diversity: high G_{ST} (= D_{ST}/H_T) i.e. diversity among populations: selfing, annuals, early-successional species, gravity or animal dispersed seeds
+	- contra predictions: geographic range, seed dispersal, pollination mechanism show patterns inconsistent with predictions
+		- widespread species include selfing, colonizing weeds and their traits were associated with high structure
+		- many of these inconsistencies seem to be just correlations in life history or other characteristics, e.g., wind pollination tending to be associated with selfing
+		- trying to separate these out a little bit: looking at a two-way comparison of longevity and mating system shows generally increasing structure with shorter longevity while controlling for mating system
+	- multivariate analysis: PCA for several traits has three axes describing 62% of variation in G_{ST}
+		- primary axis 34% has life cycle and timing of reproduction (long-lived polycarps have low G_ST) and these plants are typically outcrossed, monoecious/diecious, and wind-pollinated whereas higher G_ST species on the other side of the axis were typically insect pollinated and self-fertilized
+		- second axis 15% had loadings for breeding system, pollination, geographic range, dispersal, phenology (weak loading of G_ST)
+			- high G_ST for widespread, selfing, animal-dispersed
+		- third axis 12% had dispersal, phenology, mode of reproduction, moderate for G_ST
+	- caveats: few loci, G_ST affected by history e.g. population spread
+- Within population structure: most correlated with breeding structure (inbreeding produces relatively high G_ST)
+	- (wait... G_ST is among population... high G_ST means lower relative within population diversity? so selfing means more within population diversity???)
+	- see Brown 1978, Brown 1979 for some "more limited" analyses
+##### Conclusions
+- Breeding system as a principal factor in generating genetic structure, agreeing with other studies
+	- hypothesized relationships between seed/pollen dispersal and structure were not incredibly well supported
+		- could be bias, could be overshadowing by breeding system
+- Results here about gene flow are important - contrasting to some prior results suggesting that gene flow is small in scale
+	- among population gene flow does appear in fact to reduce among-population differentiation
+
+Well, a good review of at least improtant ecological factors for creating structure. Unclear at time if they were talking about among-population or within-population structure. 
+
+Important things here: there are a lot of factors that can influence genetic structure. Correlations among ecological characteristics among species can make predictions difficult due to cross-pressuring or effect-masking. Breeding system and outcrossing seems to be the most important thing, although other factors do have influences as well. Seed and pollen flow possibly less important than originally thought.
+
+Some cool references in here though I guess.
+
