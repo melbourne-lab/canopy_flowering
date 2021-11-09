@@ -1,0 +1,5 @@
+Manifest file for knb-lter-nwt.401.5-4c9184f37cff01bcdc32dc486ec36961.zip created on Wed Apr 28 04:35:49 MDT 2021
+c-1cr23x-cr1000.daily.ml.data.csv (3852109 bytes)
+knb-lter-nwt.401.5.xml (143356 bytes)
+knb-lter-nwt.401.5.txt (80906 bytes)
+knb-lter-nwt.401.5.report.xml (37697 bytes)
