@@ -503,3 +503,16 @@ No phen ofc. Nearly all (>90 or >95%) of aspens defoliated. Curiously - there wa
 
 I also collected seeds in the open southern parts of the S meadow. This was mostly open pockets alleys and alcoves.
 
+### Oct 16 2021
+
+Started taking sensors down. I took down: 16, 19, 25, 33, 39, 48, and 75. I left the rebar in place and placed an orange cap over the exposed tip. I will need to take these out by the end of the season.
+
+I left sensors 2 and 22 in place, replacing the battery. Sensor 2 will be useful as a reference and 22 I just want to get as much data as possible for. Sensors 6, 57, 63, 67, 70, and 77 were also left in place. 
+
+Snow... it's there. Nearly all lodgepole subcanopy had a thin layer of snow. Southern meadow boundaries (e.g. plot 75) had a thicker layer more than an inch. Meadow interiors are mostly but not completely snow-free (plot 2 and downhill of that had a thin layer). Seems to make seed addition infeasible. So it goes.
+
+### Nov 7 2021
+
+n.b. I took down remaining sensors on Oct. 25. Sensors 2 and 6 were knocked over; I am assuming these are due to moose or elk? Snow was nearly entirely gone.
+
+On this day Matt and I took coordinates of the plot locations with a RTX9 GPS borrowed from UNAVCO. We started around 9 and were finished between 1 and 2 with no apparent problems. We used a stabilizing tripod which Matt said made the work much easier. All points were shot with precision below half a meter in any direction, with an exception for plot 48 for which we had difficulty establishing a connection. This one was shot with a precision of 1m. According to Matt all coordinates were shot in WGS84 on job `niwo_gcp1111`. See file `sensors_and_loggers/elk_2021_sens_latlon_2021nov8.csv` (filename is because points were processed and uploaded on this date by Matt).
