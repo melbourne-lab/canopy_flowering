@@ -2269,3 +2269,73 @@ Some cool references in here though I guess.
 
 Okay! Glad I actually read this as it has the opposite conclusion that I expected, although it doesn't actually effectively answer the question I am interested in! There is actually no measurement of synchrony on per-flower fruit/seed produciton. Because there was no controlling for number of flowers, there was no way to disentangle number of flowers produced from synchrony effects. But I can do this! And I guess I should. The 1981 paper on one of these species (Hybanthus prunifolius) is probably better to read. More reading!
 
+### Stanton, M.L., Galen, C., and Shore, J. 1997. Population structure along a steep environmental gradient: consequences of flowering time and habitat variation in the snow buttercup, *Ranunculus adoneus*. Evolution.
+
+- Endler 1979, Gillespie and Turelli 1989 on local adaptation: different lineages consistently face different selection pressures
+	- e.g., with plants in consistent environments and mostly within-patch dispersal
+	- a lot of references related to local dispersal
+	- establishment probability could be increasing *or* decreasing with dispersal distances (could decrease if there's sib competition or predator escape, e.g.)
+	- a point about pollen dispersal... this makes me think about diversity of pollinators and their temporal dynamics. When are hummingbirds most likely to be active?
+- Stuff on genetic structure varying by stage in the life cycle??
+	- (oh I guess this is similar to the biennial paper!)
+- Here: genetic and phenological structure in an alpine plant population across a snowmelt gradient
+	- allozyme-based genetic structure tests
+	- sampling on parents and offspring! cool shit. adults and newly emerged seedlings
+	- (1) How much does snowmelt influence flowering time?
+	- (2) How much do genotypes vary from HWE?
+	- (3) Is there genetic differentiation across the snowmelt gradient
+	- (4) How are genetic differences between plants associated wiht flowering time
+	- (5) Age-specific structure
+##### Methods
+- *R. adoneus* (snow buttercup) spopulation in a snowbed in Park Co CO above treeline
+	- snowmelt in bed is delayed up to three weeks near hte interior
+	- less vegetation with later melting
+	- self compatible but a lot of facilitated pollination
+	- seeds usually dispersed by snowmelt runoff: 0.1 - 1m
+- 100x50 m2 grid over a gradient, noting the point of emergence from snow at each 5m grid point over four years
+	- snowmelt date binned into three groups: early, mid, late
+	- largest adult to each grid point excavated and moved to a new grid point (!)
+	- permanently marked nearest plant to each grid point (sep't from above?), searched for seeds nearby and transplanted (to a CG?) and leaf samples taken for egenetic analysis
+		- comparing allele freqs among cohorts
+- Bivariate regression analysis for looking at phenological separation and genetic distances
+	- 256 pairs of adults sampled at random (no replacement) from a complete multilocus genotype sample
+	- allele differences between individuals calculated per pair, looking at influences of phenological and spatial distances in model terms
+		- (although there is correlation, one can still distinguish effects with sufficient sample sizes)
+	- procedure repeated 1000 times to see if regression coefficients were different than zero, comparing to a null model
+##### Results
+- Transplants respond to snowmelt: a month of difference between transplants L->E and plants that were left in L
+	- close to zero overlap in timing of anthesis between the first and third cohorts (facilitated by short durations, although more flowers mean longer blooms)
+- Genetic differentiation: not at all loci and mostly due to uncommon alleles
+	- at the most polymorphic locus there was significant frequency variation looking across six loci
+	- more differentiation between E and L in adults than seedlings
+	- weak tendency for seedlings to be mroe related to early-emerging adults than later ones? Am I interpreting this correctly?
+- Adults are heterozygosity-deficient with deviations from random mating equilibrium at all four loci	
+- For seedlings, greater spatial distance means more genetic distance (highly significant) although this effect was small in magnitude
+	- phenological separation makes only a marginally significant contribution, nearly an order of magnitude lower in effect]
+- In adults, more space means more genetic distance (highly significant)
+	- phenological separation in adults means *less* genetic differentiaton after accounting for space
+- Repeating the structure routine within cohort: seedlings in the late cohort have less spatial differentiation than in the early cohort, although adults seemed to be similar
+##### Discussion
+- Although there were allele frequency differences among cohorts, this appears to be due to spatial isolation
+- Other studies (e.g., metal tolerance on mine tailings) also showing more genetic differentiation in adults than seeds or seed bank, likely due to local selection
+	- decreasing homozygosity through the life cycle in other species e.g. Mitton and Grant 1984
+- Concluding that there isn't diversifying selection occurring (unpublished)
+	- instead, directional gene flow from early to late melting sites (I think this is justified by the increased diversity among late cohort slings?)
+- Seeds: they're photosynthetic so longer growing season is good
+	- later environments are more exposed (??) which is favorable for establishment? due to vegetation?
+	- interesting points here that the environment more favorable for seeds is less favorable for all other parts of life cycle!
+- M. Turelli's appendix: how to produce these patterns (reduced spatial differentiation between environmental patches compared to within patches)
+	- (1) source-sink where more favorable sites produce more propagules and biased migration
+	- (2) environmentally-caused fitness differences: higher-quality sites have a disproportionate advantage over local residents from and in poor environments
+	- seems to be similar to an argument by Mayr (1963) about differentiation and biased migration from the interior to edges of a population
+- Other studies cited in last para about dispersal having larger effects than pollen movement
+
+Great study with some interesting stuff. This similarly to Cortes et al. 2014 that there is phenological differentiation, but apparently biased dispersal appears to override this. There's also an interesting pattern about genetic differentiation increasing with distances.
+
+What is different about our study? Would we expect more or less dispersal? I want to say more because of aspect etc. but I don't know what their site looks like (wrt topography). But also we have potentially a setting where there is more favorable germination in the open meadow interiors. Although maybe not? I think the meadow interiors will have greater vegetation coverage but also of course more sun. Could go either way.
+
+The allozyme stuff was cool. Wonder if people still do that? Can I do that?
+
+Read Turelli's appendix at some point.
+
+
