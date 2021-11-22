@@ -2338,4 +2338,84 @@ The allozyme stuff was cool. Wonder if people still do that? Can I do that?
 
 Read Turelli's appendix at some point.
 
+### Fox, G.A. 2003. Assortative mating and plant phenology: evolutionary and practical consequences. Evolutionary Ecology Research, 5: 1 - 18.
+
+- Evidence of genetic controls on flowering phenology: heritable variation (many studies), finding genomic regions responsible for variation, a small number of QTLs (3-4!)
+- Individual phenology and its consequences
+	- Schmitt 1983 (two papers) on phenology as a reproductive barrier
+	- Fox 1989, 1990, 2001 on the distribution of initiation of flowering (gamma?)
+- Assortative mating: phenotypes of mating individuals are correlated [is this saying that P(mating) has a relationship with trait similarity?]
+	- two components: temporal overlap and differences in schedules
+	- differences in schedules are often ignored, so assortative mating may be occurring more than originally thought
+##### Two forms of assortative mating
+- Model: genotype i makes N_{it} flowers on t (flowers last one day, all flowers are pollinated, one seed per flower)
+	- flowering time: one locus, two alleles: AA, Aa, aa have frequencies x, y, z
+- "Standard" assortative mating: if there is a period of non-overlap of AA and aa phenologies (e.g.), then there will be a deficit of AAxaa matings compared to a randomly mating population
+- "Cryptic" assortative mating: variation in the frequencies of the two genotypes during a flowering interval (even with complete temporal overlap)
+	- any difference in the flowering schedules will produce a defecit of heterozygotes in mating 
+		- this is due to Jensen's inequality: mean of a product of two varying quantitites (frequency of alleles in the mating pool) is the product of means plus covariance, and covariance is negative due to constraint of alleles summing to 1
+		- for multiple alleles, all pairwise comparisons do not necessarily hold but aggregated across all alleles it is true
+	- with balancing selection, all genotypes will remain in the population, but under directional or disruptive selection fixation will occur
+	- Wright's inbreeding coefficient gives the relative difference between heterozygote frequences under assortative mating and random mating
+- Phenotypic mean and variance:
+	- if heterozygotes are *not* intermediate (i.e., there is any form of dominance), then mean flowering date will change (for assortative mating case compared to HWE where F = 0)
+	- phenotypic variance will also be greater under assortative mating in this case (relative to random mating)
+		- note that assortative mating *inflates* additive genetic variance (gametic phase disequilibrium?)
+		- more effective loci means a stronger variance inflation?
+- Changes in allele frequencies due to phenological assortative mating vs. selection: partitioning approach
+	- say two alleles at one locus, constant selection, plant phenology determined by genotype, frequency-dependent assortative mating (no pollen limitation)
+	- Consider "asymmetric" phenology,, th*, where th* = 1 is no assortative mating and th* = 0 means homozygotes are isolated
+	- vs "symmetric" phenology, th', where th' = 1 means complete assortative mating if the peaks do not overlap (n.b. hidden parameter here related to staggering of schedules)
+	- th* is fraction of flowers produced by each genotype when all plants are in flower, th' is the fraction of flowers produced by each genotype during its own flowering midpoint
+###### Balancing selection (gaussian? allows for asymmetry)
+- Fixation does occur, and equilibrium allele frequencies are higher with assortative mating
+- With symmetric phenology (genotype-specific peak), equilibrium allele frequencies are minimized at the point with no cryptic assortative mating
+- Mean fitness can decline and fixations can occur, in contrast to random mating cases
+	- because the non-random mating reduces frequency of heterozygotes and selection reduces the frequency of the homozygotes that are less fit, which changes allele frequencies
+	- with sufficiently few matings between heterozygotes, there will be fixation
+	- (this requires asymmetric fitness landscape yes?)
+###### Directional selection
+- Effect of assortative mating redcues the time to fixation (because assortative mating reduces heritability through additive genetic variance)
+###### Disruptive selection (two trait optima)
+- Time to fixation depends on initial condition and strength of assortative mating
+##### Discussion and consequences
+- Important pieces of information needed for phenology: beginning, end date, and some description of what is happening in between (e.g., function and parameter)
+	- (are thetas here parameters?)
+	- note that most studies only focus on one of these four - initiation
+- Looking just at seeds for evidence of genotypic change  may be missing some other important selective forces, e.g., granivores, pollinators
+- Stressors (e.g., drought) affect flowering time and understanding assortative mating influences adaptation to these stressors
+
+Cool stuff and less involved than I originally feared. 
+
+One major thing I was not considering before - and this is isn't even really a major aspect of the paper - is that assortative mating inflates additive genetic variance and therefore heritability. So it speeds up adaptation! Need to understand this gametic disequilibrium more. There was also a point about (temporal?) local adaptation in the discussion.
+
+Other important pieces of the theory here... well we can still have phenotypic change under assortative mating, even for balancing selection that selects for heterozygotes. So in all cases there should be expected genotypic change (mean and variance).
+
+I suppose the other important piece actually developed in this paper (for my purposes at least) is that full knowledge of the flowering schedule is important, and even with total temporal overlap there will be a defecit of heterozygotes. Invoking Jensen's inequality will be helpful here. There was a point about multiple alleles and pairwise relationships not holding although they do hold in aggregate - does this hold for multiple loci? It should in aggregate, but what finer-scale differences could be happening?
+
+It would be interesting to combine this with some demography. What happens when there is pollen limitation? And if the pollen limitation varies over time? Could imagine two cases: limitation being highest at peak flowering and selection being highest early in the season.
+
+### Schmitt, J., and Gamble, S.E. 1990. The effect of distance from the parental site on offspring performance and inbreeding in *Impatiens capensis*: a test of the local adaptation hypothesis. Evolution, 44(8): 2022 - 2030.
+
+- Reciprocal transplant experiments tell us if selection maintains local selection
+	- local adaptation means that plants will perform best in their site of origin compared
+	- declining fitness as a function of distance from site (so long as environmental distance increases with geographic distance)
+- Inbreeding (selfing?) could preserve adaptation to local environments
+	- if the local adaptation hypothesis is correct, then inbred progeny may decline in fitness as they get further from the parental location
+		- decline in fitness would happen more steeply for inbred individuals?
+
+
+### Weis, A.R., and Kossler, T.M. 2004. Genetic variation in flowering time induces phenological assortative mating: quantitative genetic methods applied to *Brassica rapa*. American Journal of Botany.
+
+- Structure created by phenological genetic variation increases additive genetic variance in phenological traits by creating gametic phase disequilibrium (bundling of alleles with similar phenotypic effect)
+	- thus these traits may be more responsive to selection
+	- but what are selection strengths in natural pouplations?
+	- genetic marker based approach allows one to assess paternity of seeds but the required sample size in a large population makes it very difficult to do this
+	- cf. Lyons and Mulley 1992 looked at potential for assortative mating by measuring temporal overlap and Fox 2003 provides theory for how variation in flowering schedules induces assortative mating
+- Here: estimating phenotypic correlation betwen mates (rho, a measure of assortative mating) derived from flowering schedules
+	- validates this by using midparent regression, which under assortative mating has slope sinflated by 1+rho
+- Mating pool on day d is weighted mean of flowering traits (time), weighted by number of flowers open
+	- for a mother, there will be a significant difference in the first and last offspring 
+
+
 
