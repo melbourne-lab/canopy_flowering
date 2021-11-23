@@ -2395,6 +2395,46 @@ I suppose the other important piece actually developed in this paper (for my pur
 
 It would be interesting to combine this with some demography. What happens when there is pollen limitation? And if the pollen limitation varies over time? Could imagine two cases: limitation being highest at peak flowering and selection being highest early in the season.
 
+### Hirao, AS, and Kudo, G. 2004. Landscape genetics of alpine-snowbed plants: comparisons along geographic and snowmelt gradients. Heredity, 93: 290 - 298.
+
+- In the alpine, timing of flowering is determined primarily by timing of snowmelt
+- Genetic variation in snowbed environments may also be caused by differing selective forces (temperature, soil, growing season length)
+- Phenological asynchrony could cause genetically independent "units" but also may produce a network of directional gene flow (latter point is interesting - hadn't thought much about that)
+- Here: looking at genetics of three alpine species, with three different breeding systems (male+herm flowers, simultaneous herm, and protandry)
+	- Do genetic differentiation and gene flow exist among local populations?
+	- Do geographic distance and phenological gradient influence genetic structure?
+- Alpine system in Hokkaido, with deep snowdrifts, snowmelt around mid-May near ridges to late August for center of snow patches
+	- Three sites (all within 1km), with three plots on a snowmelt gradient
+	- Plots: early, middle, late snowmelt (mid-June, late June, late July
+- Three species
+	- *Peucedanum multivittatum* is andromonoecious with male and hermaphroditic flowers (herms show protandry)
+	- *Veronica stelleri* hermaphroditic herb in a clonal "clamp"
+	- *Gentiana nipponica* small stoloniferous herb with protandrous flowers
+	- No long-distance dispersal mechanisms
+- 40 plants per species randomly marked per plot, with number of open flowers counted every 3-10 days during growing season 2000-2002
+	- sequencing w/ electrophoresis
+	- standard measures of genetic variation: polymorphic loci, alleles per locus, expected heterozygosity
+		- (polymorphism if most common allele if most common allele has frequency less than 0.99... uhhh)
+	- Do genotypes depend on the phenological gradient? rank correlations between allele frequencies for polymorphic loci
+	- genetic distance between populations using pairwise F_ST, then Mantel tests to compare genetic, geographic, and phenological distances
+		- Hartl and Clark's F_{RT} calculated between geographic and phenological groups
+- Flowering seasons were short at the plant/population level for but species/pop complex level seasons were long
+	- incomplete isolation among snowmelt categories but still different peaking
+- 7 loci for *P. multivittatum*, 5 loci for *V. stelleri*, and 7 loci for *G. nipponica* identified
+	- alleles per locus was less than two in most populations (but polymorphism present... does this just mean polymorphism study-wide?)
+	- for two of three species, alleles identified that were correlated with phenology (total: 5 alleles... if alleles occurring distinctly at loci this is 5/19 instead of expected 1)
+	- two species (*V. stelleri* and *G. nipponica*) have sign. F_{IS}
+- Evidence of mild genetic differentiation among populations (F_{ST} > 0 but < 0.1)
+	- partial correlation between genetic and geographic distances significant only in *P. multivittatum*
+	- genetic and phenological distances correlated for *V. stelleri* and *G. nipponica*
+	- more within-population variance than among population (populations are similar)
+- Levels of F_{ST} suggest there is gene flow although there is also reproductive isolation
+	- mechanism here would be pollen flow, although n.b. bumblebees can forage over large distances (Heinrich 1979)
+- Other studies looking at microgeographic genetic structure find that there is natural selection occurring
+	- (is this happening here?)
+
+Not an amazingly written paper... Result here also is that genetic structure is pretty weak although it is influenced by phenology. What else is there to say? Positive result at least.
+
 ### Schmitt, J., and Gamble, S.E. 1990. The effect of distance from the parental site on offspring performance and inbreeding in *Impatiens capensis*: a test of the local adaptation hypothesis. Evolution, 44(8): 2022 - 2030.
 
 - Reciprocal transplant experiments tell us if selection maintains local selection
