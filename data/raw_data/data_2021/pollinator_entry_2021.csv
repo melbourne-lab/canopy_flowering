@@ -1,16 +1,150 @@
-﻿Date,Plot,Time,Plant,Pollinator,ID_Q,N_visits,Page,Notes
-6/22/21,37,8:55,Th 1185,And,q,1,P1,large-ish like v small bumblebee; missed due to distraction
-6/22/21,8,9:06,,,,0,P1,
-6/22/21,6,9:32,Th 1211,small black hopper,q,1,P1,
-6/22/21,10,9:40,,,,0,P1,
-6/22/21,21,9:58,,,,0,P1,small hopper-like thing landed on a bud
-6/22/21,7,10:14,,,,0,P1,
-6/22/21,74,10:45,Th 1122,ant,,1,P1,got pics
-6/22/21,74,10:49,Th 1046,smaller ant,,1,P1,
-6/22/21,71,11:03,Th 1308,Eupeodes,,1,P1,very quick visit
-6/22/21,71,11:14,Th 1289,smaller ant,,1,P1,
-6/22/21,79,11:18,,,,0,P1,
-6/22/21,76,11:36,,,,0,P1,
-6/22/21,62,11:54,Th 1151; Th 1221?,Bombus nevadensis,,2,P1,
-6/22/21,59,12:16,Th 1301,sbb,q,1,P1,lasioglossum? Escaped net; possible fly
-6/22/21,59,12:17,Th 1142,house fly,,1,P1,quick visit
+﻿Date,Plot,Time,Plant,Pollinator,ID_Q,N_visits,Fl_open,Page,Notes
+6/22/21,37,8:55,Th 1185,And,q,1,,P1,large-ish like v small bumblebee; missed due to distraction
+6/22/21,8,9:06,,,,0,,P1,
+6/22/21,6,9:32,Th 1211,small black hopper,q,1,,P1,
+6/22/21,10,9:40,,,,0,,P1,
+6/22/21,21,9:58,,,,0,,P1,small hopper-like thing landed on a bud
+6/22/21,7,10:14,,,,0,,P1,
+6/22/21,74,10:45,Th 1122,ant,,1,,P1,got pics
+6/22/21,74,10:49,Th 1046,smaller ant,,1,,P1,
+6/22/21,71,11:03,Th 1308,Eupeodes,,1,,P1,very quick visit
+6/22/21,71,11:14,Th 1289,smaller ant,,1,,P1,
+6/22/21,79,11:18,,,,0,,P1,
+6/22/21,76,11:36,,,,0,,P1,
+6/22/21,62,11:54,Th 1151; Th 1221?,Bombus nevadensis,,2,,P1,
+6/22/21,59,12:16,Th 1301,sbb,q,1,,P1,lasioglossum? Escaped net; possible fly
+6/22/21,59,12:17,Th 1142,house fly,,1,,P1,quick visit
+6/29/21,62,9:15,Th 1150; Th 1070,house fly,,1,,P1,sitting on fl wings; likely landing spot
+6/29/21,62,9:22,Th 1315,ant,,1,,P1,floral contact (inside)
+6/29/21,62,9:26,Th 1220,fly,,1,,P1,long atennae fly w/ long narrow body; pic
+6/29/21,57,9:34,,,,0,,P1,
+6/29/21,79,9:50,,,,0,,P1,
+6/29/21,71,10:14,Th 1052,small fly,,1,,P1,outside
+6/29/21,71,10:14,Th 1019,house fly,,1,,P1,outside
+6/29/21,71,10:15,Th 1052,ant,,1,,P1,inside
+6/29/21,60,10:25,,,,0,,P1,
+6/29/21,38,10:42,,,,0,,P1,
+6/29/21,37,10:59,Th 1312,Lytta (green),,1,,P1,outside; pic
+6/29/21,36,11:14,,,,0,,P1,
+6/29/21,6,11:35,,,,0,,P1,
+6/29/21,5,11:54,Th 1159,sbb,q,1,,P1,Lasioglossum? 
+6/29/21,5,11:57,Th,ant,,1,,P1,[forgot to write tag] seen inside
+6/29/21,21,12:28,,,,0,,P1,
+7/7/21,21,8:54,,,,0,,P1,
+7/7/21,10,9:11,,,,0,,P1,Bombus mixtus? visited Mertensia outside plot
+7/7/21,9,9:35,,,,0,,P1,
+7/7/21,57,9:54,,,,0,,P1,
+7/7/21,58,10:08,Th 1188,ant,,1,,P1,Bomb. Visiting lupine; Bomb visiting Mert.
+7/7/21,57,10:28,Th 1251,Bombus nevadensis,,1,,P1,4fl visited
+7/7/21,74,10:39,,,,0,,P1,
+7/7/21,76,11:07,Th 1125,Bombus nevadensis,,1,,P1,2fl
+7/7/21,71,11:16,Th 1019,Lep,q,1,,P1,bubbly orange + brown on wing; brief visit
+7/7/21,73,11:32,,,,0,,P1,B. nevadensis visiting Lupines
+7/7/21,70,11:49,,,,0,,P1,Bombus mixtus (?) visiting six plants outside plot
+7/7/21,66,12:16,Th 1306; Th 1239,Bombus nevadensis,,2,,P1,5 fl; same B. went to lupine next?
+7/7/21,66,12:19,Th 1306,house fly,,1,,P1,
+7/7/21,60,12:22,,,,0,,P1,
+7/13/21,70,9:18,,,,0,,P2,unknown beetle pic; no floral contact; B. flav visit to a Th. Outside
+7/13/21,73,9:40,Th 1069,house fly,,1,,P2,
+7/13/21,74,9:56,Th 1240,small ant,,1,,P2,
+7/13/21,57,10:12,,,,0,,P2,
+7/13/21,60,10:30,,,,0,,P2,
+7/13/21,9,10:57,,,,0,,P2,tan spider but no fc
+7/13/21,25,11:10,Th 1083,Andrena,q,1,,P2,B. visiting nearby Lupus; prev. shiny backed bee [??]
+7/13/21,25,11:10,Th 1083,house fly,,1,,P2,
+7/13/21,70,11:25,,,,0,,P2,
+7/13/21,73,11:41,,,,0,,P2,
+7/13/21,25,12:09,,,,0,,P2,house fly perched without floral contact
+7/13/21,60,12:20,,,,0,,P2,
+7/20/21,74,9:22,Ca 1905,mid black bee,q,1,2,P3,pic; Dufourea maura?
+7/20/21,71,9:45,,,,0,2,P3,pic of bee outside plot on C at 9:49
+7/20/21,53,10:15,,,,0,7,P3,two split second visits not counted
+7/20/21,37,10:34,,,,0,1,P3,
+7/20/21,7,11:02,Ca 1751,unk,,1,7,P3,likely bee can't be sure
+7/20/21,6,11:39,Ca 1848,bee,,1,5,P3,pic; yellow v on face yellow hairs on thorax black abodomen
+7/20/21,17,11:57,,,,0,7,P3,
+7/20/21,53,12:24,Ca (u),bee,,1,7,P3,same as plot 6; O. bucephalis?
+7/20/21,73,12:50,,,,0,2,P3,
+7/20/21,71,13:15,,,,0,2,P3,
+7/20/21,6,13:29,,,,0,5,P3,
+7/20/21,7,13:48,Ca 1625,Bombus flavifrons,,1,7,P3,
+7/27/21,67,9:25,,,,0,2,P4,
+7/27/21,53,9:42,,,,0,3,P4,
+7/27/21,34,10:02,,,,0,1,P4,
+7/27/21,10,10:29,Ca 1889,small fly,,1,4,P4,house fly was in net but true visitor may have escaped capture… sm syrph sm bee sm fly... 
+7/27/21,45,10:46,,,,0,1,P4,
+7/27/21,17,11:14,Ca 1832,small ant,,1,,P4,lots of small bees investigating but not landing
+7/27/21,17,11:19,Ca 1746,Bombus flavifrons,,1,,P4,
+7/27/21,1,11:31,,,,0,2,P4,
+7/27/21,7,11:48,Ca 1870; Ca 1864,Bombus flavifrons,,2,16,P4,
+7/27/21,7,11:50,Ca 1886,Bombus flavifrons,,1,16,P4,
+7/27/21,7,12:00,Ca 1885,Bombus flavifrons,,1,16,P4,possibly came from Sedum
+7/27/21,8,12:07,,,,0,1,P4,
+7/27/21,82,12:24,,,,0,6,P4,dark bee flew scoped and left
+7/27/21,3,12:40,,,,0,2,P4,
+7/27/21,74,1:02,,,,0,4,P4,
+8/2/21,6,9:15,,,,0,,P4,
+8/2/21,10,9:36,,,,0,,P4,
+8/2/21,17,10:31,,,,0,,P4,
+8/2/21,45,10:50,,,,0,,P4,
+8/2/21,58,11:46,,,,0,,P4,
+8/2/21,79,12:27,,,,0,,P4,
+8/2/21,67,13:04,,,,0,,P4,
+8/2/21,70,13:28,,,,0,,P4,
+8/2/21,71,13:55,,,,0,,P4,
+8/2/21,74,14:20,,,,0,,P4,
+8/2/21,7,15:02,Ca 1885,Bombus flavifrons,,1,,P4,came off a yellow heterospecific
+8/2/21,3,15:16,,,,,,P4,
+8/9/21,45,8:51,Ca 1883,house fly,,1,,P4,
+8/9/21,45,8:59,Ca 1883,house fly,,1,,P4,made contact w/ stigma on two flowers eating pollen; grooming?; vid
+8/9/21,38,9:11,,,,0,,P4,
+8/9/21,25,9:38,Ca 1689,house fly,,1,,P4,very brief contact w/ stigma
+8/9/21,25,9:42,Ca 1689,house fly,,1,,P4,mostly on outside (incl on 1867) but did hit stigma
+8/9/21,10,10:14,,Bombus sylvicola,,1,,P4,
+8/9/21,7,10:55,,,,0,,P5,
+8/9/21,3,11:20,Ca 1835,house fly,,1,,P5,
+8/9/21,2,11:30,,,,0,,P5,
+8/9/21,1,11:46,,,,0,,P5,
+8/9/21,67,13:15,Ca 1904,sbb,q,1,,P5,"looks hairless except for legs; narrow waste, Duf. Or Las."
+8/9/21,70,14:04,Ca 1589,Vespid,,1,,P5,wasp mimic (pic)
+8/9/21,42,14:26,,,,0,,P5,
+8/9/21,6,14:44,,,,0,,P5,
+8/16/21,23,10:05,,,,0,,P5,
+8/16/21,20,10:50,,,,0,,P5,
+8/16/21,29,11:16,,,,0,,P5,
+8/16/21,40,11:54,,,,0,,P5,
+8/16/21,67,12:44,Ca 1904,sbb,,1,,P5,Lasioglossum?
+8/16/21,72,12:58,,,,0,,P5,
+8/16/21,70,13:20,,,,0,,P5,
+8/16/21,74,13:40,,,,0,,P5,
+8/16/21,63,14:04,,,,0,,P5,
+8/16/21,10,14:47,Ca 1750,house fly,,1,,P5,
+8/16/21,3,15:05,,,,0,,P5,
+8/23/21,17,10:43,,,,0,,P5,
+8/23/21,38,11:07,,,,0,,P5,
+8/23/21,10,11:46,Ca 1889,house fly,,1,,P5,incidental contact w/ stigma; 3 flies mostly on fl exteriors occasionally explored interior
+8/23/21,10,11:57,Ca 1889,house fly,,1,,P5,inicdental contact when exploring
+8/23/21,10,11:57,Ca 1750,Bombus sylvicola,,1,,P5,
+8/23/21,20,12:04,,,,0,,P5,
+8/23/21,2,12:24,,,,0,,P5,
+8/23/21,39,12:59,,,,0,,P5,
+8/23/21,67,1:54,,,,0,,P5,
+8/23/21,74,2:17,,,,0,,P5,
+8/23/21,74,2:39,,,,0,,P5,
+8/23/21,29,3:00,,,,0,,P5,
+8/23/21,10,3:29,Ca 1889,house fly,,1,,P5,
+8/23/21,17,3:37,,,,0,,P5,
+8/31/21,10,10:58,,,,0,,76,poll did visit neighbor outside plot
+8/31/21,21,11:27,,,,0,,76,
+8/31/21,2,11:57,Ca 1564,Bombus sylvicola,,1,,76,
+8/31/21,2,13:07,Ca 1564,sbb,,1,,76,is not Las
+8/31/21,21,13:21,Ca 1681,house fly,,1,,76,
+8/31/21,10,13:32,,,,0,,76,B. sylvicola visiting neighbor
+9/9/21,40,11:15,,,,0,,78,
+9/9/21,10,12:13,Ca 1633,med black bee,,1,,78,pic
+9/9/21,40,12:33,,,,0,,78,
+9/9/21,10,12:52,,,,0,,78,
+9/14/21,40,11:52,,,,0,,79,
+9/14/21,39,12:37,,,,0,,79,
+9/14/21,40,13:08,Ca 1852,house fly,,1,,79,
+9/14/21,39,13:28,,,,0,,79,
