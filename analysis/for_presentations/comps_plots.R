@@ -19,7 +19,7 @@ a %>%
   geom_line(aes(group = doy, colour = doy)) +
   labs(x = 'Hour', y = 'Estimated radiation (W/m2)') +
   facet_wrap(~ Plot) +
-  guides(colour = guide_legend('')) +
+  guides(colour = guide_legend('', byrow = TRUE)) +
   theme_minimal() +
   theme(legend.position = 'bottom')
 
@@ -37,7 +37,9 @@ rm(list = ls())
 rs.sum = read.csv('data/solar_data/musselman_elk_2020_est-09-21.csv') %>%
   filter(!is.na(Rs)) %>%
   group_by(Plot) %>%
-  summarise(summed.rs = sum(Rs))
+  summarise(summed.rs = sum(Rs),
+            n.days    = length(unique(Date)),
+            mean.rs   = summed.rs / n.days)
 
 # Read in Thermopsis data
 therm = read.csv('data/processed_data/therm_draft_01-12-2021.csv') 
@@ -68,12 +70,12 @@ therm.allobs = therm %>%
   merge(y = rs.sum, by = 'Plot')
 
 therm.plot = therm.allobs %>%
-  mutate(summed.rs = summed.rs / 1000) %>%
+  mutate(mean.rs = mean.rs / 1000) %>%
   filter(last.date > -Inf) %>%
   mutate(first.date = as.Date(First.date, origin = '1970-01-01'),
          last.date  = as.Date(last.date, origin = '1970-01-01'),
          mean.date = as.Date(mean.date, origin = '1970-01-01')) %>%
-  ggplot(aes(x = summed.rs, xend = summed.rs)) +
+  ggplot(aes(x = mean.rs, xend = mean.rs)) +
   geom_segment(aes(y = first.date, yend = last.date),
                size = 0.5, colour =  'gold',
                position = position_dodge(width = 15)) +
@@ -82,7 +84,7 @@ therm.plot = therm.allobs %>%
              fill = 'gold', shape = 21) +
   scale_size_continuous("Flowers per plant") +
   #scale_x_continuous(breaks = NULL) +
-  labs(x = 'Solar radiation (kW/m2)', y = 'Date') +
+  labs(x = 'Mean daily solar radiation (kW/m2)', y = 'Flowering date') +
   theme(panel.grid = element_blank(),
         panel.background = element_blank(),
         axis.title = element_text(size = 16),
@@ -119,12 +121,12 @@ campa.allobs = campa %>%
   merge(y = rs.sum, by = 'Plot')
 
 campa.plot = campa.allobs %>%
-  mutate(summed.rs = summed.rs / 1000) %>%
+  mutate(mean.rs = mean.rs / 1000) %>%
   filter(last.date > -Inf) %>%
   mutate(first.date = as.Date(first.date, origin = '1970-01-01'),
          last.date  = as.Date(last.date, origin = '1970-01-01'),
          mean.date = as.Date(mean.date, origin = '1970-01-01')) %>%
-  ggplot(aes(x = summed.rs, xend = summed.rs)) +
+  ggplot(aes(x = mean.rs, xend = mean.rs)) +
   geom_segment(aes(y = first.date, yend = last.date),
                size = 0.5, colour =  'slateblue2',
                position = position_dodge(width = 15)) +
@@ -133,7 +135,7 @@ campa.plot = campa.allobs %>%
              fill = 'slateblue2', shape = 21) +
   scale_size_continuous("Flowers per plant") +
   # scale_x_continuous(breaks = NULL) +
-  labs(x = 'Solar radiation (kW/m2)', y = '') +
+  labs(x = 'Mean daily solar radiation (kW/m2)', y = '') +
   theme(panel.grid = element_blank(),
         panel.background = element_blank(),
         axis.title = element_text(size = 16),
