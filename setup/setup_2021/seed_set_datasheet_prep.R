@@ -63,4 +63,4 @@ head(harv.frt)
 # Export
 write.csv(harv.frt,
           'data/datasheet_generation/datasheet_outputs/data_datasheets_2021/seed_counting_data.csv',
-          row.names = FALSE)
+          na = '', row.names = FALSE)
