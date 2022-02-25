@@ -2435,6 +2435,36 @@ It would be interesting to combine this with some demography. What happens when 
 
 Not an amazingly written paper... Result here also is that genetic structure is pretty weak although it is influenced by phenology. What else is there to say? Positive result at least.
 
+### Price, M.V., and Waser, N.M. 1979. Pollen dispersal and optimal outcrossing in *Delphinium nelsoni*. Nature.
+
+- Selection should favor mating between intermediately-related individuals
+	- Similar individuals - inbreeding depression
+	- dissimilarity - can affect favorable co-expression of genes and lead to outbreeding depression
+	- here: is outbreeding depression occurring more than previously thought?  restricted pollen and seed dispersal, small populations experiencing drift or local adaptation
+	- also, distant to parent: in addition to intragenotypic effects, offspring similar to maternal (plant) will want to be more similar to mother's genotype if not dispersing far from mother
+- Study org: *Delphinium nelsoni* herby perennial at RMBL, early summer, no clonal spread
+	- hand pollinated 1016 flowers on 317 plants across three years	
+	- pollen donors of 1, 10, 100, 1000m away
+	- (bags on unmanipulated plants to ensure that bags actually exclude pollinators)
+- Mean seed set per flower highest at intermediate crossing distances, declined over longer distances (apparent optimal outcrossing distance is 1-100m)
+- Pollen dispersal by hummingbirds and bumblebees estimated by tracking pollinators in field and fluorescent pigments
+	- birds appear to fly much further but did not move as much pigment
+	- estimated mean flower-to-flower and plant-to-plant was less than a meter, not quite matching the optimum pollen dispersal distance as determined by th eplot
+- Expectations of pollen flow, possibly reflecting:
+	- Conflicting selection on plants to maximize amount of pollen received and optimize transfer distances
+	- Conflicting selection on plants to donate and receive pollen at different scales
+	- Conflicting selection on pollinators to move small distances and plants to achieve actual outcrossing
+		- this would require plants to be able to differentially award pollinators?
+	- Plants discriminating genotypes after pollen receipt could be important for enforcing optimal outbreeding
+
+Hmm... yeah still not quite sure what the mechanism is here. Some sort of s-allele type incompatibility? Also these differences are not that large given the uncertainties.
+
+For applicability to *T. divaricarpa* I think I would need to first know that it has some sort of s-allele mechanism? But it, unlike the study species here, isn't an obligate outcrosser... so s-allele looks very unlikely?
+
+Would want some different response then. E.g., seed weight? Seedling emergence probabilities, leaf length, survival. Aster approach would be helpful here I suppose.
+
+I do like the question though of just doing crosses against different environment types, especially over time, and looking at some fitness proxy. Also comparing with selfing. 
+
 ### Schmitt, J., and Gamble, S.E. 1990. The effect of distance from the parental site on offspring performance and inbreeding in *Impatiens capensis*: a test of the local adaptation hypothesis. Evolution, 44(8): 2022 - 2030.
 
 - Reciprocal transplant experiments tell us if selection maintains local selection
