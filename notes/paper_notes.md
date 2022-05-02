@@ -2465,6 +2465,70 @@ Would want some different response then. E.g., seed weight? Seedling emergence p
 
 I do like the question though of just doing crosses against different environment types, especially over time, and looking at some fitness proxy. Also comparing with selfing. 
 
+### Thomson, J.D. 2010. Flowering phenology, fruiting success and progressive deterioration of pollination in an early-flowering geophyte. Phil Trans R Soc B. 
+
+- Broke: Among-year variation in flowering phenolgy; Woke: within-year variation in reproductive success
+	- some refs about short growing seasons, heterogeneous snowpack melt (!)
+	- supposed effects of climate change (increased frost exposure, mismatch with pollination) requires consistent effects across years
+- Here: long-term study of within-year variation within a subalpine lily population 1993 - 2009
+##### Methods
+- Phenological indicators since 1990:
+	- first day on which last winter snow disappears from site
+	- day of winter ice breakup on nearby (100m) lake
+- Erythronium grandiflorum (glacier lily)
+	- long-lived spring-ephemeral geophyte
+	- primarily pollinated by bumblebee queens (B. bifarius, B. occidentalis)
+		- also visited by hummingbirds, solitary bees
+- One 2x200m transect in open meadow (incl. some open trees, small stands)
+	- 40 quadrats of size 2x5m
+	- snowmelt patterns in space estimated by eye over four years showing consistent ordering to snowmelt
+	- snowmelt corresponds nearly identically to snowmelt
+- Flowering phenology (~100 single-flowering plants) each year, every 3-5 days
+	- capsules collected when developed (but not dehisced)
+	- latest plants are consistently in shade with accumulating snowdrifts
+	- "middle" cohorts (plants flowering in middle of year) were less consistently found ine extreme microsites but I guess across years were similarly spatially consistent?
+- Experimental manipulation of fruit set
+	- hand pollination and unmanipulated controls	
+	- hand pollination groups: harvesting anthers from >12 different donor plants in a vile (collecting anthers)
+	- in later years, this protocol was repeated three times: early, mid, late in season (first, second, last third of flowering period)
+#### Results
+- Between extremes (early/late) have flowering onset offset by a month
+- "It was obvious that trees and clumps of trees strongly influenced the pattern (figure 2): bare ground appeared first through sublimation driven by long-wave radiation from these conifers (Marchand 1991), especially on the south-southeast sides. For example, the spot where snow last disappeared from the property was always the same place each year from 1991 to 2009, withinm a metre. This high-drifting spot is just north of a 70 cm diameter spruce. Interestingly, the melt hole to the south of the same tree is consistently one of the earliest patches to melt. Although 7m apart, these two patches have no temporal overlap in flowering. In parts of the meadow farther away from trees, the depths to which snow drifts are important for determinig the sequence of melting out, and these drifting patterns are also consistent from year to year."
+	- Huge!!!
+- Plants emerged through last few cm of snow at receding edges indicating very tight linkage
+- Frost: potentially lethal for flowers, less bad for fruit and buds, so later flowers may be exposed to frost whereas earlier flowering plants could have more fruiting? (but this assumes that frost increases over course of season...)
+- Fruit set over time, within and among years (11 years):
+	- in some years, consistent pattern where later plants have more success
+	- in other years, success constant over time
+	- not seeing any years where early plants have a definitive edge over mid/late as I would predict..,
+- Pollen supplementation early, mid, and late in season over time (my design!)
+	- if both control and supplementation failing means likely no pollination deficit (because control also fails) early in season
+	- in aggregate, "hierarchy" of effects:
+		- frost is more likely to affect early cohorts, nullifying any effects of pollinator limiation
+		- but in years with no frost, pollination limitation does look like it occurs more in pollen-limited plants
+- Also some evidence of "deterioration of pollen service" increasing over time (years)...  
+	- increase in fruit set limitation from 1994 to 2009
+##### Discussion
+- Results suggest that populations are not panmictic but are instead a temporal mosaic as determined by snowpack
+	- unlike the alpine though large trees introduce "melt holes" (?) with early melt off, where early flowering plants are only able to mate with each other
+- (Unlike what I expect) earlier flowering cohorts are less likely to set fruit, due to frosting or pollen limitation (emergence of insects)
+	- Unlike Kudo's (1993) hypothesis that late flowering runs risk of frost damage in autumn, focal species here (and *T. divaricarpa*) fruits midsummer
+	- "Response to selection on flowering time would be attenuated because any genetic basis for flowering time would tend to be swamped by non-genetic variation arising from snow-pack effects"
+- Prior work on pollen limitation in alpine
+	-  Garcia-Camacho and Totland 2009 shows frequent pollen limitation in plants
+	- Molau 1993 suggests that reproductive success increases as the season progresses?
+	- Campbell 1987 - replicate addition studies!
+	- This study does suggest that there could be "deterioration" of pollination services as time progresses (associated with climate change? there is evidence of CC having direct effects though...)
+		- hypotheses: desynchronization of plants and polls, pollinator population decline, pollinators moving to different plants (need testing)
+		- (note: there is a subsequent JT paper showing the "deterioration" of pollination services vanishes when adding more years of data!)
+
+Dang a lot of really cool stuff in here! Great read. It was good to see speculation and anecdotal evidence and discussion of effects of trees on snowmelt and phenology. This reinforces need to disentangle effects of snowmelt and phenology... maybe next year.
+
+There was a contra-expectation result that plants here have lower reproductive success earlier in the season - due to frosting. I don't think this occurs in our system? I suppose that temperature sensors can record this... Look into this Molau 1993 paper. Also there's a Marchand book about winter ecology for which the effects of snowmelt will be important.
+
+Also really interesting idea here that adaptation of flowering phenology to climate change may be very slow because of the large degree of non-genetic variation!
+ 
+
 ### Schmitt, J., and Gamble, S.E. 1990. The effect of distance from the parental site on offspring performance and inbreeding in *Impatiens capensis*: a test of the local adaptation hypothesis. Evolution, 44(8): 2022 - 2030.
 
 - Reciprocal transplant experiments tell us if selection maintains local selection
