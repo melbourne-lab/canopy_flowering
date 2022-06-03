@@ -53,6 +53,7 @@ b22 %>%
   unlist() %>%
   diff() %>%
   plot(type = 'l') # ah... it's skipping some
+# still skipping...
 
 d22 %>%
   filter(grepl('^SP510', Sensor_ID)) %>%
@@ -65,3 +66,27 @@ d22 %>%
   scale_x_continuous(breaks = 3 * (2:6))
 
 # This looks correct to me! Only taking readings between 7 and 6.
+
+d22 %>%
+  filter(grepl('^T11', Sensor_ID), grepl('mois', Reading_type)) %>%
+  mutate(Hour = (Hour_UTC - 6) %% 24,
+         Day  = Day_UTC - as.numeric(Hour_UTC < Hour)) %>%
+  mutate(time = Hour + Minute / 60 + Second / (60^2)) %>%
+  ggplot(aes(x = time, y = Unixtime_UTC)) +
+  geom_point(size = 0.1) +
+  scale_x_continuous(breaks = 3 * (2:6))
+# oh... this is not good!!
+# this seems like it is why there are missing battery readings!
+
+d22 %>%
+  filter(Month_UTC > 5, Day_UTC > 1) %>%
+  filter(grepl('batt', Sensor_ID)) %>%
+  ggplot(aes(x = Unixtime_UTC, y = Reading_raw)) +
+  geom_segment(aes(x = Unixtime_UTC, xend = Unixtime_UTC,
+                   y = min(Reading_raw), yend = max(Reading_raw)),
+               data = . %>% filter(!Hour_UTC),
+               linetype = 2, colour = 'gray55') +
+  geom_point() +
+  geom_line()
+
+# Looks good to me...
