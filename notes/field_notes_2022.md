@@ -40,3 +40,29 @@ Aspens have not leaved out yet. Buds visible but still very early.
 Aspens have started leafing out on P2P though.
 I drove through Ned on the way back and the roadside T on the entrance to town looks done (!).
 
+### Jun 4
+
+Late start today, only focused on installing sensors. Installed two: one at 33, one at 67.
+
+I did not pay special attention to the direction the mount plates needed to be facing. I put SP510 cables facing north.
+I misplaced my ruler so depths were approximate but serviceable (used a thumb-length as a substitute for an inch).
+
+I also placed flags at some of the SW plots including 33, 52, 54, 63, 64, 68, 69, 70.
+
+### Jun 6
+
+I got to the station today and unfortunately realized I forgot to check which sensors to install.
+Trying on the station computer generated a different list than my old one (maybe because their version is from 2016?!)
+
+I installed sensors at 64 (from old list), 2, and 15. Next up should be 47. Shovel is by plot 15.
+
+A low stand of aspens had leafed out but none others. I'm pretty sure there were no plots under the aspens leafing out (they're a few meters S of plot 2-4).
+Plot 2 had not leafed out yet.
+
+I got rained out before I could do much else. Did not establish any plots. Did not do a card swap on June 4th's sensors.
+
+I was able to swap one of the mount plates on one of the poles without a level. 
+While I can replace some (four) of these, I figured that I can also replace them with unused mount plates.
+
+There were some T plants with yellow buds visible in the SW meadow. Still at least two days from flowering though. None in plots (that I saw).
+
