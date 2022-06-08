@@ -16,7 +16,7 @@ rm(list = ls())
 
 # Read in path lengths and transmittances (estimated from raytrace)
 
-transms = read.csv('setup/setup_2022/musselman_calibration_path_lens_052122.csv')
+transms = read.csv('setup/setup_2022/musselman_calibration_path_lens_060722.csv')
 
 head(transms)
 
@@ -146,6 +146,9 @@ transms %>%
 # Also looks bad
 # What was happening here?? Board temperature? Glare??
 
+# Suppose I should also remove aspen post-defol measurements...
+transms = transms %>% filter(!(Plot %in% c(19, 22, 25, 33, 39, 63, 77) & Month %in% 10))
+
 ###
 
 transms %>%
@@ -162,8 +165,9 @@ transms %>%
 # really interesting and not reassuring...
 
 transms %>%
-  ggplot(aes(x = path_length, y = transm)) +
+  ggplot(aes(x = path_length, y = transm, colour = Hour)) +
   geom_point(alpha = 0.1, position = position_jitter(width = 0.25)) +
+  scale_colour_viridis_c(option = 'A') +
   facet_wrap(~ Plot)
 # also some weird artifacting in 22, 57, 70, 2, ...
 # shit
@@ -192,10 +196,7 @@ gauss.ml.fit = stan(
     cores  = 4,
     seed   = 444
 )
-# ahhhh man this is taking an eternity to run...
-# (1650 seconds?)
 
-# Low effective pop size - could possibly be fixed with more iterations?
 
 gauss.ml.fit
 # one of these is very bad - likely plots 25 and 75?
@@ -209,7 +210,7 @@ gauss.ml.df %>%
     ggplot(aes(x = key, y = value)) +
     scale_y_log10() +
     geom_point(position = position_jitter(width = 0.25), alpha = 0.75)
-# man... looking pretty bad!
+# booyah
 
 # E.g., sensor 11
 gauss.ml.df %>%
@@ -231,7 +232,7 @@ gauss.param.means
 
 gauss.sensor.ests = merge(
     x = gauss.param.means %>% mutate(key = gsub('beta|\\[|\\]', '', key)),
-    y = expand.grid(s = 1:14, x = 0:50),
+    y = expand.grid(s = 1:14, x = 0:40),
     by.x = 'key', by.y = 's'
 ) %>%
     mutate(# g.rate = exp(-exp(gauss.param.means$mean.val[gauss.param.means$key %in% 'k'])),
@@ -251,14 +252,15 @@ gauss.sensor.ests %>%
              position = position_jitter(width = 0.5),
              alpha = 0.1) +
   geom_line(aes(y = g.pred1, group = key)) +
-  geom_line(aes(y = g.pred2, group = key), linetype = 3)
+  geom_line(aes(y = g.pred2, group = key), linetype = 3) +
+  labs(x = 'path length', y = 'transmittance')
 
 gauss.sensor.ests %>%
   ggplot(aes(x = x, y = g.pred2)) +
   geom_point(
     data = transms,
-    aes(x = path_length, y = transm, colour = factor(Hour)),
-    alpha = 0.1
+    aes(x = path_length, y = transm),
+    alpha = 0.1, colour = 'gray33'
   ) +
   geom_line(
     aes(group = Plot),
@@ -267,7 +269,8 @@ gauss.sensor.ests %>%
   geom_line(
     aes(x = x, y = s.pred)
   ) +
-  scale_colour_brewer(palette = 'Set3') +
+  labs(x = 'path length', y = 'transmittance') +
+  # scale_colour_brewer(palette = 'Set3') +
   facet_wrap(~ Plot)
 
 ### Hierarchical exponential
