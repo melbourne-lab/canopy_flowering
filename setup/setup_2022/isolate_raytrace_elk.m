@@ -72,7 +72,7 @@ for i = 1:n_times
     [~, x_i] = min(abs(elk_x_1d - plt_times.east(i)));
     [~, y_i] = min(abs(elk_y_1d - plt_times.north(i)));
     
-    r_i = roiInd_mat(x_i, y_i);
+    r_i = roiInd_mat(y_i, x_i);
     
     i_i = find(index_roi == r_i);
     
@@ -384,6 +384,6 @@ end % End the parfor loop through pixels
 % toc
 % delete(pp);
 
-writetable(plt_times, 'setup/setup_2022/musselman_calibration_path_lens_052122.csv');
+writetable(plt_times, 'setup/setup_2022/musselman_calibration_path_lens_060722.csv');
 % last run/updated/exportedi 2/11/22 on index-adjusted vox domain
 
