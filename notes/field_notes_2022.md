@@ -66,3 +66,22 @@ While I can replace some (four) of these, I figured that I can also replace them
 
 There were some T plants with yellow buds visible in the SW meadow. Still at least two days from flowering though. None in plots (that I saw).
 
+### Jun 9
+
+I set up a sensor at plot 125. My own lack of preparedness meant this is the only one I was able to put up today. I lost my ruler again.
+
+I was also able to put up the remainder of the plots. There were a couple of small patches of snow, with none in plots.
+
+Flowering: I saw <10 plants flowering site wide. The amazing thing is that two of them were in plot 117!
+There were a few YV plants but nto as many as I expected. Some in 169. Some in areas that seemed first to snow off - steep part of the SW meadow and the N side of the NW meadow. Very few open flowers.
+
+I talked with Amy W. (!) today about pollen.
+She said with EP she uses toothpicks. Could I do this?
+She also recommended using an electric toothbrush (brush removed) for buzzing pollen off.
+She suspects that organzo bags trap moisture.
+She stores pollen in a cooler with an ice pack, ut likely doesn't last very long.
+Dust study sounds cool!
+
+I swapped cards on sensors 133 and 167 today (haven't read them in yet).
+
+###
