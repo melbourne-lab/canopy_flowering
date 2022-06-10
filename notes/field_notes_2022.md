@@ -72,8 +72,9 @@ I set up a sensor at plot 125. My own lack of preparedness meant this is the onl
 
 I was also able to put up the remainder of the plots. There were a couple of small patches of snow, with none in plots.
 
-Flowering: I saw <10 plants flowering site wide. The amazing thing is that two of them were in plot 117!
+Flowering: I saw <10 plants flowering site wide. The amazing thing is that two of them were in plot 118!
 There were a few YV plants but nto as many as I expected. Some in 169. Some in areas that seemed first to snow off - steep part of the SW meadow and the N side of the NW meadow. Very few open flowers.
+Lots of kinked stems on the plants at 169. I wonder if this is from snow?
 
 I talked with Amy W. (!) today about pollen.
 She said with EP she uses toothpicks. Could I do this?
