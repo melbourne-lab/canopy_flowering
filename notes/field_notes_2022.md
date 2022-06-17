@@ -85,4 +85,78 @@ Dust study sounds cool!
 
 I swapped cards on sensors 133 and 167 today (haven't read them in yet).
 
-###
+### Jun 13
+
+Started the day doing phenology. Flowering or budding plants in ~10 plots, nearly all in the sun.
+But there *are* some subcanopy plots with a lot of plants in them! Let's hope...
+
+There are some plants budding (including a handful of YVs) below aspen canopy but none flowering.
+Not crossing this week was a good idea.
+
+Sensor 167 was toppled. I fixed it around 12:03. Level may be slightly off.
+Between 4:30 and 5 I also reset the timer on 133 and 167 (on accident).
+I collected data from these as well.
+Looking at the data collected last week from these two:
+the timer on 133 was never set (?) and the soil temp readings look bad (as if first digit was usually but not always clipped off?)
+
+I installed another sensor at plot 37 for a total of seven in operation now.
+
+I also spent some time in the afternoon playing around with pollen. 
+In retrospect, this was *not* the proper time to do this because there was little pollen!
+(There was some though)
+I found that the flat-headed toothpicks were better at getting pollen than the pointed ones.
+But, it was still really difficult to get pollen off of these and into the vials.
+One *could* maybe walk around with toothpicks, broken in half perhaps, within vials and simply use thos as applicators.
+What I think may work much better (or at least be more efficient) is to simply use an electric toothbrush.
+You can stick the brush within the flowers easily and buzz it quickly to get pollen - much easier (and less destructive) than t-pick scraping!
+It may be clumsy and awkward to walk around with the brush like that but I think it is much, much more effective and efficient for collection.
+
+I put out some bags on 11 plants in three patches (all in upslope/western meadows).
+I actually think these can be used for "week 0" crosses - selfing vs. inbreeding in same environment. 
+Small sample size but not nothing.
+
+A possible procedure for recipient plants: bag all budding plants (not in plots) with numbered flags, then pull a random sequence of them...
+
+(ETA: June 14: the weirdness with the soil temp readings is because of negative readings
+could get creative with rdiff() and such but this seems sloppy... look at Ard script)
+
+### Jun 16
+
+Good day today. Zel's first day. Arrived at ~8:10 and started ~8:45. Started with practicing with crosses.
+
+Started crosses in earnest around ~10:15. Started in SSW meadow, in the open areas. There were three plants here.
+All crossing plants will be tagged with tag numbers > 2500 (today: 2501 - 2013).
+Although there were *some* open plants in the shaded areas, there weren't a ton. 
+Thus we only had two treatments: selfing and outbreeding-same for only open environments.
+Plants were assigned randomly to treatments using a bernoulli RNG, no replacement (watch). 
+Think of the ten plants, the breakdown was 6 selfed, 4 out-same.
+There were also three treatment plants in the SW meadow and four in the NW
+(one previously-bagged plant had its bag/infl ripped off).
+All plants emasculated first, then treated.
+Worked well to have one person emasculate and another do pollen transfers.
+For selfing treatments, emasculated anthers were collected in a vial for pollen application.
+For the outcross-same treatments I collected pollen from 5 plants in the same population.
+All pollen application was done with a Philips Sonicare toothbrush (Zel has one of these as well, but did not today).
+(also for the record Zel is a great emasculator... probably good to record in notes who did which step).
+We did apply nail polish to calices, although realized after a bit that there probably wasn't a need for multiple colors
+(because treatment was recorded on the datasheet)
+although it would be good to have different colors for different days.
+Also - in the future I will need to bring a cooler for storing pollen.
+Zel and I did bag 16 (in most cases) buds for use next week in SSW open, NW open, center aspen, creek aspen.
+We can use a numbering scheme (numbered flags, randomly pull some) to randomly sample.
+A note for treating buds on already-treated plants: finished flowers may have more frangible peduncles.
+
+Also did phenology. There are a good number of shaded plots that have green-bud plants. 
+169-170 popping. Nothing else popping in quite the same way.
+Definitely saw some plants fruiting! Very cool.
+
+Note: for phen, first two datasheets had Fl columns before Infl columns (for some reason)
+Confusing! I fixed these for subsequent datasheets. I think this is more in line with datasheets of yore.
+
+No dataloggers installed today. Hopefully will do Monday. Current thoughts are: 
+- next Monday: phenology, pollen addition, sensors
+- next Tuesday: boatload of crosses
+
+Zel is able to participate both days (great!)
+She logged ~11 hours today (7:30 - 7:15, including driving)
+
