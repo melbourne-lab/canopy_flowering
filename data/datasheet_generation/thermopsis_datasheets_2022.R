@@ -77,3 +77,19 @@ read.csv('data/raw_data/data_2022/Thermopsis_newplants_2022.csv') %>%
   # Export CSV
   write.csv('data/datasheet_generation/datasheet_outputs/data_datasheets_2022/therm_06-20-2022.csv',
             na = '', row.names = FALSE)
+
+# Designate plants for pollen addition
+
+set.seed(17020078)
+
+read.csv('data/datasheet_generation/datasheet_outputs/data_datasheets_2022/therm_06-20-2022.csv') %>%
+  select(Plot, Tag) %>%
+  sample_n(32) %>%
+  mutate(i = 1:32) %>%
+  mutate(Treatment = ifelse(i %% 2, 'Addition', 'Control'),
+         Extra     = ifelse(i < 25, '', 'Extra')) %>%
+  select(-i) %>%
+  arrange(Plot, Tag, Extra) %>%
+  mutate(Treated = NA, Flowers_treated = NA, Flowers = NA, Note = NA) %>%
+  write.csv('data/datasheet_generation/datasheet_outputs/data_datasheets_2022/pollen_add_06-20-2022.csv',
+            na = '', row.names = FALSE)
