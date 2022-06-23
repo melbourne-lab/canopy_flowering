@@ -160,3 +160,65 @@ No dataloggers installed today. Hopefully will do Monday. Current thoughts are:
 Zel is able to participate both days (great!)
 She logged ~11 hours today (7:30 - 7:15, including driving)
 
+### Jun 20 2022
+
+Solo day today (Zel had to opt out due to an injury)
+
+Started with phenology (started at bottom) with some pollen addition.
+I ran out of tags (!) in the last two plots so there are two untagged YV plants in 163 and 166.
+
+For pollen addition: probably would have been better to do some sort of paired design (oops).
+But, I did "treat" 24 plants. I painted addition plants Orange and contol plants Gray.
+Visited 3-5 plants for each pollen addition treatment. Used toothbrush, etc. etc.
+
+There were a handful of plants missing from today's datasheet... not sure what was up with that (bug?)
+
+Also put up a sensor (sadly only one) in plot 40.
+Annoyingly I lost one level and another one - get this - didn't even have a bubble in it! What the fuck!
+
+I'm ready to put up another sensor in the spot of the old reference sensor (plot 6).
+Tomorrow is the solstice should be good to get that data.
+
+### Jun 21 2022
+
+Went up with Zel today for a full day of crosses.
+
+Did four areas, in order: 
+Creek area (aspens w/ plot 114), 7 plants 
+NW meadow (N border, near last year's plot 50), 7 plants
+SSW meadow (N border), 7 plants
+Center aspens (w/ plot 130-132), 6 plants
+
+Some notes:
+- Sampling: procedure was to put out 16 numbered flags by bagged plants and randomly sample seven (pre-determined)
+(treatment was also pre-determined, randomly)
+- I put out green flags at finished plants (did not do this in Creek - will need to go back for this)
+- Tags: used tags 2501 - 2546 today
+- Due to time, we only did six plants in the final group
+- Zel should be up to 20-21 hours.
+- Two plants were double-treated (last time and this time). Interesting to see what happens!
+- In C aspen stand (maybe also SSW), some plants had one inflorescence bagged and the other open... bummer
+- Out diff/away pops:
+  - Creek: entrance meadow
+  - NW: C aspen stand
+  - SSW: small aspen stand uphill NW of Julian's meadow
+  - C aspen stand: slope in SW meadow
+
+Some observations:
+- Zel is better at this than me (good!)
+- Lots of infloresences with a crazy number of flowers in the central aspen stand (!)
+- In the central aspen stand, some flowers (always on bottom) had a larva inside. Not sure what this is! Should have collected...
+Consequence is that (self) fertilization may have naturally occurred! In any event no pollen was being presented.
+How did these effers get in? We did not treat these plants.
+- Relatedly, I did see a B. nevadensis pollinate a bud in the central aspen stand... possible this happened to some bagged plants?
+- Also relatedly, I saw an ant crawling around on the inside of a bag somewhere. Seems these are not totally sealed (ugh).
+- Other plants: Dodecatheons out! Paintbrushes out! Not much else of interest...
+- The previously treated plant in NW meadow didn't look like it was seeding... but Zel said the one in SSW looked like it was
+
+Some thoughts:
+- Thought that occurred to me is that crossing distance and home/away are confounded... 
+probably would be better to do distant pollen from same environment, otherwise we're kinda just looking at optimal crossing distance.
+oh well, not gonna change now
+- What to do about ants and whatever this insect is...? (we should collect these fruit I guess!)
+
+Did not get to install sensor. Bummer!!
