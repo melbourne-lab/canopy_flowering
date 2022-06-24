@@ -222,3 +222,27 @@ oh well, not gonna change now
 - What to do about ants and whatever this insect is...? (we should collect these fruit I guess!)
 
 Did not get to install sensor. Bummer!!
+
+### Jun 23 2022
+
+Began by installing a reference sensor at the (hopefully) same location as last year's plot 6.
+I checked in the afternoon and strange formatting issue notwithstanding (see below) it works.
+
+Phenology: RNG did good, human did bad. Lots of flowering plants just outside of plots. Hmm...
+I think I'm up to ~16 plots with tagged/flowering plants in them - definitely some budding in others.
+Lots of plants that are done and into fruiting now.
+Not sure that my addition treatments worked... we'll see.
+
+Also went around and (1) bagged 5-8 plants in
+- SW meadow interior
+- C aspen stand
+- Creek aspen stand
+- Upper part of E meadow
+
+Finally, checked on batteries and data in a bunch of sensors. 
+Batteries - outstanding performance. First ones (installed last month) are around 3.9 V.
+A handful of these (06R, 115) had a strange issue where the header was missing... not sure why (easy to fix).
+115 also did not have its TEROS connected, so no readings there.
+But otherwise I have data from plots 133, 167, 164, 102, and 115 (solar only).
+
+### 
