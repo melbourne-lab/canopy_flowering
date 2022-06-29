@@ -245,4 +245,25 @@ A handful of these (06R, 115) had a strange issue where the header was missing..
 115 also did not have its TEROS connected, so no readings there.
 But otherwise I have data from plots 133, 167, 164, 102, and 115 (solar only).
 
-### 
+### Jun 27 and Jun 28 2022
+
+Solo both days. 
+
+Monday (6/27): phenology mostly.
+Phenology - there is some uncertainty in whether plants are producing pollen. Oh well, uncertainty abounds.
+Pollen addition: there was a dumb mistake in the datasheet so some done plants were on the list.
+I had to supplement the list with some additional plants - in total 25 were treated.
+I'm not so sure that the addition treatments are working. Not seeing a ton of fruiting. Worrying...
+
+Tuesday (6/28): crosses.
+Because I was solo, I didn't get a ton done... but I did cross 13-14 plants.
+Four areas (in order): Center aspen patch, SW meadow, Creek, E meadow (upper part).
+Colors: pale blue = home, red = away, black = self (black and rock may be confusing...)
+I did fewer self crosses and more home/away (previously labelled as out-same and out-diff).
+Definitely a few plants with thrips in their bags but no signs that they are doing anything.
+There was, weirdly, a plant with a flower (in the bag?) eaten? Not sure how that happened.
+Again, not quite sure how well these treatments are working. We'll see.
+Saw swallowtails on Thermopsis as well as a lytta beetle muching on flowers.
+
+###
+
