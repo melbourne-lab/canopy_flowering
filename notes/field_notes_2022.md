@@ -265,5 +265,16 @@ There was, weirdly, a plant with a flower (in the bag?) eaten? Not sure how that
 Again, not quite sure how well these treatments are working. We'll see.
 Saw swallowtails on Thermopsis as well as a lytta beetle muching on flowers.
 
-###
+Also: grazing in SW meadow. Elk? Some chewed tags. One plant in 164 had two of three stems grazed.
 
+### Jun 30 2022
+
+Phenology - looks past peak. Lots of done plants in meadow interiors.
+Still some budding plants though in small clearings and below individual trees.
+
+I installed a sensor at plot 130. Got rained out before being to install another one. 
+Next is 135. Equipment is near plot 130. I need rebar.
+
+Cloudy today, some rain in afternoon. This weather is probably here for the next week.
+
+###
