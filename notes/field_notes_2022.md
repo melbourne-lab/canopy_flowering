@@ -277,4 +277,21 @@ Next is 135. Equipment is near plot 130. I need rebar.
 
 Cloudy today, some rain in afternoon. This weather is probably here for the next week.
 
-###
+### Jul 4 2022
+
+Phenology: open plots are basically done, but there are some budding plants in shaded plots.
+I counted and I think I'll have first-flowering dates in 26 (!) plots.
+Not very many plants available for crosses.
+
+Placed a new sensor at plot 135. Equipment is up there.
+
+Checked battery levels on 133 (first sensor placed) - currently at 3.6 mV! Amazing.
+
+### Jul 5 2022
+
+Started some pollen manipulation but got rained out.
+Zel and I did six plants in the Creek Aspen patch and six in the E meadow.
+Many (many) of these plants had shrivelling petals that fell off easily, but were still presenting pollen.
+I also did pollen addition on ~6 plants (starting at low end).
+Rain started around noon. Figured it was best to wait until dry.
+Will finish with phen on Thursday July 7.
