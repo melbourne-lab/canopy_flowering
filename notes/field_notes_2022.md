@@ -295,3 +295,63 @@ Many (many) of these plants had shrivelling petals that fell off easily, but wer
 I also did pollen addition on ~6 plants (starting at low end).
 Rain started around noon. Figured it was best to wait until dry.
 Will finish with phen on Thursday July 7.
+
+### Jul 7 2022
+
+Went up with Zel again. I did phenology + pollen addition while she did crosses.
+
+Phenology - ran out of tags so new plants (there were a few!) were untagged.
+Addition - I think I had a sufficient number. Red = add, pale blue = control.
+Should bag these soon, perhaps.
+
+Crosses - seemed to go fine. 
+Order of subgroups: (1) creek asp. (2) east open (3) sw open (4) center aspen
+There aren't very many budding plants anymore, so next week is likely the last.
+One exception is the area below the snowdrift in the SW meadow (think - 2020's plot 40).
+
+I think the substantial rains earlier in the week knocked a bunch of flowers off their peduncles.
+
+### Jul 11 2022
+
+Phen and crossing in one day (again).
+Crossing: SW meadow (1), NW meadow (2?), C aspen (3), Creek aspen (4)
+Re-used the tan-colored nail polish, kinda similar to the new pink...
+Probably last week for crosses.
+
+Some new plants under the snowdrift. 
+
+### Jul 14 2022
+
+Zel joined for today. Phen was pretty quick - first day with no new plants (tg).
+
+We went through and painted the fruit of addition plants. 
+Some of the plants from the first week have big, beautiful fruit.
+Red plants also may as well.
+Some cases where perhaps too much paint was applied to a calyx and the peduncle broke under the weight (!)
+We left most plants from the most recent week unpainted just in case - will return later.
+All of this data was recorded.
+
+Also did sensor checks today. Dumb, annoying stuff:
+- sensor 137 did not have its TEROS connected (needs to be fixed)
+- sensor 140 had its guy wire grazed (??) and not is not level
+- sensor 06R was... not on! rats.
+I replaced batteries on 124, 115, and 102 I believe
+
+### Jul 18 2022
+
+Made a mistake in datasheet procurement because I hadn't saved the prior day's entry (lmao).
+This meant I visited a bunch of "done" plants.
+Also some plants appeared on my datasheet that had bags on at least one inflorescence.
+I tried to make a record including the inflorescence with the bag.
+
+I think there may have been only one open flower across the whole site (!).
+I say skip next Monday and just to Thursday-Thursday.
+
+I painted a couple of fruit but forgot bags so these are *not yet bagged*.
+Some of them I painted the tips - hopefully this is okay...
+There is one plant in plot 130 without painted fruit.
+
+I connected the TEROS sensor in plot 137 and repaired 140 with new suspension wire.
+(the suspension wire I got level on the first try - booyah)
+
+
