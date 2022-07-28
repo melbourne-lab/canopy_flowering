@@ -1,0 +1,88 @@
+﻿Group,Tag,Treatment,Flowers_treated,Color,Treat_init,Date_treated,Data_page,Treat_note
+SSW,2504,Self,4,Rock,HM/SN,6/16/22,1,
+SSW,2505,Home,12,Sun,HM/SN,6/16/22,1,one fl got paint on stigma
+SSW,2506,Self,6,Rock,HM/SN,6/16/22,1,
+SW,2501,Self,5,Rock,SN,6/16/22,1,
+SW,2507,Home,7,Sun,HM/SN,6/16/22,1,
+SW,2503,Self,7,Rock,HM,6/16/22,1,
+NW,2513,Home,1,Sun,SN/HM,6/16/22,1,
+NW,2512,Self,3,Rock,HM/SN,6/16/22,1,
+NW,2510,Self,4,Rock,HM/SN,6/16/22,1,
+NW,2509,Home,7,Sun,SN,6/16/22,1,
+Creek,2502,Away,3,Yellow,HM,6/21/22,1,
+Creek,2508,Self,3,Peach,SN,6/21/22,1,
+Creek,2533,Home,5,Teal,HM,6/21/22,1,bottom flower had shriveled petal
+Creek,2527,Away,2,Yellow,SN,6/21/22,1,
+Creek,2534,Home,7,Teal,HM,6/21/22,1,
+Creek,2536,Home,4,Teal,SN,6/21/22,1,
+Creek,2532,Home,5,Blue,HM,6/21/22,1,
+NW,2512,Away,1,Yellow,SN,6/21/22,1,
+NW,2530,Away,7,Yellow,HM,6/21/22,1,
+NW,2531,Home,11,Teal,HM,6/21/22,1,
+NW,2529,Home,8,Teal,HM,6/21/22,1,
+NW,2511,Self,7,Peach,SN,6/21/22,1,
+NW,2528,Away,4,Yellow,HM,6/21/22,1,
+NW,2546,Away,5,Yellow,SN,6/21/22,1,
+SSW,2526,Home,6,Teal,HM,6/21/22,1,
+SSW,2540,Away,6,Yellow,SN,6/21/22,1,
+SSW,2539,Self,5,Peach,SN,6/21/22,1,
+SSW,2524,Self,6,Peach,HM,6/21/22,1,
+SSW,2506,Self,12,Peach,HM,6/21/22,1,
+SSW,2523,Home,3,Teal,HM,6/21/22,1,one flower had no pistil
+SSW,2515,Self,7,Peach,SN,6/21/22,1,
+Center,2517,Home,4,Blue,HM,6/21/22,2,
+Center,2520,Away,3,Yellow,HM,6/21/22,2,
+Center,2519,Away,6,Yellow,SN,6/21/22,2,
+Center,2516,Home,4,Teal,HM,6/21/22,2,
+Center,2545,Away,4,Yellow,HM,6/21/22,2,
+Center,2525,Self,6,Peach,SN,6/21/22,2,
+Center,2519,Home,6,Pale blue,SN,6/28/22,2,
+Center,2518,Away,2,Red,SN,6/28/22,2,thrips
+Center,2543,Away,6,Red,SN,6/28/22,2,possibly not enough pollen applied
+Center,2545,Self,2,Black,SN,6/28/22,2,
+SW,2503,Self,5,Black,SN,6/28/22,2,some older flowers treated
+SW,2501,Home,5,Pale blue,SN,6/28/22,2,4/5 were old
+SW,2561,Away,3,Red,SN,6/28/22,2,
+Creek,2552,Away,9,Red,SN,6/28/22,2,"donors near plot 160, 161, 162"
+Creek,2551,Home,2,Pale blue,SN,6/28/22,2,
+Creek,2553,Home,8,Pale blue,SN,6/28/22,2,
+E,2559,Home,4,Pale blue,SN,6/28/22,2,
+E,2550,Away,1,Red,SN,6/28/22,2,
+E,2555,Away,1,Red,SN,6/28/22,2,thrips
+E,2556,Self,4,Black,SN,6/28/22,2,very little self pollen collected; one eaten flower?
+Creek,2582,Away,5,Pacific blue,HM,7/5/22,3,bottom two flowers may be self-pollinated
+Creek,2534,Away,4,Pacific blue,HM,7/5/22,3,3 untreated flowers possibly fruiting
+Creek,2560,Home,4,Gray,SN,7/5/22,3,wet old flowers
+Creek,2583,Home,1,Gray,HM,7/5/22,3,frass on most flowers
+Creek,2578,Home,14,Gray,HM,7/5/22,3,bottom eight possibly selfed
+Creek,2502,Away,9,Pacific blue,SN,7/5/22,3,
+E,2555,Home,2,Gray,HM,7/5/22,3,tips of pistils were dark/black
+E,2557,Away,1,Pacific blue,SN,7/5/22,3,
+E,2580,Home,4,Gray,HM,7/5/22,3,
+E,2579,Home,6,Gray,HM,7/5/22,3,
+E,2559,Self,4,Skin,SN,7/5/22,3,
+E,2556,Away,4,Pacific blue,HM,7/5/22,3,one fl has dented pistil
+SW,2535,Away,3,Pacific blue,HM,7/7/22,3,all petals fell off; wet
+SW,2541,Away,5,Pacific blue,HM,7/7/22,3,wet
+SW,2514,Home,5,Gray,HM,7/7/22,3,bottom 2 may have selfed
+SW,2544,Self,2,Skin,HM,7/7/22,3,
+Center,2519,Home,2,Gray,HM,7/7/22,3,top two (similar color on different flowers)
+Center,2543,Home,2,Gray,HM,7/7/22,3,one previously treated fell off
+Center,2516,Home,9,Gray,HM,7/7/22,3,mature pistils but no fruit
+Center,2572,Self,2,Skin,HM,7/7/22,3,
+Center,2581,Home,9,Gray,HM,7/7/22,3,bottom two may have selfed
+SW,2576,Home,6,Pink,HM,7/11/22,4,
+SW,2573,Home,2,Pink,HM,7/11/22,4,
+SW,2575,Away,4,Beet,HM,7/11/22,4,
+SW,2571,Home,1,Beet,HM,7/11/22,4,
+SW,2570,Home,1,Pink,HM,7/11/22,4,
+,2574,Haway,2,Beet,HM,7/11/22,4,
+,2567,Away,1,Beet,HM,7/11/22,4,
+,2577,Home,5,Pink,HM,7/11/22,4,
+Center,2568,Home,5,Pink,HM,7/11/22,4,
+Center,2558,Home,3,Pink,SN,7/11/22,4,
+,2542,Away,4,Beet,HM,7/11/22,4,
+,2538,Self,5,Skin,HM,7/11/22,4,
+Creek,2537,Home,2,Pink,HM,7/11/22,4,
+Creek,2549,Self,3,Skin,SN,7/11/22,4,
+Creek,2565,Self,4,Skin,HM,7/11/22,4,
