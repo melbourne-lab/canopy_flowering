@@ -521,3 +521,28 @@ read.csv('data/raw_data/data_2022/Thermopsis_newplants_2022.csv') %>%
             na = '', row.names = FALSE)
 
 
+read.csv('data/datasheet_generation/datasheet_outputs/data_datasheets_2022/therm_07-18-2022.csv') %>%
+  filter(Done %in% '') %>%
+  mutate(Date = NA, Notes = NA, Page = NA) %>%
+  select(Date, Plot, Tag, N_infl, Fl_open, Fl_done, Q, Page, Notes) %>%
+  write.csv(file = 'data/raw_data/data_2022/therm_entry_07-18-2022.csv', na = '', row.names = FALSE)
+
+
+## Plants to bag
+
+set.seed(1692903)
+
+merge(
+  x = read.csv('data/raw_data/data_2022/Thermopsis_newplants_2022.csv') %>%
+    distinct(Plot, Tag),
+  y = read.csv('data/datasheet_generation/datasheet_outputs/data_datasheets_2022/fruit_painting_07-14-2022.csv') %>%
+    distinct(Plot, Tag) %>%
+    mutate(Manip = TRUE),
+  all.x = TRUE, all.y = TRUE
+) %>%
+  filter(is.na(Manip)) %>%
+  sample_n(size = 35, replace = FALSE) %>%
+  select(-Manip) %>%
+  arrange(Plot, Tag)
+
+### Aug 18
