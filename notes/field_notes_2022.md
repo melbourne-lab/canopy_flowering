@@ -354,4 +354,37 @@ There is one plant in plot 130 without painted fruit.
 I connected the TEROS sensor in plot 137 and repaired 140 with new suspension wire.
 (the suspension wire I got level on the first try - booyah)
 
+### Aug 18 2022
+
+At some point last month (Jul 28? Aug 1?) I went with Zel and assessed fruit from the crosses.
+Painted fruit. Looks like the crosses mostly failed. Not sure if enough for experiment.
+Meh.
+I painted fruit and put bags over them.
+
+Also went through and bagged ~30 inflorescences from phen. Random sample for the most part.
+A handful of plants I swapped - see datasheet.
+Because this was later than usual, and because there was heavy rain, empty fruit seemed to have fallen off.
+So this sample is different from last year's sample. Will need to be analyzed separately.
+Maybe it can be thought of as a sample of fruit that make it to maturation? Not sure.
+
+On Aug 18 I went out and harvested fruit from crosses, phen (seed set) and pollen addition.
+I only looked at the fruit from the creek patch for crosses - none looked ready yet. Do later.
+For phen and pollen add, I did plots 101 - 130, 163 - 170. Did not get 131 - 162.
+Looks like most of the pollen addition plants were not visited... probably not useful data.
+Bleh... Oh well I don't really care.
+
+Most sensors I saw were intact - not sure if on. Only one I had to fix was 133.
+
+### Aug 22 2022
+
+Cancelled morning meeting meant I had time to run up to the MRS and fix a few things.
+
+- Collected remaining fruit. Lots of painted calyces for empty fruit. Sad.
+- Sensors... ugh. I did not have enough batteries. Replaced them in 0R6, 130, 135
+- Thistle (Carduus nutans) in the NE meadow. Some heads have set+dropped seed. I clipped three. Buds incoming.
+
+Lots of rain the last month. The soil moisture readings I have suggest VWC around 40% in one plot! Wonder what this will do.
+
+Remaining: collect crossed fruit, drone flights (two), shoot sensor locs, take everything down
+
 
