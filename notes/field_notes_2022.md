@@ -387,4 +387,11 @@ Lots of rain the last month. The soil moisture readings I have suggest VWC aroun
 
 Remaining: collect crossed fruit, drone flights (two), shoot sensor locs, take everything down
 
+### Sep 1 2022
+
+Battery replacements. No hiccups (plus data collected) at 102, 115, 125, 137, 140, 167. (167 had a small hole in the case but otherwise looked fine.)
+At plot 164: SP510 cable chewed through. Not sure if working. Also was not collecting data prior (card held a blank file)? I might have left the old batteries in and just let it run to get soil measurements.
+At plot 133: wouldn't turn on even with new batteries. Looks like there was some damage to the board in the rain. (Data was collected but not sure how good it is).
+
+I removed the thistle. The longest root looked to snap but I got most of it. I left it by a tree next to the cabins.
 
