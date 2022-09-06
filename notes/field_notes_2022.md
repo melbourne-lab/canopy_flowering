@@ -395,3 +395,20 @@ At plot 133: wouldn't turn on even with new batteries. Looks like there was some
 
 I removed the thistle. The longest root looked to snap but I got most of it. I left it by a tree next to the cabins.
 
+### Sep 5 2022
+
+Day started with sensor maintenance.
+
+I installed a sensor at plot 153. (Note: plate here has no level).
+The sensor at plot 164 has a destroyed TEROS cable, not SP510 - did not fix.
+I replaced the board and SP510 on at plot 133 (was 1644, now 1643).
+
+I also collected fruit from the crossing study - near to all of it. 
+There were two plants I could not find - one in SW and one in the creek patch.
+I collected even less fruit than was painted - not entirely sure why in some cases. (ah well)
+THese fruit were placed in coin envelopes with tag no., date collected, and number of fruit inside.
+There's an asterisk if there's a comment on the datasheet to heed note of.
+
+Aspens - seem to be starting to turn. First signs of yellow... hmm...
+
+.
