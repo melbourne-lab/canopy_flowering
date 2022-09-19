@@ -34,7 +34,7 @@ ref.sens = ref.sens %>% select(-c(Hour_UTC, Day_UTC, Sensor_ID, ` bits`))
 # Get average reading by minute
 ref.sens = ref.sens %>%
   rename(volt = ` volt`) %>%
-  group_by(Month_UTC, Day_MDT, Hour_MDT, Minute, fn) %>% 
+  group_by(Month_UTC, Day_MDT, Hour_MDT, Minute, Half_min = as.numeric(Second < 30), fn) %>% 
   summarise(volt = mean(as.numeric(volt)))
 
 # How many days?
@@ -158,7 +158,8 @@ ref.sens.times = ref.sens %>%
   rename(Month = Month_UTC,
          Day   = Day_MDT,
          Hour  = Hour_MDT) %>%
-  mutate(Half_hour = 30 * as.numeric(Minute < 30)) %>%
+  mutate(Half_hour = 30 * as.numeric(Minute < 30),
+         Half_mint = 30 * Half_min) %>%
   # Now merge, making sure to include all x
   merge(y = ref.times, all.x = FALSE, all.y = TRUE)
 
