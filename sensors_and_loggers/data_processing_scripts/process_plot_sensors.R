@@ -966,3 +966,12 @@ nrow(this.plot.data)
 write.csv(this.plot.data,
           file = 'sensors_and_loggers/processed_data/plot77_pyran_clearsky_2021.csv',
           row.names = FALSE)
+
+### Concatenate
+
+grep('pyran_clearsky_2021.csv', dir('sensors_and_loggers/processed_data'), value = TRUE) %>%
+  paste0('sensors_and_loggers/processed_data/', .) %>%
+  lapply(read.csv) %>%
+  do.call(rbind, .) %>%
+  write.csv('sensors_and_loggers/processed_data/all_clearsky_2021.csv',
+            row.names = FALSE)
