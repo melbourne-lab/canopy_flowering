@@ -1,5 +1,6 @@
 ### Script for processing plot (non-reference) 2021 pyranometer scripts
 # SN - 19 May 2022
+# re-run 23 Sept at 30 second interval incl. October data and coords
 
 # Packages
 library(ggplot2)
@@ -16,6 +17,9 @@ sensor.dir = 'sensors_and_loggers/data/'
 read.csv('sensors_and_loggers/sensor_logger_masterlist_2021.csv') %>% arrange(Plot)
 
 ref.times = read.csv('sensors_and_loggers/processed_data/processed_ref_times_2021.csv')
+
+sensor.locs = read.csv('sensors_and_loggers/elk_2021_sens_sp_2021-11-10.csv') %>%
+  mutate(plot = as.numeric(gsub('s2021\\_p0', '', sensor)))
 
 # Some notes, observations...
 # - Plot 25: note that there was an SP510 replacement during this time
@@ -50,7 +54,7 @@ this.plot.data = paste0(sensor.dir, grep('plot2\\_', dir(sensor.dir), value = TR
   select(-c(Hour_UTC, Day_UTC, Sensor_ID, ` bits`)) %>%
   # Prepare voltage
   rename(volt = ` volt`) %>%
-  group_by(Month, Day, Hour, Minute, fn) %>% 
+  group_by(Month, Day, Hour, Minute, Half_min = as.numeric(Second >= 30), fn) %>% 
   summarise(volt = mean(as.numeric(volt)))
 
 nrow(this.plot.data)
@@ -70,7 +74,13 @@ this.plot.data = merge(
   x = this.plot.data %>% mutate(Half_hour = 30 * as.numeric(Minute < 30)),
   y = ref.times %>% distinct(Month, Day, Hour, Half_hour),
   all.x = FALSE, all.y = FALSE
-)
+) %>%
+  mutate(plot = as.numeric(gsub('plot', '', fn))) %>% 
+  select(-c(Half_hour, fn)) %>%
+  merge(
+    y = sensor.locs %>% select(plot, east, north),
+    by = 'plot', all.x = TRUE, all.y = FALSE
+  )
 
 nrow(this.plot.data)
 
@@ -105,7 +115,7 @@ this.plot.data = paste0(sensor.dir, grep('plot16\\_', dir(sensor.dir), value = T
   select(-c(Hour_UTC, Day_UTC, Sensor_ID, ` bits`)) %>%
   # Prepare voltage
   rename(volt = ` volt`) %>%
-  group_by(Month, Day, Hour, Minute, fn) %>% 
+  group_by(Month, Day, Hour, Minute, Half_min = as.numeric(Second >= 30), fn) %>% 
   summarise(volt = mean(as.numeric(volt)))
 
 nrow(this.plot.data)
@@ -123,7 +133,13 @@ this.plot.data = merge(
   x = this.plot.data %>% mutate(Half_hour = 30 * as.numeric(Minute < 30)),
   y = ref.times %>% distinct(Month, Day, Hour, Half_hour),
   all.x = FALSE, all.y = FALSE
-)
+) %>%
+  mutate(plot = as.numeric(gsub('plot', '', fn))) %>% 
+  select(-c(Half_hour, fn)) %>%
+  merge(
+    y = sensor.locs %>% select(plot, east, north),
+    by = 'plot', all.x = TRUE, all.y = FALSE
+  )
 
 nrow(this.plot.data)
 
@@ -158,13 +174,11 @@ this.plot.data = paste0(sensor.dir, grep('plot19\\_', dir(sensor.dir), value = T
   select(-c(Hour_UTC, Day_UTC, Sensor_ID, ` bits`)) %>%
   # Prepare voltage
   rename(volt = ` volt`) %>%
-  group_by(Month, Day, Hour, Minute, fn) %>% 
+  group_by(Month, Day, Hour, Minute, Half_min = as.numeric(Second >= 30), fn) %>% 
   summarise(volt = mean(as.numeric(volt)))
 
 head(this.plot.data)
 nrow(this.plot.data)
-
-# Ah... haven't done the final set of readings (Sept/Oct) yet
 
 this.plot.data %>%
   mutate(time = Hour + Minute/60,
@@ -180,7 +194,14 @@ this.plot.data = merge(
   x = this.plot.data %>% mutate(Half_hour = 30 * as.numeric(Minute < 30)),
   y = ref.times %>% distinct(Month, Day, Hour, Half_hour),
   all.x = FALSE, all.y = FALSE
-)
+) %>%
+  mutate(plot = as.numeric(gsub('plot', '', fn))) %>% 
+  select(-c(Half_hour, fn)) %>%
+  merge(
+    y = sensor.locs %>% select(plot, east, north),
+    by = 'plot', all.x = TRUE, all.y = FALSE
+  )
+
 
 nrow(this.plot.data)
 
@@ -215,7 +236,7 @@ this.plot.data = paste0(sensor.dir, grep('plot22\\_', dir(sensor.dir), value = T
   select(-c(Hour_UTC, Day_UTC, Sensor_ID, ` bits`)) %>%
   # Prepare voltage
   rename(volt = ` volt`) %>%
-  group_by(Month, Day, Hour, Minute, fn) %>% 
+  group_by(Month, Day, Hour, Minute, Half_min = as.numeric(Second >= 30), fn) %>% 
   summarise(volt = mean(as.numeric(volt)))
 
 head(this.plot.data)
@@ -236,7 +257,13 @@ this.plot.data = merge(
   x = this.plot.data %>% mutate(Half_hour = 30 * as.numeric(Minute < 30)),
   y = ref.times %>% distinct(Month, Day, Hour, Half_hour),
   all.x = FALSE, all.y = FALSE
-)
+) %>%
+  mutate(plot = as.numeric(gsub('plot', '', fn))) %>% 
+  select(-c(Half_hour, fn)) %>%
+  merge(
+    y = sensor.locs %>% select(plot, east, north),
+    by = 'plot', all.x = TRUE, all.y = FALSE
+  )
 
 nrow(this.plot.data)
 
@@ -271,7 +298,7 @@ this.plot.data = paste0(sensor.dir, grep('plot25\\_', dir(sensor.dir), value = T
   select(-c(Hour_UTC, Day_UTC, Sensor_ID, ` bits`)) %>%
   # Prepare voltage
   rename(volt = ` volt`) %>%
-  group_by(Month, Day, Hour, Minute, fn) %>% 
+  group_by(Month, Day, Hour, Minute, Half_min = as.numeric(Second >= 30), fn) %>% 
   summarise(volt = mean(as.numeric(volt)))
 
 head(this.plot.data)
@@ -311,12 +338,18 @@ this.plot.data %>%
 ######## OH... IMPORTANT NOTE######
 ###################################
 
-# Gewt only clearsky readings
+# Get only clearsky readings
 this.plot.data = merge(
   x = this.plot.data %>% mutate(Half_hour = 30 * as.numeric(Minute < 30)),
   y = ref.times %>% distinct(Month, Day, Hour, Half_hour),
   all.x = FALSE, all.y = FALSE
-)
+) %>%
+  mutate(plot = as.numeric(gsub('plot', '', fn))) %>% 
+  select(-c(Half_hour, fn)) %>%
+  merge(
+    y = sensor.locs %>% select(plot, east, north),
+    by = 'plot', all.x = TRUE, all.y = FALSE
+  )
 
 nrow(this.plot.data)
 
@@ -353,7 +386,7 @@ this.plot.data = paste0(sensor.dir, grep('plot33\\_', dir(sensor.dir), value = T
   select(-c(Hour_UTC, Day_UTC, Sensor_ID, ` bits`)) %>%
   # Prepare voltage
   rename(volt = ` volt`) %>%
-  group_by(Month, Day, Hour, Minute, fn) %>% 
+  group_by(Month, Day, Hour, Minute, Half_min = as.numeric(Second >= 30), fn) %>% 
   summarise(volt = mean(as.numeric(volt)))
 
 head(this.plot.data)
@@ -414,7 +447,13 @@ this.plot.data = merge(
   x = this.plot.data %>% mutate(Half_hour = 30 * as.numeric(Minute < 30)),
   y = ref.times %>% distinct(Month, Day, Hour, Half_hour),
   all.x = FALSE, all.y = FALSE
-)
+) %>%
+  mutate(plot = as.numeric(gsub('plot', '', fn))) %>% 
+  select(-c(Half_hour, fn)) %>%
+  merge(
+    y = sensor.locs %>% select(plot, east, north),
+    by = 'plot', all.x = TRUE, all.y = FALSE
+  )
 
 nrow(this.plot.data)
 
@@ -448,7 +487,7 @@ this.plot.data = paste0(sensor.dir, grep('plot39\\_', dir(sensor.dir), value = T
   select(-c(Hour_UTC, Day_UTC, Sensor_ID, ` bits`)) %>%
   # Prepare voltage
   rename(volt = ` volt`) %>%
-  group_by(Month, Day, Hour, Minute, fn) %>% 
+  group_by(Month, Day, Hour, Minute, Half_min = as.numeric(Second >= 30), fn) %>% 
   summarise(volt = mean(as.numeric(volt)))
 
 head(this.plot.data)
@@ -467,7 +506,13 @@ this.plot.data = merge(
   x = this.plot.data %>% mutate(Half_hour = 30 * as.numeric(Minute < 30)),
   y = ref.times %>% distinct(Month, Day, Hour, Half_hour),
   all.x = FALSE, all.y = FALSE
-)
+) %>%
+  mutate(plot = as.numeric(gsub('plot', '', fn))) %>% 
+  select(-c(Half_hour, fn)) %>%
+  merge(
+    y = sensor.locs %>% select(plot, east, north),
+    by = 'plot', all.x = TRUE, all.y = FALSE
+  )
 
 nrow(this.plot.data)
 
@@ -502,7 +547,7 @@ this.plot.data = paste0(sensor.dir, grep('plot48\\_', dir(sensor.dir), value = T
   select(-c(Hour_UTC, Day_UTC, Sensor_ID, ` bits`)) %>%
   # Prepare voltage
   rename(volt = ` volt`) %>%
-  group_by(Month, Day, Hour, Minute, fn) %>% 
+  group_by(Month, Day, Hour, Minute, Half_min = as.numeric(Second >= 30), fn) %>% 
   summarise(volt = mean(as.numeric(volt)))
 
 head(this.plot.data)
@@ -521,7 +566,13 @@ this.plot.data = merge(
   x = this.plot.data %>% mutate(Half_hour = 30 * as.numeric(Minute < 30)),
   y = ref.times %>% distinct(Month, Day, Hour, Half_hour),
   all.x = FALSE, all.y = FALSE
-)
+) %>%
+  mutate(plot = as.numeric(gsub('plot', '', fn))) %>% 
+  select(-c(Half_hour, fn)) %>%
+  merge(
+    y = sensor.locs %>% select(plot, east, north),
+    by = 'plot', all.x = TRUE, all.y = FALSE
+  )
 
 nrow(this.plot.data)
 
@@ -555,7 +606,7 @@ this.plot.data = paste0(sensor.dir, grep('plot57\\_', dir(sensor.dir), value = T
   select(-c(Hour_UTC, Day_UTC, Sensor_ID, ` bits`)) %>%
   # Prepare voltage
   rename(volt = ` volt`) %>%
-  group_by(Month, Day, Hour, Minute, fn) %>% 
+  group_by(Month, Day, Hour, Minute, Half_min = as.numeric(Second >= 30), fn) %>% 
   summarise(volt = mean(as.numeric(volt)))
 
 head(this.plot.data)
@@ -576,7 +627,13 @@ this.plot.data = merge(
   x = this.plot.data %>% mutate(Half_hour = 30 * as.numeric(Minute < 30)),
   y = ref.times %>% distinct(Month, Day, Hour, Half_hour),
   all.x = FALSE, all.y = FALSE
-)
+) %>%
+  mutate(plot = as.numeric(gsub('plot', '', fn))) %>% 
+  select(-c(Half_hour, fn)) %>%
+  merge(
+    y = sensor.locs %>% select(plot, east, north),
+    by = 'plot', all.x = TRUE, all.y = FALSE
+  )
 
 nrow(this.plot.data)
 
@@ -611,7 +668,7 @@ this.plot.data = paste0(sensor.dir, grep('plot63\\_', dir(sensor.dir), value = T
   select(-c(Hour_UTC, Day_UTC, Sensor_ID, ` bits`)) %>%
   # Prepare voltage
   rename(volt = ` volt`) %>%
-  group_by(Month, Day, Hour, Minute, fn) %>% 
+  group_by(Month, Day, Hour, Minute, Half_min = as.numeric(Second >= 30), fn) %>% 
   summarise(volt = mean(as.numeric(volt)))
 
 head(this.plot.data)
@@ -631,7 +688,13 @@ this.plot.data = merge(
   x = this.plot.data %>% mutate(Half_hour = 30 * as.numeric(Minute < 30)),
   y = ref.times %>% distinct(Month, Day, Hour, Half_hour),
   all.x = FALSE, all.y = FALSE
-)
+) %>%
+  mutate(plot = as.numeric(gsub('plot', '', fn))) %>% 
+  select(-c(Half_hour, fn)) %>%
+  merge(
+    y = sensor.locs %>% select(plot, east, north),
+    by = 'plot', all.x = TRUE, all.y = FALSE
+  )
 
 nrow(this.plot.data)
 # data is data!
@@ -666,7 +729,7 @@ this.plot.data = paste0(sensor.dir, grep('plot67\\_', dir(sensor.dir), value = T
   select(-c(Hour_UTC, Day_UTC, Sensor_ID, ` bits`)) %>%
   # Prepare voltage
   rename(volt = ` volt`) %>%
-  group_by(Month, Day, Hour, Minute, fn) %>% 
+  group_by(Month, Day, Hour, Minute, Half_min = as.numeric(Second >= 30), fn) %>% 
   summarise(volt = mean(as.numeric(volt)))
 
 this.plot.data %>%
@@ -686,14 +749,22 @@ this.plot.data = this.plot.data %>%
   # Take out July 30 - August 1
   filter(!(Month %in% 7 & Day %in% 30:31) & !(Month %in% 8 & Day %in% 1)) %>%
   # Take out September 29 - October 2
-  filter(!(Month %in% 9 & Day > 28) & !(Month %in% 10 & Day < 3))
+  filter(!(Month %in% 9 & Day > 28) & !(Month %in% 10 & Day < 3)) %>%
+  # No readings October 11 - 21?
+  filter(!(Month %in% 10 & Day %in% 11:21))
 
 # Gewt only clearsky readings
 this.plot.data = merge(
   x = this.plot.data %>% mutate(Half_hour = 30 * as.numeric(Minute < 30)),
   y = ref.times %>% distinct(Month, Day, Hour, Half_hour),
   all.x = FALSE, all.y = FALSE
-)
+) %>%
+  mutate(plot = as.numeric(gsub('plot', '', fn))) %>% 
+  select(-c(Half_hour, fn)) %>%
+  merge(
+    y = sensor.locs %>% select(plot, east, north),
+    by = 'plot', all.x = TRUE, all.y = FALSE
+  )
 
 nrow(this.plot.data)
 # data is data!
@@ -729,7 +800,7 @@ this.plot.data = paste0(sensor.dir, grep('plot70\\_', dir(sensor.dir), value = T
   select(-c(Hour_UTC, Day_UTC, Sensor_ID, ` bits`)) %>%
   # Prepare voltage
   rename(volt = ` volt`) %>%
-  group_by(Month, Day, Hour, Minute, fn) %>% 
+  group_by(Month, Day, Hour, Minute, Half_min = as.numeric(Second >= 30), fn) %>% 
   summarise(volt = mean(as.numeric(volt)))
 
 head(this.plot.data)
@@ -754,7 +825,13 @@ this.plot.data = merge(
   x = this.plot.data %>% mutate(Half_hour = 30 * as.numeric(Minute < 30)),
   y = ref.times %>% distinct(Month, Day, Hour, Half_hour),
   all.x = FALSE, all.y = FALSE
-)
+) %>%
+  mutate(plot = as.numeric(gsub('plot', '', fn))) %>% 
+  select(-c(Half_hour, fn)) %>%
+  merge(
+    y = sensor.locs %>% select(plot, east, north),
+    by = 'plot', all.x = TRUE, all.y = FALSE
+  )
 
 nrow(this.plot.data)
 
@@ -788,7 +865,7 @@ this.plot.data = paste0(sensor.dir, grep('plot75\\_', dir(sensor.dir), value = T
   select(-c(Hour_UTC, Day_UTC, Sensor_ID, ` bits`)) %>%
   # Prepare voltage
   rename(volt = ` volt`) %>%
-  group_by(Month, Day, Hour, Minute, fn) %>% 
+  group_by(Month, Day, Hour, Minute, Half_min = as.numeric(Second >= 30), fn) %>% 
   summarise(volt = mean(as.numeric(volt)))
 
 head(this.plot.data)
@@ -816,7 +893,13 @@ this.plot.data = merge(
   x = this.plot.data %>% mutate(Half_hour = 30 * as.numeric(Minute < 30)),
   y = ref.times %>% distinct(Month, Day, Hour, Half_hour),
   all.x = FALSE, all.y = FALSE
-)
+) %>%
+  mutate(plot = as.numeric(gsub('plot', '', fn))) %>% 
+  select(-c(Half_hour, fn)) %>%
+  merge(
+    y = sensor.locs %>% select(plot, east, north),
+    by = 'plot', all.x = TRUE, all.y = FALSE
+  )
 
 nrow(this.plot.data)
 
@@ -851,7 +934,7 @@ this.plot.data = paste0(sensor.dir, grep('plot77\\_', dir(sensor.dir), value = T
   select(-c(Hour_UTC, Day_UTC, Sensor_ID, ` bits`)) %>%
   # Prepare voltage
   rename(volt = ` volt`) %>%
-  group_by(Month, Day, Hour, Minute, fn) %>% 
+  group_by(Month, Day, Hour, Minute, Half_min = as.numeric(Second >= 30), fn) %>%  
   summarise(volt = mean(as.numeric(volt)))
 
 head(this.plot.data)
@@ -870,7 +953,13 @@ this.plot.data = merge(
   x = this.plot.data %>% mutate(Half_hour = 30 * as.numeric(Minute < 30)),
   y = ref.times %>% distinct(Month, Day, Hour, Half_hour),
   all.x = FALSE, all.y = FALSE
-)
+) %>%
+  mutate(plot = as.numeric(gsub('plot', '', fn))) %>% 
+  select(-c(Half_hour, fn)) %>%
+  merge(
+    y = sensor.locs %>% select(plot, east, north),
+    by = 'plot', all.x = TRUE, all.y = FALSE
+  )
 
 nrow(this.plot.data)
 

@@ -39,7 +39,7 @@ tres = rbind(
            s    = '2021.6') %>%
     select(time, s, Reading_raw)
 ) #%>%
-  spread(s, Reading_raw)
+  # spread(s, Reading_raw)
 
 # Plot
 tres %>%
