@@ -36,6 +36,39 @@ tdiv$RecordID = 20000 + (1:nrow(tdiv))
 # Add date
 tdiv$Date = as.Date(tdiv$Date, format = '%m/%d/%y')
 
+tdiv.raw = tdiv
+
+##### Load in toothpicks
+
+# Creating new columns "Toothpick.alpha" - alphabetized for merging
+# Then, going in and changing any likely-unusable toothpick records
+# to end with `.q`
+
+tpicks = read.csv('data/raw_data/data_2021/all_td_toothpicks.csv')
+
+head(tpicks)
+
+tpicks = tpicks %>%
+  group_by(Toothpicks) %>%
+  mutate(Toothpick.alpha = Toothpicks %>%
+           sapply(
+             function(x) sort(strsplit(x, '')[[1]]) %>% paste(collapse = '')
+           )
+  ) %>%
+  ungroup() #%>%
+# distinct(Toothpicks, Toothpick.alpha) %>%
+# arrange(Toothpick.alpha) #%>% View()
+
+### What are the last tpicks to have been added?
+tpicks %>% arrange(Date) %>% tail()
+# lmao date
+tpicks = tpicks %>% mutate(Date = as.Date(Date, '%m/%d/%y'))
+
+# Looking at an old (undated... ugh) datasheet - was it entered?
+tpicks %>% filter(Plot %in% 1)
+# it was not.
+tpicks %>% filter(Plot %in% 2)
+
 ##### Look at duplicated tags
 
 tdiv %>%
@@ -106,7 +139,7 @@ tdiv = tdiv %>% mutate(Toothpick = ifelse(Tag %in% 1126, 'o', Toothpick))
 tdiv %>% filter(Tag %in% c(1134, 1220))
 # woof...
 tdiv = tdiv %>% 
-  filter(Tag %in% c(1094, 1099)) %>%
+  filter(Tag %in% c(1134, 1220)) %>%
   group_by(Date) %>%
   summarise(
     Plot = Plot[1],
@@ -251,27 +284,6 @@ tdiv = tdiv %>% mutate(Fl_Done = ifelse(Tag %in% 1286 & Date %in% as.Date('2021-
 # - to TP quality analysis
 #   - for plants with one TP record, assign tp to all records
 #   - check for dupe TPs
-
-### Toothpicks
-
-# Creating new columns "Toothpick.alpha" - alphabetized for merging
-# Then, going in and changing any likely-unusable toothpick records
-# to end with `.q`
-
-tpicks = read.csv('data/raw_data/data_2021/all_td_toothpicks.csv')
-
-head(tpicks)
-
-tpicks = tpicks %>%
-  group_by(Toothpicks) %>%
-  mutate(Toothpick.alpha = Toothpicks %>%
-           sapply(
-             function(x) sort(strsplit(x, '')[[1]]) %>% paste(collapse = '')
-            )
-         ) %>%
-  ungroup() #%>%
-  # distinct(Toothpicks, Toothpick.alpha) %>%
-  # arrange(Toothpick.alpha) #%>% View()
 
 tdiv = tdiv %>%
   group_by(Toothpick) %>%
@@ -557,21 +569,11 @@ tdiv %>% group_by(Plot, Toothpick.alpha) %>% filter(any(is.na(Tag)))
 # welp, not concerned!
 
 tdiv %>% filter(is.na(Toothpick.alpha))
-tdiv %>% filter(Toothpick.alpha %in% '') %>%
+tdiv %>% filter(Toothpick.alpha %in% '')
 tdiv %>% filter(Toothpick.alpha %in% '') %>% distinct(Tag) %>% nrow()
 # oh lmao only five plants missed? that's fucking awesome. holy shit, hell yeah.
 
 tdiv %>% filter(Toothpick.alpha %in% '') %>% arrange(Date, Tag) %>% distinct(Tag, .keep_all = TRUE)
-
-### What are the last tpicks to have been added?
-tpicks %>% arrange(Date) %>% tail()
-# lmao date
-tpicks = tpicks %>% mutate(Date = as.Date(Date, '%m/%d/%y'))
-
-# Looking at an old (undated... ugh) datasheet - was it entered?
-tpicks %>% filter(Plot %in% 1)
-# it was not.
-tpicks %>% filter(Plot %in% 2)
 
 # hmm... 
 
@@ -590,35 +592,210 @@ tdivpix %>%
   distinct(Plot, Tag, .keep_all = TRUE) %>% 
   group_by(have.em = !is.na(Emerge.date)) %>%
   summarise(n = n())
-# well... that's not bad but I was hoping for better...
-# I guess I can cross-ref these against observations...
+# okay... not sure why we have 40 plants with no TP...
 
-# next up... cross-referencing tpix
+tdivpix %>% 
+  distinct(Plot, Tag, .keep_all = TRUE) %>%
+  filter(is.na(Emerge.date), !grepl('\\.q$', Toothpick.alpha), !grepl('enno|x', Toothpick.alpha))
+
+# 1152 - yv should be wow...
+tdiv %>% filter(Tag %in% 1152)
+tdiv = tdiv %>% mutate(Toothpick.alpha = ifelse(Tag %in% 1152, 'ow', Toothpick.alpha))
+
+# 1316 - 
+tdiv %>% filter(Tag %in% 1316)
+tdiv %>% filter(RecordID %in% 20923) %>% pull(Note)
+# hmm... guess there's no toothpick
+
+# 1196
+tdiv %>% filter(Tag %in% 1196)
+tpicks %>% filter(Plot %in% 20)
+# ugh... data sheet has tp = b, but I can't find this in records
+# (I do see a note on 6/14 saying it was present then but not entered... 
+# but can't find it ever being on a data sheet)
+# ugh... shit
+
+# 1050
+tdiv %>% filter(Tag %in% 1050)
+# ?? ggrw there isn't anything like this in the tpicks dataset
+# oh well.
+
+# 
+tdiv %>% filter(Tag %in% 1289)
+tdiv %>% filter(Plot %in% 71) %>% distinct(Toothpick.alpha)
+# wtf... only 11 plants in plot 71?
+# not on record (shit.)
+
+tdiv %>% filter(Tag %in% 1005)
+tpicks %>% filter(Plot %in% 71) %>% print(n = nrow(.))
+tpicks %>% filter(Plot %in% 71) %>% filter(grepl('o|r', Toothpicks))
+# hmm... call this org
+tdiv = tdiv %>% mutate(Toothpick.alpha = ifelse(Tag %in% 1005, 'gor', Toothpick.alpha))
+
+# 1107
+tdiv %>% filter(Tag %in% 1107)
+# tp is oy
+tdiv = tdiv %>% mutate(Toothpick.alpha = ifelse(Tag %in% 1107, 'oy', Toothpick.alpha))
+
+# 1039
+tdiv %>% filter(Tag %in% 1039)
+tpicks %>% filter(Plot %in% 73) %>% print(n = nrow(.))
+tdiv %>% filter(Plot %in% 73) %>% distinct(Toothpick.alpha)
+# hmm... data sheet is unambiguously gyo
+# could be gyb, could be oyy (same day)
+# g could fade to y easily
+tdiv = tdiv %>% mutate(Toothpick.alpha = ifelse(Tag %in% 1039, 'oyy', Toothpick.alpha))
+
+# 1009
+tdiv %>% filter(Tag %in% 1009)
+# no toothpick
+
+# 1054
+tdiv %>% filter(Tag %in% 1054)
+# no toothpick
+
+# 1046
+tdiv %>% filter(Tag %in% 1046)
+# there just ahs to be a bb in this plot...
+# actually I don't see it... come on man how did that happen
+tpicks %>% filter(Plot %in% 74) %>% filter(grepl('bb', Toothpicks)) # dang, shit, etc.
+
+# 1129
+tdiv %>% filter(Tag %in% 1129)
+tpicks %>% filter(Plot %in% 74) %>% filter(grepl('b|w|o', Toothpicks)) %>% print(n = nrow(.))
+# oh well
+
+# 1214
+tdiv %>% filter(Tag %in% 1214)
+# hmm...
+tdiv %>% filter(Tag %in% 1214) %>% select(Date, Fl_Stems, Fl_Open, Fl_Done, Note)
+tdiv %>% filter(Plot %in% 74) %>% group_by(Tag) %>% filter(max(Date) < as.Date('2021-07-01'))
+# chewed up tag nearby...? sure seems like a dupe to me...
+tdiv %>% filter(Plot %in% 74, grepl('r', Toothpick.alpha))
+# welp... guess I just missed the first day here
+# fixed in csv (was entry mistake)
+
+# 1056
+tdiv %>% filter(Tag %in% 1056)
+# there are two ybs, ygs in data...
+tpicks %>% filter(Plot %in% 74) %>% print(n = nrow(.))
+# assuming tp entered gr is actually yr (on tpicks data sheet)
+# fixed in toothpick csv (gr -> ry)
+
+### Now, check to see if any Tags (plants) have multiple TPs/dates...
+
+tdivpix = tpicks %>%
+  rename(Emerge.date = Date) %>%
+  select(Plot, Toothpick.alpha, Emerge.date) %>%
+  merge(tdiv, by = c('Plot', 'Toothpick.alpha'), all.x = FALSE, all.y = TRUE)
+
+tdivpix %>%
+  filter(!is.na(Tag)) %>%
+  group_by(Tag) %>%
+  filter(length(unique(Toothpick.alpha)) > 1)
+# good - no duplicated toothpicks
+
+# any duplicated dates?
+tdivpix %>%
+  filter(!is.na(Tag)) %>%
+  group_by(Tag) %>%
+  filter(length(unique(Emerge.date)) > 1)
+# woof... 
+
+tdivpix %>%
+  filter(!is.na(Tag)) %>%
+  group_by(Tag) %>%
+  filter(length(unique(Emerge.date)) > 1) %>%
+  distinct(Tag, .keep_all = TRUE)
+
+# 1307
+tdiv %>% filter(Tag %in% 1307)
+tpicks %>% filter(Plot %in% 8, grepl('orw', Toothpick.alpha))
+# great...yep fucked that up
+# actually - pretty sure it's not the 6/17 emergence date if it was yv on that day.
+tdivpix = tdivpix %>% filter(!(Tag %in% 1307 & Emerge.date > as.Date('2021-06-11')))
+
+# 1070
+tdivpix %>% filter(Tag %in% 1070)
+# two different gggs...yep both entered correctly lol
+# just assume it's the earlier one
+tdivpix = tdivpix %>% filter(!(Tag %in% 1070 & Emerge.date > as.Date('2021-06-11')))
+
+# 1190
+tdiv %>% filter(Tag %in% 1190)
+tpicks %>% filter(Plot %in% 37, grepl('ow', Toothpick.alpha))
+# great. yep that's a mistake
+# assume earlier
+tdivpix = tdivpix %>% filter(!(Tag %in% 1190 & Emerge.date > as.Date('2021-06-04')))
+
+# 1071
+tdiv %>% filter(Tag %in% 1071)
+tpicks %>% filter(Plot %in% 74, grepl('by', Toothpick.alpha))
+# two stems - going to sya it's by2 instead of by1
+tdivpix = tdivpix %>% filter(!(Tag %in% 1071 & Emerge.date > as.Date('2021-06-01')))
+
+# 1229
+tdiv %>% filter(Tag %in% 1229)
+tpicks %>% filter(Plot %in% 74, grepl('gy', Toothpick.alpha))
+# sloppy me.
+# oh well guess I'll stick to my rule of it being earlier
+tdivpix = tdivpix %>% filter(!(Tag %in% 1229 & Emerge.date > as.Date('2021-06-01')))
+
+# 1258
+tpicks %>% filter(Plot %in% 74, grepl('or', Toothpick.alpha))
+# yep. big old goof up
+tdiv %>% filter(Tag %in% 1258)
+# go with earlier
+tdivpix = tdivpix %>% filter(!(Tag %in% 1258 & Emerge.date > as.Date('2021-06-04')))
+
+# Anything else?
+# Multiple observations of a plant on the same day? could happen...
+tdivpix %>%
+  group_by(Tag, Date) %>%
+  filter(n() > 1)
+# yep...
+
+tdivpix %>%
+  filter(!is.na(Tag)) %>%
+  group_by(Tag, Date) %>%
+  filter(n() > 1) %>%
+  ungroup() %>%
+  distinct(Tag)
+
+tdivpix %>% filter(Tag %in% 1274)
+tdivpix %>% filter(Tag %in% 1181)
+tdivpix %>% filter(Tag %in% 1276)
+tdivpix %>% filter(Tag %in% 1150)
+
+# Get rid of NA records and duplicated records on same day
+tdivpix = tdivpix %>%
+  filter(!is.na(Tag)) %>%
+  distinct(Tag, Date, .keep_all = TRUE)
+
+length(unique(tdivpix$Tag))
+length(unique(tdivpix$Plot))
+
+# Good enough for me.
+
+write.csv(tdivpix, 'data/processed_data/thermopsis_cleaned_2021.csv', row.names = FALSE)
 
 #####
 
-tdiv %>%
+tdivpix %>%
   group_by(Date) %>%
   summarise(Fl_Open = sum(Fl_Open, na.rm = TRUE)) %>%
   ggplot(aes(x = Date, y = Fl_Open)) +
   geom_point() +
   geom_line()
 
-tdiv %>%
-  group_by(Date) %>%
-  summarise(Fl_Open = sum(Fl_Open, na.rm = TRUE)) %>%
-  ggplot(aes(x = Date, y = Fl_Open)) +
-  geom_point() +
-  geom_line()
-
-tdiv %>%
+tdivpix %>%
   group_by(Plot, Date) %>%
   summarise(Fl_Open = sum(Fl_Open, na.rm = TRUE)) %>%
   ggplot(aes(x = Date, y = Fl_Open, group = Plot)) +
   geom_point(size = 0.1) +
   geom_line(linewidth = 0.1)
 
-tdiv %>%
+tdivpix %>%
   group_by(Plot, Date) %>%
   summarise(Fl_Open = sum(Fl_Open, na.rm = TRUE)) %>%
   group_by(Plot) %>%
@@ -627,16 +804,9 @@ tdiv %>%
   ggplot(aes(x = Date, y = Fl_Open)) +
   geom_point()
 
-tdiv %>%
+tdivpix %>%
   group_by(Plot, Date) %>%
   summarise(Pl_Open = sum(Fl_Open > 0, na.rm = TRUE)) %>%
-  ggplot(aes(x = Date, y = Pl_Open, group = Plot)) +
-  geom_point(size = 0.1) +
-  geom_line(linewidth = 0.1)
-
-tdiv %>%
-  group_by(Plot, Date) %>%
-  summarise(Pl_Open = mean(Fl_Open > 0, na.rm = TRUE)) %>%
   ggplot(aes(x = Date, y = Pl_Open, group = Plot)) +
   geom_point(size = 0.1) +
   geom_line(linewidth = 0.1)
