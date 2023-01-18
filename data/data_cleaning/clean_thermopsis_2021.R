@@ -1,6 +1,6 @@
 # Cleaning Thermopsis data collected in 2021
 #
-# init 15 Nov. 2021, resumed 4 Jan. 2023 (lol)
+# init 15 Nov. 2021, resumed 4 Jan. 2023 (lol); final (?) Jan 18 2023
 
 library(ggplot2)
 library(dplyr)
