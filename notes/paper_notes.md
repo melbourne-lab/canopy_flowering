@@ -2528,6 +2528,108 @@ There was a contra-expectation result that plants here have lower reproductive s
 
 Also really interesting idea here that adaptation of flowering phenology to climate change may be very slow because of the large degree of non-genetic variation!
  
+### Hylander, K., Ehrlen, J., Luoto, M., and Meineri, E. Microrefugia: not for everyone. 2015. AMBIO.
+
+- Microrefugia (small sites far from core refugia) are recognized as a mechanism for resilience to climate change (helpful possibly for identifying species persisting under CC)
+	- Rull (2009) is foundational for defining microrefugia (small areas outside core where species persist despite inhospitable surroundings)
+	- Although note that Rull's definition can expand to include the absence of a core area (microrefugia can make up the entirety of the distribution at some point - e.g., 'holdouts')
+- In order to be consequential, populations in microrefugia need to persist with sufficient population growth rates
+	- so looking at population growth rates as a function of both biotic and abiotic variables is important for identifying potential microrefugia
+- Hypothesis: topographic variation increases landscape-level variability and increases the likelihood of microrefugia existence
+	- although, this topographic variation may also produce variation in response to climatic change
+		- i.e., local climate may be decoupled from regional climate change (meter-scales may diverge from kilometer scales)
+##### Climatic variables and the limitation of distributions
+- Hutchinson's niche concept: two co-existing species can't have identical niches, in which case there should be variation in which climatic drivers they respond to or how they respond
+	- thus we shouldn't expect "general patterns" in how climate limits ranges
+	- IOW limiting factors typically are species-specific
+- Population growth is the most important factor in persistence (within microrefugia) in which case it's necessary to get not just influences of climatic drivers on one but all vital rates
+- Thresholds or limits to certain physiological processes can be important (e.g., temperature thresholds below which water can not be accessed from the ground)
+- Interactions between local factors and climate can produce spatial patterns/structure between a given climate variable and population growth rates
+	- e.g., Nicole et al. 2011 found contrasting effects of spring and summer temperature on population growth rates of an alpine plant
+	- e.g., Nicole et al. 2011 also found that slope modulated the effect of high summer temperatures on population growth rates
+	- e.g., interacting effects of temperature and precip on altitudional optima for plants in CA mountains
+##### Local and regional climate
+- Local variation in climate conditions depends on the underlying climate-forcing factors, e.g., elevation
+	- but local factors can also modulate this, e.g., microtopography producing spatial structure in air temps
+- Topographic variation can produce patterns at fine scales that otherwise (on flat landscapes) would vary on much, much larger scales
+- Interesting example (not entirely sure its demonstrative purpose...) about overlap of climatic variables between two distinct spatial regions
+	- correlation exists between the two variables (GDD and minimum temperature) when pooling regions
+	- in the are of overlap between the two regions, there's a large range of overlapping minimum temperatures but only a small overlap in GDD
+	- lesson... species limited by GDD in one region (a purported refuge?) may have had more difficulty in finding microrefugia than species limited by the other variable?
+	- still not entirely sure what this is saying...
+- Other factors possibly influencing decoupling of regional and local climate: vegetation, hydrology, exposure/slope
+- E.g., moisture: might produce some buffering where other climatic variables are only important under a specific moisture regime
+##### Synthesis
+- Species are often influenced by different climatic variables (and combos thereof) and these climatic factors may or may not be strongly correlated between local and regional scales
+	- So, not all species may be able to find/benefit from microrefugia, as they may not all respond to variables that are decoupled as such
+	- Microrefugia require long-term persistence in sites, so simply having a climate similar to core is not necessarily enough
+	- "holdouts" (Hannah et al. 2014) as areas where species persist for longer than expeted under climate change but do not necessarily persist long-term
+
+Kinda interesting but not as relevant as I'd hoped. Synthesis I suppose is useful, although this is more thinking about the species level than the population level. The decoupling part is interesting though - microrefugia are refuges because they are hospitable and micro- because they are uncommon, small, different than their surrounding environment in some sense!
+
+The persistence of species relies just on one refugia/microrefugia at a minimum but having multiple increases the genetic diversity - important too! Thinking about Thermopsis - microrefugia allow persistence of high-elevation species and, possibly, low-elevation species although these might follow different evolutionary trajectories if subject to selection. Thinking about beetles at WW - microrefuges allow quick recolonization after fire?
+
+
+### Kudo, G., and Hirao, A.S. 2006. Habitat-specific responses in the flowering phenology and seed set of alpine plants to climate variation: implications for global-change impacts. Population Ecology. 
+
+- Major factors in the phenology of alpine plants: ambient temperature and snowmelt
+	- spatial heterogeneity in snowmelt timing can be strong and have a large influence on plant communities (some refs)
+	- spatial consistency in order of snow melt, although considerable variability in timing among years
+	- ambient temps: in "middle-latitude alpine region", air temperature gradients (over what?) are steeper than in hihg-latitude tundra (so there is high variation?)
+		- should affect pollinator activity (and snowmelt?)
+	- alpine ecosystem: fellfields (early snowmelt, wind-blown ridges and plateaus) and snowbeds ((thick snow)
+- Here: what are the relative impacts of inter-annual variation in flowering in fellfields vs. snowbed communities? How does thid depend on ambient temperature of year?
+	- specifically look at temporal variation in flowering season on reproductive success of a particular herb
+##### Methods
+- Mountains in Hokkaido, following data in five 20x20 m^2 plots (A-E) arranged along a snowmelt-timing gradient (all within 700 ft of each other)
+	 - additional plot (O) set on plateau where strong winds produced t hin snow cover
+- Phenology surveys of "major entomophilous plant species" throughout (3-10 days separation) the growth season for O, B, D plots 1998 (warm) and 2001 (normal)
+	- plants classified by quartile of flowering buds open/finished put onto numeric scale
+	- 14 sp in plot O, 19 in plot B, 12 in plot D
+- Reproductive success of Peucedanum multivittatum in plots A, C, D, E in several years
+	- flowers: hermaphroditic and male flowers on umbels, mostly pollinated by syrphids and flies but occasionally bumblebees
+	- at beginning of flowering season, 40-100 plants selected for each plot
+	- harvest mature fruits at end of flowering season, counting developed seeds (and seed-set percentage)
+- Analysis of seed sets: GLMMs:
+	- log(p / 1-p) = b_0 + b_P Plot + b_S Peak of flowering season + b_T Temperature + b_ST (interaction??)
+		- peak of flowering season is numeric score for when in the summer peak occurred, in ~five day windows
+		- (temperature is mean temperature over flowering season recorded at nearby sensor)
+		- only three years used? and year is ranef?
+##### Results
+- Snowmelt varied among years within beds, but sequence of snowmelt was same across all years
+	- early June for plot A to early August for plot E
+	- spearman's rank correlation tests find sign. (p ~ 0.04 lol) advancing of flowering, but nothing for remaining trends
+- Flowering times in fellfield (plot O) were similar across years 1998 and 2001 despite weather differences
+	- species-level flowering duration was similar in length between years
+- Flowering times in snowbeds (plots B, D) were shifted earlier in warm year
+	- species-level flowering durations similar between years
+	- noticeable shift (a few weeks) in flowering distributions in snowbed plots
+- Higher seed set in later-melt plots for P. multivittatum although considerable variation among years and plots
+	- differences in seed set among flowering seasons
+	- no overall effect of flowering season temperature, but interactions between temperature and growing season (?) were significants
+		- early-flowering comms are influenced by temperatures (warm means higher seed set) but late-flowering saw no effect (unless frost present)
+##### Discussion
+- Different responses to temperature between fellfield and snowbed communities
+	- snow is usually gone prior to initiation of growth in fellfields, so variation in snowmelt time produces little extra variation in phenology there
+	- daily minimum temperature may be important as well - low nighttime temperatures may decelerate development in floral buds in 1998 despite warm daytime temperatures
+		- (lower daily minimum temperatures in 2001 than 1998)
+- Reproductive success: temperature-effects depend on time of season, likely due to weather's effects on pollinator behaviors
+	- positive correlation between ambient temperature and seed set in early-melt plots only: temperature-dependent activity of pollinators active at this time/location
+	- pattern of increasing seed set as the season progressive has been observed at this site for other species as well, although there are different results in Scandinavia and US mountains
+	- delayed flowering may result in seed failure due to onset of winter or frost that halts maturation
+- Climate change predictions: warmer temperatures do not always change snowmelt dates 
+	- e.g., Colorado, where snowmelt dates are same over time because increasing temperatures is offset by increasing snowfall
+	- plants in early-melt habitat may be more sensitive to climate change than late-melt habitats (this is what Forrest et al. 2010 saw yes?)
+		- accelerated snowmelt time likely will increase growth, survival, reproduction in early habitat because of risk of frost damage or water stress (see Molau 1996 for effects of frost on flower production)
+- Hirao and Kudo 2004 does show evidence of genetic structure??
+
+Hmm less impressive than I hoped! Not very many years here and some modeling choices that could be better. With that said, the useful things are (1) habitat types differ in their sensitivities to snowmelt dates and temperature, with early-melting plots less sensitive to variation than plants in late-melting plots. (2) Seed set was higher for later-flowering plots, with significant effects of time of peak flowering and temperature likely due to pollinators (i.e., temperature only mattered for part of the flowering season).
+
+Might be useful here for thinking about how meadow interiors and forest canopies vary in their responses to annual variation (think: Julian's idea) Don't be lazy about this one - think about what these results tell us about possible differences in response between meadow interiors and forest canopies.
+
+
+
+# Incomplete stuff
 
 ### Schmitt, J., and Gamble, S.E. 1990. The effect of distance from the parental site on offspring performance and inbreeding in *Impatiens capensis*: a test of the local adaptation hypothesis. Evolution, 44(8): 2022 - 2030.
 
