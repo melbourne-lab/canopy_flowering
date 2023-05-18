@@ -56,7 +56,7 @@ if (length(teros.id) == 1) {
 
 # Get dates of deployment (in UTC) for labeling file
 data.info =  sensor.data %>% 
-  distinct(Date = as.Date(paste(Month_UTC, Day_UTC), '%m %d')) %>%
+  distinct(Date = as.Date(paste(2022, Month_UTC, Day_UTC), '%Y %m %d')) %>%
   summarise(mindate = min(Date), maxdate = max(Date))
 
 # Name of file name to copy this info to
@@ -123,3 +123,5 @@ test.battery %>%
   ggplot() +
   geom_line(aes(x = Unixtime_UTC, y = Reading_raw))
 
+rm(list = ls())
+  
