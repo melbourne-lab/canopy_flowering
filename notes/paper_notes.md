@@ -2628,6 +2628,209 @@ Hmm less impressive than I hoped! Not very many years here and some modeling cho
 Might be useful here for thinking about how meadow interiors and forest canopies vary in their responses to annual variation (think: Julian's idea) Don't be lazy about this one - think about what these results tell us about possible differences in response between meadow interiors and forest canopies.
 
 
+### Young, D.R., and Smith, W.K. 1979. Influence of sunflecks on the temperature and water relations of two subalpine understory congeners. Oecologia.
+
+- Knight et al. 1977 found that the distribution patterns of two Arnicas (*Arnica cordifolia* and *Arnica latifolia*) in understory are influenced by snowpack and growing season length
+	- more snowpack associated with *Alat* compared to *Acor*
+	- more mid-day wilting in *Acor* while *Alat* is rarely wilted
+		- turgor associated with sunlight and went away in brief shading periods
+		- wilting associated with leaf temps >10C than air temp, minimal water diffusion
+- Here: influences of sunflecks on observed differences in small-scale distribution of congener
+- Both sp are perennials, with *Acor* found at lower elevations under lodgepole pinees and *Alat* at higher elevations under spruce and fir
+	- likely frequent hybridization due to overlapping elevational ranges and close phylogenetic relationship
+- Sampling sites at five elevations (2.5 - 3.1km) below two canopy types
+	- continuous measurements of leaf resistance to water vapor diffusion, air and leaf temp, wind speed, total incident solar irradiation for sunlit and shaded leaves throughout the day
+	- frequency and duration of individual sunflecks measured as well
+- Transpirational flux from Ohm's law: transpirational flux is ratio of leaf-to-air H2O vapor concentration difference to total leaf resistance to water vapor diffusion
+- Total solar irradiation on leaf surface measured with pyranometer
+##### Results
+- Sunflecks of *Acor* ranged from 15-60 min, mean irradiation of .55 cal/cm2/min (where 1cal/cm2/cm ~ 700 W/m2)
+	- during sunlit periods, leaf temperature was as much as 30C greater than ambient air temp and was associated with greatest resistance H2O vapor concentration differences and transpirational fluxes
+	- sunlit periods caused typically ~18C increase in air temp for *Acor*, several degrees cooler than air temp during shaded periods
+- Sunflecks of *Alat* were briefer, had about half as much irradiation
+	- leaf temps for *Alat* below air temps even during sunlit conditions, max temperature 14C (cf 30C for congener)
+	- *Alat* had about a quarter of the transpiration of the 
+- Artificially-induced sunflecks (.43 cal/cm2/min) caused temperature and vapor difference to rise rapidly in the first hour then remain constant for both species, but equilibration was at lower values for *Alat* than *Acor*
+- Most sunflecks were <15min and these comprised 39% of *Acor*'s exposure and ~53% of *Alat*'s exposure
+	- no sunflecks over 60 min for *Alat*
+	- long sunflecks (>60 min) for *Acor*: made up ~5% of total sunflecks, occurred early or late in day with less intense irradiation
+	- Fig. 4 - very cool!
+		- throughout the day more irradiation reaching plants for *Acor* than *Alat*, and correspondingly greater proportion of (time?) had sunlit leaves?
+##### Discussion
+- More sunflecks, more irradiation for *Acor* than *Alat*
+	- during sunflecks, stomatas open
+	- higher leaf temps, more transpiration in *Acor* (cumulatively 4x the transpiration)
+	- *Acor* able to withstand direct sunlight for longer without wilting
+	- "Thus, *Acor* appears to be able to withstand higher transpirational fluxes... Our preliminary measurements indicate that *Acor* may possess a more extensive root system than *Alat* which could support a more rapid water uptake from the soil during high transpiration periods"
+	- "A higher transpirational water loss during sunlit conditions may be favored over water conservation in order to enhance CO2 uptake for photosynthesis, especially for *Acor*
+
+Meh. Overall, site (or more precisely elevation) is confounded with species here so be cautious. Quotes at the end appear to be useful. Sunflecks are associated with increasing stomatal opening (water loss) co-occurring with photosynthesis. One thing to note though is that it this process of stomatal opening occurs over the course of an hour, but most sunflecks are under 15 minutes (and for the species in fir+spruce canopy, never is longer than an hour).
+
+Wish there was more comparing canopy structure among tree! Oh well.
+
+
+### Stam, P. 1983. The eovlution of plant reproductive isolation in closely adjacent plant populations through differential flowering time. Heredity.
+
+- Current state of knowledge: gene flow among populations can slow genetic differentiation, but also recently noted that pollen and seed dispersal is limited in many plants
+	- Aston and Bradshaw (1966) and McNeilly and Antonovics (1968) show gene flow between populations of grasses yet genetic diversity is maintained
+	- McNeilly and Antonovics (1968) attributed flowering time differences in the mine-tailing system as adaptive - gene flow between metal-tolerant and intolerant populations would be maladaptive
+- Here: reproductive isolation in plants need not necessarily be in response to divergent selection and could be due to a non-selective difference
+	- say: A and B occupy adjacent habitats and A has a slight tendency towards earliness
+	- say there is no other systematic differences between habitat types
+	- then, pollen movement between A and B will still be preferential gene flow since late genotypes in A move to B and early genotypes in B move to A
+		- with limited seed dispersal between habitats there will be divergence inf lowering time
+	- note in this example that allele frequencies in the two combined populations (one population at large) will not change if all other things are equal
+##### Models
+- Suppose a population fo infinte size with two habitat types, A and B
+	- habitat A has an overall shift in flowering time of magnitude d
+	- assume duration of flowering is equal for all habitats, no dispersal between habitat types
+	- one locus with two alleles, diploid flowering time gene
+	- assume fertilization is density-independent (big assumption) - a "constant fraction" model of assortative mating
+- Results reported (not really demonstrated) from this model
+	- Starting with identical genotypic distributions for A and B will produce divergence, continuing until a stable equilibrium (frequency pair P_A, P_B) is reached
+	- In the early habitat (A), the frequency of the early allele E will be higher than in the late habitat (B)
+	- So long as there is overlap in flowering times between the habitats, there will be no fixation
+	- Greater shift (d) produces greater divergence between the two habitat types
+- A simulation approach: finite population of plants in a "narrow strip" running across a boundary, with equal numbers of plants in each habitat
+	- finite number of "sites" on a 2D array, with at most one plant per site?, with flowering time of individual determined by a genotype determined by a some fixed number of segregating biallelic loci
+	- for each individual, record site (position), genotype and flowering time, and seed production
+	- Reproduction: during flowering period of female parent, males sampled at random (negative exponential kernel of pollen movement), segregation to determine genotypes of offspring, then all adults replaced by offspring (dispersal surely happens somehow?)
+	- more pollen dispersal means faster divergence between habitat types
+	- less seed dispersal also means faster divergence between habitat types
+- Incorporating natural selection on an independently-segregating set of loci: consider a gradient of metal concentration and alleles for tolerance to said metal
+	- along gradient, let there be an optimum fraction of tolerance genes (scaled to 0-1) equal to the concentration
+	- fitness declines linearly with distance from optimum
+	- parents of offspring sampled with probabilities weighted by fitness
+	- two sets of simulations: one with genetic variation for flowering time and environmental differences, and one without either
+	- in sim with no variation in flowering time, no adaptation wrt tolerance because of the inflow of 'maladapted' pollen
+	- in sim with variation, subpopulations diverge with respect to flowering time, allowing adaptation to the local environment
+##### Discussion
+- Unlike previous papers, present paper demonstrates that reproductive isolation may evolve in the presence of non-genetic (environmental) differences in flowering times, rather than genetic differences as assumed in other models
+	- allows for possibility of microgeographic differentiation
+	- flowering may be canalized (I always forget what this means... strong selection producing marginal variation?)
+		- e.g., extremely-early and extremely-late plants may be at a disadvantage due to pollinator preference for the peak (not so given other studies I have read)
+		- other possible isolating mechanisms: self-fertilization, etc.
+
+Hmm... merits passing reference noting that environment may cause divergence in flowering times (and foster local adaptation) even when it's not necessarily selected for. Other papers might be more useful. Don't think this needs a re-read.
+
+
+### Godineau, C., Ronce, O., and Devaux, C. 2021. Assortative mating can help adaptation of flowering time to a changing climate: insights from a polygenic model. Journal fo Evolutionary Biology.
+
+- Flowering time is advancing for many plant populations in temperate zones, in part due to rapid genotypic change
+	- it is likely associated with assortative mating (positive correlation among mates)
+	- Weis et al. 2014 demonstrates that within the same oldfield community, values of assortative mating range wildly (0.05 - 0.63)
+	- Does asssortative mating contribute to observed rapid evolution of flowering times?
+- Background in quant gen theory usually assumes asexual reproduction or random mating
+	- general conclusions: populations are able to track moving optima of stabilizing selection, although there is typically a lag
+	- higher genetic variation for the trait accelerates the response to selection and decreases the lag
+	- but note that increasing genetic variance also depresses mean population fitness due to variance load or because increased ability to track nuisance fluctuations
+- Assortative mating and its effects on evolution of an adaptive trait
+	- Genetic variance can be partitioned into genic variance (variance for trait at linkage and HWE, same as polymorphism at each locus) + covariances in allelic effects across loci
+	- Assortative mating produces positive covariances among alleles with similar effects on the trait, inflating the genetic variance (Crow & Felsenstein 1968, Crow & Kimura 1970, Wright 1921)
+	- Assortative mating can also reduce polymorphism that mutation-selection balance might maintain (i.e., genic variance) because of the reduced reproductive success of individuals with rare phenotypes
+	- So, there are possibly contrasting effects of assortative mating on genetic variance
+- Assortative mating can facilitate or constrain responses to disruptive selection, or genetic divergence
+	- it can facilitate the resonse to directional selection because higher homozygosity increases genetic variance exposed to selection
+		- models exploring this consider a single bi-allelic locus influencing the trait
+	- in the quantitative genetics world, it is predicted that assortative mating increases responses to artificial selection but only under high heritability and weak selection
+		- not yet tested for natural stabilizing selection
+- Here: does assortative mating for a polygenic trait increase genetic variance under a changing climate, and does this increase adaptive capacity?
+	- First, incorporate assortative mating into B&L95's model of a gradually changing environment
+	- Then, consider Sachdeva and Barton's (2017) predictions about evolution of associations among allelic effects (covariances?) to scenarios of assortative mating for flowering time
+##### Methods
+- Individual-based model with discrete and non-overlapping generations, constant population size, no migration
+	- Evolution of flowering time subject to stabilizing selection around the optimal time, varying annually
+- Annual life history, 20 hermaphroditic flowers per plant with synchronous pollen release and stigma receptivity on one day
+	- no pollen limitation or interference
+	- flowers can only be fertilized by pollen grains open from conspecifics on the same day
+	- peak flowering time of an individual plant is genetically variable, but duration of flowering is the same (nine days)
+	- number of of flowers open for a plant on a given day is approximatley gaussian (1-4 flowers/day)
+	- peak flowering date, Z_j is the day with four flowers open
+	- strength of assortative mating for peak flowering date is rho = Cov(Z_x, Z_y) / (SD(Z_x) SD(Z_y)) for parents x and y
+	- in this model, strength of assortative mating is determined solely by the variance within the population of Z
+		- claim: making duration of flowering variable among individuals but keeping mean duration and spread similar would not affect hte strength of assortative mating
+- Number of viable seeds produced by a flower is a function of day (for that flower), with optimal day theta_i
+	- gaussian selection with declining fitness with further distance from optimum
+	- fitness of maternal plant is sum over days the number of open flowers on a day weighted by probability of producing viable seeds
+	- new generation formed by randomly sampling N (fixed) fertilized ovules among all flowers open in the year, weighted by probability of producing a viable seed
+- z = g + e, where e ~ N(0, 4)
+	- actual peak date is z rounded to the nearest whole number
+	- breeding value g is the sum of L additive and freely recombining loci
+	- mutations occur at rate mu = U/(2L) per allele, with mutational effects ~ N(0, V_m / U)
+- Recording: V_gi the additive genetic variance in year i among plants before selection occurs
+	- genic variance, V_LE, genetic variance at linkage equilibrium and HWE
+	- mean fitness, phenotypic lag of the population to mean flowering date (\bar{Z}_i - \theta_i)
+- Environment over time: theta_i = theta_0 + ki + e_i
+	- Neutral scenario: no selection (w^2 = infinity)
+	- stabilizing selection in a constant environment (k = 0, V_theta = 0)
+	- uncorrelated fluctuations around a constant optimum (k = 0, V_theta > 0)
+	- constant linear trend (k < 0, V_theta = 0)
+	- linear trend and fluctuations (k < 0, V_theta > 0)
+	- 10 replicates per scenario
+- Comparison against random mating
+	- some analytical stuff, selection on females only vs. females and males both... only skimmed
+	- also simulations with pairing independent of day, drawing mothers and fathers independently 
+- Also comparison of genetic variance results with extant analytical predictions
+	- for a neutral trait, V_g = V_LE = 2 N_e V_m (here N_e is set to N)
+	- Devaux and Lande 2008 have an expression for expected genetic variance under assortative mating
+	- some other stuff
+- Comaprison also with the predicted lag (B&L95) over time under random mating, as well as predicted mean population fitness under random mating
+##### Results
+- Genetic variances in constant-environment simulations match analytical predictions at equilibrium for both patterns of mating and also match for stabilizing selection under random mating (so simulation code works)
+- Genetic variance for a neutral trait is larger under assortative mating than under random mating
+	- genetic variance decreases with increasing stabilizing selection for both mating patterns
+	- when stabilizing selection is weak, genetic variance remains higher for assortative mating, but as selection strength increases this slowly reverses such that assortative mating has somewhat smaller variance
+- Analytic expressions do a good job of predicting the ratio of genic variance to genetic
+	- with random mating, genetic variance is nearly entirely genic variance 
+		- (slight negative covarition among alleles due to stabilizing selection)
+	- with assortative mating, genetic variance is much larger than genetic variance, due to positive covariation among effects
+		- smaller positive genetic associations when duration of flowering is larger (more overlap)
+	- stationary environment: analytical expectations of variance components and lag (zero) are accurate
+		- litle effect of mating pattern
+- analytical expressions are good at matching the predicted lag (decreasing non-linearly with higher genetic variance)
+- relationship between mean fitness and genetic variance: predicted to be non-monotnic in changing environment
+	- small genetic variance will increase the lag over time, large genetic variance produces variance load
+	- higher genetic variance under assortative mating allows better tracking of the optimum and a smaller lag (rel. to random mating)
+		- fitness advantage increases with faster change
+		- these results seem robust to the strength of assortative mating and stabilizing selection although the size of the fitness advantage to assortative mating varies (depends on how much genetic variance limits adaptation)
+##### Discussion
+- Here: a test to see if widely-observed patterns of rapid change in flowering phenology can be explained by assortative mating
+	- Antagonizing effects on genetic variance: assortative mating depresses polymorphism at each locus but increases variance by producing positive associations among loci
+	- In a stationary environment, the genetic variances of random and assortative mating are going to be roughly the same
+	- But with directional change in the environment, genetic variance will be higher under assortative mating, reducing the lag and increasing mean fitness (with a few exceptions)
+- Components of phenotypic variation:
+	- surprisingly, analytical model suggests that contribution of genic to genetic variance is not affected very much by speed of environmental change...) [what is this contribution?]
+	- as reported by Bulmer (the "Bulmer effect" - 1971) random mating will produce higher genic variance than genetic because directional selection will produce slightly negative effects...
+	- Another effect of assortative mating (on selection): stabilizing sexual selection, as males will be favored if they flower at a time similar to the females closest to the optimum
+	- if genic variance were the same between the two types of mating (as assumed here), genetic variance would be higher under assortative mating, but this is not observed in simulations because there is smaller genic variance in simulated assortative mating populations and depends on the regime of environmental change
+- In a stationary environment, very little effect of assortative mating
+	- may have been observed in constant environment sims because of additional sexual selection on males (reducing level of polymorphism at mutation-selection balance)
+	- slightly smaller genetic variance under assortative mating in a constant environment because there still is a negative effect on genic variance but little compensation among from positive associations (seem to rely on selection?)
+	- note that Lande (1977) found that weak assortative mating does not affect genetic variance at muation-selection balance 
+	- the exception (much larger variance under assortative mating) when selection is weak or non-existent
+- Under environmental change, higher genetic variance for assortative mating rel. to random mating
+	- bell-shaped relationship between genetic variance and speed of optimum change described by B*L95, Burger 1999)
+	- Burger 1999 suggests that increase in genic variance in slowly-changing environments is due in part to increased frequency of initially rare beneficial alleles
+	- here: assortative mating means increase in genic variance is amplified by positive associations
+	- under rapid change, declining genic variance under random mating due to increasing size of lag, producing possible drift, but assortative mating lag will be smaller
+		- finding of a smaller lag is the polygenic analog to findings of Fox (2003) and Weis et al. (2005) in single-locus models
+- "In a rapidly warming climate with longer favourable season (Barichivich et al. 2013, Vitasse et al. 2011), and thus weaker stabilizing selection, the fitness advantage conferred by assortative mating compared to random mating could be large, and critical to population persistence"
+- Flowering time is typically plastic, sensitive to temperature or other cues
+	- this plasticity is often partially adaptive, and plasticity can evolve
+	- could be incorporated into this model: assume a partially plastic response to a reliable environmental cue, no genetic variation for slope of reaction norm (so everyone responds similarly to cue), should have a similar effect (I didn't think very hard about why... rescaling the optimum to be an optimal breeding value rather than optimal trait?)
+- In the context of evolutionary rescue, increasing enetic variance in the short term via assortative mating may be greatly beneficial
+
+
+Interesting result! Would be cool if I had more time to one day look into the analytical stuff. 
+
+Result is that, with increasing or gradual  directional change, assortative mating increases genetic variance and decreases the magnitude of lag. Not clear to me if this change needs to be gradual or if it would also work for a single shift - I feel like it would because the positive associations created are due to directional selection, yes? The lack of effect in the stationary environments seems to be because the directional selection can't produce those positive associations as effectively.
+
+There is an interesting effect too of reduced genic variance. I hadn't really thought about this before. Should think about this more.  
+
+I understand on a statistical level why the positive associations would increase overall variance but it's still not clear to me biologically. Maybe I should simulate it out.
+
+Still - interesting stuff! Use in ch 3 to talk about observed rapid change in directional selection and how increasing the strength of assortative mating in this system may facilitate adaptation, although in the meadows there is an added wrinkle of two contrasting habitat types. Think about reconciling this with Stam?
+
 
 # Incomplete stuff
 
