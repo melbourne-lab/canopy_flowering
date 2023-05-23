@@ -2832,6 +2832,65 @@ I understand on a statistical level why the positive associations would increase
 Still - interesting stuff! Use in ch 3 to talk about observed rapid change in directional selection and how increasing the strength of assortative mating in this system may facilitate adaptation, although in the meadows there is an added wrinkle of two contrasting habitat types. Think about reconciling this with Stam?
 
 
+### Dahlgren, J.P., von Zeipel, H., and Ehrlen, J. 2007. Variation in vegetative and flowering phenology in a forest herb caused by environmental heterogeneity. American Journal of Botany.
+
+- Plant flowering times can influence fitness (refs) and is possibly under selection due to temporal variation in availability of pollinators, seed dispersers, herbivores
+	- Spatial variation that can influence the above factors may then be associated with spatial variation in phenology
+	- Other environmental constraints may influence phenology, including vegetative development, seed and fruit maturation
+	- Ratchke and Lacey 1985 reviewed ecological influences on flowering time, e.g., temperature, photoperiod, moisture
+		- cumulative temperature models seem to be good predictors of flowering time
+	- Phenology can also vary at small scales (Marquis 1988, Goulart et al. 2005), possibly due to microclimatic differences (Jackson 1966, Inouye et al. 2003)
+	- May also be variation in phenology due to genes, or resource state of the plant (and the latter of these may be correlated with stage/stage in previous years)
+- Here: relative influences of local environment, plant size, prior reproductive effort on within-population variation in vegetative and flowering phenology of herb *Actaea spicata* in forest understory system
+	- Q1: do local environment, size, reproductive effort influence within-population flowering itme?
+	- Q2: do environmental factors act directly on flowering time, or only through vegetative phenology?
+	- Q3: do patterns vary according to spatial scale?
+##### Methods
+- Four patches/populations of *A. spicata* in forest system, some purely deciduous and some dominated by conifers, some in open plots and some closed
+	- species: long-lived herb, inflorescences umbel-shaped with 1-30 flowers, up to four inflorescences per shoot
+		- pollinated by mostly beetles and flies
+		- nearly 100% seed set, maybe self-incompatible but maybe not?
+- 290 individuals in 25 plots across the four populations
+	- location and number of fruits per plant recorded in 2004, re-visited in 2005 to determine date of shoot emergence, height, and flowering time
+	- also counted: number of undeveloped buds, fully-developed buds, open flowers, done flowers
+		- relative time spent in each stage estimated
+		- "flowering time" is day when 50% of flowers were "freshly open"
+	- spatial stuff: slope, soil depth, litter depth, intraspecific plant density
+	- canopy coverage (once in May, once in July)
+	- soil samples (eight per plot, pooled) for nutrient concentration, pH, carbon and nitrogen concentrations, water content, temperature loggers (10cm below ground)
+- Analyses: variation at plot/individual level (not population)
+	- shoot emergence and flowering time analyzed (multiple regression)
+		- predictors (removed with alpha threshold 0.01): soil temp, soil slope, plant size, prev. year's fruit number, slope, soil depth, litter depth, interspecific density, intraspecific density, canopy openness, soil water content, pH, nutrient concentrations
+		- model selection performed with AIC
+	- path models also used (SEMs) to look at indirect effects acting on flowering time through shoot emergence
+##### Results
+- ~51% of variation in flowering time was between populations, 8% between plots
+	- in shoot-emergence time, 2% of variation was between populations, 24% between plots
+	- remaining: 41% of variation in flowering time and 74% of variation in shoot emergence was within-plot
+- Best-fitting multiple regression of shoot emergence among plots: high temperature, low July canopy openness (R^2 0.63) associated with early emergence
+- Best-fitting multiple regression of flowering time among plots: early shoot emergence, steep and south-facing slopes, high temperature, low canopy openness (?) (R^2 0.83)
+- Best-fitting shoot emergence within plots: slope, size, potassium, interspecific density (R^2 = 0.17)
+- Best-fitting flowering time within plots: early shoot emergence, high phosphorous concentration (R^2 = 0.16)
+##### Discussion
+- Within plots: smaller individuals, steeper and more south-facing slopes with more soil K (lol) have earlier emergence and then earlier flowering
+	- that shoot emergence partially explained flowering time variation suggests that evolutionary explanations of flowering phenology should also include veg phenology
+- In other studies, cumulative temperature accurately predicts differences in flowering time; here, it appeared that higher soil temperature was among the most important predictors of early flowering time
+- Low canopy coverage (July) and early flowering phenology among plots: cooler night air temperatures with open canopy, or possibly dehydration stress in open areas
+	- (urgh... so confused of more canopy coverage means earlier/later flowering... language here could mean either is true...)
+- Nutrient availability: K is a limiting resource for *A spicatra*
+	- soil nutrients did not explain differences among plots, but did explain within plots
+- Didn't see any influence of plant size on phenology
+	- if prev. states was predictive of phenology, we'd expect earlier phenology to possibly mean larger plants... but this was not observed
+	- although, did see smaller plants emerging earlier than larger ones (maybe larger shoots take longer to develop below ground, or smaller plants emerge earlier due to competition)
+	- Verdu and Traveset 2005, and other studies, suggest there is a fitness gain to earlier emergence in some systems
+
+
+Hmm... well, cool to see that vegetative phenology influences reproductive phenology (at least here). It looks like we actually see the opposite here of what I observe (and predict) as far as canopy goes: greater canopy openness seems to be associated with later flowering. The hypothesis that this is driven by night temperatures is interesting, either with effects due to freezing or just general accumulation. 
+
+Not quite sure what to make of the different scales though. Also interesting that there is nutrient limitation, but that's not something we measure here (although Buck and St. Clair found clear differences in soil nutrient profiles).
+
+
+
 # Incomplete stuff
 
 ### Schmitt, J., and Gamble, S.E. 1990. The effect of distance from the parental site on offspring performance and inbreeding in *Impatiens capensis*: a test of the local adaptation hypothesis. Evolution, 44(8): 2022 - 2030.
