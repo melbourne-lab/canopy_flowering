@@ -49,3 +49,22 @@ I also have a modified file for edits here.
 
 Should go up again soonish when snow situation is better!
 
+### May 23
+
+Went up today with Chloe.
+
+Spent the day taking coordinates. Got SW and NE areas. 
+Two separate jobs:
+- `mrs may 23 2023` (SW)
+- `mrs may 23 2023 nw` (really NE... misnomer lol)
+Raw data is in `data/spatial`.
+
+Took a couple of duplicate points - points shot last week also shot today.
+These might be useful for comparison.
+
+I also tried to get sensor coordinates - these should have names ending with `S` (or `R` in one case where I made a mistake).
+
+Snow: considerably less of it. Still some below canopy in patches but I'd guess it's 2/3 melted.
+Will return to shoot NW and remaining points in E/SE soon.
+
+I did not repair any sensors.
