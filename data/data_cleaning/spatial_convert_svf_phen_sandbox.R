@@ -160,3 +160,111 @@ ggplot() +
   ) +
   scale_colour_viridis_c(option = 'B') +
   scale_fill_viridis_c()
+
+##### with a few more coords
+
+all.coords = rbind(
+  read.csv('data/spatial/2021-2022_plot_coords_2023-05-16.csv'),
+  read.csv('data/spatial/2021-2022_plot_coords_2023-05-23_1.csv'),
+  read.csv('data/spatial/2021-2022_plot_coords_2023-05-23_2_raw.csv')
+)
+
+head(all.coords)
+
+coords.pre = SpatialPoints(all.coords[,c("Longitude", "Latitude")],
+                           proj4string = CRS("+proj=longlat"))
+
+# ESPG code 26913 corresponds to UTM zone that covers colorado
+coords.utm = spTransform(coords.pre, CRS("+init=epsg:26913"))
+
+all.coords = all.coords %>%
+  select(-c(Easting, Northing)) %>%
+  cbind(
+    coords.utm %>%
+      as.data.frame() %>%
+      rename(Easting = Longitude, Northing = Latitude)
+  )
+
+head(all.coords)
+
+all.coords %>%
+  ggplot(aes(x = Easting, y = Northing)) +
+  geom_point()
+# nice.
+
+all.plot.coords = rbind(
+  read.csv('../UAV-b-solar-radiation/00_setup/elk_meadow_data/coords_asp_slp_2020.csv') %>%
+    mutate(X_Easting = floor(X_Easting), Y_Northing = round(Y_Northing)) %>%
+    mutate(Label = gsub('^p', '', Label)) %>% 
+    rename(Plot = Label, northing = Y_Northing, easting = X_Easting) %>% 
+    select(Plot, northing, easting) %>%
+    mutate(Plot = paste(Plot, '2020', sep = '_')),
+  all.coords %>%
+    filter(!grepl('[RS]$', Name)) %>%
+    rename(Plot = Name, easting = Easting, northing = Northing) %>% 
+    select(Plot, northing, easting) %>%
+    mutate(
+      northing = round(northing), 
+      easting = floor(easting),
+      Plot = paste(Plot, ifelse(as.numeric(Plot) > 100, 2022, 2021), sep = '_')
+    )
+)
+
+head(all.plot.coords)
+
+phen20 = read.csv('data/processed_data/therm_draft_01-12-2021.csv')
+head(phen20)
+
+phen21 = read.csv('data/processed_data/thermopsis_cleaned_2021.csv')
+head(phen21)
+
+phen22 = read.csv('data/processed_data/thermopsis_cleaned_2022.csv')
+head(phen22)
+
+phen.all = rbind(
+  phen20 %>%
+    select(Date, Plot, Tag, Racemes, Infl_spread, Infl_done) %>%
+    rename(N_infl = Racemes, Fl_open = Infl_spread, Fl_done = Infl_done),
+  phen21 %>%
+    select(Date, Plot, Tag, Fl_Stems, Fl_Open, Fl_Done) %>%
+    rename(N_infl = Fl_Stems, Fl_open = Fl_Open, Fl_done = Fl_Done),
+  phen22 %>%
+    select(Date, Plot, Tag, N_infl, Fl_open, Fl_done)
+)
+
+phen.all = phen.all %>%
+  separate(Date, into = c('Year', 'Month', 'Day'), sep = '-') %>%
+  mutate(Mon_Day = paste(Month, Day, sep = '-')) %>%
+  mutate(JDay    = as.Date(Mon_Day, '%m-%d') - as.Date('2023-06-01', '%Y-%m-%d')) %>%
+  mutate(Plot = paste(Plot, Year, sep = '_'))
+
+phen.fl = phen.all %>% filter(Fl_open > 0 | Fl_done > 0)
+
+phen.init = phen.fl %>% group_by(Plot, Tag) %>% summarise(start.date = min(JDay)) %>% ungroup()
+
+spatials = read.csv('../UAV-b-solar-radiation/02_skyview/out/elk_svf_uav_long_c1.csv') %>%
+  mutate(easting = floor(easting), northing = floor(northing))
+
+phen.svf = merge(phen.init, all.plot.coords) %>%
+  mutate(Year = gsub('\\d{1,}\\_', '', Plot)) %>%
+  merge(spatials)
+
+head(phen.svf)
+nrow(phen.svf)
+length(unique(phen.svf$Plot))
+
+mod1 = rstanarm::stan_gamm4(
+  formula = start.date ~ s(svf, by = year) + year,
+  random = ~ (1 | Plot),
+  data = phen.svf %>% mutate(year = as.factor(Year), start.date = as.numeric(start.date)),
+  cores = 4,
+  chains = 4,
+  iter = 5000,
+)
+# small number of divergent transitions...
+
+mod1 %>% summary()
+rstanarm::plot_nonlinear(mod1)      # hmm...?
+# interesting...
+
+
