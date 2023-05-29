@@ -68,3 +68,23 @@ Snow: considerably less of it. Still some below canopy in patches but I'd guess 
 Will return to shoot NW and remaining points in E/SE soon.
 
 I did not repair any sensors.
+
+### May 28
+
+Solo day with GPS. Shot points in NW and remaining points in the East.
+
+Jobs:
+- `mrs nw`
+- `mrs east leftovers`
+
+I think I fixed mistakes in some old CSV files; a couple plots were mislabeled.
+
+Four plots I could not find: 
+- 68 (buried under snow S of 67?)
+- 56 (thought this was the back corner? flags gone if so)
+- 51 (flags probably gone?)
+- 42 (simply couldn't find)
+
+Snow nearly entirely gone. Very wet. Plants emerging (was true 5/23 too).
+
+Might have missed some others - not sure! Haven't totally vetted yet.
